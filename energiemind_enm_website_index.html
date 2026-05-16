@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnergieMIND | ENM Token</title>
+  <meta name="description" content="EnergieMIND (ENM) is the energy intelligence and sustainable mining layer of the TVK / EnteleKRON ecosystem. ENM is an Ethereum ERC-20 token prepared for future EnteleKRON mainnet migration." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8fbf7;
+      --panel: rgba(255,255,255,.78);
+      --panel-solid: #ffffff;
+      --text: #102018;
+      --muted: #5f7068;
+      --line: rgba(20, 68, 42, .13);
+      --green: #17b26a;
+      --green-dark: #087443;
+      --lime: #a6e635;
+      --gold: #f2c94c;
+      --blue: #2d9cdb;
+      --shadow: 0 24px 80px rgba(18, 62, 35, .12);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(166,230,53,.32), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(45,156,219,.22), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f6fff8 42%, #eefaf2 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .28;
+      background-image:
+        linear-gradient(rgba(8,116,67,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(8,116,67,.08) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 80%);
+      z-index: -2;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(255,255,255,.72);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -.04em; }
+    .mark {
+      width: 44px; height: 44px; border-radius: 16px;
+      background: conic-gradient(from 180deg, var(--green), var(--lime), var(--gold), var(--blue), var(--green));
+      box-shadow: 0 12px 38px rgba(23,178,106,.35);
+      position: relative;
+    }
+    .mark::after {
+      content: ""; position: absolute; inset: 8px; border-radius: 11px;
+      background: rgba(255,255,255,.92);
+      box-shadow: inset 0 0 0 1px rgba(8,116,67,.1);
+    }
+    .nav-links { display: flex; gap: 22px; align-items: center; font-size: 14px; color: var(--muted); font-weight: 700; }
+    .nav-links a:hover { color: var(--green-dark); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      border-radius: 999px; padding: 13px 18px; font-weight: 800; font-size: 14px;
+      border: 1px solid rgba(8,116,67,.18);
+      background: var(--panel-solid);
+      box-shadow: 0 10px 28px rgba(8,116,67,.08);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(8,116,67,.13); }
+    .btn.primary { color: white; border: none; background: linear-gradient(135deg, var(--green), var(--green-dark)); }
+
+    .hero { padding: 84px 0 52px; position: relative; }
+    .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 44px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 9px 13px; border-radius: 999px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.65);
+      color: var(--green-dark); font-weight: 900; font-size: 13px;
+      box-shadow: 0 12px 36px rgba(8,116,67,.08);
+    }
+    .dot { width: 9px; height: 9px; background: var(--green); border-radius: 50%; box-shadow: 0 0 0 8px rgba(23,178,106,.12); }
+    h1 { margin: 22px 0 18px; font-size: clamp(48px, 8vw, 94px); line-height: .91; letter-spacing: -.085em; }
+    .gradient-text { background: linear-gradient(110deg, #073b26, var(--green), #a47c00); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { font-size: clamp(18px, 2.1vw, 23px); line-height: 1.55; color: var(--muted); max-width: 710px; margin: 0 0 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin: 28px 0 30px; }
+    .contract-pill {
+      display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+      padding: 14px; border: 1px dashed rgba(8,116,67,.32); border-radius: 19px; background: rgba(255,255,255,.7);
+      color: var(--muted); font-size: 13px; max-width: 690px;
+    }
+    code { color: #073b26; font-weight: 800; word-break: break-all; }
+
+    .orb-card {
+      min-height: 510px;
+      border-radius: 40px;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(255,255,255,.85), rgba(246,255,248,.6));
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+    }
+    .orb-card::before {
+      content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%;
+      left: 50%; top: 46%; transform: translate(-50%,-50%);
+      background: radial-gradient(circle, rgba(166,230,53,.92) 0 8%, rgba(23,178,106,.8) 9% 32%, rgba(45,156,219,.25) 33% 52%, transparent 53%);
+      filter: blur(.1px);
+      animation: pulse 7s ease-in-out infinite;
+    }
+    .orb-card::after {
+      content: ""; position: absolute; inset: 72px; border-radius: 50%;
+      border: 1px solid rgba(8,116,67,.12);
+      box-shadow: inset 0 0 70px rgba(255,255,255,.7), 0 0 100px rgba(23,178,106,.18);
+    }
+    @keyframes pulse { 0%,100% { transform: translate(-50%,-50%) scale(.96) rotate(0deg); } 50% { transform: translate(-50%,-50%) scale(1.04) rotate(10deg); } }
+    .floating-stat {
+      position: absolute; z-index: 2; background: rgba(255,255,255,.82); backdrop-filter: blur(14px);
+      border: 1px solid var(--line); border-radius: 22px; padding: 16px 18px; box-shadow: 0 16px 44px rgba(8,116,67,.1);
+    }
+    .floating-stat strong { display:block; font-size: 22px; letter-spacing: -.04em; }
+    .floating-stat span { font-size: 12px; color: var(--muted); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .fs1 { left: 24px; top: 26px; } .fs2 { right: 24px; top: 110px; } .fs3 { left: 42px; bottom: 42px; } .fs4 { right: 28px; bottom: 82px; }
+
+    section { padding: 58px 0; }
+    .section-head { display:flex; justify-content: space-between; gap: 24px; align-items:end; margin-bottom: 24px; }
+    .section-head h2 { margin:0; font-size: clamp(34px, 5vw, 58px); line-height: .98; letter-spacing: -.065em; }
+    .section-head p { margin:0; max-width: 520px; color: var(--muted); line-height: 1.65; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); backdrop-filter: blur(14px);
+      padding: 26px; box-shadow: 0 18px 50px rgba(8,116,67,.07);
+      min-height: 230px;
+    }
+    .icon { width: 46px; height: 46px; border-radius: 16px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, rgba(23,178,106,.16), rgba(166,230,53,.22)); margin-bottom: 18px; font-size: 22px; }
+    .card h3 { margin: 0 0 10px; letter-spacing: -.035em; font-size: 21px; }
+    .card p { margin:0; color: var(--muted); line-height: 1.62; }
+
+    .token-panel { display:grid; grid-template-columns: .9fr 1.1fr; gap: 18px; }
+    .token-box { border-radius: 32px; border: 1px solid var(--line); background: #102018; color: white; padding: 30px; box-shadow: var(--shadow); }
+    .token-box h3 { margin:0 0 16px; font-size: 30px; letter-spacing: -.05em; }
+    .token-box p { color: rgba(255,255,255,.7); line-height:1.6; }
+    .token-list { display:grid; gap: 12px; }
+    .token-row { display:flex; justify-content:space-between; gap:16px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .token-row span { color: rgba(255,255,255,.62); }
+    .token-row strong { text-align:right; }
+
+    .roadmap { display:grid; grid-template-columns: repeat(4, 1fr); gap: 15px; counter-reset: step; }
+    .step { position:relative; padding: 24px; border: 1px solid var(--line); border-radius: 26px; background: rgba(255,255,255,.72); min-height: 210px; }
+    .step::before { counter-increment: step; content: "0" counter(step); display:inline-flex; margin-bottom: 26px; color: var(--green-dark); font-weight:900; letter-spacing:-.04em; }
+    .step h3 { margin:0 0 10px; font-size: 19px; letter-spacing:-.035em; }
+    .step p { margin:0; color: var(--muted); line-height:1.58; }
+
+    .disclaimer { border-radius: 30px; padding: 26px; background: #fff8e6; border: 1px solid rgba(242,201,76,.42); color: #5e4a0a; line-height: 1.65; }
+    .footer { padding: 44px 0; border-top: 1px solid var(--line); color: var(--muted); }
+    .footer-grid { display:flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .small { font-size: 13px; line-height:1.6; }
+
+    @media (max-width: 930px) {
+      .hero-grid, .token-panel { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      .roadmap { grid-template-columns: 1fr 1fr; }
+      .nav-links { display:none; }
+      .orb-card { min-height: 430px; }
+    }
+    @media (max-width: 620px) {
+      .roadmap { grid-template-columns: 1fr; }
+      .section-head { display:block; }
+      .section-head p { margin-top: 14px; }
+      .hero { padding-top: 52px; }
+      .floating-stat { position: relative; left:auto; right:auto; top:auto; bottom:auto; margin: 10px; display:inline-block; }
+      .orb-card::before, .orb-card::after { display:none; }
+      .orb-card { min-height:auto; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="EnergieMIND home">
+        <span class="mark"></span>
+        <span>EnergieMIND</span>
+      </a>
+      <div class="nav-links">
+        <a href="#mission">Mission</a>
+        <a href="#token">ENM Token</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+      <a class="btn primary" href="https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D" target="_blank" rel="noopener">View Contract</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Energy Intelligence • Mining • Sustainability • ENM</div>
+          <h1><span class="gradient-text">EnergieMIND</span><br/>Powering intelligent energy networks.</h1>
+          <p class="lead">EnergieMIND is the energy, mining, and sustainability intelligence layer of the TVK / EnteleKRON ecosystem — designed to connect renewable infrastructure, miner heat recovery, tokenized energy value, and AI-based operational coordination.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#token">Explore ENM</a>
+            <a class="btn" href="#mission">Read Mission</a>
+          </div>
+          <div class="contract-pill">
+            <strong>Ethereum Contract:</strong>
+            <code>0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D</code>
+          </div>
+        </div>
+        <div class="orb-card" aria-label="EnergieMIND visual energy core">
+          <div class="floating-stat fs1"><strong>50B</strong><span>Max Supply</span></div>
+          <div class="floating-stat fs2"><strong>ENM</strong><span>Token Symbol</span></div>
+          <div class="floating-stat fs3"><strong>ERC‑20</strong><span>Ethereum</span></div>
+          <div class="floating-stat fs4"><strong>18</strong><span>Decimals</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>From raw power to intelligent value.</h2>
+          <p>EnergieMIND is built around a simple thesis: energy systems, mining systems, and AI coordination should operate together — not separately.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">⚡</div><h3>Energy Intelligence</h3><p>AI-assisted monitoring for energy consumption, production, routing, and efficiency across renewable and hybrid power infrastructure.</p></article>
+          <article class="card"><div class="icon">⛏️</div><h3>Mining Heat Utility</h3><p>Designed to support mining-as-heat concepts, where computational energy can become useful thermal output for homes, hotels, farms, and commercial facilities.</p></article>
+          <article class="card"><div class="icon">🌱</div><h3>Sustainable Token Layer</h3><p>ENM positions EnergieMIND as a tokenized coordination layer for future energy credits, miner participation, and ecosystem incentives.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="token">
+      <div class="wrap token-panel">
+        <div class="token-box">
+          <h3>ENM Token</h3>
+          <p>ENM is the Ethereum ERC‑20 token prepared for the EnergieMIND layer. According to the current verified contract, transfers are locked and the token is designed for future migration alignment with the EnteleKRON mainnet.</p>
+          <a class="btn primary" href="https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D" target="_blank" rel="noopener">Open on Etherscan</a>
+        </div>
+        <div class="card">
+          <div class="token-list">
+            <div class="token-row"><span>Name</span><strong>EnergieMind</strong></div>
+            <div class="token-row"><span>Symbol</span><strong>ENM</strong></div>
+            <div class="token-row"><span>Network</span><strong>Ethereum Mainnet</strong></div>
+            <div class="token-row"><span>Standard</span><strong>ERC‑20</strong></div>
+            <div class="token-row"><span>Max Total Supply</span><strong>50,000,000,000 ENM</strong></div>
+            <div class="token-row"><span>Decimals</span><strong>18</strong></div>
+            <div class="token-row"><span>Source Code</span><strong>Verified Exact Match</strong></div>
+            <div class="token-row"><span>License</span><strong>MIT</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecosystem">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>EnergieMIND inside EnteleKRON.</h2>
+          <p>ENM is planned as a dedicated energy utility layer connected to the wider TVK ecosystem.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">🧠</div><h3>SOVRA Intelligence</h3><p>AI coordination layer for energy forecasts, mining optimization, carbon-aware routing, and operational strategy.</p></article>
+          <article class="card"><div class="icon">🔗</div><h3>EnteleKRON Mainnet</h3><p>Future migration target for ecosystem-native settlement, identity, validator logic, and utility expansion.</p></article>
+          <article class="card"><div class="icon">🏭</div><h3>TVK Energy Ventures</h3><p>Practical bridge between solar, renewable energy infrastructure, miner-heater systems, and commercial deployment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Roadmap</h2>
+          <p>A staged route from token foundation to real-world energy coordination.</p>
+        </div>
+        <div class="roadmap">
+          <article class="step"><h3>Token Foundation</h3><p>Maintain verified ENM Ethereum contract, publish official token information, and centralize ecosystem documentation.</p></article>
+          <article class="step"><h3>Energy Dashboard</h3><p>Develop monitoring tools for energy production, miner output, heat recovery metrics, and operational reporting.</p></article>
+          <article class="step"><h3>Partner Network</h3><p>Prepare pilots for hotels, commercial buildings, solar sites, and miner-heater installations.</p></article>
+          <article class="step"><h3>Mainnet Migration</h3><p>Align ENM utility with EnteleKRON mainnet modules, validator systems, and future ecosystem-native settlement.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap disclaimer">
+        <strong>Important Risk Notice:</strong> ENM is not presented here as an investment recommendation, security offering, guaranteed return product, or financial advice. Crypto assets involve substantial risk, may lose value, and may be subject to legal, technical, market, liquidity, and regulatory uncertainty. The current contract indicates transfer restrictions. Always verify the contract address independently before interacting with any token or wallet interface.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="brand"><span class="mark"></span><span>EnergieMIND</span></div>
+        <p class="small">Energy intelligence layer of the TVK / EnteleKRON ecosystem.</p>
+      </div>
+      <div class="small">
+        <strong>Official ENM Contract</strong><br/>
+        <code>0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D</code><br/>
+        <a href="https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D" target="_blank" rel="noopener">Etherscan Verification</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
