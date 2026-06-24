@@ -1,37 +1,54 @@
 # enm.network
 
-Official ENM Token website — token documentation, contract information, presale status, tokenomics, and risk disclosures for the EnergieMIND utility token.
+Official ENM Token website — multilingual token documentation, contract information, presale status, tokenomics, and risk disclosures.
 
 **enm.network** = ENM token / presale / contract / token documentation  
 **energiemind.com** = project / technology / energy intelligence
 
-## Pages
+## Languages (25)
+
+EN, TR, DE, FR, ES, IT, PT, NL, AR, RU, ZH-CN, ZH-TW, JA, KO, HI, UR, PL, RO, EL, SV, NO, DA, FI, HE, ID
+
+Each language has fully translated pages at `/{lang}/` with:
+
+- Unique title, meta description, Open Graph, and Twitter cards
+- hreflang and canonical tags
+- JSON-LD: Organization, WebSite, BreadcrumbList, Article, FAQPage
+- Language dropdown on every page
+
+## Pages (per language)
 
 | Route | Description |
 |-------|-------------|
-| `/` | Home — ENM token overview and ecosystem positioning |
-| `/token` | ENM Token details and utility scope |
-| `/tokenomics` | Allocation structure (percentages pending) |
-| `/presale` | Presale preparation stage (no dates/prices published) |
-| `/contract` | Official Ethereum contract and verification |
-| `/roadmap` | Development milestones |
-| `/risk` | Full risk notice and legal disclosure |
-| `/faq` | Frequently asked questions |
-| `/contact` | Contact information |
+| `/{lang}/` | Home |
+| `/{lang}/token` | ENM Token details |
+| `/{lang}/tokenomics` | Allocation structure |
+| `/{lang}/presale` | Presale preparation stage |
+| `/{lang}/contract` | Official contract |
+| `/{lang}/roadmap` | Development milestones |
+| `/{lang}/risk` | Full risk notice |
+| `/{lang}/faq` | FAQ |
+| `/{lang}/contact` | Contact |
+
+## Build
+
+```bash
+npm run build
+```
+
+Generates 225 HTML pages (9 pages × 25 languages), sitemaps, and robots.txt from `locales/*.json`.
+
+## SEO
+
+- `/sitemap.xml` — sitemap index (25 language sitemaps)
+- `/robots.txt` — Google, Bing, Yandex, Baidu
+- Root `/` redirects to `/en/`
 
 ## Token
 
-- **Name:** EnergieMind
-- **Symbol:** ENM
-- **Network:** Ethereum Mainnet
-- **Standard:** ERC-20
-- **Contract:** `0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D`
-- **Decimals:** 18
-- **Max Supply:** 50,000,000,000 ENM
-
-## Stack
-
-Static HTML/CSS/JS site deployed on Vercel. No build step required.
+- Contract: `0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D`
+- Network: Ethereum Mainnet (ERC-20)
+- Max supply: 50,000,000,000 ENM
 
 ## License
 

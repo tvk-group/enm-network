@@ -1,4 +1,16 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/token", "destination": "/en/token", "permanent": true },
+    { "source": "/tokenomics", "destination": "/en/tokenomics", "permanent": true },
+    { "source": "/presale", "destination": "/en/presale", "permanent": true },
+    { "source": "/contract", "destination": "/en/contract", "permanent": true },
+    { "source": "/roadmap", "destination": "/en/roadmap", "permanent": true },
+    { "source": "/risk", "destination": "/en/risk", "permanent": true },
+    { "source": "/faq", "destination": "/en/faq", "permanent": true },
+    { "source": "/contact", "destination": "/en/contact", "permanent": true }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "."
 }

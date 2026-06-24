@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://enm.network/hi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/token</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/token" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/token" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/token" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/token" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/token" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/token" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/token" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/token" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/token" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/token" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/token" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/token" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/token" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/token" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/token" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/token" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/token" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/token" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/token" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/token" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/token" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/token" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/token" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/token" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/token" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/tokenomics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/tokenomics" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/tokenomics" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/presale</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/presale" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/presale" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/presale" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/presale" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/presale" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/presale" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/presale" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/presale" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/presale" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/presale" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/presale" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/presale" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/presale" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/presale" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/presale" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/presale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/presale" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/presale" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/presale" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/presale" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/presale" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/presale" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/presale" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/presale" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/presale" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/contract</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/contract" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/contract" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/contract" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/contract" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/contract" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/contract" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/contract" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/contract" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/contract" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/contract" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/contract" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/contract" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/contract" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/contract" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/contract" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/contract" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/contract" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/contract" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/contract" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/contract" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/contract" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/contract" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/contract" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/contract" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/contract" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/roadmap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/roadmap" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/roadmap" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/roadmap" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/roadmap" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/roadmap" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/roadmap" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/roadmap" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/roadmap" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/roadmap" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/roadmap" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/roadmap" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/roadmap" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/roadmap" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/roadmap" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/roadmap" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/roadmap" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/roadmap" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/roadmap" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/roadmap" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/roadmap" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/roadmap" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/roadmap" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/roadmap" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/roadmap" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/roadmap" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/risk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/risk" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/risk" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/risk" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/risk" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/risk" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/risk" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/risk" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/risk" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/risk" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/risk" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/risk" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/risk" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/risk" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/risk" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/risk" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/risk" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/risk" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/risk" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/risk" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/risk" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/risk" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/risk" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/risk" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/risk" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/risk" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/faq" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/faq" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/faq" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/faq" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/faq" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/faq" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/faq" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/faq" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/faq" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/faq" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/faq" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/faq" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/faq" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/faq" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/faq" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/faq" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/faq" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/faq" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/faq" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/faq" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/faq" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/faq" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/faq" />
+  </url>
+  <url>
+    <loc>https://enm.network/hi/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/contact" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/contact" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/contact" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/contact" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/contact" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/contact" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/contact" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/contact" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/contact" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/contact" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/contact" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/contact" />
+  </url>
+</urlset>
