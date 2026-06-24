@@ -5,6 +5,8 @@
     { "source": "/token", "destination": "/en/token", "permanent": true },
     { "source": "/tokenomics", "destination": "/en/tokenomics", "permanent": true },
     { "source": "/presale", "destination": "/en/presale", "permanent": true },
+    { "source": "/dashboard", "destination": "/en/dashboard", "permanent": true },
+    { "source": "/wallets", "destination": "/en/wallets", "permanent": true },
     { "source": "/contract", "destination": "/en/contract", "permanent": true },
     { "source": "/roadmap", "destination": "/en/roadmap", "permanent": true },
     { "source": "/risk", "destination": "/en/risk", "permanent": true },
