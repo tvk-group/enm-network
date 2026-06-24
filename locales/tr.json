@@ -13,7 +13,9 @@
       "roadmap": "Yol Haritası",
       "risk": "Risk Bildirimi",
       "faq": "SSS",
-      "contact": "İletişim"
+      "contact": "İletişim",
+      "dashboard": "Lansman Paneli",
+      "wallets": "Resmi Cüzdanlar"
     },
     "buttons": {
       "viewContract": "Kontratı Görüntüle",
@@ -21,7 +23,14 @@
       "joinPresale": "Ön Satışa Katıl",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Etherscan'da Aç",
-      "contractDetails": "Kontrat Detayları"
+      "contractDetails": "Kontrat Detayları",
+      "openDashboard": "Lansman Panelini Aç",
+      "viewWallets": "Resmi Cüzdanlar",
+      "connectWallet": "Cüzdan Bağla",
+      "disconnectWallet": "Bağlantıyı Kes",
+      "copyAddress": "Adresi Kopyala",
+      "copied": "Kopyalandı!",
+      "verifyOnWallets": "Cüzdanlar sayfasında doğrula"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "Beklemede",
       "confirmed": "Onaylandı",
       "preparation": "Hazırlık",
-      "locked": "Transferler kısıtlı / kilitli"
+      "locked": "Transferler kısıtlı / kilitli",
+      "scheduled": "Planlandı",
+      "active": "Aktif",
+      "completed": "Tamamlandı",
+      "upcoming": "Yaklaşan"
     },
     "table": {
       "property": "Özellik",
@@ -44,7 +57,8 @@
       "parameter": "Parametre",
       "category": "Kategori",
       "description": "Açıklama",
-      "allocation": "Tahsis"
+      "allocation": "Tahsis",
+      "network": "Ağ"
     },
     "stats": {
       "symbol": "Sembol",
@@ -152,30 +166,84 @@
       "footerNote": "Şu anda kesin tahsis yüzdeleri yayınlanmamıştır. Kesin tokenomik onaylandığında bu sayfa doğrulanmış rakamlarla güncellenecektir. Resmi olmayan veya üçüncü taraf tokenomik grafiklerine güvenmeyin.",
       "riskFooter": "Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Düzenleyici, teknik, likidite, piyasa ve operasyonel riskler geçerlidir.",
       "allocations": [
-        { "name": "Yardımcı Tahsis", "desc": "EnergieMIND ağı içinde ekosistem yardımcı işlevleri, operasyonel katılım ve hizmet koordinasyonu için ayrılan tokenler." },
-        { "name": "Ekosistem Rezervi", "desc": "Uzun vadeli ekosistem geliştirme, ortaklıklar ve stratejik koordinasyon faaliyetleri için rezerv." },
-        { "name": "Likidite", "desc": "Uygulanabilir olduğunda ve resmi olarak duyurulduğunda piyasa likiditesi sağlama tahsisi." },
-        { "name": "Hazine", "desc": "Ekosistem bakımı, geliştirme ve altyapı desteği için operasyonel hazine." },
-        { "name": "Kurucu / Ekip Kilidi", "desc": "Yayınlanacak kilit programları ve hak ediş koşullarına tabi ekip ve kurucu tahsisleri." },
-        { "name": "Topluluk / Ortak Programları", "desc": "Topluluk girişimleri, ortak entegrasyonu ve pilot katılım programları için tahsisler." },
-        { "name": "Geçiş Rezervi", "desc": "Gelecekteki EnteleKRON mainnet geçiş uyumu ve zincirler arası yardımcı geçişi için rezerv." }
+        {
+          "name": "Yardımcı Tahsis",
+          "desc": "EnergieMIND ağı içinde ekosistem yardımcı işlevleri, operasyonel katılım ve hizmet koordinasyonu için ayrılan tokenler."
+        },
+        {
+          "name": "Ekosistem Rezervi",
+          "desc": "Uzun vadeli ekosistem geliştirme, ortaklıklar ve stratejik koordinasyon faaliyetleri için rezerv."
+        },
+        {
+          "name": "Likidite",
+          "desc": "Uygulanabilir olduğunda ve resmi olarak duyurulduğunda piyasa likiditesi sağlama tahsisi."
+        },
+        {
+          "name": "Hazine",
+          "desc": "Ekosistem bakımı, geliştirme ve altyapı desteği için operasyonel hazine."
+        },
+        {
+          "name": "Kurucu / Ekip Kilidi",
+          "desc": "Yayınlanacak kilit programları ve hak ediş koşullarına tabi ekip ve kurucu tahsisleri."
+        },
+        {
+          "name": "Topluluk / Ortak Programları",
+          "desc": "Topluluk girişimleri, ortak entegrasyonu ve pilot katılım programları için tahsisler."
+        },
+        {
+          "name": "Geçiş Rezervi",
+          "desc": "Gelecekteki EnteleKRON mainnet geçiş uyumu ve zincirler arası yardımcı geçişi için rezerv."
+        }
       ]
     },
     "presale": {
       "title": "Ön Satış | ENM Token",
-      "description": "ENM token ön satış durumu ve hazırlık bilgileri. Resmi olarak kesinleştirilene kadar ön satış tarihleri, fiyatları veya ödeme yöntemleri yayınlanmaz.",
-      "ogTitle": "ENM Ön Satış | enm.network",
-      "ogDescription": "ENM ön satış hazırlık aşaması. Resmi olarak kesinleştirilene kadar tarih, fiyat veya ödeme yöntemi yayınlanmaz.",
+      "description": "ENM token ön satış takvimi: Early Investor, Strategic Investor, Private Sale ve 6 aşamalı halka açık ön satış. Resmi tarihler ve lansman paneli enm.network adresinde.",
+      "ogTitle": "ENM Ön Satış Takvimi | enm.network",
+      "ogDescription": "Temmuz 2026'dan 2027 halka açık aşamalarına kadar resmi ENM ön satış fazları.",
       "breadcrumb": "Ön Satış",
-      "eyebrow": "Ön Satış Bilgileri",
-      "h1": "Ön Satış Hazırlık Aşaması",
-      "lead": "ENM ön satış koşulları henüz kesinleştirilmedi. Resmi satış kuralları, tarihleri ve kabul edilen varlıklar onaylandığında bu sayfa güncellenecektir.",
+      "eyebrow": "Ön Satış Takvimi",
+      "h1": "ENM Ön Satış",
+      "lead": "Erken yatırımcı erişiminden altı aşamalı halka açık ön satışa kadar yapılandırılmış ön satış fazları. Canlı durum için lansman panelini kullanın ve fon göndermeden önce resmi cüzdanlar sayfasında adresleri doğrulayın.",
       "important": "Önemli:",
-      "riskShort": "Bu sitede ön satış tarihleri, fiyatları, token miktarları veya kabul edilen ödeme yöntemleri yayınlanmamaktadır. enm.network üzerindeki resmi kanallar aracılığıyla doğrulanmadıkça ENM ön satışı olduğunu iddia eden herhangi bir adrese fon göndermeyin. ENM bir yatırım ürünü veya garantili getiri aracı değildir.",
-      "expectTitle": "Ne beklenmeli",
-      "expectP1": "Ön satış koşulları kesinleştirildiğinde bu sayfa kabul edilen varlıklar, hak ediş programları, KYC gereksinimleri (varsa) ve eksiksiz satış koşulları dahil doğrulanmış bilgilerle güncellenecektir. O zamana kadar bu sitede aktif bir ön satış katılım mekanizması bulunmamaktadır.",
-      "expectP2": "Ön satış zamanlaması veya uygunluk hakkında sorularınız için iletişim sayfasını kullanın. Herhangi bir işlem yapmadan önce bilgileri her zaman enm.network üzerinden doğrulayın.",
-      "contactLink": "iletişim sayfası",
+      "riskShort": "ENM bir yatırım ürünü veya garantili getiri aracı değildir. Yalnızca enm.network/wallets adresinde yayınlanan cüzdan adreslerini kullanın. Resmi olmayan adreslere fon göndermeyin. Kripto varlıklar yüksek risklidir ve değer kaybedebilir.",
+      "timelineTitle": "Ön satış zaman çizelgesi",
+      "timelineDesc": "ENM token dağıtım koordinasyonu için resmi faz takvimi.",
+      "phasesTitle": "Yatırım fazları",
+      "publicStagesTitle": "Halka açık ön satış — 6 aşama",
+      "publicStagesDesc": "Halka açık ön satış 01 Nis 2027'de başlar. Her aşama 6 hafta sürer.",
+      "stageLabel": "Aşama",
+      "weeksLabel": "hafta",
+      "durationLabel": "Süre",
+      "statusLabel": "Durum",
+      "dashboardCta": "Canlı faz durumu, geri sayım ve cüzdan bağlantısı için lansman panelini açın.",
+      "walletsCta": "Tüm resmi ENM cüzdanları cüzdanlar sayfasında listelenmiştir. Fon göndermeden önce her adresi doğrulayın.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Nitelikli erken katılımcılar için erken ekosistem koordinasyon erişimi."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Stratejik ortaklar ve altyapı odaklı katılımcılar."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Halka açık ön satış açılmadan önceki özel satış fazı."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Altı ardışık 6 haftalık aşamada halka açık ön satış."
+        }
+      ],
+      "expectTitle": "Katılım",
+      "expectP1": "Ön satış koordinasyonu için kabul edilen varlıklar: Ethereum Mainnet üzerinde ETH, USDC ve USDT. Nihai fiyatlandırma, tahsis limitleri ve hak ediş koşulları her aktif fazdan önce yayınlanacaktır.",
+      "expectP2": "Uygunluk soruları için iletişime geçin:",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM bir yatırım tavsiyesi, finansal ürün, menkul kıymet teklifi veya garantili getiri aracı değildir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir.",
       "fields": {
         "presaleStatus": "Ön Satış Durumu",
@@ -185,7 +253,8 @@
         "saleTerms": "Satış Koşulları",
         "price": "Fiyat",
         "saleDates": "Satış Tarihleri",
-        "allocationAmount": "Tahsis Miktarı"
+        "allocationAmount": "Tahsis Miktarı",
+        "contributionWallet": "Resmi Katkı Cüzdanı"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Yol haritası aşamaları öngörülen yönü temsil eder. Belirli tarihler yayınlanmamıştır. İlerleme güncellemeleri mevcut olduğunda resmi kanallar aracılığıyla iletilecektir.",
       "riskFooter": "Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Düzenleyici, teknik, likidite, piyasa ve operasyonel riskler geçerlidir.",
       "steps": [
-        { "title": "Token Temeli", "desc": "Doğrulanmış ENM Ethereum kontratını sürdürün, enm.network adresinde resmi token dokümantasyonunu yayınlayın ve ekosistem için şeffaf kontrat bilgileri oluşturun." },
-        { "title": "Dokümantasyon ve Şeffaflık", "desc": "Tokenomik, ön satış koşulları (kesinleştirildiğinde), risk açıklamaları ve resmi iletişim kanallarını yayınlayın. energiemind.com proje sitesinden token katmanı ayrımını tamamlayın." },
-        { "title": "Ön Satış ve Dağıtım", "desc": "Koşullar kesinleştirildiğinde ve resmi olarak duyurulduğunda ön satışı başlatın. Yayınlanan tokenomike göre hak ediş, tahsis ve dağıtımı uygulayın." },
-        { "title": "Yardımcı Aktivasyon", "desc": "Altyapı olgunlaştıkça enerji zekâsı katılımı, madencilik ısı koordinasyonu ve pilot program çerçeveleri ile ilgili ekosistem yardımcı işlevlerini etkinleştirin." },
-        { "title": "Ortak ve Pilot Ağı", "desc": "Otel, ticari binalar, güneş enerjisi sahaları ve madenci-ısıtıcı kurulumları için token koordinasyonlu katılım modelleriyle pilot dağıtımları destekleyin." },
-        { "title": "Ekosistem Genişlemesi", "desc": "EnergieMIND ekosistemi içinde topluluk ve ortak programları, altyapı teşvik yapıları ve operasyonel koordinasyon araçları geliştirin." },
-        { "title": "EnteleKRON Uyumu", "desc": "EnteleKRON mainnet modülleri, doğrulayıcı sistemleri ve ekosistem yerel uzlaşması için geçiş rezervi ve uyum çerçevesi hazırlayın." },
-        { "title": "Mainnet Geçişi", "desc": "Teknik, düzenleyici ve ekosistem koşulları sağlandığında EnteleKRON mainnet ile geçiş uyumunu gerçekleştirin. Koşullar önceden yayınlanacaktır." }
+        {
+          "title": "Token Temeli",
+          "desc": "Doğrulanmış ENM Ethereum kontratını sürdürün, enm.network adresinde resmi token dokümantasyonunu yayınlayın ve ekosistem için şeffaf kontrat bilgileri oluşturun."
+        },
+        {
+          "title": "Dokümantasyon ve Şeffaflık",
+          "desc": "Tokenomik, ön satış koşulları (kesinleştirildiğinde), risk açıklamaları ve resmi iletişim kanallarını yayınlayın. energiemind.com proje sitesinden token katmanı ayrımını tamamlayın."
+        },
+        {
+          "title": "Ön Satış ve Dağıtım",
+          "desc": "Koşullar kesinleştirildiğinde ve resmi olarak duyurulduğunda ön satışı başlatın. Yayınlanan tokenomike göre hak ediş, tahsis ve dağıtımı uygulayın."
+        },
+        {
+          "title": "Yardımcı Aktivasyon",
+          "desc": "Altyapı olgunlaştıkça enerji zekâsı katılımı, madencilik ısı koordinasyonu ve pilot program çerçeveleri ile ilgili ekosistem yardımcı işlevlerini etkinleştirin."
+        },
+        {
+          "title": "Ortak ve Pilot Ağı",
+          "desc": "Otel, ticari binalar, güneş enerjisi sahaları ve madenci-ısıtıcı kurulumları için token koordinasyonlu katılım modelleriyle pilot dağıtımları destekleyin."
+        },
+        {
+          "title": "Ekosistem Genişlemesi",
+          "desc": "EnergieMIND ekosistemi içinde topluluk ve ortak programları, altyapı teşvik yapıları ve operasyonel koordinasyon araçları geliştirin."
+        },
+        {
+          "title": "EnteleKRON Uyumu",
+          "desc": "EnteleKRON mainnet modülleri, doğrulayıcı sistemleri ve ekosistem yerel uzlaşması için geçiş rezervi ve uyum çerçevesi hazırlayın."
+        },
+        {
+          "title": "Mainnet Geçişi",
+          "desc": "Teknik, düzenleyici ve ekosistem koşulları sağlandığında EnteleKRON mainnet ile geçiş uyumunu gerçekleştirin. Koşullar önceden yayınlanacaktır."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Risk Bildirimi",
       "lead": "ENM veya ilgili ekosistem hizmetleri ile etkileşime girmeden önce bu bildirimi dikkatlice okuyun.",
       "sections": [
-        { "title": "Genel Sorumluluk Reddi", "content": "ENM bir yatırım tavsiyesi, finansal ürün, menkul kıymet teklifi veya garantili getiri aracı değildir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Düzenleyici, teknik, likidite, piyasa ve operasyonel riskler geçerlidir. Kontrat adresini her zaman bağımsız olarak doğrulayın.", "bold": true },
-        { "title": "Yatırım Ürünü Değildir", "content": "ENM, EnergieMIND enerji zekâsı ağı içinde ekosistem koordinasyonu için bir yardımcı token olarak sunulmaktadır. Yatırım ürünü, menkul kıymet, öz sermaye payı, borç aracı veya finansal türev olarak sunulmaz veya tanımlanmaz. enm.network üzerindeki hiçbir şey finansal tavsiye, yatırım tavsiyesi veya herhangi bir kripto varlığı alma, satma veya tutma önerisi oluşturmaz." },
-        { "title": "Garantili Getiri Yoktur", "content": "ENM yatırım getirisi, pasif gelir, kâr, değer artışı veya getiri vaat etmez, garanti etmez veya ima etmez. Herhangi bir kripto varlığın geçmiş performansı gelecekteki sonuçların göstergesi değildir. ENM ile ilişkili değerin bir kısmını veya tamamını kaybedebilirsiniz." },
-        { "title": "Menkul Kıymet Teklifi Değildir", "content": "ENM herhangi bir yargı alanında menkul kıymet olarak sunulmamaktadır. Kripto tokenlerinin düzenleyici sınıflandırması ülkeye göre değişir ve değişebilir. Yargı alanınızdaki geçerli yasaları anlama ve bunlara uyma sorumluluğu yalnızca size aittir." },
-        { "title": "Piyasa ve Likidite Riskleri", "content": "Kripto piyasaları volatildir. ENM'nin sınırlı veya hiç likiditesi olmayabilir. Fiyatlar dramatik şekilde dalgalanabilir veya işlem göremez hale gelebilir. İkincil piyasa, borsa listesi veya işlem yeri garantisi yoktur." },
-        { "title": "Teknik Riskler", "content": "Akıllı kontratlar, blok zinciri ağları ve cüzdan yazılımları hatalar, istismarlar, ağ arızaları, çatallanmalar ve geri alınamaz işlemler dahil doğası gereği teknik riskler taşır. ENM kontratı şu anda transfer kısıtlamalarını göstermektedir. Etkileşime girmeden önce kontrat davranışını her zaman Etherscan'da doğrulayın." },
-        { "title": "Düzenleyici Riskler", "content": "Kripto para düzenlemeleri küresel olarak gelişmektedir. Gelecekteki düzenleyici eylemler ENM sahipleri, transferleri veya ekosistem katılımı üzerinde kısıtlama, yasaklama veya gereksinimler getirebilir. Uyum yükümlülükleri yargı alanına göre değişebilir." },
-        { "title": "Operasyonel Riskler", "content": "Ekosistem geliştirme, ön satış yürütme, yardımcı aktivasyon ve mainnet geçişi teknik, operasyonel ve kaynak kısıtlamalarına tabidir. Yol haritası maddeleri bağlayıcı taahhütler veya teslimat garantileri değil, planlama kilometre taşlarıdır." },
-        { "title": "Kontrat Doğrulama", "content": "Resmi ENM kontrat adresi Ethereum Mainnet üzerinde 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'dir. Bu adresi her zaman Etherscan'da bağımsız olarak doğrulayın. Resmi olmayan kaynaklardan, sosyal medya mesajlarından veya üçüncü taraf web sitelerinden gelen adreslere güvenmeyin. Dolandırıcı tokenler benzer isimler kullanabilir." },
-        { "title": "Ön Satış Uyarısı", "content": "enm.network üzerinde resmi olarak kesinleştirilene kadar ön satış tarihleri, fiyatları veya ödeme yöntemleri yayınlanmaz. Bu resmi site aracılığıyla doğrulanmadıkça ENM ön satışını temsil ettiğini iddia eden herhangi bir adrese fon göndermeyin." },
-        { "title": "Sorumluluğunuz", "content": "enm.network'e erişerek veya ENM ile etkileşime girerek bu riskleri anladığınızı ve kararlarınızın tam sorumluluğunu kabul ettiğinizi beyan edersiniz. Kripto varlıklarla ilgili herhangi bir karar vermeden önce nitelikli hukuk, vergi ve finans uzmanlarına danışın." }
+        {
+          "title": "Genel Sorumluluk Reddi",
+          "content": "ENM bir yatırım tavsiyesi, finansal ürün, menkul kıymet teklifi veya garantili getiri aracı değildir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Düzenleyici, teknik, likidite, piyasa ve operasyonel riskler geçerlidir. Kontrat adresini her zaman bağımsız olarak doğrulayın.",
+          "bold": true
+        },
+        {
+          "title": "Yatırım Ürünü Değildir",
+          "content": "ENM, EnergieMIND enerji zekâsı ağı içinde ekosistem koordinasyonu için bir yardımcı token olarak sunulmaktadır. Yatırım ürünü, menkul kıymet, öz sermaye payı, borç aracı veya finansal türev olarak sunulmaz veya tanımlanmaz. enm.network üzerindeki hiçbir şey finansal tavsiye, yatırım tavsiyesi veya herhangi bir kripto varlığı alma, satma veya tutma önerisi oluşturmaz."
+        },
+        {
+          "title": "Garantili Getiri Yoktur",
+          "content": "ENM yatırım getirisi, pasif gelir, kâr, değer artışı veya getiri vaat etmez, garanti etmez veya ima etmez. Herhangi bir kripto varlığın geçmiş performansı gelecekteki sonuçların göstergesi değildir. ENM ile ilişkili değerin bir kısmını veya tamamını kaybedebilirsiniz."
+        },
+        {
+          "title": "Menkul Kıymet Teklifi Değildir",
+          "content": "ENM herhangi bir yargı alanında menkul kıymet olarak sunulmamaktadır. Kripto tokenlerinin düzenleyici sınıflandırması ülkeye göre değişir ve değişebilir. Yargı alanınızdaki geçerli yasaları anlama ve bunlara uyma sorumluluğu yalnızca size aittir."
+        },
+        {
+          "title": "Piyasa ve Likidite Riskleri",
+          "content": "Kripto piyasaları volatildir. ENM'nin sınırlı veya hiç likiditesi olmayabilir. Fiyatlar dramatik şekilde dalgalanabilir veya işlem göremez hale gelebilir. İkincil piyasa, borsa listesi veya işlem yeri garantisi yoktur."
+        },
+        {
+          "title": "Teknik Riskler",
+          "content": "Akıllı kontratlar, blok zinciri ağları ve cüzdan yazılımları hatalar, istismarlar, ağ arızaları, çatallanmalar ve geri alınamaz işlemler dahil doğası gereği teknik riskler taşır. ENM kontratı şu anda transfer kısıtlamalarını göstermektedir. Etkileşime girmeden önce kontrat davranışını her zaman Etherscan'da doğrulayın."
+        },
+        {
+          "title": "Düzenleyici Riskler",
+          "content": "Kripto para düzenlemeleri küresel olarak gelişmektedir. Gelecekteki düzenleyici eylemler ENM sahipleri, transferleri veya ekosistem katılımı üzerinde kısıtlama, yasaklama veya gereksinimler getirebilir. Uyum yükümlülükleri yargı alanına göre değişebilir."
+        },
+        {
+          "title": "Operasyonel Riskler",
+          "content": "Ekosistem geliştirme, ön satış yürütme, yardımcı aktivasyon ve mainnet geçişi teknik, operasyonel ve kaynak kısıtlamalarına tabidir. Yol haritası maddeleri bağlayıcı taahhütler veya teslimat garantileri değil, planlama kilometre taşlarıdır."
+        },
+        {
+          "title": "Kontrat Doğrulama",
+          "content": "Resmi ENM kontrat adresi Ethereum Mainnet üzerinde 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'dir. Bu adresi her zaman Etherscan'da bağımsız olarak doğrulayın. Resmi olmayan kaynaklardan, sosyal medya mesajlarından veya üçüncü taraf web sitelerinden gelen adreslere güvenmeyin. Dolandırıcı tokenler benzer isimler kullanabilir."
+        },
+        {
+          "title": "Ön Satış Uyarısı",
+          "content": "Yalnızca enm.network/wallets adresinde yayınlanan cüzdan adreslerini kullanın. Resmi ön satış katkı cüzdanı Ethereum Mainnet üzerindeki ENM Treasury adresidir. Sosyal medya, DM veya üçüncü taraf sitelerden gelen adreslere fon göndermeyin. ENM bir yatırım ürünü veya garantili getiri aracı değildir."
+        },
+        {
+          "title": "Sorumluluğunuz",
+          "content": "enm.network'e erişerek veya ENM ile etkileşime girerek bu riskleri anladığınızı ve kararlarınızın tam sorumluluğunu kabul ettiğinizi beyan edersiniz. Kripto varlıklarla ilgili herhangi bir karar vermeden önce nitelikli hukuk, vergi ve finans uzmanlarına danışın."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM bir yatırım tavsiyesi, finansal ürün, menkul kıymet teklifi veya garantili getiri aracı değildir.",
       "riskFooter": "Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Düzenleyici, teknik, likidite, piyasa ve operasyonel riskler geçerlidir. Kontrat adresini her zaman bağımsız olarak doğrulayın.",
       "items": [
-        { "q": "ENM nedir?", "a": "ENM (EnergieMind), EnergieMIND enerji zekâsı ekosisteminin yardımcı tokenidir. Ethereum Mainnet üzerinde bir ERC-20 tokenidir; enerji zekâsı, madencilik ısı katılımı, pilot programlar ve EnteleKRON mainnet uyumu ile ilgili gelecekteki ekosistem koordinasyonu için tasarlanmıştır. ENM bir yardımcı tokenidir — yatırım ürünü değildir." },
-        { "q": "enm.network ile energiemind.com arasındaki fark nedir?", "a": "enm.network, token katmanını kapsayan resmi ENM token dokümantasyon sitesidir: kontrat, tokenomik, ön satış ve risk açıklamaları. energiemind.com EnergieMIND proje katmanını kapsar: enerji zekâsı teknolojisi, madencilik ısı yardımcısı ve altyapı geliştirme. Aynı ekosistemin ayrı ancak bağlantılı parçalarıdır." },
-        { "q": "Resmi kontrat adresi nedir?", "a": "Ethereum Mainnet üzerindeki resmi ENM kontratı 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'dir. Etkileşime girmeden önce bu adresi her zaman Etherscan'da bağımsız olarak doğrulayın." },
-        { "q": "ENM'yi şu anda transfer edebilir miyim?", "a": "Mevcut doğrulanmış kontrata göre transferler kısıtlı veya kilitlidir. Herhangi bir transfer denemeden önce en son zincir üstü durum için Etherscan'da kontrat durumunu kontrol edin." },
-        { "q": "ENM bir yatırım mı?", "a": "Hayır. ENM yatırım ürünü, menkul kıymet teklifi, garantili getiri aracı veya pasif gelir vaadi olarak sunulmamaktadır. Ekosistem koordinasyonu için bir yardımcı tokenidir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Tam risk bildirimine bakın." },
-        { "q": "Ön satış ne zaman?", "a": "Ön satış hazırlık aşamasındadır. Tarih, fiyat, kabul edilen varlıklar veya satış koşulları yayınlanmamıştır. Koşullar kesinleştirildiğinde bu sayfa güncellenecektir. Resmi olmayan ön satış adreslerine fon göndermeyin." },
-        { "q": "Toplam arz nedir?", "a": "Maksimum toplam arz 18 ondalık basamakla 50.000.000.000 ENM'dir (50 milyar). Kategoriler arası tahsis yüzdeleri tokenomik sayfasında resmi yayın beklemektedir." },
-        { "q": "EnteleKRON mainnet uyumu nedir?", "a": "ENM, EnteleKRON mainnet ekosistemi ile gelecekteki geçiş ve uyum için hazırlanmıştır. Bir geçiş rezervi tahsis kategorisi planlanmaktadır. Belirli geçiş koşulları, zaman çizelgeleri ve teknik detaylar mevcut olduğunda yayınlanacaktır." },
-        { "q": "ENM'yi cüzdanıma nasıl eklerim?", "a": "Token sembolü ENM ve 18 ondalık basamakla resmi kontrat adresi 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'yi kullanın. Adresi Etherscan'da doğrulayın. Kontrat durumuna göre transferlerin şu anda kısıtlı olabileceğini unutmayın." },
-        { "q": "Resmi güncellemeleri nereden alabilirim?", "a": "Resmi token bilgileri enm.network adresinde yayınlanmaktadır. Sorularınız için iletişim sayfasını kullanın. Kontrat adresleri veya ön satış bilgileri için resmi olmayan kanallara, sosyal medya DM'lerine veya üçüncü taraf sitelere güvenmeyin." }
+        {
+          "q": "ENM nedir?",
+          "a": "ENM (EnergieMind), EnergieMIND enerji zekâsı ekosisteminin yardımcı tokenidir. Ethereum Mainnet üzerinde bir ERC-20 tokenidir; enerji zekâsı, madencilik ısı katılımı, pilot programlar ve EnteleKRON mainnet uyumu ile ilgili gelecekteki ekosistem koordinasyonu için tasarlanmıştır. ENM bir yardımcı tokenidir — yatırım ürünü değildir."
+        },
+        {
+          "q": "enm.network ile energiemind.com arasındaki fark nedir?",
+          "a": "enm.network, token katmanını kapsayan resmi ENM token dokümantasyon sitesidir: kontrat, tokenomik, ön satış ve risk açıklamaları. energiemind.com EnergieMIND proje katmanını kapsar: enerji zekâsı teknolojisi, madencilik ısı yardımcısı ve altyapı geliştirme. Aynı ekosistemin ayrı ancak bağlantılı parçalarıdır."
+        },
+        {
+          "q": "Resmi kontrat adresi nedir?",
+          "a": "Ethereum Mainnet üzerindeki resmi ENM kontratı 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'dir. Etkileşime girmeden önce bu adresi her zaman Etherscan'da bağımsız olarak doğrulayın."
+        },
+        {
+          "q": "ENM'yi şu anda transfer edebilir miyim?",
+          "a": "Mevcut doğrulanmış kontrata göre transferler kısıtlı veya kilitlidir. Herhangi bir transfer denemeden önce en son zincir üstü durum için Etherscan'da kontrat durumunu kontrol edin."
+        },
+        {
+          "q": "ENM bir yatırım mı?",
+          "a": "Hayır. ENM yatırım ürünü, menkul kıymet teklifi, garantili getiri aracı veya pasif gelir vaadi olarak sunulmamaktadır. Ekosistem koordinasyonu için bir yardımcı tokenidir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Tam risk bildirimine bakın."
+        },
+        {
+          "q": "Ön satış ne zaman?",
+          "a": "Early Investor: 01 Tem – 30 Eyl 2026. Strategic Investor: 01 Eki – 31 Ara 2026. Private Sale: 01 Oca – 31 Mar 2027. Public Presale: 01 Nis 2027'den itibaren altı 6 haftalık aşamada. Canlı durum için ön satış sayfası ve lansman paneline bakın."
+        },
+        {
+          "q": "Toplam arz nedir?",
+          "a": "Maksimum toplam arz 18 ondalık basamakla 50.000.000.000 ENM'dir (50 milyar). Kategoriler arası tahsis yüzdeleri tokenomik sayfasında resmi yayın beklemektedir."
+        },
+        {
+          "q": "EnteleKRON mainnet uyumu nedir?",
+          "a": "ENM, EnteleKRON mainnet ekosistemi ile gelecekteki geçiş ve uyum için hazırlanmıştır. Bir geçiş rezervi tahsis kategorisi planlanmaktadır. Belirli geçiş koşulları, zaman çizelgeleri ve teknik detaylar mevcut olduğunda yayınlanacaktır."
+        },
+        {
+          "q": "ENM'yi cüzdanıma nasıl eklerim?",
+          "a": "Token sembolü ENM ve 18 ondalık basamakla resmi kontrat adresi 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'yi kullanın. Adresi Etherscan'da doğrulayın. Kontrat durumuna göre transferlerin şu anda kısıtlı olabileceğini unutmayın."
+        },
+        {
+          "q": "Resmi güncellemeleri nereden alabilirim?",
+          "a": "Resmi token bilgileri enm.network adresinde yayınlanmaktadır. Sorularınız için iletişim sayfasını kullanın. Kontrat adresleri veya ön satış bilgileri için resmi olmayan kanallara, sosyal medya DM'lerine veya üçüncü taraf sitelere güvenmeyin."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Kontrat sayfası",
       "footerNote": "Yanıt süreleri değişebilir. Dolandırıcı adresler veya kimlik taklidi ile ilgili acil güvenlik endişeleri için konu satırına \"SECURITY\" ekleyin. İstenmeyen mesajlarla alınan adreslere asla kripto para göndermeyin.",
       "riskFooter": "ENM bir yatırım tavsiyesi, finansal ürün, menkul kıymet teklifi veya garantili getiri aracı değildir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir."
+    },
+    "dashboard": {
+      "title": "Lansman Paneli | ENM Token",
+      "description": "ENM token lansman paneli — canlı ön satış faz durumu, geri sayım, cüzdan bağlantısı ve resmi katkı cüzdanı doğrulaması.",
+      "ogTitle": "ENM Lansman Paneli | enm.network",
+      "ogDescription": "Faz takibi, geri sayım ve cüzdan araçlarıyla canlı ENM ön satış paneli.",
+      "breadcrumb": "Lansman Paneli",
+      "eyebrow": "Lansman Kontrol Merkezi",
+      "h1": "Lansman Paneli",
+      "lead": "Ön satış fazlarını izleyin, mevcut aşamayı takip edin, cüzdanınızı bağlayın ve katılımdan önce resmi katkı adresini doğrulayın.",
+      "riskShort": "ENM bir yatırım ürünü veya garantili getiri aracı değildir. Tüm adresleri resmi cüzdanlar sayfasında doğrulayın. Kripto varlıklar yüksek risklidir.",
+      "currentPhase": "Mevcut faz",
+      "nextPhase": "Sonraki faz",
+      "timeRemaining": "Kalan süre",
+      "phaseEnded": "Faz sona erdi",
+      "phaseNotStarted": "Henüz başlamadı",
+      "publicStage": "Halka açık aşama",
+      "ofStages": "/ 6",
+      "walletPanel": "Cüzdanınız",
+      "walletConnected": "Bağlı",
+      "walletDisconnected": "Bağlı değil",
+      "networkLabel": "Ağ",
+      "networkRequired": "Ethereum Mainnet gerekli",
+      "contributionTitle": "Resmi katkı cüzdanı",
+      "contributionDesc": "Ön satış katkıları resmi ENM Treasury cüzdanı üzerinden koordine edilir. Fon göndermeden önce bu adresin enm.network/wallets ile eşleştiğini her zaman doğrulayın.",
+      "statsTitle": "Lansman özeti",
+      "statPhase": "Aktif faz",
+      "statStage": "Halka açık aşama",
+      "statAccepted": "Kabul edilen varlıklar",
+      "statNetwork": "Ağ",
+      "timelineTitle": "Faz zaman çizelgesi",
+      "registerTitle": "Katılım bildirimi",
+      "registerDesc": "Aktif fazlar sırasında cüzdanınızı bağlayın ve yayınlanan koşullara göre katılımı koordine edin. Bu panel tahsis, getiri veya token teslimatı garanti etmez — risk bildirimine bakın.",
+      "riskFooter": "Cüzdan adreslerini her zaman bağımsız olarak doğrulayın. ENM bir yatırım tavsiyesi veya garantili getiri aracı değildir."
+    },
+    "wallets": {
+      "title": "Resmi Cüzdanlar | ENM Token",
+      "description": "Ethereum Mainnet üzerinde resmi EnergieMind ENM ekosistem cüzdanları — Founder, OPS, Genesis ve Treasury adresleri.",
+      "ogTitle": "ENM Resmi Cüzdanlar | enm.network",
+      "ogDescription": "Ethereum Mainnet üzerinde doğrulanmış resmi ENM ekosistem cüzdan adresleri.",
+      "breadcrumb": "Cüzdanlar",
+      "eyebrow": "Doğrulanmış Adresler",
+      "h1": "Resmi Cüzdanlar",
+      "lead": "Ethereum Mainnet üzerinde resmi EnergieMind ENM ekosistem cüzdanları. Etkileşime girmeden önce bu sayfadaki her adresi doğrulayın. Dolandırıcı adresler benzer isimler kullanabilir.",
+      "riskShort": "Yalnızca enm.network/wallets adresinde listelenen adreslere güvenin. ENM ekibi size asla DM ile cüzdan adresi göndermez. ENM bir yatırım ürünü değildir.",
+      "verifyTitle": "Adres doğrulama",
+      "verifyDesc": "Fon göndermeden önce karakter karakter karşılaştırın. Ön satış katkıları fazlar aktifken Treasury cüzdanını kullanır.",
+      "tableTitle": "Ekosistem cüzdanları",
+      "purposeLabel": "Amaç",
+      "recommendedTitle": "Önerilen ek cüzdanlar",
+      "recommendedDesc": "Eksiksiz bir token lansmanı için hazır olduğunuzda bu ek cüzdanları oluşturmayı düşünün:",
+      "recommended": [
+        {
+          "name": "Presale Escrow / Sale",
+          "desc": "Operasyonel izolasyon istiyorsanız Treasury'den ayrı özel satış cüzdanı (isteğe bağlı — Treasury bu rolü üstlenebilir)."
+        },
+        {
+          "name": "Vesting & Locks",
+          "desc": "Zincir üstü hak ediş devreye alındığında ekip, kurucu ve yatırımcı hak ediş programları için."
+        },
+        {
+          "name": "Liquidity",
+          "desc": "Resmi olarak duyurulduğunda DEX likidite sağlama için."
+        },
+        {
+          "name": "Community & Rewards",
+          "desc": "Pilot programlar, topluluk teşvikleri ve ortak tahsisleri için."
+        }
+      ],
+      "purposes": {
+        "founder": "Kurucu tahsisi ve yönetişim koordinasyonu",
+        "operations": "Operasyonel giderler ve ekosistem operasyonları",
+        "genesis": "Genesis tahsisi ve ilk ekosistem önyüklemesi",
+        "treasury": "Hazine, ön satış katkıları ve ekosistem rezervleri"
+      },
+      "riskFooter": "Kripto işlemleri geri alınamaz. Adresleri her zaman enm.network üzerinde doğrulayın. ENM bir yatırım ürünü veya garantili getiri aracı değildir."
     }
   }
 }

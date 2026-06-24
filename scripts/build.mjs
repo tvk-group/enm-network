@@ -2,6 +2,15 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { SITE_URL, CONTRACT, ETHERSCAN, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
+import {
+  OFFICIAL_WALLETS,
+  PRESALE_WALLET,
+  PRESALE_PHASES,
+  PUBLIC_STAGES,
+  ACCEPTED_ASSETS,
+  walletEtherscan,
+  formatDateRange,
+} from './presale-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -155,6 +164,8 @@ function renderNav(lang, t, activePage) {
     ['token', c.nav.token, 'token'],
     ['tokenomics', c.nav.tokenomics, 'tokenomics'],
     ['presale', c.nav.presale, 'presale'],
+    ['dashboard', c.nav.dashboard, 'dashboard'],
+    ['wallets', c.nav.wallets, 'wallets'],
     ['contract', c.nav.contract, 'contract'],
     ['roadmap', c.nav.roadmap, 'roadmap'],
     ['risk', c.nav.risk, 'risk'],
@@ -183,6 +194,8 @@ function renderFooter(lang, t) {
             ${link(lang, 'token', c.nav.token)}
             ${link(lang, 'tokenomics', c.nav.tokenomics)}
             ${link(lang, 'presale', c.nav.presale)}
+            ${link(lang, 'dashboard', c.nav.dashboard)}
+            ${link(lang, 'wallets', c.nav.wallets)}
             ${link(lang, 'contract', c.nav.contract)}
           </div>
         </div>
@@ -230,7 +243,7 @@ function renderHome(lang, t) {
           <p class="lead">${esc(p.lead)}</p>
           <p class="support-line">${esc(p.supportLine)}</p>
           <div class="hero-actions">
-            <a class="btn primary" href="${pagePath(lang, 'contract')}">${esc(c.buttons.viewContract)}</a>
+            <a class="btn primary" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
             <a class="btn outline-navy" href="${pagePath(lang, 'risk')}">${esc(c.buttons.readRisk)}</a>
             <a class="btn green" href="${pagePath(lang, 'presale')}">${esc(c.buttons.joinPresale)}</a>
           </div>
@@ -376,10 +389,195 @@ function renderTokenomics(lang, t) {
     <section><div class="wrap">${riskBannerLang(t, p.riskFooter, lang)}</div></section>`;
 }
 
+function presaleConfigScript(lang, t) {
+  const phaseLabels = {};
+  const phaseDescs = {};
+  for (const ph of PRESALE_PHASES) {
+    const loc = t.pages.presale?.phases?.find((x) => x.id === ph.id);
+    phaseLabels[ph.id] = loc?.name || ph.id;
+    phaseDescs[ph.id] = loc?.desc || '';
+  }
+  return `<script type="application/json" id="presale-config">${JSON.stringify({
+    phases: PRESALE_PHASES,
+    phaseLabels,
+    phaseDescs,
+    publicStages: PUBLIC_STAGES,
+    wallets: OFFICIAL_WALLETS,
+    presaleWallet: PRESALE_WALLET,
+    acceptedAssets: ACCEPTED_ASSETS,
+    tokenContract: CONTRACT,
+    lang,
+    badges: t.common.badges,
+    labels: {
+      walletConnected: t.pages.dashboard?.walletConnected || 'Connected',
+      walletDisconnected: t.pages.dashboard?.walletDisconnected || 'Not connected',
+      connectWallet: t.common.buttons?.connectWallet || 'Connect Wallet',
+      disconnectWallet: t.common.buttons?.disconnectWallet || 'Disconnect',
+      copied: t.common.buttons?.copied || 'Copied!',
+    },
+  })}</script>`;
+}
+
+function renderPhaseTimeline(lang, t, p) {
+  const localePhases = p.phases || [];
+  return PRESALE_PHASES.map((phase) => {
+    const label = localePhases.find((x) => x.id === phase.id) || { name: phase.id, desc: '' };
+    return `
+      <article class="phase-card" data-phase="${phase.id}">
+        <div class="phase-card-head">
+          <h3>${esc(label.name)}</h3>
+          <span class="badge scheduled phase-status">${esc(t.common.badges.scheduled)}</span>
+        </div>
+        <p class="phase-desc">${esc(label.desc)}</p>
+        <div class="phase-dates">${formatDateRange(phase.start, phase.end, lang)}</div>
+      </article>`;
+  }).join('');
+}
+
+function renderPublicStages(lang, t, p) {
+  return PUBLIC_STAGES.map((s) => `
+    <article class="stage-card" data-stage="${s.stage}">
+      <div class="stage-num">${esc(p.stageLabel)} ${s.stage}</div>
+      <div class="stage-dates">${formatDateRange(s.start, s.end, lang)}</div>
+      <div class="stage-weeks">${s.weeks} ${esc(p.weeksLabel)}</div>
+      <span class="badge scheduled stage-status">${esc(t.common.badges.scheduled)}</span>
+    </article>`).join('');
+}
+
 function renderPresale(lang, t) {
   const p = t.pages.presale;
   const c = t.common;
   const f = p.fields;
+  const phases = renderPhaseTimeline(lang, t, p);
+  const stages = renderPublicStages(lang, t, p);
+  return `
+    <div class="page-hero"><div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
+      <h1>${esc(p.h1)}</h1>
+      <p class="lead">${esc(p.lead)}</p>
+      <div class="hero-actions" style="margin-top: 20px;">
+        <a class="btn primary" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
+        <a class="btn" href="${pagePath(lang, 'wallets')}">${esc(c.buttons.viewWallets)}</a>
+      </div>
+    </div></div>
+    <section><div class="wrap">
+      <div class="risk-banner" style="margin-bottom: 32px;"><strong>${esc(p.important)}</strong> ${esc(p.riskShort)}</div>
+      <div class="section-head"><h2>${esc(p.timelineTitle)}</h2><p>${esc(p.timelineDesc)}</p></div>
+      <div class="phase-grid">${phases}</div>
+      <div class="section-head" style="margin-top: 40px;"><h2>${esc(p.publicStagesTitle)}</h2><p>${esc(p.publicStagesDesc)}</p></div>
+      <div class="stage-grid">${stages}</div>
+      <div class="table-panel" style="margin-top: 32px;">
+        <table class="data-table">
+          <thead><tr><th>${esc(c.table.parameter)}</th><th>${esc(c.table.status)}</th></tr></thead>
+          <tbody>
+            <tr><td><strong>${esc(f.presaleStatus)}</strong></td><td><span class="badge scheduled" id="presale-status-badge">${esc(c.badges.scheduled)}</span></td></tr>
+            <tr><td><strong>${esc(f.acceptedAssets)}</strong></td><td>${ACCEPTED_ASSETS.join(', ')}</td></tr>
+            <tr><td><strong>${esc(f.contributionWallet)}</strong></td><td><code style="font-size:12px;">${PRESALE_WALLET.address}</code> <a href="${pagePath(lang, 'wallets')}" style="color:var(--energy-blue-dark);font-weight:600;">${esc(c.buttons.verifyOnWallets)}</a></td></tr>
+            <tr><td><strong>${esc(f.vesting)}</strong></td><td>${esc(c.values.tba)}</td></tr>
+            <tr><td><strong>${esc(f.kyc)}</strong></td><td>${esc(c.values.tbaKyc)}</td></tr>
+            <tr><td><strong>${esc(f.price)}</strong></td><td>${esc(c.values.tba)}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose" style="margin-top: 32px;">
+        <h2>${esc(p.expectTitle)}</h2>
+        <p>${esc(p.expectP1)}</p>
+        <p>${esc(p.expectP2)} <a href="mailto:token@enm.network" style="color: var(--energy-blue-dark); font-weight: 600;">${esc(p.contactLink)}</a>.</p>
+        <p>${esc(p.dashboardCta)} <a href="${pagePath(lang, 'dashboard')}" style="color: var(--energy-blue-dark); font-weight: 600;">${esc(c.nav.dashboard)}</a>.</p>
+        <p>${esc(p.walletsCta)} <a href="${pagePath(lang, 'wallets')}" style="color: var(--energy-blue-dark); font-weight: 600;">${esc(c.nav.wallets)}</a>.</p>
+      </div>
+    </div></section>
+    <section><div class="wrap">${riskBannerLang(t, p.riskFooter, lang)}</div></section>
+    ${presaleConfigScript(lang, t)}`;
+}
+
+function renderDashboard(lang, t) {
+  const p = t.pages.dashboard;
+  const c = t.common;
+  const phases = renderPhaseTimeline(lang, t, t.pages.presale);
+  return `
+    <div class="page-hero dashboard-hero"><div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
+      <h1>${esc(p.h1)}</h1>
+      <p class="lead">${esc(p.lead)}</p>
+    </div></div>
+    <section class="dashboard-section"><div class="wrap">
+      <div class="risk-banner" style="margin-bottom: 24px;"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}</div>
+      <div class="dashboard-grid">
+        <div class="dash-panel dash-main">
+          <div class="dash-status-row">
+            <div>
+              <div class="dash-label">${esc(p.currentPhase)}</div>
+              <div class="dash-value" id="dash-current-phase">—</div>
+            </div>
+            <div>
+              <div class="dash-label">${esc(p.timeRemaining)}</div>
+              <div class="dash-countdown" id="dash-countdown">—</div>
+            </div>
+          </div>
+          <div class="dash-stage-row" id="dash-public-stage-wrap" hidden>
+            <div class="dash-label">${esc(p.publicStage)}</div>
+            <div class="dash-value"><span id="dash-public-stage">—</span> ${esc(p.ofStages)}</div>
+          </div>
+          <div class="progress-bar-wrap"><div class="progress-bar" id="dash-phase-progress" style="width:0%"></div></div>
+        </div>
+        <div class="dash-panel">
+          <h3>${esc(p.walletPanel)}</h3>
+          <p class="dash-muted" id="dash-wallet-status">${esc(p.walletDisconnected)}</p>
+          <p class="dash-address" id="dash-wallet-address"></p>
+          <button type="button" class="btn primary" id="dash-connect-btn">${esc(c.buttons.connectWallet)}</button>
+          <p class="dash-muted" style="margin-top:12px;">${esc(p.networkLabel)}: ${esc(c.values.ethereumMainnet)}</p>
+        </div>
+        <div class="dash-panel dash-contribution">
+          <h3>${esc(p.contributionTitle)}</h3>
+          <p class="dash-muted">${esc(p.contributionDesc)}</p>
+          <div class="wallet-address-box">
+            <code id="dash-treasury-address">${PRESALE_WALLET.address}</code>
+            <button type="button" class="btn" id="dash-copy-treasury">${esc(c.buttons.copyAddress)}</button>
+          </div>
+          <a class="btn" href="${walletEtherscan(PRESALE_WALLET.address)}" target="_blank" rel="noopener">${esc(c.buttons.etherscan)}</a>
+        </div>
+        <div class="dash-panel">
+          <h3>${esc(p.statsTitle)}</h3>
+          <div class="dash-stats">
+            <div><span>${esc(p.statPhase)}</span><strong id="dash-stat-phase">—</strong></div>
+            <div><span>${esc(p.statStage)}</span><strong id="dash-stat-stage">—</strong></div>
+            <div><span>${esc(p.statAccepted)}</span><strong>${ACCEPTED_ASSETS.join(', ')}</strong></div>
+            <div><span>${esc(p.statNetwork)}</span><strong>${esc(c.values.ethereumMainnet)}</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-head" style="margin-top: 40px;"><h2>${esc(p.timelineTitle)}</h2></div>
+      <div class="phase-grid dash-timeline">${phases}</div>
+      <div class="card" style="margin-top: 24px; padding: 24px;">
+        <h3>${esc(p.registerTitle)}</h3>
+        <p style="color: var(--muted); margin: 0 0 12px;">${esc(p.registerDesc)}</p>
+        <a href="${pagePath(lang, 'risk')}" style="color: var(--energy-blue-dark); font-weight: 600;">${esc(c.buttons.readRisk)}</a>
+      </div>
+    </div></section>
+    <section><div class="wrap">${riskBannerLang(t, p.riskFooter, lang)}</div></section>
+    ${presaleConfigScript(lang, t)}`;
+}
+
+function renderWallets(lang, t) {
+  const p = t.pages.wallets;
+  const c = t.common;
+  const walletRows = OFFICIAL_WALLETS.map((w) => {
+    const purpose = p.purposes?.[w.purpose] || w.purpose;
+    return `
+      <tr>
+        <td><strong>${esc(w.label)}</strong></td>
+        <td>${esc(w.network)} / ${w.symbol}</td>
+        <td>${esc(purpose)}</td>
+        <td><code style="font-size:12px;">${w.address}</code></td>
+        <td>
+          <button type="button" class="btn btn-sm copy-wallet-btn" data-address="${w.address}">${esc(c.buttons.copyAddress)}</button>
+          <a class="btn btn-sm" href="${walletEtherscan(w.address)}" target="_blank" rel="noopener">${esc(c.buttons.etherscan)}</a>
+        </td>
+      </tr>`;
+  }).join('');
+  const recommended = (p.recommended || []).map((r) => `
+    <article class="card"><h3>${esc(r.name)}</h3><p>${esc(r.desc)}</p></article>`).join('');
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
@@ -387,27 +585,16 @@ function renderPresale(lang, t) {
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
-      <div class="risk-banner" style="margin-bottom: 32px;"><strong>${esc(p.important)}</strong> ${esc(p.riskShort)}</div>
+      <div class="risk-banner" style="margin-bottom: 32px;"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}</div>
+      <div class="section-head"><h2>${esc(p.verifyTitle)}</h2><p>${esc(p.verifyDesc)}</p></div>
       <div class="table-panel">
         <table class="data-table">
-          <thead><tr><th>${esc(c.table.parameter)}</th><th>${esc(c.table.status)}</th></tr></thead>
-          <tbody>
-            <tr><td><strong>${esc(f.presaleStatus)}</strong></td><td><span class="badge preparation">${esc(c.badges.preparation)}</span></td></tr>
-            <tr><td><strong>${esc(f.acceptedAssets)}</strong></td><td>${esc(c.values.tba)}</td></tr>
-            <tr><td><strong>${esc(f.vesting)}</strong></td><td>${esc(c.values.tba)}</td></tr>
-            <tr><td><strong>${esc(f.kyc)}</strong></td><td>${esc(c.values.tbaKyc)}</td></tr>
-            <tr><td><strong>${esc(f.saleTerms)}</strong></td><td>${esc(c.values.tba)}</td></tr>
-            <tr><td><strong>${esc(f.price)}</strong></td><td>${esc(c.values.notPublished)}</td></tr>
-            <tr><td><strong>${esc(f.saleDates)}</strong></td><td>${esc(c.values.notPublished)}</td></tr>
-            <tr><td><strong>${esc(f.allocationAmount)}</strong></td><td>${esc(c.values.notPublished)}</td></tr>
-          </tbody>
+          <thead><tr><th>${esc(c.table.category)}</th><th>${esc(c.table.network)}</th><th>${esc(p.purposeLabel)}</th><th>${esc(c.table.value)}</th><th></th></tr></thead>
+          <tbody>${walletRows}</tbody>
         </table>
       </div>
-      <div class="prose" style="margin-top: 32px;">
-        <h2>${esc(p.expectTitle)}</h2>
-        <p>${esc(p.expectP1)}</p>
-        <p>${esc(p.expectP2)} <a href="${pagePath(lang, 'contact')}" style="color: var(--energy-blue-dark); font-weight: 600;">${esc(p.contactLink)}</a>.</p>
-      </div>
+      <div class="section-head" style="margin-top: 40px;"><h2>${esc(p.recommendedTitle)}</h2><p>${esc(p.recommendedDesc)}</p></div>
+      <div class="cards two">${recommended}</div>
     </div></section>
     <section><div class="wrap">${riskBannerLang(t, p.riskFooter, lang)}</div></section>`;
 }
@@ -579,6 +766,8 @@ const RENDERERS = {
   token: renderToken,
   tokenomics: renderTokenomics,
   presale: renderPresale,
+  dashboard: renderDashboard,
+  wallets: renderWallets,
   contract: renderContract,
   roadmap: renderRoadmap,
   risk: renderRisk,
@@ -632,7 +821,7 @@ ${schemas.join('\n')}
     ${RENDERERS[pageId](lang, t)}
   </main>
   ${renderFooter(lang, t)}
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>${['presale', 'dashboard', 'wallets'].includes(pageId) ? '\n  <script src="/assets/js/dashboard.js"></script>' : ''}
 </body>
 </html>`;
 }
@@ -646,7 +835,7 @@ function generateSitemaps() {
     const urls = PAGES.map((p) => {
       const loc = pageUrl(lang.code, p.slug);
       const priority = p.id === 'home' ? '1.0' : '0.8';
-      const changefreq = p.id === 'presale' ? 'weekly' : 'monthly';
+      const changefreq = ['presale', 'dashboard'].includes(p.id) ? 'weekly' : 'monthly';
       return `  <url>
     <loc>${loc}</loc>
     <changefreq>${changefreq}</changefreq>

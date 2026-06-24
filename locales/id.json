@@ -13,7 +13,9 @@
       "roadmap": "Roadmap",
       "risk": "Pemberitahuan Risiko",
       "faq": "FAQ",
-      "contact": "Kontak"
+      "contact": "Kontak",
+      "dashboard": "Dasbor",
+      "wallets": "Dompet"
     },
     "buttons": {
       "viewContract": "Lihat Kontrak",
@@ -21,7 +23,14 @@
       "joinPresale": "Ikuti Pra-penjualan",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Buka di Etherscan",
-      "contractDetails": "Detail Kontrak"
+      "contractDetails": "Detail Kontrak",
+      "openDashboard": "Buka dasbor peluncuran",
+      "viewWallets": "Dompet resmi",
+      "connectWallet": "Hubungkan dompet",
+      "disconnectWallet": "Putuskan dompet",
+      "copyAddress": "Salin alamat",
+      "copied": "Disalin!",
+      "verifyOnWallets": "Verifikasi di halaman dompet"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "Menunggu",
       "confirmed": "Dikonfirmasi",
       "preparation": "Persiapan",
-      "locked": "Transfer dibatasi / terkunci"
+      "locked": "Transfer dibatasi / terkunci",
+      "scheduled": "Terjadwal",
+      "active": "Aktif",
+      "completed": "Selesai",
+      "upcoming": "Akan datang"
     },
     "table": {
       "property": "Properti",
@@ -44,7 +57,8 @@
       "parameter": "Parameter",
       "category": "Kategori",
       "description": "Deskripsi",
-      "allocation": "Alokasi"
+      "allocation": "Alokasi",
+      "network": "Jaringan"
     },
     "stats": {
       "symbol": "Simbol",
@@ -152,30 +166,84 @@
       "footerNote": "Tidak ada persentase alokasi pasti yang dipublikasikan saat ini. Ketika tokenomics akhir disetujui, halaman ini akan diperbarui dengan angka terverifikasi. Jangan mengandalkan grafik tokenomics tidak resmi atau pihak ketiga.",
       "riskFooter": "Aset kripto berisiko tinggi dan dapat kehilangan nilai. Berlaku risiko regulasi, teknis, likuiditas, pasar, dan operasional.",
       "allocations": [
-        { "name": "Alokasi Utility", "desc": "Token yang disediakan untuk fungsi utility ekosistem, partisipasi operasional, dan koordinasi layanan dalam jaringan EnergieMIND." },
-        { "name": "Cadangan Ekosistem", "desc": "Cadangan untuk pengembangan ekosistem jangka panjang, kemitraan, dan aktivitas koordinasi strategis." },
-        { "name": "Likuiditas", "desc": "Alokasi untuk penyediaan likuiditas pasar jika berlaku dan diumumkan secara resmi." },
-        { "name": "Treasury", "desc": "Treasury operasional untuk pemeliharaan ekosistem, pengembangan, dan dukungan infrastruktur." },
-        { "name": "Kunci Pendiri / Tim", "desc": "Alokasi tim dan pendiri dengan jadwal kunci dan ketentuan vesting yang akan dipublikasikan." },
-        { "name": "Program Komunitas / Mitra", "desc": "Alokasi untuk inisiatif komunitas, onboarding mitra, dan program partisipasi pilot." },
-        { "name": "Cadangan Migrasi", "desc": "Cadangan untuk penyelarasan migrasi EnteleKRON mainnet di masa depan dan transisi utility lintas rantai." }
+        {
+          "name": "Alokasi Utility",
+          "desc": "Token yang disediakan untuk fungsi utility ekosistem, partisipasi operasional, dan koordinasi layanan dalam jaringan EnergieMIND."
+        },
+        {
+          "name": "Cadangan Ekosistem",
+          "desc": "Cadangan untuk pengembangan ekosistem jangka panjang, kemitraan, dan aktivitas koordinasi strategis."
+        },
+        {
+          "name": "Likuiditas",
+          "desc": "Alokasi untuk penyediaan likuiditas pasar jika berlaku dan diumumkan secara resmi."
+        },
+        {
+          "name": "Treasury",
+          "desc": "Treasury operasional untuk pemeliharaan ekosistem, pengembangan, dan dukungan infrastruktur."
+        },
+        {
+          "name": "Kunci Pendiri / Tim",
+          "desc": "Alokasi tim dan pendiri dengan jadwal kunci dan ketentuan vesting yang akan dipublikasikan."
+        },
+        {
+          "name": "Program Komunitas / Mitra",
+          "desc": "Alokasi untuk inisiatif komunitas, onboarding mitra, dan program partisipasi pilot."
+        },
+        {
+          "name": "Cadangan Migrasi",
+          "desc": "Cadangan untuk penyelarasan migrasi EnteleKRON mainnet di masa depan dan transisi utility lintas rantai."
+        }
       ]
     },
     "presale": {
       "title": "Pra-penjualan | ENM Token",
-      "description": "Status pra-penjualan token ENM dan informasi persiapan. Tidak ada tanggal, harga, atau metode pembayaran pra-penjualan yang dipublikasikan hingga difinalisasi secara resmi.",
-      "ogTitle": "ENM Pra-penjualan | enm.network",
-      "ogDescription": "Tahap persiapan pra-penjualan ENM. Tidak ada tanggal, harga, atau metode pembayaran yang dipublikasikan hingga difinalisasi secara resmi.",
+      "description": "Jadwal pra-penjualan token ENM: Early Investor, Strategic Investor, Private Sale, dan pra-penjualan publik 6 tahap. Tanggal resmi dan dasbor peluncuran di enm.network.",
+      "ogTitle": "Jadwal Pra-penjualan ENM | enm.network",
+      "ogDescription": "Fase pra-penjualan resmi ENM dari Juli 2026 hingga tahap publik pada 2027.",
       "breadcrumb": "Pra-penjualan",
-      "eyebrow": "Informasi Pra-penjualan",
-      "h1": "Tahap Persiapan Pra-penjualan",
-      "lead": "Ketentuan pra-penjualan ENM belum difinalisasi. Halaman ini akan diperbarui ketika aturan penjualan resmi, tanggal, dan aset yang diterima dikonfirmasi.",
+      "eyebrow": "Jadwal Pra-penjualan",
+      "h1": "Pra-penjualan ENM",
+      "lead": "Fase pra-penjualan terstruktur dari akses investor awal hingga pra-penjualan publik enam tahap. Gunakan dasbor peluncuran untuk status fase langsung dan selalu verifikasi alamat dompet di halaman dompet resmi.",
       "important": "Penting:",
-      "riskShort": "Tidak ada tanggal, harga, jumlah token, atau metode pembayaran yang diterima yang dipublikasikan di situs ini. Jangan kirim dana ke alamat apa pun yang mengklaim sebagai pra-penjualan ENM kecuali diverifikasi melalui saluran resmi di enm.network. ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin.",
-      "expectTitle": "Yang dapat diharapkan",
-      "expectP1": "Ketika ketentuan pra-penjualan difinalisasi, halaman ini akan diperbarui dengan informasi terverifikasi termasuk aset yang diterima, jadwal vesting, persyaratan KYC (jika ada), dan ketentuan penjualan lengkap. Sampai saat itu, tidak ada mekanisme pra-penjualan aktif di situs ini.",
-      "expectP2": "Untuk pertanyaan tentang waktu atau kelayakan pra-penjualan, gunakan halaman kontak. Selalu verifikasi informasi melalui enm.network sebelum mengambil tindakan.",
-      "contactLink": "halaman kontak",
+      "riskShort": "ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin. Hanya gunakan alamat dompet yang dipublikasikan di enm.network/wallets. Jangan kirim dana ke alamat tidak resmi. Aset kripto berisiko tinggi dan dapat kehilangan nilai.",
+      "timelineTitle": "Linimasa pra-penjualan",
+      "timelineDesc": "Jadwal fase resmi untuk koordinasi distribusi token ENM.",
+      "phasesTitle": "Fase investasi",
+      "publicStagesTitle": "Pra-penjualan publik — 6 tahap",
+      "publicStagesDesc": "Pra-penjualan publik dimulai 01 April 2027. Setiap tahap berlangsung 6 minggu.",
+      "stageLabel": "Tahap",
+      "weeksLabel": "minggu",
+      "durationLabel": "Durasi",
+      "statusLabel": "Status",
+      "dashboardCta": "Buka dasbor peluncuran untuk status fase langsung, hitung mundur, dan koneksi dompet.",
+      "walletsCta": "Semua dompet resmi ENM tercantum di halaman dompet. Verifikasi setiap alamat sebelum mengirim dana.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Akses koordinasi ekosistem awal untuk peserta awal yang memenuhi syarat."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Mitra strategis dan peserta yang selaras dengan infrastruktur."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Fase penjualan privat sebelum pembukaan pra-penjualan publik."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Pra-penjualan publik dalam enam tahap berurutan masing-masing 6 minggu."
+        }
+      ],
+      "expectTitle": "Partisipasi",
+      "expectP1": "Aset yang diterima untuk koordinasi pra-penjualan: ETH, USDC, dan USDT di Ethereum Mainnet. Harga akhir, batas alokasi, dan ketentuan vesting akan dipublikasikan sebelum setiap fase aktif.",
+      "expectP2": "Untuk pertanyaan kelayakan, hubungi",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin. Aset kripto berisiko tinggi dan dapat kehilangan nilai.",
       "fields": {
         "presaleStatus": "Status Pra-penjualan",
@@ -185,7 +253,8 @@
         "saleTerms": "Ketentuan Penjualan",
         "price": "Harga",
         "saleDates": "Tanggal Penjualan",
-        "allocationAmount": "Jumlah Alokasi"
+        "allocationAmount": "Jumlah Alokasi",
+        "contributionWallet": "Dompet kontribusi resmi"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Fase roadmap mewakili arah yang dimaksudkan. Tidak ada tanggal spesifik yang dipublikasikan. Pembaruan kemajuan akan dikomunikasikan melalui saluran resmi jika tersedia.",
       "riskFooter": "Aset kripto berisiko tinggi dan dapat kehilangan nilai. Berlaku risiko regulasi, teknis, likuiditas, pasar, dan operasional.",
       "steps": [
-        { "title": "Fondasi Token", "desc": "Pertahankan kontrak ENM Ethereum terverifikasi, publikasikan dokumentasi token resmi di enm.network, dan bangun informasi kontrak transparan untuk ekosistem." },
-        { "title": "Dokumentasi & Transparansi", "desc": "Publikasikan tokenomics, ketentuan pra-penjualan (setelah difinalisasi), pengungkapan risiko, dan saluran komunikasi resmi. Pemisahan lapisan token sepenuhnya dari situs proyek energiemind.com." },
-        { "title": "Pra-penjualan & Distribusi", "desc": "Luncurkan pra-penjualan ketika ketentuan difinalisasi dan diumumkan secara resmi. Terapkan vesting, alokasi, dan distribusi sesuai tokenomics yang dipublikasikan." },
-        { "title": "Aktivasi Utility", "desc": "Aktifkan fungsi utility ekosistem terkait partisipasi kecerdasan energi, koordinasi panas penambangan, dan kerangka program pilot seiring infrastruktur matang." },
-        { "title": "Jaringan Mitra & Pilot", "desc": "Dukung penerapan pilot untuk hotel, gedung komersial, lokasi surya, dan instalasi miner-heater dengan model partisipasi terkoordinasi token." },
-        { "title": "Ekspansi Ekosistem", "desc": "Kembangkan program komunitas dan mitra, struktur insentif infrastruktur, dan alat koordinasi operasional dalam ekosistem EnergieMIND." },
-        { "title": "Penyelarasan EnteleKRON", "desc": "Siapkan cadangan migrasi dan kerangka penyelarasan untuk modul EnteleKRON mainnet, sistem validator, dan penyelesaian asli ekosistem." },
-        { "title": "Migrasi Mainnet", "desc": "Laksanakan penyelarasan migrasi dengan EnteleKRON mainnet ketika kondisi teknis, regulasi, dan ekosistem terpenuhi. Ketentuan akan dipublikasikan sebelumnya." }
+        {
+          "title": "Fondasi Token",
+          "desc": "Pertahankan kontrak ENM Ethereum terverifikasi, publikasikan dokumentasi token resmi di enm.network, dan bangun informasi kontrak transparan untuk ekosistem."
+        },
+        {
+          "title": "Dokumentasi & Transparansi",
+          "desc": "Publikasikan tokenomics, ketentuan pra-penjualan (setelah difinalisasi), pengungkapan risiko, dan saluran komunikasi resmi. Pemisahan lapisan token sepenuhnya dari situs proyek energiemind.com."
+        },
+        {
+          "title": "Pra-penjualan & Distribusi",
+          "desc": "Luncurkan pra-penjualan ketika ketentuan difinalisasi dan diumumkan secara resmi. Terapkan vesting, alokasi, dan distribusi sesuai tokenomics yang dipublikasikan."
+        },
+        {
+          "title": "Aktivasi Utility",
+          "desc": "Aktifkan fungsi utility ekosistem terkait partisipasi kecerdasan energi, koordinasi panas penambangan, dan kerangka program pilot seiring infrastruktur matang."
+        },
+        {
+          "title": "Jaringan Mitra & Pilot",
+          "desc": "Dukung penerapan pilot untuk hotel, gedung komersial, lokasi surya, dan instalasi miner-heater dengan model partisipasi terkoordinasi token."
+        },
+        {
+          "title": "Ekspansi Ekosistem",
+          "desc": "Kembangkan program komunitas dan mitra, struktur insentif infrastruktur, dan alat koordinasi operasional dalam ekosistem EnergieMIND."
+        },
+        {
+          "title": "Penyelarasan EnteleKRON",
+          "desc": "Siapkan cadangan migrasi dan kerangka penyelarasan untuk modul EnteleKRON mainnet, sistem validator, dan penyelesaian asli ekosistem."
+        },
+        {
+          "title": "Migrasi Mainnet",
+          "desc": "Laksanakan penyelarasan migrasi dengan EnteleKRON mainnet ketika kondisi teknis, regulasi, dan ekosistem terpenuhi. Ketentuan akan dipublikasikan sebelumnya."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Pemberitahuan Risiko",
       "lead": "Baca pemberitahuan ini dengan saksama sebelum berinteraksi dengan ENM atau layanan ekosistem terkait.",
       "sections": [
-        { "title": "Penafian Umum", "content": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin. Aset kripto berisiko tinggi dan dapat kehilangan nilai. Berlaku risiko regulasi, teknis, likuiditas, pasar, dan operasional. Selalu verifikasi contract address secara mandiri.", "bold": true },
-        { "title": "Bukan Produk Investasi", "content": "ENM disajikan sebagai token utility untuk koordinasi ekosistem dalam jaringan kecerdasan energi EnergieMIND. ENM tidak ditawarkan atau dijelaskan sebagai produk investasi, sekuritas, kepentingan ekuitas, instrumen utang, atau derivatif keuangan. Tidak ada apa pun di enm.network yang merupakan nasihat keuangan, nasihat investasi, atau rekomendasi untuk membeli, menjual, atau memegang aset kripto apa pun." },
-        { "title": "Tidak Ada Imbal Hasil Terjamin", "content": "ENM tidak menjanjikan, menjamin, atau menyiratkan imbal hasil investasi, pendapatan pasif, keuntungan, apresiasi, atau yield. Kinerja masa lalu aset kripto apa pun bukan indikasi hasil di masa depan. Anda dapat kehilangan sebagian atau seluruh nilai yang terkait dengan ENM." },
-        { "title": "Bukan Penawaran Sekuritas", "content": "ENM tidak ditawarkan sebagai sekuritas di yurisdiksi mana pun. Klasifikasi regulasi token kripto bervariasi menurut negara dan dapat berubah. Anda sepenuhnya bertanggung jawab untuk memahami dan mematuhi hukum yang berlaku di yurisdiksi Anda." },
-        { "title": "Risiko Pasar dan Likuiditas", "content": "Pasar kripto volatil. ENM mungkin memiliki likuiditas terbatas atau tidak ada likuiditas. Harga dapat berfluktuasi secara dramatis atau menjadi tidak dapat diperdagangkan. Tidak ada jaminan pasar sekunder, pencatatan bursa, atau tempat perdagangan." },
-        { "title": "Risiko Teknis", "content": "Kontrak pintar, jaringan blockchain, dan perangkat lunak dompet membawa risiko teknis inheren termasuk bug, eksploitasi, kegagalan jaringan, fork, dan transaksi yang tidak dapat dibatalkan. Kontrak ENM saat ini menunjukkan pembatasan transfer. Selalu verifikasi perilaku kontrak di Etherscan sebelum berinteraksi." },
-        { "title": "Risiko Regulasi", "content": "Regulasi mata uang kripto berkembang secara global. Tindakan regulasi di masa depan dapat membatasi, melarang, atau memberlakukan persyaratan pada pemegang ENM, transfer, atau partisipasi ekosistem. Kewajiban kepatuhan dapat bervariasi menurut yurisdiksi." },
-        { "title": "Risiko Operasional", "content": "Pengembangan ekosistem, pelaksanaan pra-penjualan, aktivasi utility, dan migrasi mainnet tunduk pada kendala teknis, operasional, dan sumber daya. Item roadmap adalah tonggak perencanaan, bukan komitmen mengikat atau jaminan pengiriman." },
-        { "title": "Verifikasi Kontrak", "content": "contract address resmi ENM adalah 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D di Ethereum Mainnet. Selalu verifikasi alamat ini secara mandiri di Etherscan. Jangan percaya alamat dari sumber tidak resmi, pesan media sosial, atau situs web pihak ketiga. Token penipuan mungkin menggunakan nama serupa." },
-        { "title": "Kehati-hatian Pra-penjualan", "content": "Tidak ada tanggal, harga, atau metode pembayaran pra-penjualan yang dipublikasikan hingga difinalisasi secara resmi di enm.network. Jangan kirim dana ke alamat apa pun yang mengklaim mewakili pra-penjualan ENM kecuali diverifikasi melalui situs resmi ini." },
-        { "title": "Tanggung Jawab Anda", "content": "Dengan mengakses enm.network atau berinteraksi dengan ENM, Anda mengakui bahwa Anda memahami risiko ini dan menerima tanggung jawab penuh atas keputusan Anda. Konsultasikan profesional hukum, pajak, dan keuangan yang berkualifikasi sebelum membuat keputusan terkait aset kripto." }
+        {
+          "title": "Penafian Umum",
+          "content": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin. Aset kripto berisiko tinggi dan dapat kehilangan nilai. Berlaku risiko regulasi, teknis, likuiditas, pasar, dan operasional. Selalu verifikasi contract address secara mandiri.",
+          "bold": true
+        },
+        {
+          "title": "Bukan Produk Investasi",
+          "content": "ENM disajikan sebagai token utility untuk koordinasi ekosistem dalam jaringan kecerdasan energi EnergieMIND. ENM tidak ditawarkan atau dijelaskan sebagai produk investasi, sekuritas, kepentingan ekuitas, instrumen utang, atau derivatif keuangan. Tidak ada apa pun di enm.network yang merupakan nasihat keuangan, nasihat investasi, atau rekomendasi untuk membeli, menjual, atau memegang aset kripto apa pun."
+        },
+        {
+          "title": "Tidak Ada Imbal Hasil Terjamin",
+          "content": "ENM tidak menjanjikan, menjamin, atau menyiratkan imbal hasil investasi, pendapatan pasif, keuntungan, apresiasi, atau yield. Kinerja masa lalu aset kripto apa pun bukan indikasi hasil di masa depan. Anda dapat kehilangan sebagian atau seluruh nilai yang terkait dengan ENM."
+        },
+        {
+          "title": "Bukan Penawaran Sekuritas",
+          "content": "ENM tidak ditawarkan sebagai sekuritas di yurisdiksi mana pun. Klasifikasi regulasi token kripto bervariasi menurut negara dan dapat berubah. Anda sepenuhnya bertanggung jawab untuk memahami dan mematuhi hukum yang berlaku di yurisdiksi Anda."
+        },
+        {
+          "title": "Risiko Pasar dan Likuiditas",
+          "content": "Pasar kripto volatil. ENM mungkin memiliki likuiditas terbatas atau tidak ada likuiditas. Harga dapat berfluktuasi secara dramatis atau menjadi tidak dapat diperdagangkan. Tidak ada jaminan pasar sekunder, pencatatan bursa, atau tempat perdagangan."
+        },
+        {
+          "title": "Risiko Teknis",
+          "content": "Kontrak pintar, jaringan blockchain, dan perangkat lunak dompet membawa risiko teknis inheren termasuk bug, eksploitasi, kegagalan jaringan, fork, dan transaksi yang tidak dapat dibatalkan. Kontrak ENM saat ini menunjukkan pembatasan transfer. Selalu verifikasi perilaku kontrak di Etherscan sebelum berinteraksi."
+        },
+        {
+          "title": "Risiko Regulasi",
+          "content": "Regulasi mata uang kripto berkembang secara global. Tindakan regulasi di masa depan dapat membatasi, melarang, atau memberlakukan persyaratan pada pemegang ENM, transfer, atau partisipasi ekosistem. Kewajiban kepatuhan dapat bervariasi menurut yurisdiksi."
+        },
+        {
+          "title": "Risiko Operasional",
+          "content": "Pengembangan ekosistem, pelaksanaan pra-penjualan, aktivasi utility, dan migrasi mainnet tunduk pada kendala teknis, operasional, dan sumber daya. Item roadmap adalah tonggak perencanaan, bukan komitmen mengikat atau jaminan pengiriman."
+        },
+        {
+          "title": "Verifikasi Kontrak",
+          "content": "contract address resmi ENM adalah 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D di Ethereum Mainnet. Selalu verifikasi alamat ini secara mandiri di Etherscan. Jangan percaya alamat dari sumber tidak resmi, pesan media sosial, atau situs web pihak ketiga. Token penipuan mungkin menggunakan nama serupa."
+        },
+        {
+          "title": "Kehati-hatian Pra-penjualan",
+          "content": "Hanya gunakan alamat dompet yang dipublikasikan di enm.network/wallets. Dompet kontribusi pra-penjualan resmi adalah alamat ENM Treasury di Ethereum Mainnet. Jangan kirim dana ke alamat dari media sosial, DM, atau situs pihak ketiga. ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin."
+        },
+        {
+          "title": "Tanggung Jawab Anda",
+          "content": "Dengan mengakses enm.network atau berinteraksi dengan ENM, Anda mengakui bahwa Anda memahami risiko ini dan menerima tanggung jawab penuh atas keputusan Anda. Konsultasikan profesional hukum, pajak, dan keuangan yang berkualifikasi sebelum membuat keputusan terkait aset kripto."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin.",
       "riskFooter": "Aset kripto berisiko tinggi dan dapat kehilangan nilai. Berlaku risiko regulasi, teknis, likuiditas, pasar, dan operasional. Selalu verifikasi contract address secara mandiri.",
       "items": [
-        { "q": "Apa itu ENM?", "a": "ENM (EnergieMind) adalah token utility ekosistem kecerdasan energi EnergieMIND. Ini adalah token ERC-20 di Ethereum Mainnet, dirancang untuk koordinasi ekosistem masa depan terkait kecerdasan energi, partisipasi panas penambangan, program pilot, dan penyelarasan EnteleKRON mainnet. ENM adalah token utility — bukan produk investasi." },
-        { "q": "Apa perbedaan antara enm.network dan energiemind.com?", "a": "enm.network adalah situs dokumentasi resmi token ENM yang mencakup lapisan token: kontrak, tokenomics, pra-penjualan, dan pengungkapan risiko. energiemind.com mencakup lapisan proyek EnergieMIND: teknologi kecerdasan energi, utilitas panas penambangan, dan pengembangan infrastruktur. Keduanya adalah bagian terpisah namun terhubung dari ekosistem yang sama." },
-        { "q": "Apa contract address resminya?", "a": "Kontrak resmi ENM di Ethereum Mainnet adalah 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Selalu verifikasi alamat ini secara mandiri di Etherscan sebelum berinteraksi." },
-        { "q": "Bisakah saya mentransfer ENM sekarang?", "a": "Menurut kontrak terverifikasi saat ini, transfer dibatasi atau terkunci. Periksa status kontrak di Etherscan untuk keadaan on-chain terbaru sebelum mencoba transfer." },
-        { "q": "Apakah ENM investasi?", "a": "Tidak. ENM tidak disajikan sebagai produk investasi, penawaran sekuritas, instrumen dengan imbal hasil terjamin, atau janji pendapatan pasif. Ini adalah token utility untuk koordinasi ekosistem. Aset kripto berisiko tinggi dan dapat kehilangan nilai. Lihat pemberitahuan risiko lengkap." },
-        { "q": "Kapan pra-penjualannya?", "a": "Pra-penjualan dalam tahap persiapan. Tidak ada tanggal, harga, aset yang diterima, atau ketentuan penjualan yang dipublikasikan. Halaman ini akan diperbarui ketika ketentuan difinalisasi. Jangan kirim dana ke alamat pra-penjualan tidak resmi." },
-        { "q": "Berapa total pasokannya?", "a": "Total pasokan maksimum adalah 50.000.000.000 ENM (50 miliar) dengan 18 desimal. Persentase alokasi antar kategori menunggu publikasi resmi di halaman tokenomics." },
-        { "q": "Apa itu penyelarasan EnteleKRON mainnet?", "a": "ENM disiapkan untuk migrasi dan penyelarasan masa depan dengan ekosistem EnteleKRON mainnet. Kategori alokasi cadangan migrasi direncanakan. Ketentuan migrasi, timeline, dan detail teknis spesifik akan dipublikasikan jika tersedia." },
-        { "q": "Bagaimana cara menambahkan ENM ke dompet saya?", "a": "Gunakan contract address resmi 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D dengan simbol token ENM dan 18 desimal. Verifikasi alamat di Etherscan. Perhatikan bahwa transfer saat ini mungkin dibatasi sesuai keadaan kontrak." },
-        { "q": "Di mana saya mendapatkan pembaruan resmi?", "a": "Informasi token resmi dipublikasikan di enm.network. Untuk pertanyaan, gunakan halaman kontak. Jangan percaya saluran tidak resmi, DM media sosial, atau situs pihak ketiga untuk contract address atau informasi pra-penjualan." }
+        {
+          "q": "Apa itu ENM?",
+          "a": "ENM (EnergieMind) adalah token utility ekosistem kecerdasan energi EnergieMIND. Ini adalah token ERC-20 di Ethereum Mainnet, dirancang untuk koordinasi ekosistem masa depan terkait kecerdasan energi, partisipasi panas penambangan, program pilot, dan penyelarasan EnteleKRON mainnet. ENM adalah token utility — bukan produk investasi."
+        },
+        {
+          "q": "Apa perbedaan antara enm.network dan energiemind.com?",
+          "a": "enm.network adalah situs dokumentasi resmi token ENM yang mencakup lapisan token: kontrak, tokenomics, pra-penjualan, dan pengungkapan risiko. energiemind.com mencakup lapisan proyek EnergieMIND: teknologi kecerdasan energi, utilitas panas penambangan, dan pengembangan infrastruktur. Keduanya adalah bagian terpisah namun terhubung dari ekosistem yang sama."
+        },
+        {
+          "q": "Apa contract address resminya?",
+          "a": "Kontrak resmi ENM di Ethereum Mainnet adalah 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Selalu verifikasi alamat ini secara mandiri di Etherscan sebelum berinteraksi."
+        },
+        {
+          "q": "Bisakah saya mentransfer ENM sekarang?",
+          "a": "Menurut kontrak terverifikasi saat ini, transfer dibatasi atau terkunci. Periksa status kontrak di Etherscan untuk keadaan on-chain terbaru sebelum mencoba transfer."
+        },
+        {
+          "q": "Apakah ENM investasi?",
+          "a": "Tidak. ENM tidak disajikan sebagai produk investasi, penawaran sekuritas, instrumen dengan imbal hasil terjamin, atau janji pendapatan pasif. Ini adalah token utility untuk koordinasi ekosistem. Aset kripto berisiko tinggi dan dapat kehilangan nilai. Lihat pemberitahuan risiko lengkap."
+        },
+        {
+          "q": "Kapan pra-penjualannya?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Okt – 31 Des 2026. Private Sale: 01 Jan – 31 Mar 2027. Pra-penjualan publik: mulai 01 Apr 2027 dalam enam tahap 6 minggu. Lihat halaman pra-penjualan dan dasbor peluncuran untuk status langsung."
+        },
+        {
+          "q": "Berapa total pasokannya?",
+          "a": "Total pasokan maksimum adalah 50.000.000.000 ENM (50 miliar) dengan 18 desimal. Persentase alokasi antar kategori menunggu publikasi resmi di halaman tokenomics."
+        },
+        {
+          "q": "Apa itu penyelarasan EnteleKRON mainnet?",
+          "a": "ENM disiapkan untuk migrasi dan penyelarasan masa depan dengan ekosistem EnteleKRON mainnet. Kategori alokasi cadangan migrasi direncanakan. Ketentuan migrasi, timeline, dan detail teknis spesifik akan dipublikasikan jika tersedia."
+        },
+        {
+          "q": "Bagaimana cara menambahkan ENM ke dompet saya?",
+          "a": "Gunakan contract address resmi 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D dengan simbol token ENM dan 18 desimal. Verifikasi alamat di Etherscan. Perhatikan bahwa transfer saat ini mungkin dibatasi sesuai keadaan kontrak."
+        },
+        {
+          "q": "Di mana saya mendapatkan pembaruan resmi?",
+          "a": "Informasi token resmi dipublikasikan di enm.network. Untuk pertanyaan, gunakan halaman kontak. Jangan percaya saluran tidak resmi, DM media sosial, atau situs pihak ketiga untuk contract address atau informasi pra-penjualan."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Halaman kontrak",
       "footerNote": "Waktu respons dapat bervariasi. Untuk masalah keamanan mendesak terkait alamat penipuan atau peniruan identitas, sertakan \"SECURITY\" di baris subjek. Jangan pernah mengirim mata uang kripto ke alamat yang diterima melalui pesan tidak diminta.",
       "riskFooter": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin. Aset kripto berisiko tinggi dan dapat kehilangan nilai."
+    },
+    "dashboard": {
+      "title": "Dasbor Peluncuran | ENM Token",
+      "description": "Dasbor peluncuran token ENM — status fase pra-penjualan langsung, hitung mundur, koneksi dompet, dan verifikasi dompet kontribusi resmi.",
+      "ogTitle": "Dasbor Peluncuran ENM | enm.network",
+      "ogDescription": "Dasbor pra-penjualan ENM langsung dengan pelacakan fase, hitung mundur, dan alat dompet.",
+      "breadcrumb": "Dasbor",
+      "eyebrow": "Pusat Kontrol Peluncuran",
+      "h1": "Dasbor Peluncuran",
+      "lead": "Pantau fase pra-penjualan, lacak tahap saat ini, hubungkan dompet Anda, dan verifikasi alamat kontribusi resmi sebelum berpartisipasi.",
+      "riskShort": "ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin. Verifikasi semua alamat di halaman dompet resmi. Aset kripto berisiko tinggi.",
+      "currentPhase": "Fase saat ini",
+      "nextPhase": "Fase berikutnya",
+      "timeRemaining": "Waktu tersisa",
+      "phaseEnded": "Fase berakhir",
+      "phaseNotStarted": "Belum dimulai",
+      "publicStage": "Tahap publik",
+      "ofStages": "dari 6",
+      "walletPanel": "Dompet Anda",
+      "walletConnected": "Terhubung",
+      "walletDisconnected": "Tidak terhubung",
+      "networkLabel": "Jaringan",
+      "networkRequired": "Ethereum Mainnet diperlukan",
+      "contributionTitle": "Dompet kontribusi resmi",
+      "contributionDesc": "Kontribusi pra-penjualan dikoordinasikan melalui dompet ENM Treasury resmi. Selalu verifikasi bahwa alamat ini cocok dengan enm.network/wallets sebelum mengirim dana.",
+      "statsTitle": "Ringkasan peluncuran",
+      "statPhase": "Fase aktif",
+      "statStage": "Tahap publik",
+      "statAccepted": "Aset yang diterima",
+      "statNetwork": "Jaringan",
+      "timelineTitle": "Linimasa fase",
+      "registerTitle": "Pemberitahuan partisipasi",
+      "registerDesc": "Selama fase aktif, hubungkan dompet Anda dan koordinasikan partisipasi sesuai ketentuan yang dipublikasikan. Dasbor ini tidak menjamin alokasi, imbal hasil, atau pengiriman token — lihat pemberitahuan risiko.",
+      "riskFooter": "Selalu verifikasi alamat dompet secara mandiri. ENM bukan rekomendasi investasi atau instrumen dengan imbal hasil terjamin."
+    },
+    "wallets": {
+      "title": "Dompet Resmi | ENM Token",
+      "description": "Dompet ekosistem EnergieMind ENM resmi di Ethereum Mainnet — alamat Founder, OPS, Genesis, dan Treasury.",
+      "ogTitle": "Dompet Resmi ENM | enm.network",
+      "ogDescription": "Alamat dompet ekosistem ENM resmi terverifikasi di Ethereum Mainnet.",
+      "breadcrumb": "Dompet",
+      "eyebrow": "Alamat Terverifikasi",
+      "h1": "Dompet Resmi",
+      "lead": "Dompet ekosistem EnergieMind ENM resmi di Ethereum Mainnet. Verifikasi setiap alamat di halaman ini sebelum berinteraksi. Alamat penipuan mungkin menggunakan nama serupa.",
+      "riskShort": "Hanya percayai alamat yang tercantum di enm.network/wallets. Tim ENM tidak akan pernah mengirimi Anda alamat dompet melalui DM. ENM bukan produk investasi.",
+      "verifyTitle": "Verifikasi alamat",
+      "verifyDesc": "Bandingkan karakter demi karakter sebelum mengirim dana. Kontribusi pra-penjualan menggunakan dompet Treasury saat fase aktif.",
+      "tableTitle": "Dompet ekosistem",
+      "purposeLabel": "Tujuan",
+      "recommendedTitle": "Dompet tambahan yang direkomendasikan",
+      "recommendedDesc": "Untuk peluncuran token yang lengkap, pertimbangkan membuat dompet tambahan ini saat siap:",
+      "recommended": [
+        {
+          "name": "Escrow Pra-penjualan / Penjualan",
+          "desc": "Dompet penjualan khusus terpisah dari Treasury jika Anda menginginkan isolasi operasional (opsional — Treasury dapat memenuhi peran ini)."
+        },
+        {
+          "name": "Vesting & Kunci",
+          "desc": "Untuk jadwal vesting tim, pendiri, dan investor saat vesting on-chain diterapkan."
+        },
+        {
+          "name": "Likuiditas",
+          "desc": "Untuk penyediaan likuiditas DEX saat diumumkan secara resmi."
+        },
+        {
+          "name": "Komunitas & Hadiah",
+          "desc": "Untuk program pilot, insentif komunitas, dan alokasi mitra."
+        }
+      ],
+      "purposes": {
+        "founder": "Alokasi pendiri dan koordinasi tata kelola",
+        "operations": "Biaya operasional dan operasi ekosistem",
+        "genesis": "Alokasi genesis dan bootstrap ekosistem awal",
+        "treasury": "Treasury, kontribusi pra-penjualan, dan cadangan ekosistem"
+      },
+      "riskFooter": "Transaksi kripto tidak dapat dibatalkan. Selalu verifikasi alamat di enm.network. ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin."
     }
   }
 }

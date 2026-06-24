@@ -122,6 +122,66 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/presale" />
   </url>
   <url>
+    <loc>https://enm.network/el/dashboard</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/dashboard" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/dashboard" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/dashboard" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/dashboard" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/dashboard" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/dashboard" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/dashboard" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/dashboard" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/dashboard" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/dashboard" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/dashboard" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/dashboard" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/dashboard" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/dashboard" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/dashboard" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/dashboard" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/dashboard" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/dashboard" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/dashboard" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/dashboard" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/dashboard" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/dashboard" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/dashboard" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/dashboard" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/dashboard" />
+  </url>
+  <url>
+    <loc>https://enm.network/el/wallets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/wallets" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/wallets" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/wallets" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/wallets" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/wallets" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/wallets" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/wallets" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/wallets" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/wallets" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/wallets" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/wallets" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/wallets" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/wallets" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/wallets" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/wallets" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/wallets" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/wallets" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/wallets" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/wallets" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/wallets" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/wallets" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/wallets" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/wallets" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/wallets" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/wallets" />
+  </url>
+  <url>
     <loc>https://enm.network/el/contract</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

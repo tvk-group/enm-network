@@ -13,7 +13,9 @@
       "roadmap": "Roadmap",
       "risk": "Riskivaroitus",
       "faq": "FAQ",
-      "contact": "Yhteystiedot"
+      "contact": "Yhteystiedot",
+      "dashboard": "Hallintapaneeli",
+      "wallets": "Lompakot"
     },
     "buttons": {
       "viewContract": "Näytä sopimus",
@@ -21,7 +23,14 @@
       "joinPresale": "Osallistu ennakkomyyntiin",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Avaa Etherscanissa",
-      "contractDetails": "Sopimuksen tiedot"
+      "contractDetails": "Sopimuksen tiedot",
+      "openDashboard": "Avaa lanseerauspaneeli",
+      "viewWallets": "Viralliset lompakot",
+      "connectWallet": "Yhdistä lompakko",
+      "disconnectWallet": "Katkaise yhteys",
+      "copyAddress": "Kopioi osoite",
+      "copied": "Kopioitu!",
+      "verifyOnWallets": "Vahvista lompakkosivulla"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "Odottaa",
       "confirmed": "Vahvistettu",
       "preparation": "Valmistelu",
-      "locked": "Siirrot rajoitettu / lukittu"
+      "locked": "Siirrot rajoitettu / lukittu",
+      "scheduled": "Ajoitettu",
+      "active": "Aktiivinen",
+      "completed": "Valmis",
+      "upcoming": "Tulossa"
     },
     "table": {
       "property": "Ominaisuus",
@@ -44,7 +57,8 @@
       "parameter": "Parametri",
       "category": "Kategoria",
       "description": "Kuvaus",
-      "allocation": "Allokaatio"
+      "allocation": "Allokaatio",
+      "network": "Verkko"
     },
     "stats": {
       "symbol": "Symboli",
@@ -152,30 +166,84 @@
       "footerNote": "Tarkkoja allokaatioprosenttiosuuksia ei ole julkaistu tällä hetkellä. Kun lopullinen tokenomics on hyväksytty, tämä sivu päivitetään vahvistetuilla luvuilla. Älä luota epävirallisiin tai kolmannen osapuolen tokenomics-kaavioihin.",
       "riskFooter": "Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Sovellettavissa ovat sääntely-, tekniset, likviditeetti-, markkina- ja operatiiviset riskit.",
       "allocations": [
-        { "name": "Utility-allokaatio", "desc": "Tokenit varattu ekosysteemin utility-toiminnoille, operatiiviselle osallistumiselle ja palvelukoordinoinnille EnergieMIND-verkostossa." },
-        { "name": "Ekosysteemivara", "desc": "Vara pitkän aikavälin ekosysteemin kehitykseen, kumppanuuksiin ja strategisiin koordinointitoimiin." },
-        { "name": "Likviditeetti", "desc": "Allokaatio markkinalikviditeetin tarjoamiseen, kun sovellettavissa ja virallisesti ilmoitettu." },
-        { "name": "Treasury", "desc": "Operatiivinen treasury ekosysteemin ylläpitoon, kehitykseen ja infrastruktuuritukeen." },
-        { "name": "Perustaja / Tiimilukko", "desc": "Tiimi- ja perustajaallokaatiot lukitus aikatauluilla ja vesting-ehdoilla, jotka julkaistaan." },
-        { "name": "Yhteisö / Kumppaniohjelmat", "desc": "Allokaatiot yhteisöaloitteisiin, kumppanien onboardingiin ja pilottiosallistumisohjelmiin." },
-        { "name": "Siirtovara", "desc": "Vara tulevaan EnteleKRON mainnet -siirron kohdistukseen ja cross-chain utility -siirtymään." }
+        {
+          "name": "Utility-allokaatio",
+          "desc": "Tokenit varattu ekosysteemin utility-toiminnoille, operatiiviselle osallistumiselle ja palvelukoordinoinnille EnergieMIND-verkostossa."
+        },
+        {
+          "name": "Ekosysteemivara",
+          "desc": "Vara pitkän aikavälin ekosysteemin kehitykseen, kumppanuuksiin ja strategisiin koordinointitoimiin."
+        },
+        {
+          "name": "Likviditeetti",
+          "desc": "Allokaatio markkinalikviditeetin tarjoamiseen, kun sovellettavissa ja virallisesti ilmoitettu."
+        },
+        {
+          "name": "Treasury",
+          "desc": "Operatiivinen treasury ekosysteemin ylläpitoon, kehitykseen ja infrastruktuuritukeen."
+        },
+        {
+          "name": "Perustaja / Tiimilukko",
+          "desc": "Tiimi- ja perustajaallokaatiot lukitus aikatauluilla ja vesting-ehdoilla, jotka julkaistaan."
+        },
+        {
+          "name": "Yhteisö / Kumppaniohjelmat",
+          "desc": "Allokaatiot yhteisöaloitteisiin, kumppanien onboardingiin ja pilottiosallistumisohjelmiin."
+        },
+        {
+          "name": "Siirtovara",
+          "desc": "Vara tulevaan EnteleKRON mainnet -siirron kohdistukseen ja cross-chain utility -siirtymään."
+        }
       ]
     },
     "presale": {
       "title": "Ennakkomyynti | ENM Token",
-      "description": "ENM token -ennakkomyynnin tila ja valmistelutiedot. Ennakkomyyntipäiviä, hintoja tai maksutapoja ei julkaista ennen virallista viimeistelyä.",
-      "ogTitle": "ENM Ennakkomyynti | enm.network",
-      "ogDescription": "ENM ennakkomyynnin valmistelu. Päiviä, hintoja tai maksutapoja ei julkaista ennen virallista viimeistelyä.",
+      "description": "ENM-tokenin ennakkomyyntiaikataulu: Early Investor, Strategic Investor, Private Sale ja 6-vaiheinen julkinen ennakkomyynti. Viralliset päivämäärät ja lanseerauspaneeli osoitteessa enm.network.",
+      "ogTitle": "ENM Ennakkomyyntiaikataulu | enm.network",
+      "ogDescription": "Viralliset ENM-ennakkomyyntivaiheet heinäkuusta 2026 julkisiin vaiheisiin vuonna 2027.",
       "breadcrumb": "Ennakkomyynti",
-      "eyebrow": "Ennakkomyyntitiedot",
-      "h1": "Ennakkomyynnin valmisteluvaihe",
-      "lead": "ENM ennakkomyynnin ehdot eivät ole vielä viimeistelty. Tämä sivu päivitetään, kun viralliset myyntisäännöt, päivämäärät ja hyväksytyt omaisuuserät vahvistetaan.",
+      "eyebrow": "Ennakkomyyntiaikataulu",
+      "h1": "ENM Ennakkomyynti",
+      "lead": "Jäsenneltyjä ennakkomyyntivaiheita varhaisesta sijoittajapääsystä kuusivaiheiseen julkiseen ennakkomyyntiin. Käytä lanseerauspaneelia reaaliaikaisen tilan seurantaan ja vahvista aina lompakko-osoitteet virallisella lompakkosivulla.",
       "important": "Tärkeää:",
-      "riskShort": "Ennakkomyyntipäiviä, hintoja, token-määriä tai hyväksyttyjä maksutapoja ei julkaista tällä sivustolla. Älä lähetä varoja mihinkään osoitteeseen, joka väittää olevansa ENM-ennakkomyynti, ellei sitä ole vahvistettu virallisilla kanavilla osoitteessa enm.network. ENM ei ole sijoitus tuote tai taattu tuotto -instrumentti.",
-      "expectTitle": "Mitä odottaa",
-      "expectP1": "Kun ennakkomyynnin ehdot viimeistellään, tämä sivu päivitetään vahvistetuilla tiedoilla, mukaan lukien hyväksytyt omaisuuserät, vesting-aikataulut, KYC-vaatimukset (jos sellaisia on) ja täydelliset myyntiehdot. Siihen asti tällä sivustolla ei ole aktiivista ennakkomyyntimekanismia.",
-      "expectP2": "Ennakkomyynnin ajoitusta tai kelpoisuutta koskevissa kyselyissä käytä yhteyssivua. Vahvista aina tiedot osoitteessa enm.network ennen toimenpiteitä.",
-      "contactLink": "yhteyssivu",
+      "riskShort": "ENM ei ole sijoitustuote tai taattu tuotto -instrumentti. Käytä vain osoitteessa enm.network/wallets julkaistuja lompakko-osoitteita. Älä lähetä varoja epävirallisiin osoitteisiin. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa.",
+      "timelineTitle": "Ennakkomyynnin aikajana",
+      "timelineDesc": "Virallinen vaiheaikataulu ENM-tokenin jakelun koordinointiin.",
+      "phasesTitle": "Sijoitusvaiheet",
+      "publicStagesTitle": "Julkinen ennakkomyynti — 6 vaihetta",
+      "publicStagesDesc": "Julkinen ennakkomyynti alkaa 01.04.2027. Jokainen vaihe kestää 6 viikkoa.",
+      "stageLabel": "Vaihe",
+      "weeksLabel": "viikkoa",
+      "durationLabel": "Kesto",
+      "statusLabel": "Tila",
+      "dashboardCta": "Avaa lanseerauspaneeli reaaliaikaista vaihetilaa, lähtölaskentaa ja lompakkoyhteyttä varten.",
+      "walletsCta": "Kaikki viralliset ENM-lompakot on listattu lompakkosivulla. Vahvista jokainen osoite ennen varojen lähettämistä.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Varhainen ekosysteemikoordinointi pätevöityneille varhaisille osallistujille."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Strategiset kumppanit ja infrastruktuuriin sopeutuneet osallistujat."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Yksityinen myyntivaihe ennen julkisen ennakkomyynnin avaamista."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Julkinen ennakkomyynti kuudessa peräkkäisessä 6 viikon vaiheessa."
+        }
+      ],
+      "expectTitle": "Osallistuminen",
+      "expectP1": "Hyväksytyt omaisuuserät ennakkomyynnin koordinointiin: ETH, USDC ja USDT Ethereum Mainnetissä. Lopullinen hinnoittelu, allokaatiorajat ja vesting-ehdot julkaistaan ennen kutakin aktiivista vaihetta.",
+      "expectP2": "Kelpoisuuskysymyksissä ota yhteyttä",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM ei ole sijoitus suositus, rahoitustuote, arvopaperitarjonta tai taattu tuotto -instrumentti. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa.",
       "fields": {
         "presaleStatus": "Ennakkomyynnin tila",
@@ -185,7 +253,8 @@
         "saleTerms": "Myyntiehdot",
         "price": "Hinta",
         "saleDates": "Myyntipäivät",
-        "allocationAmount": "Allokaatiomäärä"
+        "allocationAmount": "Allokaatiomäärä",
+        "contributionWallet": "Virallinen osallistumislompakko"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Roadmap-vaiheet edustavat tarkoitettua suuntaa. Tarkkoja päivämääriä ei julkaista. Edistymispäivitykset viestitään virallisilla kanavilla, kun ne ovat saatavilla.",
       "riskFooter": "Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Sovellettavissa ovat sääntely-, tekniset, likviditeetti-, markkina- ja operatiiviset riskit.",
       "steps": [
-        { "title": "Tokenin perusta", "desc": "Ylläpidä vahvistettua ENM Ethereum -sopimusta, julkaise virallinen token-dokumentaatio osoitteessa enm.network ja luo läpinäkyvät sopimustiedot ekosysteemille." },
-        { "title": "Dokumentaatio ja läpinäkyvyys", "desc": "Julkaise tokenomics, ennakkomyynnin ehdot (kun viimeistelty), riskitiedot ja viralliset viestintäkanavat. Täydellinen token-kerroksen erottelu energiemind.com-projektisivustosta." },
-        { "title": "Ennakkomyynti ja jakelu", "desc": "Käynnistä ennakkomyynti, kun ehdot on viimeistelty ja virallisesti ilmoitettu. Toteuta vesting, allokaatio ja jakelu julkaistun tokenomicsin mukaisesti." },
-        { "title": "Utility-aktivointi", "desc": "Ota käyttöön ekosysteemin utility-toiminnot, jotka liittyvät energiaälykkyyteen osallistumiseen, kaivostoiminnan lämmön koordinointiin ja pilottiohjelmakehyksiin infrastruktuurin kypsyessä." },
-        { "title": "Kumppani- ja pilottiverkosto", "desc": "Tue pilottikäyttöönottoja hotelleissa, kaupallisissa rakennuksissa, aurinkovoimaloissa ja miner-heater-asennuksissa token-koordinoiduilla osallistumismalleilla." },
-        { "title": "Ekosysteemin laajentuminen", "desc": "Kehitä yhteisö- ja kumppaniohjelmia, infrastruktuuriin kannustinrakenteita ja operatiivisia koordinointityökaluja EnergieMIND-ekosysteemissä." },
-        { "title": "EnteleKRON-kohdistus", "desc": "Valmistele siirtovara ja kohdistuskehys EnteleKRON mainnet -moduuleille, validaattorijärjestelmille ja ekosysteemin natiiville selvitykselle." },
-        { "title": "Mainnet-siirto", "desc": "Toteuta siirron kohdistus EnteleKRON mainnetiin, kun tekniset, sääntely- ja ekosysteemiehdot täyttyvät. Ehdot julkaistaan etukäteen." }
+        {
+          "title": "Tokenin perusta",
+          "desc": "Ylläpidä vahvistettua ENM Ethereum -sopimusta, julkaise virallinen token-dokumentaatio osoitteessa enm.network ja luo läpinäkyvät sopimustiedot ekosysteemille."
+        },
+        {
+          "title": "Dokumentaatio ja läpinäkyvyys",
+          "desc": "Julkaise tokenomics, ennakkomyynnin ehdot (kun viimeistelty), riskitiedot ja viralliset viestintäkanavat. Täydellinen token-kerroksen erottelu energiemind.com-projektisivustosta."
+        },
+        {
+          "title": "Ennakkomyynti ja jakelu",
+          "desc": "Käynnistä ennakkomyynti, kun ehdot on viimeistelty ja virallisesti ilmoitettu. Toteuta vesting, allokaatio ja jakelu julkaistun tokenomicsin mukaisesti."
+        },
+        {
+          "title": "Utility-aktivointi",
+          "desc": "Ota käyttöön ekosysteemin utility-toiminnot, jotka liittyvät energiaälykkyyteen osallistumiseen, kaivostoiminnan lämmön koordinointiin ja pilottiohjelmakehyksiin infrastruktuurin kypsyessä."
+        },
+        {
+          "title": "Kumppani- ja pilottiverkosto",
+          "desc": "Tue pilottikäyttöönottoja hotelleissa, kaupallisissa rakennuksissa, aurinkovoimaloissa ja miner-heater-asennuksissa token-koordinoiduilla osallistumismalleilla."
+        },
+        {
+          "title": "Ekosysteemin laajentuminen",
+          "desc": "Kehitä yhteisö- ja kumppaniohjelmia, infrastruktuuriin kannustinrakenteita ja operatiivisia koordinointityökaluja EnergieMIND-ekosysteemissä."
+        },
+        {
+          "title": "EnteleKRON-kohdistus",
+          "desc": "Valmistele siirtovara ja kohdistuskehys EnteleKRON mainnet -moduuleille, validaattorijärjestelmille ja ekosysteemin natiiville selvitykselle."
+        },
+        {
+          "title": "Mainnet-siirto",
+          "desc": "Toteuta siirron kohdistus EnteleKRON mainnetiin, kun tekniset, sääntely- ja ekosysteemiehdot täyttyvät. Ehdot julkaistaan etukäteen."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Riskivaroitus",
       "lead": "Lue tämä varoitus huolellisesti ennen ENM:n tai siihen liittyvien ekosysteemipalveluiden kanssa vuorovaikutusta.",
       "sections": [
-        { "title": "Yleinen vastuuvapauslauseke", "content": "ENM ei ole sijoitus suositus, rahoitustuote, arvopaperitarjonta tai taattu tuotto -instrumentti. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Sovellettavissa ovat sääntely-, tekniset, likviditeetti-, markkina- ja operatiiviset riskit. Vahvista aina contract address itsenäisesti.", "bold": true },
-        { "title": "Ei sijoitus tuote", "content": "ENM esitetään utility-tokenina ekosysteemikoordinointiin EnergieMINDin energiaälykkäässä verkostossa. Sitä ei tarjota tai kuvata sijoitus tuotteena, arvopaperina, omistusosuutena, velkainstrumenttina tai rahoitusjohdannaisena. Mikään osoitteessa enm.network ei muodosta rahoitusneuvontaa, sijoitusneuvontaa tai suositusta ostaa, myydä tai pitää mitään krypto-omaisuutta." },
-        { "title": "Ei taattua tuottoa", "content": "ENM ei lupaa, takaa tai vihjaa mitään sijoitustuottoa, passiivista tuloa, voittoa, arvonnousua tai yieldiä. Minkään krypto-omaisuuden aiempi kehitys ei ole osoitus tulevista tuloksista. Voit menettää osan tai koko ENM:ään liittyvästä arvosta." },
-        { "title": "Ei arvopaperitarjonta", "content": "ENM:ää ei tarjota arvopaperina missään lainkäyttöalueella. Kryptotokenien sääntelyluokitus vaihtelee maittain ja voi muuttua. Olet yksin vastuussa sovellettavien lakien ymmärtämisestä ja noudattamisesta omalla lainkäyttöalueellasi." },
-        { "title": "Markkina- ja likviditeettiriskit", "content": "Kryptomarkkinat ovat epävakaita. ENM:llä voi olla rajallinen tai ei lainkaan likviditeettiä. Hinnat voivat vaihdella dramaattisesti tai muuttua kaupankäynnin ulkopuolelle. Ei ole takeita toissijaisesta markkinasta, pörssilistauksesta tai kaupankäyntipaikasta." },
-        { "title": "Tekniset riskit", "content": "Älysopimukset, lohkoketjuverkot ja lompakko-ohjelmistot sisältävät luontaisia teknisiä riskejä, kuten bugeja, hyväksikäyttöjä, verkkohäiriöitä, forkkeja ja peruuttamattomia transaktioita. ENM-sopimus osoittaa tällä hetkellä siirtorajoituksia. Vahvista aina sopimuksen toiminta Etherscanissa ennen vuorovaikutusta." },
-        { "title": "Sääntelyriskit", "content": "Kryptovaluuttasääntely kehittyy maailmanlaajuisesti. Tulevat sääntelytoimet voivat rajoittaa, kieltää tai asettaa vaatimuksia ENM:n haltijoille, siirroille tai ekosysteemiin osallistumiselle. Noudattamisvelvoitteet voivat vaihdella lainkäyttöalueittain." },
-        { "title": "Operatiiviset riskit", "content": "Ekosysteemin kehitys, ennakkomyynnin toteutus, utility-aktivointi ja mainnet-siirto ovat teknisten, operatiivisten ja resurssirajoitusten alaisia. Roadmap-kohteet ovat suunnittelun välitavoitteita, eivät sitovia sitoumuksia tai takuita toimituksesta." },
-        { "title": "Sopimuksen vahvistus", "content": "Virallinen ENM contract address on 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D Ethereum Mainnetissä. Vahvista aina tämä osoite itsenäisesti Etherscanissa. Älä luota osoitteisiin epävirallisista lähteistä, sosiaalisen median viesteistä tai kolmannen osapuolen verkkosivustoista. Huijaustokenit voivat käyttää samankaltaisia nimiä." },
-        { "title": "Ennakkomyyntivarovaisuus", "content": "Ennakkomyyntipäiviä, hintoja tai maksutapoja ei julkaista ennen virallista viimeistelyä osoitteessa enm.network. Älä lähetä varoja mihinkään osoitteeseen, joka väittää edustavan ENM-ennakkomyyntiä, ellei sitä ole vahvistettu tämän virallisen sivuston kautta." },
-        { "title": "Sinun vastuusi", "content": "Vierailemalla osoitteessa enm.network tai käsittelemällä ENM:ää vahvistat ymmärtäväsi nämä riskit ja hyväksyt täyden vastuun päätöksistäsi. Konsultoi päteviä oikeudellisia, vero- ja rahoitusalan ammattilaisia ennen krypto-omaisuuksiin liittyviä päätöksiä." }
+        {
+          "title": "Yleinen vastuuvapauslauseke",
+          "content": "ENM ei ole sijoitus suositus, rahoitustuote, arvopaperitarjonta tai taattu tuotto -instrumentti. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Sovellettavissa ovat sääntely-, tekniset, likviditeetti-, markkina- ja operatiiviset riskit. Vahvista aina contract address itsenäisesti.",
+          "bold": true
+        },
+        {
+          "title": "Ei sijoitus tuote",
+          "content": "ENM esitetään utility-tokenina ekosysteemikoordinointiin EnergieMINDin energiaälykkäässä verkostossa. Sitä ei tarjota tai kuvata sijoitus tuotteena, arvopaperina, omistusosuutena, velkainstrumenttina tai rahoitusjohdannaisena. Mikään osoitteessa enm.network ei muodosta rahoitusneuvontaa, sijoitusneuvontaa tai suositusta ostaa, myydä tai pitää mitään krypto-omaisuutta."
+        },
+        {
+          "title": "Ei taattua tuottoa",
+          "content": "ENM ei lupaa, takaa tai vihjaa mitään sijoitustuottoa, passiivista tuloa, voittoa, arvonnousua tai yieldiä. Minkään krypto-omaisuuden aiempi kehitys ei ole osoitus tulevista tuloksista. Voit menettää osan tai koko ENM:ään liittyvästä arvosta."
+        },
+        {
+          "title": "Ei arvopaperitarjonta",
+          "content": "ENM:ää ei tarjota arvopaperina missään lainkäyttöalueella. Kryptotokenien sääntelyluokitus vaihtelee maittain ja voi muuttua. Olet yksin vastuussa sovellettavien lakien ymmärtämisestä ja noudattamisesta omalla lainkäyttöalueellasi."
+        },
+        {
+          "title": "Markkina- ja likviditeettiriskit",
+          "content": "Kryptomarkkinat ovat epävakaita. ENM:llä voi olla rajallinen tai ei lainkaan likviditeettiä. Hinnat voivat vaihdella dramaattisesti tai muuttua kaupankäynnin ulkopuolelle. Ei ole takeita toissijaisesta markkinasta, pörssilistauksesta tai kaupankäyntipaikasta."
+        },
+        {
+          "title": "Tekniset riskit",
+          "content": "Älysopimukset, lohkoketjuverkot ja lompakko-ohjelmistot sisältävät luontaisia teknisiä riskejä, kuten bugeja, hyväksikäyttöjä, verkkohäiriöitä, forkkeja ja peruuttamattomia transaktioita. ENM-sopimus osoittaa tällä hetkellä siirtorajoituksia. Vahvista aina sopimuksen toiminta Etherscanissa ennen vuorovaikutusta."
+        },
+        {
+          "title": "Sääntelyriskit",
+          "content": "Kryptovaluuttasääntely kehittyy maailmanlaajuisesti. Tulevat sääntelytoimet voivat rajoittaa, kieltää tai asettaa vaatimuksia ENM:n haltijoille, siirroille tai ekosysteemiin osallistumiselle. Noudattamisvelvoitteet voivat vaihdella lainkäyttöalueittain."
+        },
+        {
+          "title": "Operatiiviset riskit",
+          "content": "Ekosysteemin kehitys, ennakkomyynnin toteutus, utility-aktivointi ja mainnet-siirto ovat teknisten, operatiivisten ja resurssirajoitusten alaisia. Roadmap-kohteet ovat suunnittelun välitavoitteita, eivät sitovia sitoumuksia tai takuita toimituksesta."
+        },
+        {
+          "title": "Sopimuksen vahvistus",
+          "content": "Virallinen ENM contract address on 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D Ethereum Mainnetissä. Vahvista aina tämä osoite itsenäisesti Etherscanissa. Älä luota osoitteisiin epävirallisista lähteistä, sosiaalisen median viesteistä tai kolmannen osapuolen verkkosivustoista. Huijaustokenit voivat käyttää samankaltaisia nimiä."
+        },
+        {
+          "title": "Ennakkomyyntivarovaisuus",
+          "content": "Käytä vain osoitteessa enm.network/wallets julkaistuja lompakko-osoitteita. Virallinen ennakkomyynnin osallistumislompakko on ENM Treasury -osoite Ethereum Mainnetissä. Älä lähetä varoja sosiaalisen median, yksityisviestien tai kolmannen osapuolen sivustojen osoitteisiin. ENM ei ole sijoitustuote tai taattu tuotto -instrumentti."
+        },
+        {
+          "title": "Sinun vastuusi",
+          "content": "Vierailemalla osoitteessa enm.network tai käsittelemällä ENM:ää vahvistat ymmärtäväsi nämä riskit ja hyväksyt täyden vastuun päätöksistäsi. Konsultoi päteviä oikeudellisia, vero- ja rahoitusalan ammattilaisia ennen krypto-omaisuuksiin liittyviä päätöksiä."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM ei ole sijoitus suositus, rahoitustuote, arvopaperitarjonta tai taattu tuotto -instrumentti.",
       "riskFooter": "Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Sovellettavissa ovat sääntely-, tekniset, likviditeetti-, markkina- ja operatiiviset riskit. Vahvista aina contract address itsenäisesti.",
       "items": [
-        { "q": "Mikä on ENM?", "a": "ENM (EnergieMind) on EnergieMINDin energiaälykkään ekosysteemin utility-token. Se on ERC-20-token Ethereum Mainnetissä, suunniteltu tulevaan ekosysteemikoordinointiin, joka liittyy energiaälykkyyteen, kaivostoiminnan lämpöön osallistumiseen, pilottiohjelmiin ja EnteleKRON mainnet -kohdistukseen. ENM on utility-token — ei sijoitus tuote." },
-        { "q": "Mikä on ero enm.networkin ja energiemind.comin välillä?", "a": "enm.network on virallinen ENM token -dokumentaatiosivusto, joka kattaa token-kerroksen: sopimus, tokenomics, ennakkomyynti ja riskitiedot. energiemind.com kattaa EnergieMIND-projektikerroksen: energiaälykkään teknologian, kaivostoiminnan lämmön ja infrastruktuurin kehityksen. Ne ovat erillisiä mutta toisiinsa liittyviä osia samasta ekosysteemistä." },
-        { "q": "Mikä on virallinen contract address?", "a": "Virallinen ENM-sopimus Ethereum Mainnetissä on 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Vahvista aina tämä osoite itsenäisesti Etherscanissa ennen vuorovaikutusta." },
-        { "q": "Voinko siirtää ENM:ää juuri nyt?", "a": "Nykyisen vahvistetun sopimuksen mukaan siirrot ovat rajoitettuja tai lukittuja. Tarkista sopimuksen tila Etherscanissa saadaksesi uusimman on-chain-tilan ennen siirtojen yrittämistä." },
-        { "q": "Onko ENM sijoitus?", "a": "Ei. ENM:ää ei esitetä sijoitus tuotteena, arvopaperitarjontana, taattu tuotto -instrumenttina tai passiivisen tulon lupauksena. Se on utility-token ekosysteemikoordinointiin. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Katso täydellinen riskivaroitus." },
-        { "q": "Milloin ennakkomyynti on?", "a": "Ennakkomyynti on valmisteluvaiheessa. Päiviä, hintoja, hyväksyttyjä omaisuuseriä tai myyntiehtoja ei ole julkaistu. Tämä sivu päivitetään, kun ehdot viimeistellään. Älä lähetä varoja epävirallisiin ennakkomyyntiosoitteisiin." },
-        { "q": "Mikä on kokonaistarjonta?", "a": "Maksimaalinen kokonaistarjonta on 50 000 000 000 ENM (50 miljardia) 18 desimaalilla. Allokaatioprosenttiosuudet kategorioittain odottavat virallista julkaisua tokenomics-sivulla." },
-        { "q": "Mikä on EnteleKRON mainnet -kohdistus?", "a": "ENM on valmisteltu tulevaan siirtoon ja kohdistukseen EnteleKRON mainnet -ekosysteemiin. Siirtovara-allokaatiokategoria on suunniteltu. Erityiset siirtoehdot, aikataulut ja tekniset tiedot julkaistaan, kun ne ovat saatavilla." },
-        { "q": "Miten lisään ENM:n lompakkooni?", "a": "Käytä virallista contract addressia 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D token-symbolilla ENM ja 18 desimaalilla. Vahvista osoite Etherscanissa. Huomaa, että siirrot voivat tällä hetkellä olla rajoitettuja sopimuksen tilan mukaan." },
-        { "q": "Mistä saan virallisia päivityksiä?", "a": "Viralliset token-tiedot julkaistaan osoitteessa enm.network. Kyselyissä käytä yhteyssivua. Älä luota epävirallisiin kanaviin, sosiaalisen median yksityisviesteihin tai kolmannen osapuolen sivustoihin contract addressin tai ennakkomyyntitietojen osalta." }
+        {
+          "q": "Mikä on ENM?",
+          "a": "ENM (EnergieMind) on EnergieMINDin energiaälykkään ekosysteemin utility-token. Se on ERC-20-token Ethereum Mainnetissä, suunniteltu tulevaan ekosysteemikoordinointiin, joka liittyy energiaälykkyyteen, kaivostoiminnan lämpöön osallistumiseen, pilottiohjelmiin ja EnteleKRON mainnet -kohdistukseen. ENM on utility-token — ei sijoitus tuote."
+        },
+        {
+          "q": "Mikä on ero enm.networkin ja energiemind.comin välillä?",
+          "a": "enm.network on virallinen ENM token -dokumentaatiosivusto, joka kattaa token-kerroksen: sopimus, tokenomics, ennakkomyynti ja riskitiedot. energiemind.com kattaa EnergieMIND-projektikerroksen: energiaälykkään teknologian, kaivostoiminnan lämmön ja infrastruktuurin kehityksen. Ne ovat erillisiä mutta toisiinsa liittyviä osia samasta ekosysteemistä."
+        },
+        {
+          "q": "Mikä on virallinen contract address?",
+          "a": "Virallinen ENM-sopimus Ethereum Mainnetissä on 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Vahvista aina tämä osoite itsenäisesti Etherscanissa ennen vuorovaikutusta."
+        },
+        {
+          "q": "Voinko siirtää ENM:ää juuri nyt?",
+          "a": "Nykyisen vahvistetun sopimuksen mukaan siirrot ovat rajoitettuja tai lukittuja. Tarkista sopimuksen tila Etherscanissa saadaksesi uusimman on-chain-tilan ennen siirtojen yrittämistä."
+        },
+        {
+          "q": "Onko ENM sijoitus?",
+          "a": "Ei. ENM:ää ei esitetä sijoitus tuotteena, arvopaperitarjontana, taattu tuotto -instrumenttina tai passiivisen tulon lupauksena. Se on utility-token ekosysteemikoordinointiin. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Katso täydellinen riskivaroitus."
+        },
+        {
+          "q": "Milloin ennakkomyynti on?",
+          "a": "Early Investor: 01.07.–30.09.2026. Strategic Investor: 01.10.–31.12.2026. Private Sale: 01.01.–31.03.2027. Julkinen ennakkomyynti: 01.04.2027 alkaen kuudessa 6 viikon vaiheessa. Katso ennakkomyyntisivu ja lanseerauspaneeli reaaliaikaisesta tilasta."
+        },
+        {
+          "q": "Mikä on kokonaistarjonta?",
+          "a": "Maksimaalinen kokonaistarjonta on 50 000 000 000 ENM (50 miljardia) 18 desimaalilla. Allokaatioprosenttiosuudet kategorioittain odottavat virallista julkaisua tokenomics-sivulla."
+        },
+        {
+          "q": "Mikä on EnteleKRON mainnet -kohdistus?",
+          "a": "ENM on valmisteltu tulevaan siirtoon ja kohdistukseen EnteleKRON mainnet -ekosysteemiin. Siirtovara-allokaatiokategoria on suunniteltu. Erityiset siirtoehdot, aikataulut ja tekniset tiedot julkaistaan, kun ne ovat saatavilla."
+        },
+        {
+          "q": "Miten lisään ENM:n lompakkooni?",
+          "a": "Käytä virallista contract addressia 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D token-symbolilla ENM ja 18 desimaalilla. Vahvista osoite Etherscanissa. Huomaa, että siirrot voivat tällä hetkellä olla rajoitettuja sopimuksen tilan mukaan."
+        },
+        {
+          "q": "Mistä saan virallisia päivityksiä?",
+          "a": "Viralliset token-tiedot julkaistaan osoitteessa enm.network. Kyselyissä käytä yhteyssivua. Älä luota epävirallisiin kanaviin, sosiaalisen median yksityisviesteihin tai kolmannen osapuolen sivustoihin contract addressin tai ennakkomyyntitietojen osalta."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Sopimussivu",
       "footerNote": "Vastausajat voivat vaihdella. Kiireellisissä turvallisuusasioissa, jotka liittyvät huijausosoitteisiin tai identiteettivarkauteen, sisällytä \"SECURITY\" aiheriviin. Älä koskaan lähetä kryptovaluuttaa osoitteisiin, jotka on vastaanotettu pyytämättömistä viesteistä.",
       "riskFooter": "ENM ei ole sijoitus suositus, rahoitustuote, arvopaperitarjonta tai taattu tuotto -instrumentti. Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa."
+    },
+    "dashboard": {
+      "title": "Lanseerauspaneeli | ENM Token",
+      "description": "ENM-tokenin lanseerauspaneeli — reaaliaikainen ennakkomyyntivaiheen tila, lähtölaskenta, lompakkoyhteys ja virallisen osallistumislompakon vahvistus.",
+      "ogTitle": "ENM Lanseerauspaneeli | enm.network",
+      "ogDescription": "Reaaliaikainen ENM-ennakkomyyntipaneeli vaiheseurannalla, lähtölaskennalla ja lompakotyökaluilla.",
+      "breadcrumb": "Hallintapaneeli",
+      "eyebrow": "Lanseerauksen ohjauskeskus",
+      "h1": "Lanseerauspaneeli",
+      "lead": "Seuraa ennakkomyyntivaiheita, nykyistä vaihetta, yhdistä lompakkosi ja vahvista virallinen osallistumisosoite ennen osallistumista.",
+      "riskShort": "ENM ei ole sijoitustuote tai taattu tuotto -instrumentti. Vahvista kaikki osoitteet virallisella lompakkosivulla. Krypto-omaisuudet ovat korkean riskin.",
+      "currentPhase": "Nykyinen vaihe",
+      "nextPhase": "Seuraava vaihe",
+      "timeRemaining": "Jäljellä oleva aika",
+      "phaseEnded": "Vaihe päättynyt",
+      "phaseNotStarted": "Ei vielä alkanut",
+      "publicStage": "Julkinen vaihe",
+      "ofStages": "/ 6",
+      "walletPanel": "Lompakkosi",
+      "walletConnected": "Yhdistetty",
+      "walletDisconnected": "Ei yhdistetty",
+      "networkLabel": "Verkko",
+      "networkRequired": "Ethereum Mainnet vaaditaan",
+      "contributionTitle": "Virallinen osallistumislompakko",
+      "contributionDesc": "Ennakkomyynnin osallistumiset koordinoidaan virallisen ENM Treasury -lompakon kautta. Vahvista aina, että tämä osoite vastaa enm.network/wallets -osoitetta ennen varojen lähettämistä.",
+      "statsTitle": "Lanseerauksen yleiskatsaus",
+      "statPhase": "Aktiivinen vaihe",
+      "statStage": "Julkinen vaihe",
+      "statAccepted": "Hyväksytyt omaisuuserät",
+      "statNetwork": "Verkko",
+      "timelineTitle": "Vaiheaikajana",
+      "registerTitle": "Osallistumisilmoitus",
+      "registerDesc": "Aktiivisten vaiheiden aikana yhdistä lompakkosi ja koordinoi osallistuminen julkaistujen ehtojen mukaisesti. Tämä paneeli ei takaa allokaatiota, tuottoa tai token-toimitusta — katso riskivaroitus.",
+      "riskFooter": "Vahvista aina lompakko-osoitteet itsenäisesti. ENM ei ole sijoitus suositus tai taattu tuotto -instrumentti."
+    },
+    "wallets": {
+      "title": "Viralliset lompakot | ENM Token",
+      "description": "Viralliset EnergieMind ENM -ekosysteemilompakot Ethereum Mainnetissä — Founder-, OPS-, Genesis- ja Treasury-osoitteet.",
+      "ogTitle": "ENM Viralliset lompakot | enm.network",
+      "ogDescription": "Vahvistetut viralliset ENM-ekosysteemilompakko-osoitteet Ethereum Mainnetissä.",
+      "breadcrumb": "Lompakot",
+      "eyebrow": "Vahvistetut osoitteet",
+      "h1": "Viralliset lompakot",
+      "lead": "Viralliset EnergieMind ENM -ekosysteemilompakot Ethereum Mainnetissä. Vahvista jokainen osoite tällä sivulla ennen vuorovaikutusta. Huijausosoitteet voivat käyttää samankaltaisia nimiä.",
+      "riskShort": "Luota vain osoitteessa enm.network/wallets listattuihin osoitteisiin. ENM-tiimi ei koskaan lähetä sinulle lompakko-osoitteita yksityisviesteillä. ENM ei ole sijoitustuote.",
+      "verifyTitle": "Osoitteen vahvistus",
+      "verifyDesc": "Vertaa merkki merkiltä ennen varojen lähettämistä. Ennakkomyynnin osallistumiset käyttävät Treasury-lompakkoa, kun vaiheet ovat aktiivisia.",
+      "tableTitle": "Ekosysteemilompakot",
+      "purposeLabel": "Tarkoitus",
+      "recommendedTitle": "Suositellut lisälompakot",
+      "recommendedDesc": "Täydellistä token-lanseerausta varten harkitse näiden lisälompakoiden luomista, kun olet valmis:",
+      "recommended": [
+        {
+          "name": "Ennakkomyynnin escrow / myynti",
+          "desc": "Erillinen myyntilompakko Treasurystä, jos haluat operatiivisen eristyksen (valinnainen — Treasury voi täyttää tämän roolin)."
+        },
+        {
+          "name": "Vesting ja lukot",
+          "desc": "Tiimi-, perustaja- ja sijoittajavesting-aikatauluihin, kun on-chain vesting otetaan käyttöön."
+        },
+        {
+          "name": "Likviditeetti",
+          "desc": "DEX-likviditeetin tarjoamiseen, kun virallisesti ilmoitettu."
+        },
+        {
+          "name": "Yhteisö ja palkinnot",
+          "desc": "Pilottiohjelmiin, yhteisökannustimiin ja kumppanien allokaatioihin."
+        }
+      ],
+      "purposes": {
+        "founder": "Perustaja-allokaatio ja hallinnon koordinointi",
+        "operations": "Operatiiviset kulut ja ekosysteemin toiminta",
+        "genesis": "Genesis-allokaatio ja ekosysteemin alkukäynnistys",
+        "treasury": "Treasury, ennakkomyynnin osallistumiset ja ekosysteemivarannot"
+      },
+      "riskFooter": "Kryptotransaktiot ovat peruuttamattomia. Vahvista aina osoitteet osoitteessa enm.network. ENM ei ole sijoitustuote tai taattu tuotto -instrumentti."
     }
   }
 }

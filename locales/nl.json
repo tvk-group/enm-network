@@ -13,7 +13,9 @@
       "roadmap": "Roadmap",
       "risk": "Risicowaarschuwing",
       "faq": "FAQ",
-      "contact": "Contact"
+      "contact": "Contact",
+      "dashboard": "Dashboard",
+      "wallets": "Wallets"
     },
     "buttons": {
       "viewContract": "Contract bekijken",
@@ -21,7 +23,14 @@
       "joinPresale": "Deelnemen aan presale",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Openen op Etherscan",
-      "contractDetails": "Contractdetails"
+      "contractDetails": "Contractdetails",
+      "openDashboard": "Launch Dashboard openen",
+      "viewWallets": "Officiële wallets",
+      "connectWallet": "Wallet verbinden",
+      "disconnectWallet": "Verbinding verbreken",
+      "copyAddress": "Adres kopiëren",
+      "copied": "Gekopieerd!",
+      "verifyOnWallets": "Verifiëren op walletpagina"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "In afwachting",
       "confirmed": "Bevestigd",
       "preparation": "Voorbereiding",
-      "locked": "Overdrachten beperkt / vergrendeld"
+      "locked": "Overdrachten beperkt / vergrendeld",
+      "scheduled": "Gepland",
+      "active": "Actief",
+      "completed": "Voltooid",
+      "upcoming": "Binnenkort"
     },
     "table": {
       "property": "Eigenschap",
@@ -44,7 +57,8 @@
       "parameter": "Parameter",
       "category": "Categorie",
       "description": "Beschrijving",
-      "allocation": "Toewijzing"
+      "allocation": "Toewijzing",
+      "network": "Network"
     },
     "stats": {
       "symbol": "Symbool",
@@ -152,30 +166,84 @@
       "footerNote": "Er zijn op dit moment geen exacte toewijzingspercentages gepubliceerd. Wanneer de definitieve tokenomics zijn goedgekeurd, wordt deze pagina bijgewerkt met geverifieerde cijfers. Vertrouw niet op onofficiële of externe tokenomics-grafieken.",
       "riskFooter": "Crypto-activa zijn risicovol en kunnen in waarde dalen. Regelgevings-, technische, liquiditeits-, markt- en operationele risico's zijn van toepassing.",
       "allocations": [
-        { "name": "Utility-toewijzing", "desc": "Tokens gereserveerd voor ecosysteem-utilityfuncties, operationele deelname en servicecoördinatie binnen het EnergieMIND-netwerk." },
-        { "name": "Ecosysteemreserve", "desc": "Reserve voor langetermijn ecosysteemontwikkeling, partnerschappen en strategische coördinatieactiviteiten." },
-        { "name": "Liquiditeit", "desc": "Toewijzing voor marktliquiditeitsvoorziening wanneer van toepassing en officieel aangekondigd." },
-        { "name": "Treasury", "desc": "Operationele treasury voor ecosysteemonderhoud, ontwikkeling en infrastructuurondersteuning." },
-        { "name": "Founder / Team Lock", "desc": "Team- en founder-toewijzingen onderworpen aan lockschema's en vestingvoorwaarden die worden gepubliceerd." },
-        { "name": "Community / Partnerprogramma's", "desc": "Toewijzingen voor community-initiatieven, partneronboarding en pilotdeelnameprogramma's." },
-        { "name": "Migratiereserve", "desc": "Reserve voor toekomstige EnteleKRON mainnet-migratieafstemming en cross-chain utility-overgang." }
+        {
+          "name": "Utility-toewijzing",
+          "desc": "Tokens gereserveerd voor ecosysteem-utilityfuncties, operationele deelname en servicecoördinatie binnen het EnergieMIND-netwerk."
+        },
+        {
+          "name": "Ecosysteemreserve",
+          "desc": "Reserve voor langetermijn ecosysteemontwikkeling, partnerschappen en strategische coördinatieactiviteiten."
+        },
+        {
+          "name": "Liquiditeit",
+          "desc": "Toewijzing voor marktliquiditeitsvoorziening wanneer van toepassing en officieel aangekondigd."
+        },
+        {
+          "name": "Treasury",
+          "desc": "Operationele treasury voor ecosysteemonderhoud, ontwikkeling en infrastructuurondersteuning."
+        },
+        {
+          "name": "Founder / Team Lock",
+          "desc": "Team- en founder-toewijzingen onderworpen aan lockschema's en vestingvoorwaarden die worden gepubliceerd."
+        },
+        {
+          "name": "Community / Partnerprogramma's",
+          "desc": "Toewijzingen voor community-initiatieven, partneronboarding en pilotdeelnameprogramma's."
+        },
+        {
+          "name": "Migratiereserve",
+          "desc": "Reserve voor toekomstige EnteleKRON mainnet-migratieafstemming en cross-chain utility-overgang."
+        }
       ]
     },
     "presale": {
       "title": "Presale | ENM Token",
-      "description": "ENM-token presale-status en voorbereidingsinformatie. Geen presale-data, prijzen of betaalmethoden gepubliceerd totdat deze officieel definitief zijn.",
-      "ogTitle": "ENM Presale | enm.network",
-      "ogDescription": "ENM presale-voorbereidingsfase. Geen data, prijzen of betaalmethoden gepubliceerd totdat deze officieel definitief zijn.",
+      "description": "ENM-token presale-schema: Early Investor, Strategic Investor, Private Sale en 6-staps Public Presale. Officiële data en launch dashboard op enm.network.",
+      "ogTitle": "ENM Presale-schema | enm.network",
+      "ogDescription": "Officiële ENM-presalefasen van juli 2026 tot publieke fasen in 2027.",
       "breadcrumb": "Presale",
-      "eyebrow": "Presale-informatie",
-      "h1": "Presale-voorbereidingsfase",
-      "lead": "ENM presale-voorwaarden zijn nog niet definitief. Deze pagina wordt bijgewerkt wanneer officiële verkoopregels, data en geaccepteerde activa zijn bevestigd.",
+      "eyebrow": "Presale-schema",
+      "h1": "ENM Presale",
+      "lead": "Gestructureerde presalefasen van vroege investeerderstoegang tot een zesstaps publieke presale. Gebruik het launch dashboard voor live status en verifieer walletadressen altijd op de officiële walletpagina.",
       "important": "Belangrijk:",
-      "riskShort": "Er zijn geen presale-data, prijzen, tokenhoeveelheden of geaccepteerde betaalmethoden gepubliceerd op deze site. Stuur geen geld naar een adres dat beweert een ENM-presale te zijn, tenzij geverifieerd via officiële kanalen op enm.network. ENM is geen beleggingsproduct of instrument met gegarandeerde rendementen.",
-      "expectTitle": "Wat u kunt verwachten",
-      "expectP1": "Wanneer presale-voorwaarden definitief zijn, wordt deze pagina bijgewerkt met geverifieerde informatie, waaronder geaccepteerde activa, vesting-schema's, KYC-vereisten (indien van toepassing) en volledige verkoopvoorwaarden. Tot die tijd is er geen actief presale-deelnamemechanisme op deze site.",
-      "expectP2": "Voor vragen over presale-timing of -geschiktheid, gebruik de contactpagina. Verifieer informatie altijd via enm.network voordat u actie onderneemt.",
-      "contactLink": "contactpagina",
+      "riskShort": "ENM is geen beleggingsproduct of instrument met gegarandeerde rendementen. Gebruik alleen walletadressen die op enm.network/wallets zijn gepubliceerd. Stuur geen geld naar onofficiële adressen. Crypto-activa zijn risicovol en kunnen in waarde dalen.",
+      "timelineTitle": "Presale-tijdlijn",
+      "timelineDesc": "Officieel faseschema voor de coördinatie van ENM-tokenverdeling.",
+      "phasesTitle": "Investeringsfasen",
+      "publicStagesTitle": "Publieke presale — 6 fasen",
+      "publicStagesDesc": "De publieke presale start op 01 april 2027. Elke fase duurt 6 weken.",
+      "stageLabel": "Fase",
+      "weeksLabel": "weken",
+      "durationLabel": "Duur",
+      "statusLabel": "Status",
+      "dashboardCta": "Open het launch dashboard voor live fasestatus, countdown en walletverbinding.",
+      "walletsCta": "Alle officiële ENM-wallets staan op de walletpagina. Verifieer elk adres voordat u geld verstuurt.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Vroege toegang tot ecosysteemcoördinatie voor gekwalificeerde vroege deelnemers."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Strategische partners en infrastructuurafgestemde deelnemers."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Private sale-fase vóór de opening van de publieke presale."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Publieke presale over zes opeenvolgende fasen van 6 weken."
+        }
+      ],
+      "expectTitle": "Deelname",
+      "expectP1": "Geaccepteerde activa voor presalecoördinatie: ETH, USDC en USDT op Ethereum Mainnet. Definitieve prijzen, toewijzingslimieten en vestingvoorwaarden worden vóór elke actieve fase gepubliceerd.",
+      "expectP2": "Voor vragen over geschiktheid, neem contact op via",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM is geen beleggingsaanbeveling, financieel product, security-aanbod of instrument met gegarandeerde rendementen. Crypto-activa zijn risicovol en kunnen in waarde dalen.",
       "fields": {
         "presaleStatus": "Presale-status",
@@ -185,7 +253,8 @@
         "saleTerms": "Verkoopvoorwaarden",
         "price": "Prijs",
         "saleDates": "Verkoopdata",
-        "allocationAmount": "Toewijzingshoeveelheid"
+        "allocationAmount": "Toewijzingshoeveelheid",
+        "contributionWallet": "Officiële bijdragewallet"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Roadmap-fasen vertegenwoordigen de beoogde richting. Er zijn geen specifieke data gepubliceerd. Voortgangsupdates worden via officiële kanalen gecommuniceerd wanneer beschikbaar.",
       "riskFooter": "Crypto-activa zijn risicovol en kunnen in waarde dalen. Regelgevings-, technische, liquiditeits-, markt- en operationele risico's zijn van toepassing.",
       "steps": [
-        { "title": "Tokenfundament", "desc": "Geverifieerd ENM Ethereum-contract onderhouden, officiële token documentatie publiceren op enm.network en transparante contractinformatie voor het ecosysteem vaststellen." },
-        { "title": "Documentatie & transparantie", "desc": "Tokenomics, presale-voorwaarden (wanneer definitief), risicodisclosures en officiële communicatiekanalen publiceren. Volledige scheiding van de tokenlaag van de energiemind.com-projectsite." },
-        { "title": "Presale & distributie", "desc": "Presale lanceren wanneer voorwaarden definitief en officieel aangekondigd zijn. Vesting, toewijzing en distributie implementeren volgens gepubliceerde tokenomics." },
-        { "title": "Utility-activatie", "desc": "Ecosysteem-utilityfuncties inschakelen gerelateerd aan energie-intelligentiedeelname, mining-heat-coördinatie en pilotprogrammaraamwerken naarmate infrastructuur volwassen wordt." },
-        { "title": "Partner- & pilotnetwerk", "desc": "Pilotimplementaties ondersteunen voor hotels, commerciële gebouwen, zonne-energielocaties en miner-heater-installaties met token-gecoördineerde deelnamemodellen." },
-        { "title": "Ecosysteemuitbreiding", "desc": "Community- en partnerprogramma's, infrastructuurincentivestructuren en operationele coördinatietools ontwikkelen binnen het EnergieMIND-ecosysteem." },
-        { "title": "EnteleKRON-afstemming", "desc": "Migratiereserve en afstemmingsraamwerk voorbereiden voor EnteleKRON mainnet-modules, validatorsystemen en ecosysteemnative settlement." },
-        { "title": "Mainnet-migratie", "desc": "Migratieafstemming met EnteleKRON mainnet uitvoeren wanneer technische, regelgevings- en ecosysteemvoorwaarden zijn vervuld. Voorwaarden worden vooraf gepubliceerd." }
+        {
+          "title": "Tokenfundament",
+          "desc": "Geverifieerd ENM Ethereum-contract onderhouden, officiële token documentatie publiceren op enm.network en transparante contractinformatie voor het ecosysteem vaststellen."
+        },
+        {
+          "title": "Documentatie & transparantie",
+          "desc": "Tokenomics, presale-voorwaarden (wanneer definitief), risicodisclosures en officiële communicatiekanalen publiceren. Volledige scheiding van de tokenlaag van de energiemind.com-projectsite."
+        },
+        {
+          "title": "Presale & distributie",
+          "desc": "Presale lanceren wanneer voorwaarden definitief en officieel aangekondigd zijn. Vesting, toewijzing en distributie implementeren volgens gepubliceerde tokenomics."
+        },
+        {
+          "title": "Utility-activatie",
+          "desc": "Ecosysteem-utilityfuncties inschakelen gerelateerd aan energie-intelligentiedeelname, mining-heat-coördinatie en pilotprogrammaraamwerken naarmate infrastructuur volwassen wordt."
+        },
+        {
+          "title": "Partner- & pilotnetwerk",
+          "desc": "Pilotimplementaties ondersteunen voor hotels, commerciële gebouwen, zonne-energielocaties en miner-heater-installaties met token-gecoördineerde deelnamemodellen."
+        },
+        {
+          "title": "Ecosysteemuitbreiding",
+          "desc": "Community- en partnerprogramma's, infrastructuurincentivestructuren en operationele coördinatietools ontwikkelen binnen het EnergieMIND-ecosysteem."
+        },
+        {
+          "title": "EnteleKRON-afstemming",
+          "desc": "Migratiereserve en afstemmingsraamwerk voorbereiden voor EnteleKRON mainnet-modules, validatorsystemen en ecosysteemnative settlement."
+        },
+        {
+          "title": "Mainnet-migratie",
+          "desc": "Migratieafstemming met EnteleKRON mainnet uitvoeren wanneer technische, regelgevings- en ecosysteemvoorwaarden zijn vervuld. Voorwaarden worden vooraf gepubliceerd."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Risicowaarschuwing",
       "lead": "Lees deze waarschuwing zorgvuldig voordat u met ENM of gerelateerde ecosysteemdiensten interactie aangaat.",
       "sections": [
-        { "title": "Algemene disclaimer", "content": "ENM is geen beleggingsaanbeveling, financieel product, security-aanbod of instrument met gegarandeerde rendementen. Crypto-activa zijn risicovol en kunnen in waarde dalen. Regelgevings-, technische, liquiditeits-, markt- en operationele risico's zijn van toepassing. Verifieer het contractadres altijd onafhankelijk.", "bold": true },
-        { "title": "Geen beleggingsproduct", "content": "ENM wordt gepresenteerd als utility-token voor ecosysteemcoördinatie binnen het EnergieMIND-energie-intelligentienetwerk. Het wordt niet aangeboden of beschreven als beleggingsproduct, security, aandelenbelang, schuldinstrument of financieel derivaat. Niets op enm.network vormt financieel advies, beleggingsadvies of een aanbeveling om crypto-activa te kopen, verkopen of aan te houden." },
-        { "title": "Geen gegarandeerde rendementen", "content": "ENM belooft, garandeert of impliceert geen rendement op investering, passief inkomen, winst, waardestijging of yield. Eerdere prestaties van crypto-activa zijn geen indicatie voor toekomstige resultaten. U kunt een deel of alles van de waarde gekoppeld aan ENM verliezen." },
-        { "title": "Geen security-aanbod", "content": "ENM wordt niet aangeboden als security in enige jurisdictie. De regelgevingsclassificatie van crypto-tokens verschilt per land en kan wijzigen. U bent zelf verantwoordelijk voor het begrijpen van en naleven van toepasselijke wetten in uw jurisdictie." },
-        { "title": "Markt- en liquiditeitsrisico's", "content": "Cryptomarkten zijn volatiel. ENM kan beperkte of geen liquiditeit hebben. Prijzen kunnen dramatisch fluctueren of onverhandelbaar worden. Er is geen zekerheid van een secundaire markt, exchange-notering of handelsplatform." },
-        { "title": "Technische risico's", "content": "Smart contracts, blockchainnetwerken en walletsoftware dragen inherente technische risico's, waaronder bugs, exploits, netwerkstoringen, forks en onomkeerbare transacties. Het ENM-contract geeft momenteel overdrachtsbeperkingen aan. Verifieer altijd het contractgedrag op Etherscan voordat u interactie aangaat." },
-        { "title": "Regelgevingsrisico's", "content": "Cryptocurrency-regelgeving evolueert wereldwijd. Toekomstige regelgevingsmaatregelen kunnen ENM-houders, overdrachten of ecosysteemdeelname beperken, verbieden of vereisten opleggen. Nalevingsverplichtingen kunnen per jurisdictie verschillen." },
-        { "title": "Operationele risico's", "content": "Ecosysteemontwikkeling, presale-uitvoering, utility-activatie en mainnet-migratie zijn onderworpen aan technische, operationele en middelenbeperkingen. Roadmap-items zijn planningsmijlpalen, geen bindende toezeggingen of garanties voor levering." },
-        { "title": "Contractverificatie", "content": "Het officiële ENM-contractadres is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D op Ethereum Mainnet. Verifieer dit adres altijd onafhankelijk op Etherscan. Vertrouw geen adressen van onofficiële bronnen, social media-berichten of externe websites. Scam-tokens kunnen vergelijkbare namen gebruiken." },
-        { "title": "Presale-waarschuwing", "content": "Er zijn geen presale-data, prijzen of betaalmethoden gepubliceerd totdat deze officieel definitief zijn op enm.network. Stuur geen geld naar een adres dat beweert een ENM-presale te vertegenwoordigen, tenzij geverifieerd via deze officiële site." },
-        { "title": "Uw verantwoordelijkheid", "content": "Door toegang te krijgen tot enm.network of interactie aan te gaan met ENM, erkent u dat u deze risico's begrijpt en volledige verantwoordelijkheid accepteert voor uw beslissingen. Raadpleeg gekwalificeerde juridische, fiscale en financiële professionals voordat u beslissingen neemt met betrekking tot crypto-activa." }
+        {
+          "title": "Algemene disclaimer",
+          "content": "ENM is geen beleggingsaanbeveling, financieel product, security-aanbod of instrument met gegarandeerde rendementen. Crypto-activa zijn risicovol en kunnen in waarde dalen. Regelgevings-, technische, liquiditeits-, markt- en operationele risico's zijn van toepassing. Verifieer het contractadres altijd onafhankelijk.",
+          "bold": true
+        },
+        {
+          "title": "Geen beleggingsproduct",
+          "content": "ENM wordt gepresenteerd als utility-token voor ecosysteemcoördinatie binnen het EnergieMIND-energie-intelligentienetwerk. Het wordt niet aangeboden of beschreven als beleggingsproduct, security, aandelenbelang, schuldinstrument of financieel derivaat. Niets op enm.network vormt financieel advies, beleggingsadvies of een aanbeveling om crypto-activa te kopen, verkopen of aan te houden."
+        },
+        {
+          "title": "Geen gegarandeerde rendementen",
+          "content": "ENM belooft, garandeert of impliceert geen rendement op investering, passief inkomen, winst, waardestijging of yield. Eerdere prestaties van crypto-activa zijn geen indicatie voor toekomstige resultaten. U kunt een deel of alles van de waarde gekoppeld aan ENM verliezen."
+        },
+        {
+          "title": "Geen security-aanbod",
+          "content": "ENM wordt niet aangeboden als security in enige jurisdictie. De regelgevingsclassificatie van crypto-tokens verschilt per land en kan wijzigen. U bent zelf verantwoordelijk voor het begrijpen van en naleven van toepasselijke wetten in uw jurisdictie."
+        },
+        {
+          "title": "Markt- en liquiditeitsrisico's",
+          "content": "Cryptomarkten zijn volatiel. ENM kan beperkte of geen liquiditeit hebben. Prijzen kunnen dramatisch fluctueren of onverhandelbaar worden. Er is geen zekerheid van een secundaire markt, exchange-notering of handelsplatform."
+        },
+        {
+          "title": "Technische risico's",
+          "content": "Smart contracts, blockchainnetwerken en walletsoftware dragen inherente technische risico's, waaronder bugs, exploits, netwerkstoringen, forks en onomkeerbare transacties. Het ENM-contract geeft momenteel overdrachtsbeperkingen aan. Verifieer altijd het contractgedrag op Etherscan voordat u interactie aangaat."
+        },
+        {
+          "title": "Regelgevingsrisico's",
+          "content": "Cryptocurrency-regelgeving evolueert wereldwijd. Toekomstige regelgevingsmaatregelen kunnen ENM-houders, overdrachten of ecosysteemdeelname beperken, verbieden of vereisten opleggen. Nalevingsverplichtingen kunnen per jurisdictie verschillen."
+        },
+        {
+          "title": "Operationele risico's",
+          "content": "Ecosysteemontwikkeling, presale-uitvoering, utility-activatie en mainnet-migratie zijn onderworpen aan technische, operationele en middelenbeperkingen. Roadmap-items zijn planningsmijlpalen, geen bindende toezeggingen of garanties voor levering."
+        },
+        {
+          "title": "Contractverificatie",
+          "content": "Het officiële ENM-contractadres is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D op Ethereum Mainnet. Verifieer dit adres altijd onafhankelijk op Etherscan. Vertrouw geen adressen van onofficiële bronnen, social media-berichten of externe websites. Scam-tokens kunnen vergelijkbare namen gebruiken."
+        },
+        {
+          "title": "Presale-waarschuwing",
+          "content": "Gebruik alleen walletadressen die op enm.network/wallets zijn gepubliceerd. De officiële presale-bijdragewallet is het ENM Treasury-adres op Ethereum Mainnet. Stuur geen geld naar adressen via social media, DM's of externe sites. ENM is geen beleggingsproduct of instrument met gegarandeerde rendementen."
+        },
+        {
+          "title": "Uw verantwoordelijkheid",
+          "content": "Door toegang te krijgen tot enm.network of interactie aan te gaan met ENM, erkent u dat u deze risico's begrijpt en volledige verantwoordelijkheid accepteert voor uw beslissingen. Raadpleeg gekwalificeerde juridische, fiscale en financiële professionals voordat u beslissingen neemt met betrekking tot crypto-activa."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM is geen beleggingsaanbeveling, financieel product, security-aanbod of instrument met gegarandeerde rendementen.",
       "riskFooter": "Crypto-activa zijn risicovol en kunnen in waarde dalen. Regelgevings-, technische, liquiditeits-, markt- en operationele risico's zijn van toepassing. Verifieer het contractadres altijd onafhankelijk.",
       "items": [
-        { "q": "Wat is ENM?", "a": "ENM (EnergieMind) is de utility-token van het EnergieMIND-energie-intelligentie-ecosysteem. Het is een ERC-20 token op Ethereum Mainnet, ontworpen voor toekomstige ecosysteemcoördinatie rond energie-intelligentie, mining-heat-deelname, pilotprogramma's en EnteleKRON mainnet-afstemming. ENM is een utility-token — geen beleggingsproduct." },
-        { "q": "Wat is het verschil tussen enm.network en energiemind.com?", "a": "enm.network is de officiële ENM-token documentatiesite voor de tokenlaag: contract, tokenomics, presale en risicodisclosures. energiemind.com behandelt de EnergieMIND-projectlaag: energie-intelligentietechnologie, mining-heat-utility en infrastructuurontwikkeling. Het zijn afzonderlijke maar verbonden onderdelen van hetzelfde ecosysteem." },
-        { "q": "Wat is het officiële contractadres?", "a": "Het officiële ENM-contract op Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifieer dit adres altijd onafhankelijk op Etherscan voordat u interactie aangaat." },
-        { "q": "Kan ik ENM nu overdragen?", "a": "Volgens het huidige geverifieerde contract zijn overdrachten beperkt of vergrendeld. Controleer de contractstatus op Etherscan voor de laatste on-chain status voordat u een overdracht probeert." },
-        { "q": "Is ENM een belegging?", "a": "Nee. ENM wordt niet gepresenteerd als beleggingsproduct, security-aanbod, instrument met gegarandeerde rendementen of belofte van passief inkomen. Het is een utility-token voor ecosysteemcoördinatie. Crypto-activa zijn risicovol en kunnen in waarde dalen. Zie de volledige risicowaarschuwing." },
-        { "q": "Wanneer is de presale?", "a": "De presale bevindt zich in de voorbereidingsfase. Er zijn geen data, prijzen, geaccepteerde activa of verkoopvoorwaarden gepubliceerd. Deze pagina wordt bijgewerkt wanneer de voorwaarden definitief zijn. Stuur geen geld naar onofficiële presale-adressen." },
-        { "q": "Wat is het totale aanbod?", "a": "Het maximale totale aanbod is 50.000.000.000 ENM (50 miljard) met 18 decimalen. Toewijzingspercentages over categorieën zijn in afwachting van officiële publicatie op de tokenomics-pagina." },
-        { "q": "Wat is EnteleKRON mainnet-afstemming?", "a": "ENM is voorbereid op toekomstige migratie en afstemming met het EnteleKRON mainnet-ecosysteem. Een migratiereserve-toewijzingscategorie is gepland. Specifieke migratievoorwaarden, tijdlijnen en technische details worden gepubliceerd wanneer beschikbaar." },
-        { "q": "Hoe voeg ik ENM toe aan mijn wallet?", "a": "Gebruik het officiële contractadres 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D met tokensymbool ENM en 18 decimalen. Verifieer het adres op Etherscan. Houd er rekening mee dat overdrachten momenteel beperkt kunnen zijn volgens de contractstatus." },
-        { "q": "Waar kan ik officiële updates krijgen?", "a": "Officiële tokeninformatie wordt gepubliceerd op enm.network. Voor vragen, gebruik de contactpagina. Vertrouw geen onofficiële kanalen, social media DM's of externe sites voor contractadressen of presale-informatie." }
+        {
+          "q": "Wat is ENM?",
+          "a": "ENM (EnergieMind) is de utility-token van het EnergieMIND-energie-intelligentie-ecosysteem. Het is een ERC-20 token op Ethereum Mainnet, ontworpen voor toekomstige ecosysteemcoördinatie rond energie-intelligentie, mining-heat-deelname, pilotprogramma's en EnteleKRON mainnet-afstemming. ENM is een utility-token — geen beleggingsproduct."
+        },
+        {
+          "q": "Wat is het verschil tussen enm.network en energiemind.com?",
+          "a": "enm.network is de officiële ENM-token documentatiesite voor de tokenlaag: contract, tokenomics, presale en risicodisclosures. energiemind.com behandelt de EnergieMIND-projectlaag: energie-intelligentietechnologie, mining-heat-utility en infrastructuurontwikkeling. Het zijn afzonderlijke maar verbonden onderdelen van hetzelfde ecosysteem."
+        },
+        {
+          "q": "Wat is het officiële contractadres?",
+          "a": "Het officiële ENM-contract op Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifieer dit adres altijd onafhankelijk op Etherscan voordat u interactie aangaat."
+        },
+        {
+          "q": "Kan ik ENM nu overdragen?",
+          "a": "Volgens het huidige geverifieerde contract zijn overdrachten beperkt of vergrendeld. Controleer de contractstatus op Etherscan voor de laatste on-chain status voordat u een overdracht probeert."
+        },
+        {
+          "q": "Is ENM een belegging?",
+          "a": "Nee. ENM wordt niet gepresenteerd als beleggingsproduct, security-aanbod, instrument met gegarandeerde rendementen of belofte van passief inkomen. Het is een utility-token voor ecosysteemcoördinatie. Crypto-activa zijn risicovol en kunnen in waarde dalen. Zie de volledige risicowaarschuwing."
+        },
+        {
+          "q": "Wanneer is de presale?",
+          "a": "Early Investor: 01 jul – 30 sep 2026. Strategic Investor: 01 okt – 31 dec 2026. Private Sale: 01 jan – 31 mrt 2027. Public Presale: vanaf 01 apr 2027 in zes fasen van 6 weken. Zie de presalepagina en het launch dashboard voor live status."
+        },
+        {
+          "q": "Wat is het totale aanbod?",
+          "a": "Het maximale totale aanbod is 50.000.000.000 ENM (50 miljard) met 18 decimalen. Toewijzingspercentages over categorieën zijn in afwachting van officiële publicatie op de tokenomics-pagina."
+        },
+        {
+          "q": "Wat is EnteleKRON mainnet-afstemming?",
+          "a": "ENM is voorbereid op toekomstige migratie en afstemming met het EnteleKRON mainnet-ecosysteem. Een migratiereserve-toewijzingscategorie is gepland. Specifieke migratievoorwaarden, tijdlijnen en technische details worden gepubliceerd wanneer beschikbaar."
+        },
+        {
+          "q": "Hoe voeg ik ENM toe aan mijn wallet?",
+          "a": "Gebruik het officiële contractadres 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D met tokensymbool ENM en 18 decimalen. Verifieer het adres op Etherscan. Houd er rekening mee dat overdrachten momenteel beperkt kunnen zijn volgens de contractstatus."
+        },
+        {
+          "q": "Waar kan ik officiële updates krijgen?",
+          "a": "Officiële tokeninformatie wordt gepubliceerd op enm.network. Voor vragen, gebruik de contactpagina. Vertrouw geen onofficiële kanalen, social media DM's of externe sites voor contractadressen of presale-informatie."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Contractpagina",
       "footerNote": "Reactietijden kunnen variëren. Voor dringende beveiligingszorgen met betrekking tot scam-adressen of impersonatie, vermeld \"SECURITY\" in uw onderwerpregel. Stuur nooit cryptocurrency naar adressen ontvangen via ongevraagde berichten.",
       "riskFooter": "ENM is geen beleggingsaanbeveling, financieel product, security-aanbod of instrument met gegarandeerde rendementen. Crypto-activa zijn risicovol en kunnen in waarde dalen."
+    },
+    "dashboard": {
+      "title": "Launch Dashboard | ENM Token",
+      "description": "ENM-token launch dashboard — live presale-fasestatus, countdown, walletverbinding en verificatie van de officiële bijdragewallet.",
+      "ogTitle": "ENM Launch Dashboard | enm.network",
+      "ogDescription": "Live ENM-presale dashboard met fasetracking, countdown en wallettools.",
+      "breadcrumb": "Dashboard",
+      "eyebrow": "Startcontrolecentrum",
+      "h1": "Launch-dashboard",
+      "lead": "Monitor presalefasen, volg de huidige fase, verbind uw wallet en verifieer het officiële bijdrageadres vóór deelname.",
+      "riskShort": "ENM is geen beleggingsproduct of instrument met gegarandeerde rendementen. Verifieer alle adressen op de officiële walletpagina. Crypto-activa zijn risicovol.",
+      "currentPhase": "Huidige fase",
+      "nextPhase": "Volgende fase",
+      "timeRemaining": "Resterende tijd",
+      "phaseEnded": "Fase beëindigd",
+      "phaseNotStarted": "Nog niet gestart",
+      "publicStage": "Publieke fase",
+      "ofStages": "van 6",
+      "walletPanel": "Uw wallet",
+      "walletConnected": "Verbonden",
+      "walletDisconnected": "Niet verbonden",
+      "networkLabel": "Netwerk",
+      "networkRequired": "Ethereum Mainnet vereist",
+      "contributionTitle": "Officiële bijdragewallet",
+      "contributionDesc": "Presale-bijdragen worden gecoördineerd via de officiële ENM Treasury-wallet. Verifieer altijd dat dit adres overeenkomt met enm.network/wallets voordat u geld verstuurt.",
+      "statsTitle": "Launch-overzicht",
+      "statPhase": "Actieve fase",
+      "statStage": "Publieke fase",
+      "statAccepted": "Geaccepteerde activa",
+      "statNetwork": "Netwerk",
+      "timelineTitle": "Fasetijdlijn",
+      "registerTitle": "Deelnamemelding",
+      "registerDesc": "Tijdens actieve fasen verbindt u uw wallet en coördineert u deelname volgens gepubliceerde voorwaarden. Dit dashboard garandeert geen toewijzing, rendement of tokenlevering — zie risicowaarschuwing.",
+      "riskFooter": "Verifieer walletadressen altijd onafhankelijk. ENM is geen beleggingsaanbeveling of instrument met gegarandeerde rendementen."
+    },
+    "wallets": {
+      "title": "Officiële Wallets | ENM Token",
+      "description": "Officiële EnergieMind ENM-ecosysteemwallets op Ethereum Mainnet — Founder, OPS, Genesis en Treasury-adressen.",
+      "ogTitle": "ENM Officiële Wallets | enm.network",
+      "ogDescription": "Geverifieerde officiële ENM-ecosysteemwalletadressen op Ethereum Mainnet.",
+      "breadcrumb": "Wallets",
+      "eyebrow": "Geverifieerde adressen",
+      "h1": "Officiële Wallets",
+      "lead": "Officiële EnergieMind ENM-ecosysteemwallets op Ethereum Mainnet. Verifieer elk adres op deze pagina vóór interactie. Scam-adressen kunnen vergelijkbare namen gebruiken.",
+      "riskShort": "Vertrouw alleen adressen op enm.network/wallets. Het ENM-team stuurt nooit walletadressen via DM. ENM is geen beleggingsproduct.",
+      "verifyTitle": "Adresverificatie",
+      "verifyDesc": "Vergelijk teken voor teken voordat u geld verstuurt. Presale-bijdragen gebruiken de Treasury-wallet wanneer fasen actief zijn.",
+      "tableTitle": "Ecosysteemwallets",
+      "purposeLabel": "Doel",
+      "recommendedTitle": "Aanbevolen aanvullende wallets",
+      "recommendedDesc": "Voor een volledige tokenlaunch kunt u deze aanvullende wallets aanmaken wanneer u klaar bent:",
+      "recommended": [
+        {
+          "name": "Presale Escrow / Sale",
+          "desc": "Aparte verkoopwallet, los van Treasury, voor operationele scheiding (optioneel — Treasury kan deze rol vervullen)."
+        },
+        {
+          "name": "Vesting & Locks",
+          "desc": "Voor team-, founder- en investeerdersvesting wanneer on-chain vesting is geïmplementeerd."
+        },
+        {
+          "name": "Liquidity",
+          "desc": "Voor DEX-liquiditeitsvoorziening wanneer officieel aangekondigd."
+        },
+        {
+          "name": "Community & Rewards",
+          "desc": "Voor pilotprogramma's, community-incentives en partnertoewijzingen."
+        }
+      ],
+      "purposes": {
+        "founder": "Founder-toewijzing en governancecoördinatie",
+        "operations": "Operationele kosten en ecosysteemoperaties",
+        "genesis": "Genesis-toewijzing en initiële ecosysteembootstrap",
+        "treasury": "Treasury, presale-bijdragen en ecosysteemreserves"
+      },
+      "riskFooter": "Crypto-transacties zijn onomkeerbaar. Verifieer adressen altijd op enm.network. ENM is geen beleggingsproduct of instrument met gegarandeerde rendementen."
     }
   }
 }

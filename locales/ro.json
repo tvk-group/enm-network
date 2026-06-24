@@ -13,7 +13,9 @@
       "roadmap": "Foaie de parcurs",
       "risk": "Notificare de risc",
       "faq": "FAQ",
-      "contact": "Contact"
+      "contact": "Contact",
+      "dashboard": "Panou",
+      "wallets": "Portofele"
     },
     "buttons": {
       "viewContract": "Vezi contractul",
@@ -21,7 +23,14 @@
       "joinPresale": "Participă la prevânzare",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Deschide în Etherscan",
-      "contractDetails": "Detalii contract"
+      "contractDetails": "Detalii contract",
+      "openDashboard": "Deschide panoul de lansare",
+      "viewWallets": "Portofele oficiale",
+      "connectWallet": "Conectează portofelul",
+      "disconnectWallet": "Deconectează",
+      "copyAddress": "Copiază adresa",
+      "copied": "Copiat!",
+      "verifyOnWallets": "Verifică pe pagina portofelelor"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "În așteptare",
       "confirmed": "Confirmat",
       "preparation": "Pregătire",
-      "locked": "Transferuri restricționate / blocate"
+      "locked": "Transferuri restricționate / blocate",
+      "scheduled": "Programat",
+      "active": "Activ",
+      "completed": "Finalizat",
+      "upcoming": "Viitor"
     },
     "table": {
       "property": "Proprietate",
@@ -44,7 +57,8 @@
       "parameter": "Parametru",
       "category": "Categorie",
       "description": "Descriere",
-      "allocation": "Alocare"
+      "allocation": "Alocare",
+      "network": "Rețea"
     },
     "stats": {
       "symbol": "Simbol",
@@ -152,40 +166,95 @@
       "footerNote": "Nu sunt publicate procente exacte de alocare în acest moment. Când tokenomica finală va fi aprobată, această pagină va fi actualizată cu cifre verificate. Nu te baza pe grafice de tokenomică neoficiale sau de la terți.",
       "riskFooter": "Activele cripto sunt cu risc ridicat și pot pierde valoare. Se aplică riscuri de reglementare, tehnice, de lichiditate, de piață și operaționale.",
       "allocations": [
-        { "name": "Alocare utilitară", "desc": "Tokenuri rezervate pentru funcțiile utilitare ale ecosistemului, participarea operațională și coordonarea serviciilor în rețeaua EnergieMIND." },
-        { "name": "Rezervă ecosistem", "desc": "Rezervă pentru dezvoltarea pe termen lung a ecosistemului, parteneriate și activități strategice de coordonare." },
-        { "name": "Lichiditate", "desc": "Alocare pentru furnizarea de lichiditate pe piață, când este aplicabil și anunțat oficial." },
-        { "name": "Trezorerie", "desc": "Trezorerie operațională pentru întreținerea ecosistemului, dezvoltare și suport infrastructură." },
-        { "name": "Blocare fondator / echipă", "desc": "Alocările echipei și fondatorilor sunt supuse programelor de blocare și termenilor de vesting de publicat." },
-        { "name": "Programe comunitate / parteneri", "desc": "Alocări pentru inițiative comunitare, onboarding parteneri și programe de participare pilot." },
-        { "name": "Rezervă migrare", "desc": "Rezervă pentru alinierea viitoare a migrării la mainnetul EnteleKRON și tranziția utilității cross-chain." }
+        {
+          "name": "Alocare utilitară",
+          "desc": "Tokenuri rezervate pentru funcțiile utilitare ale ecosistemului, participarea operațională și coordonarea serviciilor în rețeaua EnergieMIND."
+        },
+        {
+          "name": "Rezervă ecosistem",
+          "desc": "Rezervă pentru dezvoltarea pe termen lung a ecosistemului, parteneriate și activități strategice de coordonare."
+        },
+        {
+          "name": "Lichiditate",
+          "desc": "Alocare pentru furnizarea de lichiditate pe piață, când este aplicabil și anunțat oficial."
+        },
+        {
+          "name": "Trezorerie",
+          "desc": "Trezorerie operațională pentru întreținerea ecosistemului, dezvoltare și suport infrastructură."
+        },
+        {
+          "name": "Blocare fondator / echipă",
+          "desc": "Alocările echipei și fondatorilor sunt supuse programelor de blocare și termenilor de vesting de publicat."
+        },
+        {
+          "name": "Programe comunitate / parteneri",
+          "desc": "Alocări pentru inițiative comunitare, onboarding parteneri și programe de participare pilot."
+        },
+        {
+          "name": "Rezervă migrare",
+          "desc": "Rezervă pentru alinierea viitoare a migrării la mainnetul EnteleKRON și tranziția utilității cross-chain."
+        }
       ]
     },
     "presale": {
       "title": "Prevânzare | ENM Token",
-      "description": "Starea prevânzării tokenului ENM și informații de pregătire. Nicio dată, preț sau metodă de plată nu este publicată până la finalizarea oficială.",
-      "ogTitle": "Prevânzare ENM | enm.network",
-      "ogDescription": "Etapa de pregătire a prevânzării ENM. Nicio dată, preț sau metodă de plată nu este publicată până la finalizarea oficială.",
+      "description": "Program prevânzare token ENM: Early Investor, Strategic Investor, Private Sale și Public Presale în 6 etape. Date oficiale și panou de lansare pe enm.network.",
+      "ogTitle": "Program prevânzare ENM | enm.network",
+      "ogDescription": "Faze oficiale de prevânzare ENM din iulie 2026 până la etapele publice din 2027.",
       "breadcrumb": "Prevânzare",
-      "eyebrow": "Informații prevânzare",
-      "h1": "Etapa de pregătire a prevânzării",
-      "lead": "Termenii prevânzării ENM nu sunt încă finalizați. Această pagină va fi actualizată când regulile oficiale de vânzare, datele și activele acceptate vor fi confirmate.",
+      "eyebrow": "Program prevânzare",
+      "h1": "Prevânzare ENM",
+      "lead": "Faze structurate de prevânzare de la accesul investitorilor timpurii la prevânzarea publică în șase etape. Folosiți panoul de lansare pentru status live și verificați întotdeauna adresele portofelelor pe pagina oficială înainte de a trimite fonduri.",
       "important": "Important:",
-      "riskShort": "Pe acest site nu sunt publicate date de prevânzare, prețuri, cantități de token sau metode de plată acceptate. Nu trimite fonduri la nicio adresă care pretinde a fi o prevânzare ENM decât dacă este verificată prin canalele oficiale de pe enm.network. ENM nu este un produs de investiții sau un instrument cu randament garantat.",
-      "expectTitle": "La ce să te aștepți",
-      "expectP1": "Când termenii prevânzării vor fi finalizați, această pagină va fi actualizată cu informații verificate, inclusiv active acceptate, programe de vesting, cerințe KYC (dacă există) și termeni completi de vânzare. Până atunci, nu există niciun mecanism activ de participare la prevânzare pe acest site.",
-      "expectP2": "Pentru întrebări despre calendarul sau eligibilitatea prevânzării, folosește pagina de contact. Verifică întotdeauna informațiile prin enm.network înainte de a acționa.",
-      "contactLink": "pagina de contact",
-      "riskFooter": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare.",
+      "riskShort": "ENM nu este un produs de investiții sau un instrument cu randament garantat. Folosiți doar adresele de portofel publicate pe enm.network/wallets. Nu trimiteți fonduri la adrese neoficiale. Activele cripto sunt de risc ridicat și pot pierde valoare.",
+      "timelineTitle": "Cronologie prevânzare",
+      "timelineDesc": "Program oficial al fazelor pentru coordonarea distribuției tokenului ENM.",
+      "phasesTitle": "Faze de investiție",
+      "publicStagesTitle": "Prevânzare publică — 6 etape",
+      "publicStagesDesc": "Prevânzarea publică începe pe 01 aprilie 2027. Fiecare etapă durează 6 săptămâni.",
+      "stageLabel": "Etapă",
+      "weeksLabel": "săptămâni",
+      "durationLabel": "Durată",
+      "statusLabel": "Status",
+      "dashboardCta": "Deschideți panoul de lansare pentru statusul fazei live, numărătoare inversă și conexiunea portofelului.",
+      "walletsCta": "Toate portofelele oficiale ENM sunt listate pe pagina portofelelor. Verificați fiecare adresă înainte de a trimite fonduri.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Acces timpuriu la coordonarea ecosistemului pentru participanții calificați."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Parteneri strategici și participanți aliniați infrastructurii."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Faza de vânzare privată înainte de deschiderea prevânzării publice."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Prevânzare publică în șase etape consecutive de câte 6 săptămâni."
+        }
+      ],
+      "expectTitle": "Participare",
+      "expectP1": "Active acceptate pentru coordonarea prevânzării: ETH, USDC și USDT pe Ethereum Mainnet. Prețurile finale, limitele de alocare și termenii de vesting vor fi publicați înainte de fiecare fază activă.",
+      "expectP2": "Pentru întrebări despre eligibilitate, contactați",
+      "contactLink": "token@enm.network",
+      "riskFooter": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de valori mobiliare sau un instrument cu randament garantat. Activele cripto sunt de risc ridicat și pot pierde valoare.",
       "fields": {
-        "presaleStatus": "Starea prevânzării",
+        "presaleStatus": "Status prevânzare",
         "acceptedAssets": "Active acceptate",
         "vesting": "Vesting",
         "kyc": "KYC",
         "saleTerms": "Termeni de vânzare",
         "price": "Preț",
         "saleDates": "Date de vânzare",
-        "allocationAmount": "Cantitate alocare"
+        "allocationAmount": "Cantitate alocare",
+        "contributionWallet": "Portofel oficial de contribuție"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Fazele foii de parcurs reprezintă direcția intenționată. Nu sunt publicate date specifice. Actualizările de progres vor fi comunicate prin canale oficiale când vor fi disponibile.",
       "riskFooter": "Activele cripto sunt cu risc ridicat și pot pierde valoare. Se aplică riscuri de reglementare, tehnice, de lichiditate, de piață și operaționale.",
       "steps": [
-        { "title": "Fundația tokenului", "desc": "Menținerea contractului ENM Ethereum verificat, publicarea documentației oficiale a tokenului pe enm.network și stabilirea informațiilor transparente despre contract pentru ecosistem." },
-        { "title": "Documentație și transparență", "desc": "Publicarea tokenomicii, termenilor de prevânzare (la finalizare), divulgărilor de risc și canalelor oficiale de comunicare. Separare completă a stratului de token de site-ul proiectului energiemind.com." },
-        { "title": "Prevânzare și distribuție", "desc": "Lansarea prevânzării când termenii sunt finalizați și anunțați oficial. Implementarea vestingului, alocării și distribuției conform tokenomicii publicate." },
-        { "title": "Activare utilitară", "desc": "Activarea funcțiilor utilitare ale ecosistemului legate de participarea la inteligența energetică, coordonarea căldurii miniere și cadrele programelor pilot pe măsură ce infrastructura se maturizează." },
-        { "title": "Rețea parteneri și pilot", "desc": "Susținerea implementărilor pilot pentru hoteluri, clădiri comerciale, site-uri solare și instalații miner-heater cu modele de participare coordonate prin token." },
-        { "title": "Extindere ecosistem", "desc": "Dezvoltarea programelor comunitare și partenere, structurilor de stimulente pentru infrastructură și instrumentelor de coordonare operațională în ecosistemul EnergieMIND." },
-        { "title": "Aliniere EnteleKRON", "desc": "Pregătirea rezervei de migrare și a cadrului de aliniere pentru modulele mainnet EnteleKRON, sistemele de validatori și decontarea nativă a ecosistemului." },
-        { "title": "Migrare mainnet", "desc": "Executarea alinierii migrării cu mainnetul EnteleKRON când condițiile tehnice, de reglementare și de ecosistem sunt îndeplinite. Termenii vor fi publicați în avans." }
+        {
+          "title": "Fundația tokenului",
+          "desc": "Menținerea contractului ENM Ethereum verificat, publicarea documentației oficiale a tokenului pe enm.network și stabilirea informațiilor transparente despre contract pentru ecosistem."
+        },
+        {
+          "title": "Documentație și transparență",
+          "desc": "Publicarea tokenomicii, termenilor de prevânzare (la finalizare), divulgărilor de risc și canalelor oficiale de comunicare. Separare completă a stratului de token de site-ul proiectului energiemind.com."
+        },
+        {
+          "title": "Prevânzare și distribuție",
+          "desc": "Lansarea prevânzării când termenii sunt finalizați și anunțați oficial. Implementarea vestingului, alocării și distribuției conform tokenomicii publicate."
+        },
+        {
+          "title": "Activare utilitară",
+          "desc": "Activarea funcțiilor utilitare ale ecosistemului legate de participarea la inteligența energetică, coordonarea căldurii miniere și cadrele programelor pilot pe măsură ce infrastructura se maturizează."
+        },
+        {
+          "title": "Rețea parteneri și pilot",
+          "desc": "Susținerea implementărilor pilot pentru hoteluri, clădiri comerciale, site-uri solare și instalații miner-heater cu modele de participare coordonate prin token."
+        },
+        {
+          "title": "Extindere ecosistem",
+          "desc": "Dezvoltarea programelor comunitare și partenere, structurilor de stimulente pentru infrastructură și instrumentelor de coordonare operațională în ecosistemul EnergieMIND."
+        },
+        {
+          "title": "Aliniere EnteleKRON",
+          "desc": "Pregătirea rezervei de migrare și a cadrului de aliniere pentru modulele mainnet EnteleKRON, sistemele de validatori și decontarea nativă a ecosistemului."
+        },
+        {
+          "title": "Migrare mainnet",
+          "desc": "Executarea alinierii migrării cu mainnetul EnteleKRON când condițiile tehnice, de reglementare și de ecosistem sunt îndeplinite. Termenii vor fi publicați în avans."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Notificare de risc",
       "lead": "Citește cu atenție această notificare înainte de a interacționa cu ENM sau orice servicii conexe ale ecosistemului.",
       "sections": [
-        { "title": "Declinare generală de responsabilitate", "content": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare. Se aplică riscuri de reglementare, tehnice, de lichiditate, de piață și operaționale. Verifică întotdeauna contract address în mod independent.", "bold": true },
-        { "title": "Nu este un produs de investiții", "content": "ENM este prezentat ca token utilitar pentru coordonarea ecosistemului în rețeaua de inteligență energetică EnergieMIND. Nu este oferit sau descris ca produs de investiții, titlu de valoare, interes de capital, instrument de datorie sau derivat financiar. Nimic de pe enm.network nu constituie sfat financiar, sfat de investiții sau recomandare de a cumpăra, vinde sau deține orice activ cripto." },
-        { "title": "Fără randamente garantate", "content": "ENM nu promite, nu garantează și nu sugerează niciun randament al investiției, venit pasiv, profit, apreciere sau randament. Performanța anterioară a oricărui activ cripto nu indică rezultate viitoare. Poți pierde o parte sau întreaga valoare asociată cu ENM." },
-        { "title": "Nu este o ofertă de titluri de valoare", "content": "ENM nu este oferit ca titlu de valoare în nicio jurisdicție. Clasificarea de reglementare a tokenurilor cripto variază în funcție de țară și poate suferi modificări. Ești singurul responsabil pentru înțelegerea și respectarea legilor aplicabile în jurisdicția ta." },
-        { "title": "Riscuri de piață și lichiditate", "content": "Piețele cripto sunt volatile. ENM poate avea lichiditate limitată sau inexistentă. Prețurile pot fluctua dramatic sau pot deveni netransactionabile. Nu există nicio asigurare a unei piețe secundare, listări pe bursă sau loc de tranzacționare." },
-        { "title": "Riscuri tehnice", "content": "Contractele inteligente, rețelele blockchain și software-ul de portofel implică riscuri tehnice inerente, inclusiv erori, exploatări, defecțiuni de rețea, fork-uri și tranzacții ireversibile. Contractul ENM indică în prezent restricții de transfer. Verifică întotdeauna comportamentul contractului pe Etherscan înainte de a interacționa." },
-        { "title": "Riscuri de reglementare", "content": "Reglementările privind criptomonedele evoluează la nivel global. Acțiunile viitoare de reglementare pot restricționa, interzice sau impune cerințe asupra deținătorilor ENM, transferurilor sau participării la ecosistem. Obligațiile de conformitate pot varia în funcție de jurisdicție." },
-        { "title": "Riscuri operaționale", "content": "Dezvoltarea ecosistemului, executarea prevânzării, activarea utilității și migrarea mainnetului sunt supuse constrângerilor tehnice, operaționale și de resurse. Elementele foii de parcurs sunt repere de planificare, nu angajamente obligatorii sau garanții de livrare." },
-        { "title": "Verificarea contractului", "content": "Contract address oficial ENM este 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D pe Ethereum Mainnet. Verifică întotdeauna această adresă în mod independent pe Etherscan. Nu avea încredere în adrese din surse neoficiale, mesaje pe rețele sociale sau site-uri terțe. Tokenurile frauduloase pot folosi nume similare." },
-        { "title": "Precauție la prevânzare", "content": "Nicio dată, preț sau metodă de plată pentru prevânzare nu este publicată până la finalizarea oficială pe enm.network. Nu trimite fonduri la nicio adresă care pretinde a reprezenta o prevânzare ENM decât dacă este verificată prin acest site oficial." },
-        { "title": "Responsabilitatea ta", "content": "Prin accesarea enm.network sau interacțiunea cu ENM, recunoști că înțelegi aceste riscuri și îți asumi întreaga responsabilitate pentru deciziile tale. Consultă profesioniști calificați în domeniul juridic, fiscal și financiar înainte de a lua orice decizie legată de activele cripto." }
+        {
+          "title": "Declinare generală de responsabilitate",
+          "content": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare. Se aplică riscuri de reglementare, tehnice, de lichiditate, de piață și operaționale. Verifică întotdeauna contract address în mod independent.",
+          "bold": true
+        },
+        {
+          "title": "Nu este un produs de investiții",
+          "content": "ENM este prezentat ca token utilitar pentru coordonarea ecosistemului în rețeaua de inteligență energetică EnergieMIND. Nu este oferit sau descris ca produs de investiții, titlu de valoare, interes de capital, instrument de datorie sau derivat financiar. Nimic de pe enm.network nu constituie sfat financiar, sfat de investiții sau recomandare de a cumpăra, vinde sau deține orice activ cripto."
+        },
+        {
+          "title": "Fără randamente garantate",
+          "content": "ENM nu promite, nu garantează și nu sugerează niciun randament al investiției, venit pasiv, profit, apreciere sau randament. Performanța anterioară a oricărui activ cripto nu indică rezultate viitoare. Poți pierde o parte sau întreaga valoare asociată cu ENM."
+        },
+        {
+          "title": "Nu este o ofertă de titluri de valoare",
+          "content": "ENM nu este oferit ca titlu de valoare în nicio jurisdicție. Clasificarea de reglementare a tokenurilor cripto variază în funcție de țară și poate suferi modificări. Ești singurul responsabil pentru înțelegerea și respectarea legilor aplicabile în jurisdicția ta."
+        },
+        {
+          "title": "Riscuri de piață și lichiditate",
+          "content": "Piețele cripto sunt volatile. ENM poate avea lichiditate limitată sau inexistentă. Prețurile pot fluctua dramatic sau pot deveni netransactionabile. Nu există nicio asigurare a unei piețe secundare, listări pe bursă sau loc de tranzacționare."
+        },
+        {
+          "title": "Riscuri tehnice",
+          "content": "Contractele inteligente, rețelele blockchain și software-ul de portofel implică riscuri tehnice inerente, inclusiv erori, exploatări, defecțiuni de rețea, fork-uri și tranzacții ireversibile. Contractul ENM indică în prezent restricții de transfer. Verifică întotdeauna comportamentul contractului pe Etherscan înainte de a interacționa."
+        },
+        {
+          "title": "Riscuri de reglementare",
+          "content": "Reglementările privind criptomonedele evoluează la nivel global. Acțiunile viitoare de reglementare pot restricționa, interzice sau impune cerințe asupra deținătorilor ENM, transferurilor sau participării la ecosistem. Obligațiile de conformitate pot varia în funcție de jurisdicție."
+        },
+        {
+          "title": "Riscuri operaționale",
+          "content": "Dezvoltarea ecosistemului, executarea prevânzării, activarea utilității și migrarea mainnetului sunt supuse constrângerilor tehnice, operaționale și de resurse. Elementele foii de parcurs sunt repere de planificare, nu angajamente obligatorii sau garanții de livrare."
+        },
+        {
+          "title": "Verificarea contractului",
+          "content": "Contract address oficial ENM este 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D pe Ethereum Mainnet. Verifică întotdeauna această adresă în mod independent pe Etherscan. Nu avea încredere în adrese din surse neoficiale, mesaje pe rețele sociale sau site-uri terțe. Tokenurile frauduloase pot folosi nume similare."
+        },
+        {
+          "title": "Precauție prevânzare",
+          "content": "Folosiți doar adresele de portofel publicate pe enm.network/wallets. Portofelul oficial de contribuție la prevânzare este adresa ENM Treasury pe Ethereum Mainnet. Nu trimiteți fonduri la adrese din rețele sociale, DM sau site-uri terțe. ENM nu este un produs de investiții sau un instrument cu randament garantat."
+        },
+        {
+          "title": "Responsabilitatea ta",
+          "content": "Prin accesarea enm.network sau interacțiunea cu ENM, recunoști că înțelegi aceste riscuri și îți asumi întreaga responsabilitate pentru deciziile tale. Consultă profesioniști calificați în domeniul juridic, fiscal și financiar înainte de a lua orice decizie legată de activele cripto."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat.",
       "riskFooter": "Activele cripto sunt cu risc ridicat și pot pierde valoare. Se aplică riscuri de reglementare, tehnice, de lichiditate, de piață și operaționale. Verifică întotdeauna contract address în mod independent.",
       "items": [
-        { "q": "Ce este ENM?", "a": "ENM (EnergieMind) este tokenul utilitar al ecosistemului de inteligență energetică EnergieMIND. Este un token ERC-20 pe Ethereum Mainnet, conceput pentru coordonarea viitoare a ecosistemului legată de inteligența energetică, participarea la căldura minieră, programe pilot și alinierea la mainnetul EnteleKRON. ENM este un token utilitar — nu un produs de investiții." },
-        { "q": "Care este diferența dintre enm.network și energiemind.com?", "a": "enm.network este site-ul oficial de documentație a tokenului ENM care acoperă stratul de token: contract, tokenomică, prevânzare și divulgări de risc. energiemind.com acoperă stratul proiectului EnergieMIND: tehnologia inteligenței energetice, utilitatea căldurii miniere și dezvoltarea infrastructurii. Sunt părți separate, dar conectate ale aceluiași ecosistem." },
-        { "q": "Care este contract address oficial?", "a": "Contractul oficial ENM pe Ethereum Mainnet este 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifică întotdeauna această adresă în mod independent pe Etherscan înainte de a interacționa." },
-        { "q": "Pot transfera ENM acum?", "a": "Conform contractului verificat actual, transferurile sunt restricționate sau blocate. Verifică starea contractului pe Etherscan pentru cea mai recentă stare on-chain înainte de a încerca orice transfer." },
-        { "q": "Este ENM o investiție?", "a": "Nu. ENM nu este prezentat ca produs de investiții, ofertă de titluri de valoare, instrument cu randament garantat sau promisiune de venit pasiv. Este un token utilitar pentru coordonarea ecosistemului. Activele cripto sunt cu risc ridicat și pot pierde valoare. Consultă notificarea completă de risc." },
-        { "q": "Când este prevânzarea?", "a": "Prevânzarea este în etapa de pregătire. Nu au fost publicate date, prețuri, active acceptate sau termeni de vânzare. Această pagină va fi actualizată când termenii vor fi finalizați. Nu trimite fonduri la adrese neoficiale de prevânzare." },
-        { "q": "Care este oferta totală?", "a": "Oferta totală maximă este de 50,000,000,000 ENM (50 de miliarde) cu 18 zecimale. Procentele de alocare pe categorii așteaptă publicarea oficială pe pagina de tokenomică." },
-        { "q": "Ce este alinierea la mainnetul EnteleKRON?", "a": "ENM este pregătit pentru migrarea viitoare și alinierea cu ecosistemul mainnet EnteleKRON. Este planificată o categorie de alocare pentru rezerva de migrare. Termenii specifici de migrare, calendarele și detaliile tehnice vor fi publicate când vor fi disponibile." },
-        { "q": "Cum adaug ENM în portofelul meu?", "a": "Folosește contract address oficial 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D cu simbolul token ENM și 18 zecimale. Verifică adresa pe Etherscan. Reține că transferurile pot fi în prezent restricționate conform stării contractului." },
-        { "q": "De unde pot obține actualizări oficiale?", "a": "Informațiile oficiale despre token sunt publicate pe enm.network. Pentru întrebări, folosește pagina de contact. Nu avea încredere în canale neoficiale, mesaje DM pe rețele sociale sau site-uri terțe pentru contract address sau informații despre prevânzare." }
+        {
+          "q": "Ce este ENM?",
+          "a": "ENM (EnergieMind) este tokenul utilitar al ecosistemului de inteligență energetică EnergieMIND. Este un token ERC-20 pe Ethereum Mainnet, conceput pentru coordonarea viitoare a ecosistemului legată de inteligența energetică, participarea la căldura minieră, programe pilot și alinierea la mainnetul EnteleKRON. ENM este un token utilitar — nu un produs de investiții."
+        },
+        {
+          "q": "Care este diferența dintre enm.network și energiemind.com?",
+          "a": "enm.network este site-ul oficial de documentație a tokenului ENM care acoperă stratul de token: contract, tokenomică, prevânzare și divulgări de risc. energiemind.com acoperă stratul proiectului EnergieMIND: tehnologia inteligenței energetice, utilitatea căldurii miniere și dezvoltarea infrastructurii. Sunt părți separate, dar conectate ale aceluiași ecosistem."
+        },
+        {
+          "q": "Care este contract address oficial?",
+          "a": "Contractul oficial ENM pe Ethereum Mainnet este 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifică întotdeauna această adresă în mod independent pe Etherscan înainte de a interacționa."
+        },
+        {
+          "q": "Pot transfera ENM acum?",
+          "a": "Conform contractului verificat actual, transferurile sunt restricționate sau blocate. Verifică starea contractului pe Etherscan pentru cea mai recentă stare on-chain înainte de a încerca orice transfer."
+        },
+        {
+          "q": "Este ENM o investiție?",
+          "a": "Nu. ENM nu este prezentat ca produs de investiții, ofertă de titluri de valoare, instrument cu randament garantat sau promisiune de venit pasiv. Este un token utilitar pentru coordonarea ecosistemului. Activele cripto sunt cu risc ridicat și pot pierde valoare. Consultă notificarea completă de risc."
+        },
+        {
+          "q": "Când este prevânzarea?",
+          "a": "Early Investor: 01 iul – 30 sep 2026. Strategic Investor: 01 oct – 31 dec 2026. Private Sale: 01 ian – 31 mar 2027. Public Presale: din 01 apr 2027 în șase etape de câte 6 săptămâni. Consultați pagina de prevânzare și panoul de lansare pentru status live."
+        },
+        {
+          "q": "Care este oferta totală?",
+          "a": "Oferta totală maximă este de 50,000,000,000 ENM (50 de miliarde) cu 18 zecimale. Procentele de alocare pe categorii așteaptă publicarea oficială pe pagina de tokenomică."
+        },
+        {
+          "q": "Ce este alinierea la mainnetul EnteleKRON?",
+          "a": "ENM este pregătit pentru migrarea viitoare și alinierea cu ecosistemul mainnet EnteleKRON. Este planificată o categorie de alocare pentru rezerva de migrare. Termenii specifici de migrare, calendarele și detaliile tehnice vor fi publicate când vor fi disponibile."
+        },
+        {
+          "q": "Cum adaug ENM în portofelul meu?",
+          "a": "Folosește contract address oficial 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D cu simbolul token ENM și 18 zecimale. Verifică adresa pe Etherscan. Reține că transferurile pot fi în prezent restricționate conform stării contractului."
+        },
+        {
+          "q": "De unde pot obține actualizări oficiale?",
+          "a": "Informațiile oficiale despre token sunt publicate pe enm.network. Pentru întrebări, folosește pagina de contact. Nu avea încredere în canale neoficiale, mesaje DM pe rețele sociale sau site-uri terțe pentru contract address sau informații despre prevânzare."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Pagina contractului",
       "footerNote": "Timpii de răspuns pot varia. Pentru preocupări urgente de securitate legate de adrese frauduloase sau impersonare, include \"SECURITY\" în subiectul mesajului. Nu trimite niciodată criptomonedă la adrese primite prin mesaje nesolicitate.",
       "riskFooter": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare."
+    },
+    "dashboard": {
+      "title": "Panou de lansare | ENM Token",
+      "description": "Panou de lansare token ENM — status live al fazei de prevânzare, numărătoare inversă, conexiune portofel și verificare portofel oficial de contribuție.",
+      "ogTitle": "Panou de lansare ENM | enm.network",
+      "ogDescription": "Panou live de prevânzare ENM cu urmărirea fazelor, numărătoare inversă și instrumente portofel.",
+      "breadcrumb": "Panou",
+      "eyebrow": "Centru de control lansare",
+      "h1": "Panou de lansare",
+      "lead": "Monitorizați fazele de prevânzare, urmăriți etapa curentă, conectați portofelul și verificați adresa oficială de contribuție înainte de orice participare.",
+      "riskShort": "ENM nu este un produs de investiții sau un instrument cu randament garantat. Verificați toate adresele pe pagina oficială de portofele. Activele cripto sunt de risc ridicat.",
+      "currentPhase": "Faza curentă",
+      "nextPhase": "Faza următoare",
+      "timeRemaining": "Timp rămas",
+      "phaseEnded": "Fază încheiată",
+      "phaseNotStarted": "Încă nu a început",
+      "publicStage": "Etapă publică",
+      "ofStages": "din 6",
+      "walletPanel": "Portofelul dvs.",
+      "walletConnected": "Conectat",
+      "walletDisconnected": "Neconectat",
+      "networkLabel": "Rețea",
+      "networkRequired": "Ethereum Mainnet necesar",
+      "contributionTitle": "Portofel oficial de contribuție",
+      "contributionDesc": "Contribuțiile la prevânzare sunt coordonate prin portofelul oficial ENM Treasury. Verificați întotdeauna că această adresă corespunde cu enm.network/wallets înainte de a trimite fonduri.",
+      "statsTitle": "Prezentare generală lansare",
+      "statPhase": "Fază activă",
+      "statStage": "Etapă publică",
+      "statAccepted": "Active acceptate",
+      "statNetwork": "Rețea",
+      "timelineTitle": "Cronologie faze",
+      "registerTitle": "Notificare participare",
+      "registerDesc": "În fazele active, conectați portofelul și coordonați participarea conform termenilor publicați. Acest panou nu garantează alocare, randament sau livrare de tokeni — consultați notificarea de risc.",
+      "riskFooter": "Verificați întotdeauna adresele portofelelor independent. ENM nu este o recomandare de investiții sau un instrument cu randament garantat."
+    },
+    "wallets": {
+      "title": "Portofele oficiale | ENM Token",
+      "description": "Portofele oficiale ale ecosistemului EnergieMind ENM pe Ethereum Mainnet — adrese Founder, OPS, Genesis și Treasury.",
+      "ogTitle": "Portofele oficiale ENM | enm.network",
+      "ogDescription": "Adrese verificate ale portofelelor oficiale ale ecosistemului ENM pe Ethereum Mainnet.",
+      "breadcrumb": "Portofele",
+      "eyebrow": "Adrese verificate",
+      "h1": "Portofele oficiale",
+      "lead": "Portofele oficiale ale ecosistemului EnergieMind ENM pe Ethereum Mainnet. Verificați fiecare adresă pe această pagină înainte de interacțiune. Adresele frauduloase pot folosi nume similare.",
+      "riskShort": "Aveți încredere doar în adresele listate pe enm.network/wallets. Echipa ENM nu vă va trimite niciodată adrese de portofel prin DM. ENM nu este un produs de investiții.",
+      "verifyTitle": "Verificare adresă",
+      "verifyDesc": "Comparați caracter cu caracter înainte de a trimite fonduri. Contribuțiile la prevânzare folosesc portofelul Treasury când fazele sunt active.",
+      "tableTitle": "Portofele ecosistem",
+      "purposeLabel": "Scop",
+      "recommendedTitle": "Portofele suplimentare recomandate",
+      "recommendedDesc": "Pentru o lansare completă a tokenului, luați în considerare crearea acestor portofele suplimentare când sunteți gata:",
+      "recommended": [
+        {
+          "name": "Presale Escrow / Sale",
+          "desc": "Portofel dedicat de vânzare separat de Treasury dacă doriți izolare operațională (opțional — Treasury poate îndeplini acest rol)."
+        },
+        {
+          "name": "Vesting & Locks",
+          "desc": "Pentru programele de vesting ale echipei, fondatorilor și investitorilor când vestingul on-chain este implementat."
+        },
+        {
+          "name": "Liquidity",
+          "desc": "Pentru furnizarea de lichiditate DEX când este anunțat oficial."
+        },
+        {
+          "name": "Community & Rewards",
+          "desc": "Pentru programe pilot, stimulente comunitare și alocări partenere."
+        }
+      ],
+      "purposes": {
+        "founder": "Alocare fondator și coordonare guvernanță",
+        "operations": "Cheltuieli operaționale și operațiuni ecosistem",
+        "genesis": "Alocare Genesis și bootstrap inițial al ecosistemului",
+        "treasury": "Treasury, contribuții prevânzare și rezerve ecosistem"
+      },
+      "riskFooter": "Tranzacțiile cripto sunt ireversibile. Verificați întotdeauna adresele pe enm.network. ENM nu este un produs de investiții sau un instrument cu randament garantat."
     }
   }
 }

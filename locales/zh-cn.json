@@ -13,7 +13,9 @@
       "roadmap": "路线图",
       "risk": "风险声明",
       "faq": "常见问题",
-      "contact": "联系我们"
+      "contact": "联系我们",
+      "dashboard": "启动面板",
+      "wallets": "钱包"
     },
     "buttons": {
       "viewContract": "查看合约",
@@ -21,7 +23,14 @@
       "joinPresale": "参与预售",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "在 Etherscan 上打开",
-      "contractDetails": "合约详情"
+      "contractDetails": "合约详情",
+      "openDashboard": "打开启动面板",
+      "viewWallets": "官方钱包",
+      "connectWallet": "连接钱包",
+      "disconnectWallet": "断开连接",
+      "copyAddress": "复制地址",
+      "copied": "已复制！",
+      "verifyOnWallets": "在钱包页面验证"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "待定",
       "confirmed": "已确认",
       "preparation": "准备中",
-      "locked": "转账受限 / 已锁定"
+      "locked": "转账受限 / 已锁定",
+      "scheduled": "已排期",
+      "active": "进行中",
+      "completed": "已完成",
+      "upcoming": "即将开始"
     },
     "table": {
       "property": "属性",
@@ -44,7 +57,8 @@
       "parameter": "参数",
       "category": "类别",
       "description": "描述",
-      "allocation": "分配"
+      "allocation": "分配",
+      "network": "Network"
     },
     "stats": {
       "symbol": "符号",
@@ -152,30 +166,84 @@
       "footerNote": "目前未公布确切的分配百分比。最终代币经济学获批后，本页面将更新为经核实的数字。请勿依赖非官方或第三方代币经济学图表。",
       "riskFooter": "加密资产风险极高，可能贬值。适用监管、技术、流动性、市场及运营风险。",
       "allocations": [
-        { "name": "实用分配", "desc": "为 EnergieMIND 网络内的生态系统实用功能、运营参与和服务协调预留的代币。" },
-        { "name": "生态储备", "desc": "用于长期生态发展、合作伙伴关系和战略协调活动的储备。" },
-        { "name": "流动性", "desc": "在适用且官方宣布时用于市场流动性提供的分配。" },
-        { "name": "金库", "desc": "用于生态维护、开发和基础设施支持的运营金库。" },
-        { "name": "创始人 / 团队锁定", "desc": "团队和创始人分配受待公布的锁定计划和归属条款约束。" },
-        { "name": "社区 / 合作伙伴计划", "desc": "用于社区倡议、合作伙伴入驻和试点参与计划的分配。" },
-        { "name": "迁移储备", "desc": "用于未来 EnteleKRON 主网迁移对齐和跨链实用过渡的储备。" }
+        {
+          "name": "实用分配",
+          "desc": "为 EnergieMIND 网络内的生态系统实用功能、运营参与和服务协调预留的代币。"
+        },
+        {
+          "name": "生态储备",
+          "desc": "用于长期生态发展、合作伙伴关系和战略协调活动的储备。"
+        },
+        {
+          "name": "流动性",
+          "desc": "在适用且官方宣布时用于市场流动性提供的分配。"
+        },
+        {
+          "name": "金库",
+          "desc": "用于生态维护、开发和基础设施支持的运营金库。"
+        },
+        {
+          "name": "创始人 / 团队锁定",
+          "desc": "团队和创始人分配受待公布的锁定计划和归属条款约束。"
+        },
+        {
+          "name": "社区 / 合作伙伴计划",
+          "desc": "用于社区倡议、合作伙伴入驻和试点参与计划的分配。"
+        },
+        {
+          "name": "迁移储备",
+          "desc": "用于未来 EnteleKRON 主网迁移对齐和跨链实用过渡的储备。"
+        }
       ]
     },
     "presale": {
       "title": "预售 | ENM Token",
-      "description": "ENM 代币预售状态和准备信息。在正式确定前，不公布预售日期、价格或支付方式。",
-      "ogTitle": "ENM 预售 | enm.network",
-      "ogDescription": "ENM 预售准备阶段。在正式确定前，不公布日期、价格或支付方式。",
+      "description": "ENM 代币预售时间表：Early Investor、Strategic Investor、Private Sale 及 6 阶段 Public Presale。官方日期与启动面板请访问 enm.network。",
+      "ogTitle": "ENM 预售时间表 | enm.network",
+      "ogDescription": "ENM 官方预售阶段，自 2026 年 7 月至 2027 年公开阶段。",
       "breadcrumb": "预售",
-      "eyebrow": "预售信息",
-      "h1": "预售准备阶段",
-      "lead": "ENM 预售条款尚未最终确定。官方销售规则、日期和接受资产确认后，本页面将更新。",
+      "eyebrow": "预售时间表",
+      "h1": "ENM 预售",
+      "lead": "从早期投资者准入到六阶段公开预售的结构化预售阶段。请使用启动面板查看实时状态，并始终在官方钱包页面核实钱包地址。",
       "important": "重要提示：",
-      "riskShort": "本网站未公布预售日期、价格、代币数量或接受的支付方式。除非通过 enm.network 官方渠道核实，否则请勿向任何声称是 ENM 预售的地址发送资金。ENM 并非投资产品或保证收益工具。",
-      "expectTitle": "预期内容",
-      "expectP1": "预售条款最终确定后，本页面将更新经核实的信息，包括接受资产、归属计划、KYC 要求（如有）和完整销售条款。在此之前，本网站无活跃的预售参与机制。",
-      "expectP2": "有关预售时间或资格的咨询，请使用联系页面。采取任何行动前，请始终通过 enm.network 核实信息。",
-      "contactLink": "联系页面",
+      "riskShort": "ENM 并非投资产品或保证收益工具。仅使用 enm.network/wallets 上公布的钱包地址。请勿向非官方地址发送资金。加密资产风险极高，可能贬值。",
+      "timelineTitle": "预售时间线",
+      "timelineDesc": "ENM 代币分配协调的官方阶段时间表。",
+      "phasesTitle": "投资阶段",
+      "publicStagesTitle": "公开预售 — 6 个阶段",
+      "publicStagesDesc": "公开预售于 2027 年 4 月 1 日开始。每个阶段持续 6 周。",
+      "stageLabel": "阶段",
+      "weeksLabel": "周",
+      "durationLabel": "时长",
+      "statusLabel": "状态",
+      "dashboardCta": "打开启动面板，查看实时阶段状态、倒计时和钱包连接。",
+      "walletsCta": "所有官方 ENM 钱包均列于钱包页面。发送资金前请核实每个地址。",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "为符合条件的早期参与者提供生态系统协调的早期准入。"
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "战略合作伙伴及与基础设施对齐的参与者。"
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "公开预售开始前的私募阶段。"
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "分六个连续 6 周阶段的公开预售。"
+        }
+      ],
+      "expectTitle": "参与方式",
+      "expectP1": "预售协调接受的资产：Ethereum Mainnet 上的 ETH、USDC 和 USDT。最终定价、分配限额和归属条款将在各活跃阶段开始前公布。",
+      "expectP2": "有关资格的问题，请联系",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM 并非投资建议、金融产品、证券发行或保证收益工具。加密资产风险极高，可能贬值。",
       "fields": {
         "presaleStatus": "预售状态",
@@ -185,7 +253,8 @@
         "saleTerms": "销售条款",
         "price": "价格",
         "saleDates": "销售日期",
-        "allocationAmount": "分配数量"
+        "allocationAmount": "分配数量",
+        "contributionWallet": "官方出资钱包"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "路线图阶段代表预期方向。未公布具体日期。有进展时将通过官方渠道发布更新。",
       "riskFooter": "加密资产风险极高，可能贬值。适用监管、技术、流动性、市场及运营风险。",
       "steps": [
-        { "title": "代币基础", "desc": "维护经核实的 ENM Ethereum 合约，在 enm.network 发布官方代币文档，为生态系统建立透明的合约信息。" },
-        { "title": "文档与透明度", "desc": "发布代币经济学、预售条款（最终确定后）、风险披露和官方沟通渠道。完成代币层与 energiemind.com 项目网站的分离。" },
-        { "title": "预售与分配", "desc": "条款最终确定并官方公布后启动预售。根据已发布的代币经济学实施归属、分配和分发。" },
-        { "title": "实用激活", "desc": "随着基础设施成熟，启用与能源智能参与、挖矿热能协调和试点计划框架相关的生态系统实用功能。" },
-        { "title": "合作伙伴与试点网络", "desc": "支持酒店、商业建筑、太阳能站点和矿机加热器安装的试点部署，采用代币协调的参与模式。" },
-        { "title": "生态扩展", "desc": "在 EnergieMIND 生态系统内发展社区和合作伙伴计划、基础设施激励结构和运营协调工具。" },
-        { "title": "EnteleKRON 对齐", "desc": "为 EnteleKRON 主网模块、验证者系统和生态原生结算准备迁移储备和对齐框架。" },
-        { "title": "主网迁移", "desc": "在技术、监管和生态条件满足时，执行与 EnteleKRON 主网的迁移对齐。条款将提前公布。" }
+        {
+          "title": "代币基础",
+          "desc": "维护经核实的 ENM Ethereum 合约，在 enm.network 发布官方代币文档，为生态系统建立透明的合约信息。"
+        },
+        {
+          "title": "文档与透明度",
+          "desc": "发布代币经济学、预售条款（最终确定后）、风险披露和官方沟通渠道。完成代币层与 energiemind.com 项目网站的分离。"
+        },
+        {
+          "title": "预售与分配",
+          "desc": "条款最终确定并官方公布后启动预售。根据已发布的代币经济学实施归属、分配和分发。"
+        },
+        {
+          "title": "实用激活",
+          "desc": "随着基础设施成熟，启用与能源智能参与、挖矿热能协调和试点计划框架相关的生态系统实用功能。"
+        },
+        {
+          "title": "合作伙伴与试点网络",
+          "desc": "支持酒店、商业建筑、太阳能站点和矿机加热器安装的试点部署，采用代币协调的参与模式。"
+        },
+        {
+          "title": "生态扩展",
+          "desc": "在 EnergieMIND 生态系统内发展社区和合作伙伴计划、基础设施激励结构和运营协调工具。"
+        },
+        {
+          "title": "EnteleKRON 对齐",
+          "desc": "为 EnteleKRON 主网模块、验证者系统和生态原生结算准备迁移储备和对齐框架。"
+        },
+        {
+          "title": "主网迁移",
+          "desc": "在技术、监管和生态条件满足时，执行与 EnteleKRON 主网的迁移对齐。条款将提前公布。"
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "风险声明",
       "lead": "与 ENM 或任何相关生态服务交互前，请仔细阅读本声明。",
       "sections": [
-        { "title": "一般免责声明", "content": "ENM 并非投资建议、金融产品、证券发行或保证收益工具。加密资产风险极高，可能贬值。适用监管、技术、流动性、市场及运营风险。请始终独立核实合约地址。", "bold": true },
-        { "title": "非投资产品", "content": "ENM 作为 EnergieMIND 能源智能网络内生态协调的实用型代币呈现。其不作为投资产品、证券、股权、债务工具或金融衍生品提供或描述。enm.network 上的任何内容均不构成财务建议、投资建议或买卖或持有任何加密资产的建议。" },
-        { "title": "无保证收益", "content": "ENM 不承诺、保证或暗示任何投资回报、被动收入、利润、升值或收益。任何加密资产的历史表现不代表未来结果。您可能损失与 ENM 相关的部分或全部价值。" },
-        { "title": "非证券发行", "content": "ENM 不在任何司法管辖区作为证券发行。加密代币的监管分类因国家而异，可能变更。您须自行了解并遵守所在司法管辖区的适用法律。" },
-        { "title": "市场与流动性风险", "content": "加密市场波动剧烈。ENM 可能流动性有限或没有流动性。价格可能大幅波动或无法交易。不保证存在二级市场、交易所上市或交易场所。" },
-        { "title": "技术风险", "content": "智能合约、区块链网络和钱包软件存在固有技术风险，包括漏洞、攻击、网络故障、分叉和不可逆交易。ENM 合约目前表明存在转账限制。交互前请始终在 Etherscan 上验证合约行为。" },
-        { "title": "监管风险", "content": "全球加密货币监管不断发展。未来监管行动可能限制、禁止或对 ENM 持有者、转账或生态参与施加要求。合规义务可能因司法管辖区而异。" },
-        { "title": "运营风险", "content": "生态发展、预售执行、实用激活和主网迁移受技术、运营和资源限制。路线图项目为规划里程碑，非具有约束力的承诺或交付保证。" },
-        { "title": "合约验证", "content": "官方 ENM 合约地址为 Ethereum Mainnet 上的 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D。请始终在 Etherscan 上独立核实此地址。请勿信任来自非官方来源、社交媒体消息或第三方网站的地址。诈骗代币可能使用相似名称。" },
-        { "title": "预售警示", "content": "在 enm.network 上正式确定前，不公布预售日期、价格或支付方式。除非通过本官方网站核实，否则请勿向任何声称代表 ENM 预售的地址发送资金。" },
-        { "title": "您的责任", "content": "访问 enm.network 或与 ENM 交互，即表示您理解这些风险并对自己的决定承担全部责任。在做出与加密资产相关的任何决定前，请咨询合格的法律、税务和财务专业人士。" }
+        {
+          "title": "一般免责声明",
+          "content": "ENM 并非投资建议、金融产品、证券发行或保证收益工具。加密资产风险极高，可能贬值。适用监管、技术、流动性、市场及运营风险。请始终独立核实合约地址。",
+          "bold": true
+        },
+        {
+          "title": "非投资产品",
+          "content": "ENM 作为 EnergieMIND 能源智能网络内生态协调的实用型代币呈现。其不作为投资产品、证券、股权、债务工具或金融衍生品提供或描述。enm.network 上的任何内容均不构成财务建议、投资建议或买卖或持有任何加密资产的建议。"
+        },
+        {
+          "title": "无保证收益",
+          "content": "ENM 不承诺、保证或暗示任何投资回报、被动收入、利润、升值或收益。任何加密资产的历史表现不代表未来结果。您可能损失与 ENM 相关的部分或全部价值。"
+        },
+        {
+          "title": "非证券发行",
+          "content": "ENM 不在任何司法管辖区作为证券发行。加密代币的监管分类因国家而异，可能变更。您须自行了解并遵守所在司法管辖区的适用法律。"
+        },
+        {
+          "title": "市场与流动性风险",
+          "content": "加密市场波动剧烈。ENM 可能流动性有限或没有流动性。价格可能大幅波动或无法交易。不保证存在二级市场、交易所上市或交易场所。"
+        },
+        {
+          "title": "技术风险",
+          "content": "智能合约、区块链网络和钱包软件存在固有技术风险，包括漏洞、攻击、网络故障、分叉和不可逆交易。ENM 合约目前表明存在转账限制。交互前请始终在 Etherscan 上验证合约行为。"
+        },
+        {
+          "title": "监管风险",
+          "content": "全球加密货币监管不断发展。未来监管行动可能限制、禁止或对 ENM 持有者、转账或生态参与施加要求。合规义务可能因司法管辖区而异。"
+        },
+        {
+          "title": "运营风险",
+          "content": "生态发展、预售执行、实用激活和主网迁移受技术、运营和资源限制。路线图项目为规划里程碑，非具有约束力的承诺或交付保证。"
+        },
+        {
+          "title": "合约验证",
+          "content": "官方 ENM 合约地址为 Ethereum Mainnet 上的 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D。请始终在 Etherscan 上独立核实此地址。请勿信任来自非官方来源、社交媒体消息或第三方网站的地址。诈骗代币可能使用相似名称。"
+        },
+        {
+          "title": "预售警示",
+          "content": "仅使用 enm.network/wallets 上公布的钱包地址。官方预售出资钱包为 Ethereum Mainnet 上的 ENM Treasury 地址。请勿向社交媒体、私信或第三方网站上的地址发送资金。ENM 并非投资产品或保证收益工具。"
+        },
+        {
+          "title": "您的责任",
+          "content": "访问 enm.network 或与 ENM 交互，即表示您理解这些风险并对自己的决定承担全部责任。在做出与加密资产相关的任何决定前，请咨询合格的法律、税务和财务专业人士。"
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM 并非投资建议、金融产品、证券发行或保证收益工具。",
       "riskFooter": "加密资产风险极高，可能贬值。适用监管、技术、流动性、市场及运营风险。请始终独立核实合约地址。",
       "items": [
-        { "q": "什么是 ENM？", "a": "ENM（EnergieMind）是 EnergieMIND 能源智能生态系统的实用型代币。它是 Ethereum Mainnet 上的 ERC-20 代币，专为与能源智能、挖矿热能参与、试点计划和 EnteleKRON 主网对齐相关的未来生态协调而设计。ENM 是实用型代币——非投资产品。" },
-        { "q": "enm.network 和 energiemind.com 有何区别？", "a": "enm.network 是官方 ENM 代币文档网站，涵盖代币层：合约、代币经济学、预售和风险披露。energiemind.com 涵盖 EnergieMIND 项目层：能源智能技术、挖矿热能实用和基础设施开发。它们是同一生态系统中相互独立但相互关联的部分。" },
-        { "q": "官方合约地址是什么？", "a": "Ethereum Mainnet 上的官方 ENM 合约为 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D。交互前请始终在 Etherscan 上独立核实此地址。" },
-        { "q": "我现在可以转账 ENM 吗？", "a": "根据当前经核实的合约，转账受限或已锁定。尝试任何转账前，请在 Etherscan 上查看合约的最新链上状态。" },
-        { "q": "ENM 是投资吗？", "a": "不是。ENM 不作为投资产品、证券发行、保证收益工具或被动收入承诺呈现。它是用于生态协调的实用型代币。加密资产风险极高，可能贬值。请参阅完整风险声明。" },
-        { "q": "预售何时进行？", "a": "预售处于准备阶段。尚未公布日期、价格、接受资产或销售条款。条款最终确定后，本页面将更新。请勿向非官方预售地址发送资金。" },
-        { "q": "总供应量是多少？", "a": "最大总供应量为 50,000,000,000 ENM（500 亿），18 位小数。各类别的分配百分比待在代币经济学页面官方公布。" },
-        { "q": "什么是 EnteleKRON 主网对齐？", "a": "ENM 已为与 EnteleKRON 主网生态系统的未来迁移和对齐做好准备。已规划迁移储备分配类别。具体迁移条款、时间线和技术细节将在可用时公布。" },
-        { "q": "如何将 ENM 添加到钱包？", "a": "使用官方合约地址 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D，代币符号 ENM，18 位小数。在 Etherscan 上核实地址。请注意，根据合约状态，转账目前可能受限。" },
-        { "q": "在哪里获取官方更新？", "a": "官方代币信息发布在 enm.network。咨询请使用联系页面。请勿信任非官方渠道、社交媒体私信或第三方网站获取合约地址或预售信息。" }
+        {
+          "q": "什么是 ENM？",
+          "a": "ENM（EnergieMind）是 EnergieMIND 能源智能生态系统的实用型代币。它是 Ethereum Mainnet 上的 ERC-20 代币，专为与能源智能、挖矿热能参与、试点计划和 EnteleKRON 主网对齐相关的未来生态协调而设计。ENM 是实用型代币——非投资产品。"
+        },
+        {
+          "q": "enm.network 和 energiemind.com 有何区别？",
+          "a": "enm.network 是官方 ENM 代币文档网站，涵盖代币层：合约、代币经济学、预售和风险披露。energiemind.com 涵盖 EnergieMIND 项目层：能源智能技术、挖矿热能实用和基础设施开发。它们是同一生态系统中相互独立但相互关联的部分。"
+        },
+        {
+          "q": "官方合约地址是什么？",
+          "a": "Ethereum Mainnet 上的官方 ENM 合约为 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D。交互前请始终在 Etherscan 上独立核实此地址。"
+        },
+        {
+          "q": "我现在可以转账 ENM 吗？",
+          "a": "根据当前经核实的合约，转账受限或已锁定。尝试任何转账前，请在 Etherscan 上查看合约的最新链上状态。"
+        },
+        {
+          "q": "ENM 是投资吗？",
+          "a": "不是。ENM 不作为投资产品、证券发行、保证收益工具或被动收入承诺呈现。它是用于生态协调的实用型代币。加密资产风险极高，可能贬值。请参阅完整风险声明。"
+        },
+        {
+          "q": "预售何时进行？",
+          "a": "Early Investor：2026 年 7 月 1 日 – 9 月 30 日。Strategic Investor：2026 年 10 月 1 日 – 12 月 31 日。Private Sale：2027 年 1 月 1 日 – 3 月 31 日。Public Presale：自 2027 年 4 月 1 日起，分六个 6 周阶段。请参阅预售页面和启动面板查看实时状态。"
+        },
+        {
+          "q": "总供应量是多少？",
+          "a": "最大总供应量为 50,000,000,000 ENM（500 亿），18 位小数。各类别的分配百分比待在代币经济学页面官方公布。"
+        },
+        {
+          "q": "什么是 EnteleKRON 主网对齐？",
+          "a": "ENM 已为与 EnteleKRON 主网生态系统的未来迁移和对齐做好准备。已规划迁移储备分配类别。具体迁移条款、时间线和技术细节将在可用时公布。"
+        },
+        {
+          "q": "如何将 ENM 添加到钱包？",
+          "a": "使用官方合约地址 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D，代币符号 ENM，18 位小数。在 Etherscan 上核实地址。请注意，根据合约状态，转账目前可能受限。"
+        },
+        {
+          "q": "在哪里获取官方更新？",
+          "a": "官方代币信息发布在 enm.network。咨询请使用联系页面。请勿信任非官方渠道、社交媒体私信或第三方网站获取合约地址或预售信息。"
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "合约页面",
       "footerNote": "回复时间可能有所不同。对于与诈骗地址或冒充相关的紧急安全问题，请在邮件主题中包含 \"SECURITY\"。切勿向通过未经请求的消息收到的地址发送加密货币。",
       "riskFooter": "ENM 并非投资建议、金融产品、证券发行或保证收益工具。加密资产风险极高，可能贬值。"
+    },
+    "dashboard": {
+      "title": "启动面板 | ENM Token",
+      "description": "ENM 代币启动面板 — 实时预售阶段状态、倒计时、钱包连接及官方出资钱包验证。",
+      "ogTitle": "ENM 启动面板 | enm.network",
+      "ogDescription": "ENM 预售实时面板，含阶段跟踪、倒计时和钱包工具。",
+      "breadcrumb": "启动面板",
+      "eyebrow": "启动控制中心",
+      "h1": "启动面板",
+      "lead": "监控预售阶段、跟踪当前阶段、连接钱包，并在参与前核实官方出资地址。",
+      "riskShort": "ENM 并非投资产品或保证收益工具。请在官方钱包页面核实所有地址。加密资产风险极高。",
+      "currentPhase": "当前阶段",
+      "nextPhase": "下一阶段",
+      "timeRemaining": "剩余时间",
+      "phaseEnded": "阶段已结束",
+      "phaseNotStarted": "尚未开始",
+      "publicStage": "公开阶段",
+      "ofStages": "共 6 个",
+      "walletPanel": "您的钱包",
+      "walletConnected": "已连接",
+      "walletDisconnected": "未连接",
+      "networkLabel": "网络",
+      "networkRequired": "需要 Ethereum Mainnet",
+      "contributionTitle": "官方出资钱包",
+      "contributionDesc": "预售出资通过官方 ENM Treasury 钱包协调。发送资金前，请始终核实此地址与 enm.network/wallets 一致。",
+      "statsTitle": "启动概览",
+      "statPhase": "活跃阶段",
+      "statStage": "公开阶段",
+      "statAccepted": "接受资产",
+      "statNetwork": "网络",
+      "timelineTitle": "阶段时间线",
+      "registerTitle": "参与须知",
+      "registerDesc": "在活跃阶段，请连接钱包并按已公布条款协调参与。本面板不保证分配、收益或代币交付 — 请参阅风险声明。",
+      "riskFooter": "请始终独立核实钱包地址。ENM 并非投资建议或保证收益工具。"
+    },
+    "wallets": {
+      "title": "官方钱包 | ENM Token",
+      "description": "Ethereum Mainnet 上的官方 EnergieMind ENM 生态系统钱包 — Founder、OPS、Genesis 和 Treasury 地址。",
+      "ogTitle": "ENM 官方钱包 | enm.network",
+      "ogDescription": "Ethereum Mainnet 上经核实的官方 ENM 生态系统钱包地址。",
+      "breadcrumb": "钱包",
+      "eyebrow": "经核实地址",
+      "h1": "官方钱包",
+      "lead": "Ethereum Mainnet 上的官方 EnergieMind ENM 生态系统钱包。交互前请核实本页面上的每个地址。诈骗地址可能使用相似名称。",
+      "riskShort": "仅信任 enm.network/wallets 上列出的地址。ENM 团队绝不会通过私信发送钱包地址。ENM 并非投资产品。",
+      "verifyTitle": "地址验证",
+      "verifyDesc": "发送资金前请逐字核对。阶段活跃时，预售出资使用 Treasury 钱包。",
+      "tableTitle": "生态系统钱包",
+      "purposeLabel": "用途",
+      "recommendedTitle": "建议的附加钱包",
+      "recommendedDesc": "为完整代币发行，可在准备就绪时考虑创建以下附加钱包：",
+      "recommended": [
+        {
+          "name": "Presale Escrow / Sale",
+          "desc": "如需运营隔离，可设立独立于 Treasury 的专用销售钱包（可选 — Treasury 亦可承担此角色）。"
+        },
+        {
+          "name": "Vesting & Locks",
+          "desc": "用于链上归属部署后团队、创始人和投资者的归属计划。"
+        },
+        {
+          "name": "Liquidity",
+          "desc": "用于官方宣布后的 DEX 流动性提供。"
+        },
+        {
+          "name": "Community & Rewards",
+          "desc": "用于试点计划、社区激励和合作伙伴分配。"
+        }
+      ],
+      "purposes": {
+        "founder": "创始人分配与治理协调",
+        "operations": "运营支出与生态系统运营",
+        "genesis": "Genesis 分配与生态系统初始启动",
+        "treasury": "Treasury、预售出资与生态系统储备"
+      },
+      "riskFooter": "加密交易不可逆。请始终在 enm.network 上核实地址。ENM 并非投资产品或保证收益工具。"
     }
   }
 }
