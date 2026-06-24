@@ -13,7 +13,9 @@
       "roadmap": "Roadmap",
       "risk": "Avviso sui rischi",
       "faq": "FAQ",
-      "contact": "Contatti"
+      "contact": "Contatti",
+      "dashboard": "Dashboard di lancio",
+      "wallets": "Wallet ufficiali"
     },
     "buttons": {
       "viewContract": "Visualizza contratto",
@@ -21,7 +23,14 @@
       "joinPresale": "Partecipa alla prevendita",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Apri su Etherscan",
-      "contractDetails": "Dettagli contratto"
+      "contractDetails": "Dettagli contratto",
+      "openDashboard": "Apri dashboard di lancio",
+      "viewWallets": "Wallet ufficiali",
+      "connectWallet": "Connetti wallet",
+      "disconnectWallet": "Disconnetti",
+      "copyAddress": "Copia indirizzo",
+      "copied": "Copiato!",
+      "verifyOnWallets": "Verifica sulla pagina Wallet"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "In attesa",
       "confirmed": "Confermato",
       "preparation": "Preparazione",
-      "locked": "Trasferimenti limitati / bloccati"
+      "locked": "Trasferimenti limitati / bloccati",
+      "scheduled": "Programmato",
+      "active": "Attivo",
+      "completed": "Completato",
+      "upcoming": "In arrivo"
     },
     "table": {
       "property": "Proprietà",
@@ -44,7 +57,8 @@
       "parameter": "Parametro",
       "category": "Categoria",
       "description": "Descrizione",
-      "allocation": "Allocazione"
+      "allocation": "Allocazione",
+      "network": "Rete"
     },
     "stats": {
       "symbol": "Simbolo",
@@ -152,30 +166,84 @@
       "footerNote": "Al momento non sono pubblicate percentuali di allocazione esatte. Quando le tokenomics finali saranno approvate, questa pagina sarà aggiornata con cifre verificate. Non fate affidamento su grafici tokenomics non ufficiali o di terze parti.",
       "riskFooter": "Gli asset crypto sono ad alto rischio e possono perdere valore. Si applicano rischi normativi, tecnici, di liquidità, di mercato e operativi.",
       "allocations": [
-        { "name": "Allocazione di utilità", "desc": "Token riservati per funzioni di utilità dell'ecosistema, partecipazione operativa e coordinamento dei servizi all'interno della rete EnergieMIND." },
-        { "name": "Riserva ecosistema", "desc": "Riserva per lo sviluppo a lungo termine dell'ecosistema, partnership e attività di coordinamento strategico." },
-        { "name": "Liquidità", "desc": "Allocazione per la fornitura di liquidità di mercato quando applicabile e ufficialmente annunciata." },
-        { "name": "Tesoreria", "desc": "Tesoreria operativa per manutenzione, sviluppo e supporto infrastrutturale dell'ecosistema." },
-        { "name": "Blocco fondatore / team", "desc": "Allocazioni team e fondatori soggette a calendari di blocco e termini di vesting da pubblicare." },
-        { "name": "Programmi community / partner", "desc": "Allocazioni per iniziative community, onboarding partner e programmi di partecipazione ai piloti." },
-        { "name": "Riserva di migrazione", "desc": "Riserva per il futuro allineamento della migrazione al mainnet EnteleKRON e transizione di utilità cross-chain." }
+        {
+          "name": "Allocazione di utilità",
+          "desc": "Token riservati per funzioni di utilità dell'ecosistema, partecipazione operativa e coordinamento dei servizi all'interno della rete EnergieMIND."
+        },
+        {
+          "name": "Riserva ecosistema",
+          "desc": "Riserva per lo sviluppo a lungo termine dell'ecosistema, partnership e attività di coordinamento strategico."
+        },
+        {
+          "name": "Liquidità",
+          "desc": "Allocazione per la fornitura di liquidità di mercato quando applicabile e ufficialmente annunciata."
+        },
+        {
+          "name": "Tesoreria",
+          "desc": "Tesoreria operativa per manutenzione, sviluppo e supporto infrastrutturale dell'ecosistema."
+        },
+        {
+          "name": "Blocco fondatore / team",
+          "desc": "Allocazioni team e fondatori soggette a calendari di blocco e termini di vesting da pubblicare."
+        },
+        {
+          "name": "Programmi community / partner",
+          "desc": "Allocazioni per iniziative community, onboarding partner e programmi di partecipazione ai piloti."
+        },
+        {
+          "name": "Riserva di migrazione",
+          "desc": "Riserva per il futuro allineamento della migrazione al mainnet EnteleKRON e transizione di utilità cross-chain."
+        }
       ]
     },
     "presale": {
       "title": "Prevendita | ENM Token",
-      "description": "Stato della prevendita e informazioni di preparazione del token ENM. Nessuna data, prezzo o metodo di pagamento della prevendita è pubblicato fino alla finalizzazione ufficiale.",
-      "ogTitle": "Prevendita ENM | enm.network",
-      "ogDescription": "Fase di preparazione della prevendita ENM. Nessuna data, prezzo o metodo di pagamento pubblicato fino alla finalizzazione ufficiale.",
+      "description": "Calendario prevendita token ENM: Early Investor, Strategic Investor, Private Sale e prevendita pubblica in 6 fasi. Date ufficiali e dashboard di lancio su enm.network.",
+      "ogTitle": "Calendario prevendita ENM | enm.network",
+      "ogDescription": "Fasi ufficiali di prevendita ENM da luglio 2026 alle fasi pubbliche nel 2027.",
       "breadcrumb": "Prevendita",
-      "eyebrow": "Informazioni prevendita",
-      "h1": "Fase di preparazione prevendita",
-      "lead": "I termini di prevendita ENM non sono ancora finalizzati. Questa pagina sarà aggiornata quando regole di vendita ufficiali, date e asset accettati saranno confermati.",
+      "eyebrow": "Calendario prevendita",
+      "h1": "Prevendita ENM",
+      "lead": "Fasi di prevendita strutturate dall'accesso early investor a una prevendita pubblica in sei fasi. Usate la dashboard di lancio per lo stato in tempo reale e verificate sempre gli indirizzi wallet sulla pagina ufficiale dei wallet.",
       "important": "Importante:",
-      "riskShort": "Su questo sito non sono pubblicate date, prezzi, quantità di token o metodi di pagamento accettati della prevendita. Non inviate fondi a indirizzi che dichiarano di essere una prevendita ENM a meno che non siano verificati tramite canali ufficiali su enm.network. ENM non è un prodotto d'investimento né uno strumento di rendimento garantito.",
-      "expectTitle": "Cosa aspettarsi",
-      "expectP1": "Quando i termini di prevendita saranno finalizzati, questa pagina sarà aggiornata con informazioni verificate inclusi asset accettati, calendari di vesting, requisiti KYC (se presenti) e termini di vendita completi. Fino ad allora, non è attivo alcun meccanismo di partecipazione alla prevendita su questo sito.",
-      "expectP2": "Per domande su tempistiche o idoneità della prevendita, utilizzate la pagina contatti. Verificate sempre le informazioni tramite enm.network prima di intraprendere qualsiasi azione.",
-      "contactLink": "pagina contatti",
+      "riskShort": "ENM non è un prodotto d'investimento né uno strumento di rendimento garantito. Utilizzate solo indirizzi wallet pubblicati su enm.network/wallets. Non inviate fondi a indirizzi non ufficiali. Gli asset crypto sono ad alto rischio e possono perdere valore.",
+      "timelineTitle": "Cronologia prevendita",
+      "timelineDesc": "Calendario ufficiale delle fasi per la coordinazione della distribuzione del token ENM.",
+      "phasesTitle": "Fasi di investimento",
+      "publicStagesTitle": "Prevendita pubblica — 6 fasi",
+      "publicStagesDesc": "La prevendita pubblica inizia il 01 apr. 2027. Ogni fase dura 6 settimane.",
+      "stageLabel": "Fase",
+      "weeksLabel": "settimane",
+      "durationLabel": "Durata",
+      "statusLabel": "Stato",
+      "dashboardCta": "Aprite la dashboard di lancio per lo stato della fase in tempo reale, il conto alla rovescia e la connessione del wallet.",
+      "walletsCta": "Tutti i wallet ufficiali ENM sono elencati nella pagina Wallet. Verificate ogni indirizzo prima di inviare fondi.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Accesso anticipato alla coordinazione dell'ecosistema per partecipanti early qualificati."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Partner strategici e partecipanti allineati all'infrastruttura."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Fase di vendita privata prima dell'apertura della prevendita pubblica."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Prevendita pubblica su sei fasi consecutive di 6 settimane."
+        }
+      ],
+      "expectTitle": "Partecipazione",
+      "expectP1": "Asset accettati per la coordinazione della prevendita: ETH, USDC e USDT su Ethereum Mainnet. Prezzi finali, limiti di allocazione e condizioni di vesting saranno pubblicati prima di ogni fase attiva.",
+      "expectP2": "Per domande sull'idoneità, contattate",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM non è una raccomandazione d'investimento, un prodotto finanziario, un'offerta di titoli né uno strumento di rendimento garantito. Gli asset crypto sono ad alto rischio e possono perdere valore.",
       "fields": {
         "presaleStatus": "Stato prevendita",
@@ -185,7 +253,8 @@
         "saleTerms": "Termini di vendita",
         "price": "Prezzo",
         "saleDates": "Date di vendita",
-        "allocationAmount": "Importo allocazione"
+        "allocationAmount": "Importo allocazione",
+        "contributionWallet": "Wallet di contribuzione ufficiale"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Le fasi della roadmap rappresentano la direzione prevista. Non sono pubblicate date specifiche. Gli aggiornamenti sui progressi saranno comunicati tramite canali ufficiali quando disponibili.",
       "riskFooter": "Gli asset crypto sono ad alto rischio e possono perdere valore. Si applicano rischi normativi, tecnici, di liquidità, di mercato e operativi.",
       "steps": [
-        { "title": "Fondamenta del token", "desc": "Mantenere il contratto Ethereum ENM verificato, pubblicare la documentazione ufficiale del token su enm.network e stabilire informazioni contrattuali trasparenti per l'ecosistema." },
-        { "title": "Documentazione e trasparenza", "desc": "Pubblicare tokenomics, termini di prevendita (quando finalizzati), informative sui rischi e canali di comunicazione ufficiali. Completare la separazione del livello token dal sito progetto energiemind.com." },
-        { "title": "Prevendita e distribuzione", "desc": "Avviare la prevendita quando i termini saranno finalizzati e ufficialmente annunciati. Implementare vesting, allocazione e distribuzione secondo le tokenomics pubblicate." },
-        { "title": "Attivazione utilità", "desc": "Abilitare funzioni di utilità dell'ecosistema relative alla partecipazione all'intelligenza energetica, coordinamento calore mining e framework di programmi pilota man mano che l'infrastruttura matura." },
-        { "title": "Rete partner e piloti", "desc": "Supportare deployment pilota per hotel, edifici commerciali, siti solari e installazioni miner-riscaldatore con modelli di partecipazione coordinati da token." },
-        { "title": "Espansione ecosistema", "desc": "Sviluppare programmi community e partner, strutture di incentivo infrastrutturale e strumenti di coordinamento operativo all'interno dell'ecosistema EnergieMIND." },
-        { "title": "Allineamento EnteleKRON", "desc": "Preparare riserva di migrazione e framework di allineamento per moduli mainnet EnteleKRON, sistemi validatori e regolamento nativo dell'ecosistema." },
-        { "title": "Migrazione mainnet", "desc": "Eseguire l'allineamento della migrazione con il mainnet EnteleKRON quando le condizioni tecniche, normative e dell'ecosistema saranno soddisfatte. I termini saranno pubblicati in anticipo." }
+        {
+          "title": "Fondamenta del token",
+          "desc": "Mantenere il contratto Ethereum ENM verificato, pubblicare la documentazione ufficiale del token su enm.network e stabilire informazioni contrattuali trasparenti per l'ecosistema."
+        },
+        {
+          "title": "Documentazione e trasparenza",
+          "desc": "Pubblicare tokenomics, termini di prevendita (quando finalizzati), informative sui rischi e canali di comunicazione ufficiali. Completare la separazione del livello token dal sito progetto energiemind.com."
+        },
+        {
+          "title": "Prevendita e distribuzione",
+          "desc": "Avviare la prevendita quando i termini saranno finalizzati e ufficialmente annunciati. Implementare vesting, allocazione e distribuzione secondo le tokenomics pubblicate."
+        },
+        {
+          "title": "Attivazione utilità",
+          "desc": "Abilitare funzioni di utilità dell'ecosistema relative alla partecipazione all'intelligenza energetica, coordinamento calore mining e framework di programmi pilota man mano che l'infrastruttura matura."
+        },
+        {
+          "title": "Rete partner e piloti",
+          "desc": "Supportare deployment pilota per hotel, edifici commerciali, siti solari e installazioni miner-riscaldatore con modelli di partecipazione coordinati da token."
+        },
+        {
+          "title": "Espansione ecosistema",
+          "desc": "Sviluppare programmi community e partner, strutture di incentivo infrastrutturale e strumenti di coordinamento operativo all'interno dell'ecosistema EnergieMIND."
+        },
+        {
+          "title": "Allineamento EnteleKRON",
+          "desc": "Preparare riserva di migrazione e framework di allineamento per moduli mainnet EnteleKRON, sistemi validatori e regolamento nativo dell'ecosistema."
+        },
+        {
+          "title": "Migrazione mainnet",
+          "desc": "Eseguire l'allineamento della migrazione con il mainnet EnteleKRON quando le condizioni tecniche, normative e dell'ecosistema saranno soddisfatte. I termini saranno pubblicati in anticipo."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Avviso sui rischi",
       "lead": "Leggete attentamente questo avviso prima di interagire con ENM o qualsiasi servizio correlato all'ecosistema.",
       "sections": [
-        { "title": "Esclusione di responsabilità generale", "content": "ENM non è una raccomandazione d'investimento, un prodotto finanziario, un'offerta di titoli né uno strumento di rendimento garantito. Gli asset crypto sono ad alto rischio e possono perdere valore. Si applicano rischi normativi, tecnici, di liquidità, di mercato e operativi. Verificate sempre l'indirizzo del contratto in modo indipendente.", "bold": true },
-        { "title": "Non è un prodotto d'investimento", "content": "ENM è presentato come token di utilità per il coordinamento dell'ecosistema all'interno della rete di intelligenza energetica EnergieMIND. Non è offerto né descritto come prodotto d'investimento, titolo, partecipazione azionaria, strumento di debito o derivato finanziario. Nulla su enm.network costituisce consulenza finanziaria, consulenza d'investimento o raccomandazione di acquistare, vendere o detenere asset crypto." },
-        { "title": "Nessun rendimento garantito", "content": "ENM non promette, garantisce né implica alcun rendimento dell'investimento, reddito passivo, profitto, apprezzamento o rendimento. Le performance passate di qualsiasi asset crypto non sono indicative di risultati futuri. Potreste perdere parte o tutto il valore associato a ENM." },
-        { "title": "Non è un'offerta di titoli", "content": "ENM non è offerto come titolo in alcuna giurisdizione. La classificazione normativa dei token crypto varia per paese e può cambiare. Siete gli unici responsabili di comprendere e rispettare le leggi applicabili nella vostra giurisdizione." },
-        { "title": "Rischi di mercato e liquidità", "content": "I mercati crypto sono volatili. ENM può avere liquidità limitata o assente. I prezzi possono fluttuare drasticamente o diventare non negoziabili. Non c'è alcuna garanzia di mercato secondario, quotazione in borsa o piattaforma di trading." },
-        { "title": "Rischi tecnici", "content": "Smart contract, reti blockchain e software wallet comportano rischi tecnici intrinseci inclusi bug, exploit, guasti di rete, fork e transazioni irreversibili. Il contratto ENM attualmente indica restrizioni sui trasferimenti. Verificate sempre il comportamento del contratto su Etherscan prima di interagire." },
-        { "title": "Rischi normativi", "content": "Le normative sulle criptovalute si stanno evolvendo a livello globale. Future azioni normative potrebbero limitare, vietare o imporre requisiti ai detentori di ENM, ai trasferimenti o alla partecipazione all'ecosistema. Gli obblighi di conformità possono variare per giurisdizione." },
-        { "title": "Rischi operativi", "content": "Lo sviluppo dell'ecosistema, l'esecuzione della prevendita, l'attivazione dell'utilità e la migrazione mainnet sono soggetti a vincoli tecnici, operativi e di risorse. Gli elementi della roadmap sono traguardi di pianificazione, non impegni vincolanti o garanzie di consegna." },
-        { "title": "Verifica del contratto", "content": "L'indirizzo ufficiale del contratto ENM è 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D su Ethereum Mainnet. Verificate sempre questo indirizzo in modo indipendente su Etherscan. Non fidatevi di indirizzi da fonti non ufficiali, messaggi sui social media o siti web di terze parti. Token fraudolenti possono usare nomi simili." },
-        { "title": "Cautela prevendita", "content": "Nessuna data, prezzo o metodo di pagamento della prevendita è pubblicato fino alla finalizzazione ufficiale su enm.network. Non inviate fondi a indirizzi che dichiarano di rappresentare una prevendita ENM a meno che non siano verificati tramite questo sito ufficiale." },
-        { "title": "La vostra responsabilità", "content": "Accedendo a enm.network o interagendo con ENM, riconoscete di comprendere questi rischi e accettate la piena responsabilità delle vostre decisioni. Consultate professionisti qualificati in materia legale, fiscale e finanziaria prima di prendere decisioni relative agli asset crypto." }
+        {
+          "title": "Esclusione di responsabilità generale",
+          "content": "ENM non è una raccomandazione d'investimento, un prodotto finanziario, un'offerta di titoli né uno strumento di rendimento garantito. Gli asset crypto sono ad alto rischio e possono perdere valore. Si applicano rischi normativi, tecnici, di liquidità, di mercato e operativi. Verificate sempre l'indirizzo del contratto in modo indipendente.",
+          "bold": true
+        },
+        {
+          "title": "Non è un prodotto d'investimento",
+          "content": "ENM è presentato come token di utilità per il coordinamento dell'ecosistema all'interno della rete di intelligenza energetica EnergieMIND. Non è offerto né descritto come prodotto d'investimento, titolo, partecipazione azionaria, strumento di debito o derivato finanziario. Nulla su enm.network costituisce consulenza finanziaria, consulenza d'investimento o raccomandazione di acquistare, vendere o detenere asset crypto."
+        },
+        {
+          "title": "Nessun rendimento garantito",
+          "content": "ENM non promette, garantisce né implica alcun rendimento dell'investimento, reddito passivo, profitto, apprezzamento o rendimento. Le performance passate di qualsiasi asset crypto non sono indicative di risultati futuri. Potreste perdere parte o tutto il valore associato a ENM."
+        },
+        {
+          "title": "Non è un'offerta di titoli",
+          "content": "ENM non è offerto come titolo in alcuna giurisdizione. La classificazione normativa dei token crypto varia per paese e può cambiare. Siete gli unici responsabili di comprendere e rispettare le leggi applicabili nella vostra giurisdizione."
+        },
+        {
+          "title": "Rischi di mercato e liquidità",
+          "content": "I mercati crypto sono volatili. ENM può avere liquidità limitata o assente. I prezzi possono fluttuare drasticamente o diventare non negoziabili. Non c'è alcuna garanzia di mercato secondario, quotazione in borsa o piattaforma di trading."
+        },
+        {
+          "title": "Rischi tecnici",
+          "content": "Smart contract, reti blockchain e software wallet comportano rischi tecnici intrinseci inclusi bug, exploit, guasti di rete, fork e transazioni irreversibili. Il contratto ENM attualmente indica restrizioni sui trasferimenti. Verificate sempre il comportamento del contratto su Etherscan prima di interagire."
+        },
+        {
+          "title": "Rischi normativi",
+          "content": "Le normative sulle criptovalute si stanno evolvendo a livello globale. Future azioni normative potrebbero limitare, vietare o imporre requisiti ai detentori di ENM, ai trasferimenti o alla partecipazione all'ecosistema. Gli obblighi di conformità possono variare per giurisdizione."
+        },
+        {
+          "title": "Rischi operativi",
+          "content": "Lo sviluppo dell'ecosistema, l'esecuzione della prevendita, l'attivazione dell'utilità e la migrazione mainnet sono soggetti a vincoli tecnici, operativi e di risorse. Gli elementi della roadmap sono traguardi di pianificazione, non impegni vincolanti o garanzie di consegna."
+        },
+        {
+          "title": "Verifica del contratto",
+          "content": "L'indirizzo ufficiale del contratto ENM è 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D su Ethereum Mainnet. Verificate sempre questo indirizzo in modo indipendente su Etherscan. Non fidatevi di indirizzi da fonti non ufficiali, messaggi sui social media o siti web di terze parti. Token fraudolenti possono usare nomi simili."
+        },
+        {
+          "title": "Cautela prevendita",
+          "content": "Utilizzate solo indirizzi wallet pubblicati su enm.network/wallets. Il wallet di contribuzione ufficiale alla prevendita è l'indirizzo Treasury ENM su Ethereum Mainnet. Non inviate fondi a indirizzi da social media, messaggi diretti o siti di terze parti. ENM non è un prodotto d'investimento né uno strumento di rendimento garantito."
+        },
+        {
+          "title": "La vostra responsabilità",
+          "content": "Accedendo a enm.network o interagendo con ENM, riconoscete di comprendere questi rischi e accettate la piena responsabilità delle vostre decisioni. Consultate professionisti qualificati in materia legale, fiscale e finanziaria prima di prendere decisioni relative agli asset crypto."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM non è una raccomandazione d'investimento, un prodotto finanziario, un'offerta di titoli né uno strumento di rendimento garantito.",
       "riskFooter": "Gli asset crypto sono ad alto rischio e possono perdere valore. Si applicano rischi normativi, tecnici, di liquidità, di mercato e operativi. Verificate sempre l'indirizzo del contratto in modo indipendente.",
       "items": [
-        { "q": "Cos'è ENM?", "a": "ENM (EnergieMind) è il token di utilità dell'ecosistema di intelligenza energetica EnergieMIND. È un token ERC-20 su Ethereum Mainnet, progettato per il coordinamento futuro dell'ecosistema relativo all'intelligenza energetica, partecipazione al calore mining, programmi pilota e allineamento con il mainnet EnteleKRON. ENM è un token di utilità — non un prodotto d'investimento." },
-        { "q": "Qual è la differenza tra enm.network e energiemind.com?", "a": "enm.network è il sito ufficiale di documentazione del token ENM che copre il livello del token: contratto, tokenomics, prevendita e informative sui rischi. energiemind.com copre il livello progetto EnergieMIND: tecnologia di intelligenza energetica, utilità calore mining e sviluppo infrastrutturale. Sono parti separate ma collegate dello stesso ecosistema." },
-        { "q": "Qual è l'indirizzo ufficiale del contratto?", "a": "Il contratto ufficiale ENM su Ethereum Mainnet è 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verificate sempre questo indirizzo in modo indipendente su Etherscan prima di interagire." },
-        { "q": "Posso trasferire ENM adesso?", "a": "Secondo il contratto verificato attuale, i trasferimenti sono limitati o bloccati. Controllate lo stato del contratto su Etherscan per l'ultimo stato on-chain prima di tentare qualsiasi trasferimento." },
-        { "q": "ENM è un investimento?", "a": "No. ENM non è presentato come prodotto d'investimento, offerta di titoli, strumento di rendimento garantito o promessa di reddito passivo. È un token di utilità per il coordinamento dell'ecosistema. Gli asset crypto sono ad alto rischio e possono perdere valore. Consultate l'avviso sui rischi completo." },
-        { "q": "Quando è la prevendita?", "a": "La prevendita è in fase di preparazione. Non sono state pubblicate date, prezzi, asset accettati o termini di vendita. Questa pagina sarà aggiornata quando i termini saranno finalizzati. Non inviate fondi a indirizzi di prevendita non ufficiali." },
-        { "q": "Qual è l'offerta totale?", "a": "L'offerta totale massima è di 50.000.000.000 ENM (50 miliardi) con 18 decimali. Le percentuali di allocazione tra le categorie sono in attesa di pubblicazione ufficiale sulla pagina tokenomics." },
-        { "q": "Cos'è l'allineamento con il mainnet EnteleKRON?", "a": "ENM è preparato per la migrazione futura e l'allineamento con l'ecosistema mainnet EnteleKRON. È prevista una categoria di allocazione riserva di migrazione. Termini, tempistiche e dettagli tecnici specifici della migrazione saranno pubblicati quando disponibili." },
-        { "q": "Come aggiungo ENM al mio wallet?", "a": "Utilizzate l'indirizzo ufficiale del contratto 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D con simbolo token ENM e 18 decimali. Verificate l'indirizzo su Etherscan. Tenete presente che i trasferimenti possono essere attualmente limitati secondo lo stato del contratto." },
-        { "q": "Dove posso ottenere aggiornamenti ufficiali?", "a": "Le informazioni ufficiali sul token sono pubblicate su enm.network. Per domande, utilizzate la pagina contatti. Non fidatevi di canali non ufficiali, DM sui social media o siti di terze parti per indirizzi di contratto o informazioni sulla prevendita." }
+        {
+          "q": "Cos'è ENM?",
+          "a": "ENM (EnergieMind) è il token di utilità dell'ecosistema di intelligenza energetica EnergieMIND. È un token ERC-20 su Ethereum Mainnet, progettato per il coordinamento futuro dell'ecosistema relativo all'intelligenza energetica, partecipazione al calore mining, programmi pilota e allineamento con il mainnet EnteleKRON. ENM è un token di utilità — non un prodotto d'investimento."
+        },
+        {
+          "q": "Qual è la differenza tra enm.network e energiemind.com?",
+          "a": "enm.network è il sito ufficiale di documentazione del token ENM che copre il livello del token: contratto, tokenomics, prevendita e informative sui rischi. energiemind.com copre il livello progetto EnergieMIND: tecnologia di intelligenza energetica, utilità calore mining e sviluppo infrastrutturale. Sono parti separate ma collegate dello stesso ecosistema."
+        },
+        {
+          "q": "Qual è l'indirizzo ufficiale del contratto?",
+          "a": "Il contratto ufficiale ENM su Ethereum Mainnet è 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verificate sempre questo indirizzo in modo indipendente su Etherscan prima di interagire."
+        },
+        {
+          "q": "Posso trasferire ENM adesso?",
+          "a": "Secondo il contratto verificato attuale, i trasferimenti sono limitati o bloccati. Controllate lo stato del contratto su Etherscan per l'ultimo stato on-chain prima di tentare qualsiasi trasferimento."
+        },
+        {
+          "q": "ENM è un investimento?",
+          "a": "No. ENM non è presentato come prodotto d'investimento, offerta di titoli, strumento di rendimento garantito o promessa di reddito passivo. È un token di utilità per il coordinamento dell'ecosistema. Gli asset crypto sono ad alto rischio e possono perdere valore. Consultate l'avviso sui rischi completo."
+        },
+        {
+          "q": "Quando è la prevendita?",
+          "a": "Early Investor: 01 lug. – 30 set. 2026. Strategic Investor: 01 ott. – 31 dic. 2026. Private Sale: 01 gen. – 31 mar. 2027. Public Presale: dal 01 apr. 2027 in sei fasi da 6 settimane. Consultate la pagina Prevendita e la dashboard di lancio per lo stato in tempo reale."
+        },
+        {
+          "q": "Qual è l'offerta totale?",
+          "a": "L'offerta totale massima è di 50.000.000.000 ENM (50 miliardi) con 18 decimali. Le percentuali di allocazione tra le categorie sono in attesa di pubblicazione ufficiale sulla pagina tokenomics."
+        },
+        {
+          "q": "Cos'è l'allineamento con il mainnet EnteleKRON?",
+          "a": "ENM è preparato per la migrazione futura e l'allineamento con l'ecosistema mainnet EnteleKRON. È prevista una categoria di allocazione riserva di migrazione. Termini, tempistiche e dettagli tecnici specifici della migrazione saranno pubblicati quando disponibili."
+        },
+        {
+          "q": "Come aggiungo ENM al mio wallet?",
+          "a": "Utilizzate l'indirizzo ufficiale del contratto 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D con simbolo token ENM e 18 decimali. Verificate l'indirizzo su Etherscan. Tenete presente che i trasferimenti possono essere attualmente limitati secondo lo stato del contratto."
+        },
+        {
+          "q": "Dove posso ottenere aggiornamenti ufficiali?",
+          "a": "Le informazioni ufficiali sul token sono pubblicate su enm.network. Per domande, utilizzate la pagina contatti. Non fidatevi di canali non ufficiali, DM sui social media o siti di terze parti per indirizzi di contratto o informazioni sulla prevendita."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Pagina contratto",
       "footerNote": "I tempi di risposta possono variare. Per preoccupazioni urgenti di sicurezza relative a indirizzi fraudolenti o impersonificazione, includete \"SECURITY\" nell'oggetto. Non inviate mai criptovaluta a indirizzi ricevuti tramite messaggi non richiesti.",
       "riskFooter": "ENM non è una raccomandazione d'investimento, un prodotto finanziario, un'offerta di titoli né uno strumento di rendimento garantito. Gli asset crypto sono ad alto rischio e possono perdere valore."
+    },
+    "dashboard": {
+      "title": "Dashboard di lancio | ENM Token",
+      "description": "Dashboard di lancio token ENM — stato fase prevendita in tempo reale, conto alla rovescia, connessione wallet e verifica del wallet di contribuzione ufficiale.",
+      "ogTitle": "Dashboard di lancio ENM | enm.network",
+      "ogDescription": "Dashboard prevendita ENM in tempo reale con tracciamento fasi, conto alla rovescia e strumenti wallet.",
+      "breadcrumb": "Dashboard",
+      "eyebrow": "Centro di controllo del lancio",
+      "h1": "Dashboard di lancio",
+      "lead": "Monitorate le fasi di prevendita, seguite la fase corrente, collegate il wallet e verificate l'indirizzo di contribuzione ufficiale prima di qualsiasi partecipazione.",
+      "riskShort": "ENM non è un prodotto d'investimento né uno strumento di rendimento garantito. Verificate tutti gli indirizzi sulla pagina ufficiale dei wallet. Gli asset crypto sono ad alto rischio.",
+      "currentPhase": "Fase corrente",
+      "nextPhase": "Fase successiva",
+      "timeRemaining": "Tempo rimanente",
+      "phaseEnded": "Fase terminata",
+      "phaseNotStarted": "Non ancora iniziata",
+      "publicStage": "Fase pubblica",
+      "ofStages": "di 6",
+      "walletPanel": "Il vostro wallet",
+      "walletConnected": "Connesso",
+      "walletDisconnected": "Non connesso",
+      "networkLabel": "Rete",
+      "networkRequired": "Ethereum Mainnet richiesto",
+      "contributionTitle": "Wallet di contribuzione ufficiale",
+      "contributionDesc": "Le contribuzioni alla prevendita sono coordinate tramite il wallet Treasury ENM ufficiale. Verificate sempre che questo indirizzo corrisponda a enm.network/wallets prima di inviare fondi.",
+      "statsTitle": "Panoramica del lancio",
+      "statPhase": "Fase attiva",
+      "statStage": "Fase pubblica",
+      "statAccepted": "Asset accettati",
+      "statNetwork": "Rete",
+      "timelineTitle": "Cronologia delle fasi",
+      "registerTitle": "Avviso di partecipazione",
+      "registerDesc": "Durante le fasi attive, collegate il wallet e coordinate la partecipazione secondo i termini pubblicati. Questa dashboard non garantisce allocazione, rendimento o consegna di token — consultate l'avviso sui rischi.",
+      "riskFooter": "Verificate sempre gli indirizzi wallet in modo indipendente. ENM non è una raccomandazione d'investimento né uno strumento di rendimento garantito."
+    },
+    "wallets": {
+      "title": "Wallet ufficiali | ENM Token",
+      "description": "Wallet ufficiali dell'ecosistema EnergieMind ENM su Ethereum Mainnet — indirizzi Founder, OPS, Genesis e Treasury.",
+      "ogTitle": "Wallet ufficiali ENM | enm.network",
+      "ogDescription": "Indirizzi wallet ufficiali verificati dell'ecosistema ENM su Ethereum Mainnet.",
+      "breadcrumb": "Wallet",
+      "eyebrow": "Indirizzi verificati",
+      "h1": "Wallet ufficiali",
+      "lead": "Wallet ufficiali dell'ecosistema EnergieMind ENM su Ethereum Mainnet. Verificate ogni indirizzo su questa pagina prima di interagire. Indirizzi truffa possono usare nomi simili.",
+      "riskShort": "Affidatevi solo agli indirizzi elencati su enm.network/wallets. Il team ENM non vi invierà mai indirizzi wallet via messaggio diretto. ENM non è un prodotto d'investimento.",
+      "verifyTitle": "Verifica indirizzo",
+      "verifyDesc": "Confrontate carattere per carattere prima di inviare fondi. Le contribuzioni alla prevendita usano il wallet Treasury quando le fasi sono attive.",
+      "tableTitle": "Wallet dell'ecosistema",
+      "purposeLabel": "Scopo",
+      "recommendedTitle": "Wallet aggiuntivi consigliati",
+      "recommendedDesc": "Per un lancio token completo, considerate di creare questi wallet aggiuntivi quando siete pronti:",
+      "recommended": [
+        {
+          "name": "Presale Escrow / Sale",
+          "desc": "Wallet di vendita dedicato, separato dalla Treasury se desiderate isolamento operativo (opzionale — la Treasury può svolgere questo ruolo)."
+        },
+        {
+          "name": "Vesting & Locks",
+          "desc": "Per calendari di vesting di team, fondatori e investitori al deploy del vesting on-chain."
+        },
+        {
+          "name": "Liquidity",
+          "desc": "Per la fornitura di liquidità DEX quando annunciata ufficialmente."
+        },
+        {
+          "name": "Community & Rewards",
+          "desc": "Per programmi pilota, incentivi community e allocazioni partner."
+        }
+      ],
+      "purposes": {
+        "founder": "Allocazione fondatore e coordinamento governance",
+        "operations": "Spese operative e operazioni dell'ecosistema",
+        "genesis": "Allocazione genesis e bootstrap iniziale dell'ecosistema",
+        "treasury": "Treasury, contribuzioni prevendita e riserve dell'ecosistema"
+      },
+      "riskFooter": "Le transazioni crypto sono irreversibili. Verificate sempre gli indirizzi su enm.network. ENM non è un prodotto d'investimento né uno strumento di rendimento garantito."
     }
   }
 }
