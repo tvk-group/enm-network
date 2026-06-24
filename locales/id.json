@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "Beranda ENM Token",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu",
     "selectLanguage": "Pilih bahasa",
     "nav": {
       "home": "Beranda",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "Tokenomics",
       "presale": "Pra-penjualan",
       "contract": "Kontrak",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "Dokumentasi resmi token ENM di enm.network. Informasi proyek EnergieMIND tersedia di energiemind.com.",
       "descShort": "Dokumentasi resmi token ENM di enm.network.",
       "tokenHeading": "Token",
@@ -67,7 +67,8 @@
       "standard": "Standar",
       "maxSupply": "Pasokan Maks.",
       "decimals": "Desimal",
-      "overview": "Ringkasan Token"
+      "overview": "Ringkasan Token",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Kontrak Ethereum:",
@@ -88,17 +89,26 @@
       "verifiedMatch": "Kecocokan Tepat Terverifikasi",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM adalah lapisan token utility ekosistem kecerdasan energi EnergieMIND. Dokumentasi resmi token, informasi kontrak, dan status pra-penjualan di enm.network.",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "Lapisan token utility ekosistem kecerdasan energi EnergieMIND.",
       "breadcrumb": "Beranda",
-      "eyebrow": "Situs Resmi ENM Token",
-      "h1": "ENM Token",
+      "eyebrow": "Situs Resmi EnergieMIND Token",
+      "h1": "EnergieMIND Token",
       "lead": "Lapisan token utility ekosistem kecerdasan energi EnergieMIND.",
       "supportLine": "Utilitas Energi · Partisipasi Panas Penambangan · Koordinasi Ekosistem · Penyelarasan Mainnet Masa Depan",
       "layersTitle": "Dua lapisan, satu ekosistem.",
@@ -129,20 +139,21 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM (EnergieMind) adalah token utility Ethereum ERC-20 untuk ekosistem kecerdasan energi EnergieMIND. Detail token, status, dan informasi kontrak.",
-      "ogTitle": "Dokumentasi ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
+      "description": "EnergieMIND Token (ENM) adalah token utility Ethereum ERC-20 untuk ekosistem kecerdasan energi EnergieMIND. Detail token, status, dan informasi kontrak.",
+      "ogTitle": "Dokumentasi EnergieMIND Token | enm.network",
       "ogDescription": "Detail token utility Ethereum ERC-20, status, dan informasi kontrak untuk ENM.",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "Dokumentasi Token",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "Lapisan token utility ekosistem kecerdasan energi EnergieMIND — dirancang untuk koordinasi ekosistem, bukan sebagai produk investasi.",
       "riskShort": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin. Aset kripto berisiko tinggi dan dapat kehilangan nilai. Selalu verifikasi contract address secara mandiri.",
       "aboutTitle": "Tentang ENM",
-      "aboutP1": "ENM (EnergieMind) adalah token utility Ethereum ERC-20 untuk ekosistem EnergieMIND. Dirancang untuk koordinasi masa depan terkait kecerdasan energi, partisipasi utilitas panas penambangan, program pilot, insentif infrastruktur energi, dan penyelarasan EnteleKRON mainnet.",
+      "aboutP1": "EnergieMIND Token (ENM) adalah token utility Ethereum ERC-20 untuk ekosistem EnergieMIND. Dirancang untuk koordinasi masa depan terkait kecerdasan energi, partisipasi utilitas panas penambangan, program pilot, insentif infrastruktur energi, dan penyelarasan EnteleKRON mainnet.",
       "aboutP2": "ENM terpisah dari situs proyek EnergieMIND di energiemind.com, yang mencakup teknologi dan infrastruktur. Situs ini hanya mendokumentasikan lapisan token.",
       "scopeTitle": "Ruang lingkup utility yang dimaksudkan.",
       "scopeDesc": "ENM diposisikan sebagai utility koordinasi — bukan pendapatan pasif, jaminan keuntungan, atau penawaran sekuritas.",
@@ -162,12 +173,13 @@
         "maxSupply": "Pasokan Maks.",
         "status": "Status",
         "contract": "Kontrak"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "Tokenomics | ENM Token",
+      "title": "Tokenomics | EnergieMIND Token",
       "description": "Struktur tokenomics ENM dan kategori alokasi. Persentase akhir menunggu publikasi resmi.",
-      "ogTitle": "ENM Tokenomics | enm.network",
+      "ogTitle": "EnergieMIND Tokenomics | enm.network",
       "ogDescription": "Pasokan token ENM dan kategori alokasi. Persentase akhir menunggu publikasi resmi.",
       "breadcrumb": "Tokenomics",
       "eyebrow": "Struktur Alokasi",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "Pra-penjualan | ENM Token",
+      "title": "Pra-penjualan | EnergieMIND Token",
       "description": "Jadwal pra-penjualan token ENM: Early Investor, Strategic Investor, Private Sale, dan pra-penjualan publik 6 tahap. Tanggal resmi dan dasbor peluncuran di enm.network.",
       "ogTitle": "Jadwal Pra-penjualan ENM | enm.network",
       "ogDescription": "Fase pra-penjualan resmi ENM dari Juli 2026 hingga tahap publik pada 2027.",
@@ -269,10 +281,11 @@
         "saleDates": "Tanggal Penjualan",
         "allocationAmount": "Jumlah Alokasi",
         "contributionWallet": "Dompet kontribusi resmi"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "Kontrak | ENM Token",
+      "title": "Kontrak | EnergieMIND Token",
       "description": "Kontrak resmi token ENM di Ethereum Mainnet. contract address ERC-20 terverifikasi, parameter token, dan tautan Etherscan.",
       "ogTitle": "ENM Kontrak | enm.network",
       "ogDescription": "Kontrak resmi ENM ERC-20 di Ethereum Mainnet. Alamat terverifikasi dan parameter token.",
@@ -310,9 +323,9 @@
       }
     },
     "roadmap": {
-      "title": "Roadmap | ENM Token",
+      "title": "Roadmap | EnergieMIND Token",
       "description": "Roadmap token ENM dari fondasi kontrak hingga koordinasi ekosistem dan penyelarasan EnteleKRON mainnet.",
-      "ogTitle": "ENM Roadmap | enm.network",
+      "ogTitle": "EnergieMIND Token Roadmap | enm.network",
       "ogDescription": "Roadmap pengembangan token ENM dari fondasi hingga penyelarasan EnteleKRON mainnet.",
       "breadcrumb": "Roadmap",
       "eyebrow": "Jalur Pengembangan",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "Fondasi Token",
-          "desc": "Pertahankan kontrak ENM Ethereum terverifikasi, publikasikan dokumentasi token resmi di enm.network, dan bangun informasi kontrak transparan untuk ekosistem."
+          "desc": "Pertahankan kontrak EnergieMIND Token (ENM) Ethereum terverifikasi, publikasikan dokumentasi token resmi di enm.network, dan bangun informasi kontrak transparan untuk ekosistem."
         },
         {
           "title": "Dokumentasi & Transparansi",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "Pemberitahuan Risiko | ENM Token",
+      "title": "Pemberitahuan Risiko | EnergieMIND Token",
       "description": "Pengungkapan risiko token ENM. ENM bukan produk investasi, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin.",
       "ogTitle": "Pemberitahuan Risiko ENM | enm.network",
       "ogDescription": "Pengungkapan risiko lengkap untuk token ENM. Bukan produk investasi, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin.",
@@ -405,7 +418,7 @@
         },
         {
           "title": "Kehati-hatian Pra-penjualan",
-          "content": "Hanya gunakan alamat dompet yang dipublikasikan di enm.network/wallets. Dompet kontribusi pra-penjualan resmi adalah alamat ENM Treasury di Ethereum Mainnet. Jangan kirim dana ke alamat dari media sosial, DM, atau situs pihak ketiga. ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin."
+          "content": "Hanya gunakan alamat dompet yang dipublikasikan di enm.network/wallets. Dompet kontribusi pra-penjualan resmi adalah alamat EnergieMIND Token Treasury di Ethereum Mainnet. Jangan kirim dana ke alamat dari media sosial, DM, atau situs pihak ketiga. ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin."
         },
         {
           "title": "Tanggung Jawab Anda",
@@ -414,9 +427,9 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "Pertanyaan umum tentang token ENM, kontrak, pra-penjualan, tokenomics, dan ekosistem EnergieMIND.",
-      "ogTitle": "ENM FAQ | enm.network",
+      "ogTitle": "EnergieMIND Token FAQ | enm.network",
       "ogDescription": "Pertanyaan umum tentang token ENM, kontrak, pra-penjualan, dan ekosistem.",
       "breadcrumb": "FAQ",
       "eyebrow": "Pertanyaan Umum",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "Apa itu ENM?",
-          "a": "ENM (EnergieMind) adalah token utility ekosistem kecerdasan energi EnergieMIND. Ini adalah token ERC-20 di Ethereum Mainnet, dirancang untuk koordinasi ekosistem masa depan terkait kecerdasan energi, partisipasi panas penambangan, program pilot, dan penyelarasan EnteleKRON mainnet. ENM adalah token utility — bukan produk investasi."
+          "a": "EnergieMIND Token (ENM) adalah token utility ekosistem kecerdasan energi EnergieMIND. Ini adalah token ERC-20 di Ethereum Mainnet, dirancang untuk koordinasi ekosistem masa depan terkait kecerdasan energi, partisipasi panas penambangan, program pilot, dan penyelarasan EnteleKRON mainnet. ENM adalah token utility — bukan produk investasi."
         },
         {
           "q": "Apa perbedaan antara enm.network dan energiemind.com?",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "Kontak | ENM Token",
+      "title": "Kontak | EnergieMIND Token",
       "description": "Informasi kontak untuk pertanyaan token ENM. Saluran komunikasi resmi untuk enm.network.",
       "ogTitle": "Kontak ENM | enm.network",
       "ogDescription": "Saluran kontak resmi untuk pertanyaan token ENM dan kemitraan.",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM bukan rekomendasi investasi, produk keuangan, penawaran sekuritas, atau instrumen dengan imbal hasil terjamin. Aset kripto berisiko tinggi dan dapat kehilangan nilai."
     },
     "dashboard": {
-      "title": "Dasbor Peluncuran | ENM Token",
+      "title": "Dasbor Peluncuran | EnergieMIND Token",
       "description": "Dasbor peluncuran token ENM — status fase pra-penjualan langsung, hitung mundur, koneksi dompet, dan verifikasi dompet kontribusi resmi.",
       "ogTitle": "Dasbor Peluncuran ENM | enm.network",
       "ogDescription": "Dasbor pra-penjualan ENM langsung dengan pelacakan fase, hitung mundur, dan alat dompet.",
@@ -513,7 +526,7 @@
       "networkLabel": "Jaringan",
       "networkRequired": "Ethereum Mainnet diperlukan",
       "contributionTitle": "Dompet kontribusi resmi",
-      "contributionDesc": "Kontribusi pra-penjualan dikoordinasikan melalui dompet ENM Treasury resmi. Selalu verifikasi bahwa alamat ini cocok dengan enm.network/wallets sebelum mengirim dana.",
+      "contributionDesc": "Kontribusi pra-penjualan dikoordinasikan melalui dompet EnergieMIND Token Treasury resmi. Selalu verifikasi bahwa alamat ini cocok dengan enm.network/wallets sebelum mengirim dana.",
       "statsTitle": "Ringkasan peluncuran",
       "statPhase": "Fase aktif",
       "statStage": "Tahap publik",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "Dompet Resmi | ENM Token",
-      "description": "Dompet ekosistem EnergieMind ENM resmi di Ethereum Mainnet — alamat Founder, OPS, Genesis, dan Treasury.",
+      "title": "Dompet Resmi | EnergieMIND Token",
+      "description": "Dompet ekosistem EnergieMIND Token (ENM) resmi di Ethereum Mainnet — alamat Founder, OPS, Genesis, dan Treasury.",
       "ogTitle": "Dompet Resmi ENM | enm.network",
       "ogDescription": "Alamat dompet ekosistem ENM resmi terverifikasi di Ethereum Mainnet.",
       "breadcrumb": "Dompet",
       "eyebrow": "Alamat Terverifikasi",
       "h1": "Dompet Resmi",
-      "lead": "Dompet ekosistem EnergieMind ENM resmi di Ethereum Mainnet. Verifikasi setiap alamat di halaman ini sebelum berinteraksi. Alamat penipuan mungkin menggunakan nama serupa.",
+      "lead": "Dompet ekosistem EnergieMIND Token (ENM) resmi di Ethereum Mainnet. Verifikasi setiap alamat di halaman ini sebelum berinteraksi. Alamat penipuan mungkin menggunakan nama serupa.",
       "riskShort": "Hanya percayai alamat yang tercantum di enm.network/wallets. Tim ENM tidak akan pernah mengirimi Anda alamat dompet melalui DM. ENM bukan produk investasi.",
       "verifyTitle": "Verifikasi alamat",
       "verifyDesc": "Bandingkan karakter demi karakter sebelum mengirim dana. Kontribusi pra-penjualan menggunakan dompet Treasury saat fase aktif.",
@@ -624,14 +637,14 @@
       "riskFooter": "Transaksi kripto tidak dapat dibatalkan. Selalu verifikasi alamat di enm.network. ENM bukan produk investasi atau instrumen dengan imbal hasil terjamin."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "ENM Token होम",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "मेनू खोलें",
     "closeMenu": "मेनू बंद करें",
     "selectLanguage": "भाषा चुनें",
     "nav": {
       "home": "होम",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "टोकनोमिक्स",
       "presale": "प्रीसेल",
       "contract": "कॉन्ट्रैक्ट",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "enm.network पर आधिकारिक ENM टोकन दस्तावेज़। EnergieMIND परियोजना जानकारी energiemind.com पर उपलब्ध है।",
       "descShort": "enm.network पर आधिकारिक ENM टोकन दस्तावेज़।",
       "tokenHeading": "टोकन",
@@ -67,7 +67,8 @@
       "standard": "मानक",
       "maxSupply": "अधिकतम आपूर्ति",
       "decimals": "दशमलव",
-      "overview": "टोकन अवलोकन"
+      "overview": "टोकन अवलोकन",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Ethereum कॉन्ट्रैक्ट:",
@@ -88,17 +89,26 @@
       "verifiedMatch": "सत्यापित सटीक मिलान",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM, EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत है। enm.network पर आधिकारिक टोकन दस्तावेज़, कॉन्ट्रैक्ट जानकारी और प्रीसेल स्थिति।",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत।",
       "breadcrumb": "होम",
-      "eyebrow": "आधिकारिक ENM Token साइट",
-      "h1": "ENM Token",
+      "eyebrow": "आधिकारिक EnergieMIND Token साइट",
+      "h1": "EnergieMIND Token",
       "lead": "EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत।",
       "supportLine": "ऊर्जा उपयोगिता · माइनिंग हीट भागीदारी · पारिस्थितिकी तंत्र समन्वय · भविष्य के मेननेट संरेखण",
       "layersTitle": "दो परतें, एक पारिस्थितिकी तंत्र।",
@@ -129,20 +139,21 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM (EnergieMind) EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र के लिए Ethereum ERC-20 उपयोगिता टोकन है। टोकन विवरण, स्थिति और कॉन्ट्रैक्ट जानकारी।",
-      "ogTitle": "ENM Token दस्तावेज़ | enm.network",
+      "title": "EnergieMIND Token | enm.network",
+      "description": "EnergieMIND Token (ENM) EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र के लिए Ethereum ERC-20 उपयोगिता टोकन है। टोकन विवरण, स्थिति और कॉन्ट्रैक्ट जानकारी।",
+      "ogTitle": "EnergieMIND Token दस्तावेज़ | enm.network",
       "ogDescription": "ENM के लिए Ethereum ERC-20 उपयोगिता टोकन विवरण, स्थिति और कॉन्ट्रैक्ट जानकारी।",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "टोकन दस्तावेज़",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत — पारिस्थितिकी तंत्र समन्वय के लिए डिज़ाइन, निवेश उत्पाद के रूप में नहीं।",
       "riskShort": "ENM निवेश सिफारिश, वित्तीय उत्पाद, प्रतिभूति पेशकश या गारंटीकृत रिटर्न उपकरण नहीं है। क्रिप्टो संपत्तियाँ उच्च जोखिम वाली हैं और मूल्य खो सकती हैं। हमेशा contract address को स्वतंत्र रूप से सत्यापित करें।",
       "aboutTitle": "ENM के बारे में",
-      "aboutP1": "ENM (EnergieMind) EnergieMIND पारिस्थितिकी तंत्र के लिए Ethereum ERC-20 उपयोगिता टोकन है। यह ऊर्जा बुद्धिमत्ता, माइनिंग हीट उपयोगिता भागीदारी, पायलट कार्यक्रम, ऊर्जा अवसंरचना प्रोत्साहन और EnteleKRON मेननेट संरेखण से संबंधित भविष्य के समन्वय के लिए डिज़ाइन किया गया है।",
+      "aboutP1": "EnergieMIND Token (ENM) EnergieMIND पारिस्थितिकी तंत्र के लिए Ethereum ERC-20 उपयोगिता टोकन है। यह ऊर्जा बुद्धिमत्ता, माइनिंग हीट उपयोगिता भागीदारी, पायलट कार्यक्रम, ऊर्जा अवसंरचना प्रोत्साहन और EnteleKRON मेननेट संरेखण से संबंधित भविष्य के समन्वय के लिए डिज़ाइन किया गया है।",
       "aboutP2": "ENM energiemind.com पर EnergieMIND परियोजना वेबसाइट से अलग है, जो तकनीक और अवसंरचना को कवर करती है। यह साइट केवल टोकन परत का दस्तावेज़ीकरण करती है।",
       "scopeTitle": "इच्छित उपयोगिता दायरा।",
       "scopeDesc": "ENM एक समन्वय उपयोगिता के रूप में स्थित है — निष्क्रिय आय, लाभ गारंटी या प्रतिभूति पेशकश नहीं।",
@@ -162,10 +173,11 @@
         "maxSupply": "अधिकतम आपूर्ति",
         "status": "स्थिति",
         "contract": "कॉन्ट्रैक्ट"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "टोकनोमिक्स | ENM Token",
+      "title": "टोकनोमिक्स | EnergieMIND Token",
       "description": "ENM टोकनोमिक्स संरचना और आवंटन श्रेणियाँ। अंतिम प्रतिशत आधिकारिक प्रकाशन लंबित।",
       "ogTitle": "ENM टोकनोमिक्स | enm.network",
       "ogDescription": "ENM टोकन आपूर्ति और आवंटन श्रेणियाँ। अंतिम प्रतिशत आधिकारिक प्रकाशन लंबित।",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "प्रीसेल | ENM Token",
+      "title": "प्रीसेल | EnergieMIND Token",
       "description": "ENM टोकन प्रीसेल अनुसूची: Early Investor, Strategic Investor, Private Sale और 6-चरणीय Public Presale। enm.network पर आधिकारिक तिथियाँ और लॉन्च डैशबोर्ड।",
       "ogTitle": "ENM प्रीसेल अनुसूची | enm.network",
       "ogDescription": "जुलाई 2026 से 2027 में सार्वजनिक चरणों तक आधिकारिक ENM प्रीसेल चरण।",
@@ -269,10 +281,11 @@
         "saleDates": "बिक्री तिथियाँ",
         "allocationAmount": "आवंटन मात्रा",
         "contributionWallet": "आधिकारिक योगदान वॉलेट"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "कॉन्ट्रैक्ट | ENM Token",
+      "title": "कॉन्ट्रैक्ट | EnergieMIND Token",
       "description": "Ethereum Mainnet पर आधिकारिक ENM टोकन कॉन्ट्रैक्ट। सत्यापित ERC-20 कॉन्ट्रैक्ट पता, टोकन पैरामीटर और Etherscan लिंक।",
       "ogTitle": "ENM कॉन्ट्रैक्ट | enm.network",
       "ogDescription": "Ethereum Mainnet पर आधिकारिक ENM ERC-20 कॉन्ट्रैक्ट। सत्यापित पता और टोकन पैरामीटर।",
@@ -310,7 +323,7 @@
       }
     },
     "roadmap": {
-      "title": "रोडमैप | ENM Token",
+      "title": "रोडमैप | EnergieMIND Token",
       "description": "कॉन्ट्रैक्ट नींव से पारिस्थितिकी तंत्र समन्वय और EnteleKRON मेननेट संरेखण तक ENM टोकन रोडमैप।",
       "ogTitle": "ENM रोडमैप | enm.network",
       "ogDescription": "नींव से EnteleKRON मेननेट संरेखण तक ENM टोकन विकास रोडमैप।",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "टोकन नींव",
-          "desc": "सत्यापित ENM Ethereum कॉन्ट्रैक्ट बनाए रखें, enm.network पर आधिकारिक टोकन दस्तावेज़ प्रकाशित करें, और पारिस्थितिकी तंत्र के लिए पारदर्शी कॉन्ट्रैक्ट जानकारी स्थापित करें।"
+          "desc": "सत्यापित EnergieMIND Token (ENM) Ethereum कॉन्ट्रैक्ट बनाए रखें, enm.network पर आधिकारिक टोकन दस्तावेज़ प्रकाशित करें, और पारिस्थितिकी तंत्र के लिए पारदर्शी कॉन्ट्रैक्ट जानकारी स्थापित करें।"
         },
         {
           "title": "दस्तावेज़ीकरण और पारदर्शिता",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "जोखिम सूचना | ENM Token",
+      "title": "जोखिम सूचना | EnergieMIND Token",
       "description": "ENM टोकन जोखिम प्रकटीकरण। ENM निवेश उत्पाद, प्रतिभूति पेशकश या गारंटीकृत रिटर्न उपकरण नहीं है।",
       "ogTitle": "ENM जोखिम सूचना | enm.network",
       "ogDescription": "ENM टोकन के लिए पूर्ण जोखिम प्रकटीकरण। निवेश उत्पाद, प्रतिभूति पेशकश या गारंटीकृत रिटर्न उपकरण नहीं।",
@@ -401,11 +414,11 @@
         },
         {
           "title": "कॉन्ट्रैक्ट सत्यापन",
-          "content": "आधिकारिक ENM contract address Ethereum Mainnet पर 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D है। हमेशा Etherscan पर इस पते को स्वतंत्र रूप से सत्यापित करें। अनौपचारिक स्रोतों, सोशल मीडिया संदेशों या तृतीय-पक्ष वेबसाइटों के पतों पर भरोसा न करें। घोटाला टोकन समान नामों का उपयोग कर सकते हैं।"
+          "content": "आधिकारिक EnergieMIND Token (ENM) contract address Ethereum Mainnet पर 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D है। हमेशा Etherscan पर इस पते को स्वतंत्र रूप से सत्यापित करें। अनौपचारिक स्रोतों, सोशल मीडिया संदेशों या तृतीय-पक्ष वेबसाइटों के पतों पर भरोसा न करें। घोटाला टोकन समान नामों का उपयोग कर सकते हैं।"
         },
         {
           "title": "प्रीसेल सावधानी",
-          "content": "केवल enm.network/wallets पर प्रकाशित वॉलेट पतों का उपयोग करें। Ethereum Mainnet पर आधिकारिक प्रीसेल योगदान वॉलेट ENM Treasury पता है। सोशल मीडिया, DM या तृतीय-पक्ष साइटों के पतों पर धन न भेजें। ENM निवेश उत्पाद या गारंटीकृत रिटर्न उपकरण नहीं है।"
+          "content": "केवल enm.network/wallets पर प्रकाशित वॉलेट पतों का उपयोग करें। Ethereum Mainnet पर आधिकारिक प्रीसेल योगदान वॉलेट EnergieMIND Token Treasury पता है। सोशल मीडिया, DM या तृतीय-पक्ष साइटों के पतों पर धन न भेजें। ENM निवेश उत्पाद या गारंटीकृत रिटर्न उपकरण नहीं है।"
         },
         {
           "title": "आपकी जिम्मेदारी",
@@ -414,9 +427,9 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "ENM टोकन, कॉन्ट्रैक्ट, प्रीसेल, टोकनोमिक्स और EnergieMIND पारिस्थितिकी तंत्र के बारे में अक्सर पूछे जाने वाले प्रश्न।",
-      "ogTitle": "ENM FAQ | enm.network",
+      "ogTitle": "EnergieMIND Token FAQ | enm.network",
       "ogDescription": "ENM टोकन, कॉन्ट्रैक्ट, प्रीसेल और पारिस्थितिकी तंत्र के बारे में अक्सर पूछे जाने वाले प्रश्न।",
       "breadcrumb": "FAQ",
       "eyebrow": "सामान्य प्रश्न",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "ENM क्या है?",
-          "a": "ENM (EnergieMind) EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र का उपयोगिता टोकन है। यह Ethereum Mainnet पर ERC-20 टोकन है, ऊर्जा बुद्धिमत्ता, माइनिंग हीट भागीदारी, पायलट कार्यक्रम और EnteleKRON मेननेट संरेखण से संबंधित भविष्य के पारिस्थितिकी तंत्र समन्वय के लिए डिज़ाइन किया गया। ENM एक उपयोगिता टोकन है — निवेश उत्पाद नहीं।"
+          "a": "EnergieMIND Token (ENM) EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र का उपयोगिता टोकन है। यह Ethereum Mainnet पर ERC-20 टोकन है, ऊर्जा बुद्धिमत्ता, माइनिंग हीट भागीदारी, पायलट कार्यक्रम और EnteleKRON मेननेट संरेखण से संबंधित भविष्य के पारिस्थितिकी तंत्र समन्वय के लिए डिज़ाइन किया गया। ENM एक उपयोगिता टोकन है — निवेश उत्पाद नहीं।"
         },
         {
           "q": "enm.network और energiemind.com में क्या अंतर है?",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "संपर्क | ENM Token",
+      "title": "संपर्क | EnergieMIND Token",
       "description": "ENM टोकन पूछताछ के लिए संपर्क जानकारी। enm.network के लिए आधिकारिक संचार चैनल।",
       "ogTitle": "ENM संपर्क | enm.network",
       "ogDescription": "ENM टोकन पूछताछ और साझेदारी के लिए आधिकारिक संपर्क चैनल।",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM निवेश सिफारिश, वित्तीय उत्पाद, प्रतिभूति पेशकश या गारंटीकृत रिटर्न उपकरण नहीं है। क्रिप्टो संपत्तियाँ उच्च जोखिम वाली हैं और मूल्य खो सकती हैं।"
     },
     "dashboard": {
-      "title": "लॉन्च डैशबोर्ड | ENM Token",
+      "title": "लॉन्च डैशबोर्ड | EnergieMIND Token",
       "description": "ENM टोकन लॉन्च डैशबोर्ड — लाइव प्रीसेल चरण स्थिति, काउंटडाउन, वॉलेट कनेक्शन और आधिकारिक योगदान वॉलेट सत्यापन।",
       "ogTitle": "ENM लॉन्च डैशबोर्ड | enm.network",
       "ogDescription": "चरण ट्रैकिंग, काउंटडाउन और वॉलेट टूल के साथ लाइव ENM प्रीसेल डैशबोर्ड।",
@@ -513,7 +526,7 @@
       "networkLabel": "नेटवर्क",
       "networkRequired": "Ethereum Mainnet आवश्यक",
       "contributionTitle": "आधिकारिक योगदान वॉलेट",
-      "contributionDesc": "प्रीसेल योगदान आधिकारिक ENM Treasury वॉलेट के माध्यम से समन्वित किए जाते हैं। धन भेजने से पहले हमेशा सत्यापित करें कि यह पता enm.network/wallets से मेल खाता है।",
+      "contributionDesc": "प्रीसेल योगदान आधिकारिक EnergieMIND Token Treasury वॉलेट के माध्यम से समन्वित किए जाते हैं। धन भेजने से पहले हमेशा सत्यापित करें कि यह पता enm.network/wallets से मेल खाता है।",
       "statsTitle": "लॉन्च अवलोकन",
       "statPhase": "सक्रिय चरण",
       "statStage": "सार्वजनिक चरण",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "आधिकारिक वॉलेट | ENM Token",
-      "description": "Ethereum Mainnet पर आधिकारिक EnergieMind ENM पारिस्थितिकी तंत्र वॉलेट — Founder, OPS, Genesis और Treasury पते।",
+      "title": "आधिकारिक वॉलेट | EnergieMIND Token",
+      "description": "Ethereum Mainnet पर आधिकारिक EnergieMIND Token (ENM) पारिस्थितिकी तंत्र वॉलेट — Founder, OPS, Genesis और Treasury पते।",
       "ogTitle": "ENM आधिकारिक वॉलेट | enm.network",
       "ogDescription": "Ethereum Mainnet पर सत्यापित आधिकारिक ENM पारिस्थितिकी तंत्र वॉलेट पते।",
       "breadcrumb": "वॉलेट",
       "eyebrow": "सत्यापित पते",
       "h1": "आधिकारिक वॉलेट",
-      "lead": "Ethereum Mainnet पर आधिकारिक EnergieMind ENM पारिस्थितिकी तंत्र वॉलेट। बातचीत से पहले इस पृष्ठ पर प्रत्येक पता सत्यापित करें। घोटाला पते समान नामों का उपयोग कर सकते हैं।",
+      "lead": "Ethereum Mainnet पर आधिकारिक EnergieMIND Token (ENM) पारिस्थितिकी तंत्र वॉलेट। बातचीत से पहले इस पृष्ठ पर प्रत्येक पता सत्यापित करें। घोटाला पते समान नामों का उपयोग कर सकते हैं।",
       "riskShort": "केवल enm.network/wallets पर सूचीबद्ध पतों पर भरोसा करें। ENM टीम कभी भी DM से वॉलेट पते नहीं भेजेगी। ENM निवेश उत्पाद नहीं है।",
       "verifyTitle": "पता सत्यापन",
       "verifyDesc": "धन भेजने से पहले वर्ण-दर-वर्ण तुलना करें। प्रीसेल योगदान सक्रिय चरणों में Treasury वॉलेट का उपयोग करते हैं।",
@@ -624,14 +637,14 @@
       "riskFooter": "क्रिप्टो लेनदेन अपरिवर्तनीय हैं। हमेशा enm.network पर पते सत्यापित करें। ENM निवेश उत्पाद या गारंटीकृत रिटर्न उपकरण नहीं है।"
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

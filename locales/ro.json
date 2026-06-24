@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "Pagina principală ENM Token",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "Deschide meniul",
     "closeMenu": "Închide meniul",
     "selectLanguage": "Selectează limba",
     "nav": {
       "home": "Acasă",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "Tokenomică",
       "presale": "Prevânzare",
       "contract": "Contract",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "Documentația oficială a tokenului ENM pe enm.network. Informațiile despre proiectul EnergieMIND sunt disponibile pe energiemind.com.",
       "descShort": "Documentația oficială a tokenului ENM pe enm.network.",
       "tokenHeading": "Token",
@@ -67,7 +67,8 @@
       "standard": "Standard",
       "maxSupply": "Ofertă maximă",
       "decimals": "Zecimale",
-      "overview": "Prezentare generală token"
+      "overview": "Prezentare generală token",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Contract Ethereum:",
@@ -88,17 +89,26 @@
       "verifiedMatch": "Potrivire exactă verificată",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM este stratul de token utilitar al ecosistemului de inteligență energetică EnergieMIND. Documentația oficială a tokenului, informații despre contract și starea prevânzării pe enm.network.",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "Stratul de token utilitar al ecosistemului de inteligență energetică EnergieMIND.",
       "breadcrumb": "Acasă",
-      "eyebrow": "Site oficial ENM Token",
-      "h1": "ENM Token",
+      "eyebrow": "Site oficial EnergieMIND Token",
+      "h1": "EnergieMIND Token",
       "lead": "Stratul de token utilitar al ecosistemului de inteligență energetică EnergieMIND.",
       "supportLine": "Utilitate energetică · Participare la căldura minieră · Coordonare ecosistem · Aliniere viitoare la mainnet",
       "layersTitle": "Două straturi, un ecosistem.",
@@ -129,20 +139,21 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM (EnergieMind) este un token utilitar Ethereum ERC-20 pentru ecosistemul de inteligență energetică EnergieMIND. Detalii token, stare și informații despre contract.",
-      "ogTitle": "Documentație ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
+      "description": "EnergieMIND Token (ENM) este un token utilitar Ethereum ERC-20 pentru ecosistemul de inteligență energetică EnergieMIND. Detalii token, stare și informații despre contract.",
+      "ogTitle": "Documentație EnergieMIND Token | enm.network",
       "ogDescription": "Detalii token utilitar Ethereum ERC-20, stare și informații despre contract pentru ENM.",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "Documentație token",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "Stratul de token utilitar al ecosistemului de inteligență energetică EnergieMIND — conceput pentru coordonarea ecosistemului, nu ca produs de investiții.",
       "riskShort": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare. Verifică întotdeauna contract address în mod independent.",
       "aboutTitle": "Despre ENM",
-      "aboutP1": "ENM (EnergieMind) este tokenul utilitar Ethereum ERC-20 pentru ecosistemul EnergieMIND. Este conceput pentru coordonarea viitoare legată de inteligența energetică, participarea la utilitatea căldurii miniere, programe pilot, stimulente pentru infrastructura energetică și alinierea la mainnetul EnteleKRON.",
+      "aboutP1": "EnergieMIND Token (ENM) este tokenul utilitar Ethereum ERC-20 pentru ecosistemul EnergieMIND. Este conceput pentru coordonarea viitoare legată de inteligența energetică, participarea la utilitatea căldurii miniere, programe pilot, stimulente pentru infrastructura energetică și alinierea la mainnetul EnteleKRON.",
       "aboutP2": "ENM este separat de site-ul proiectului EnergieMIND de pe energiemind.com, care acoperă tehnologia și infrastructura. Acest site documentează doar stratul de token.",
       "scopeTitle": "Domeniul utilitar intenționat.",
       "scopeDesc": "ENM este poziționat ca utilitate de coordonare — nu venit pasiv, garanție de profit sau ofertă de titluri de valoare.",
@@ -162,10 +173,11 @@
         "maxSupply": "Ofertă maximă",
         "status": "Stare",
         "contract": "Contract"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "Tokenomică | ENM Token",
+      "title": "Tokenomică | EnergieMIND Token",
       "description": "Structura tokenomicii ENM și categoriile de alocare. Procentele finale așteaptă publicarea oficială.",
       "ogTitle": "Tokenomică ENM | enm.network",
       "ogDescription": "Oferta de token ENM și categoriile de alocare. Procentele finale așteaptă publicarea oficială.",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "Prevânzare | ENM Token",
+      "title": "Prevânzare | EnergieMIND Token",
       "description": "Program prevânzare token ENM: Early Investor, Strategic Investor, Private Sale și Public Presale în 6 etape. Date oficiale și panou de lansare pe enm.network.",
       "ogTitle": "Program prevânzare ENM | enm.network",
       "ogDescription": "Faze oficiale de prevânzare ENM din iulie 2026 până la etapele publice din 2027.",
@@ -269,10 +281,11 @@
         "saleDates": "Date de vânzare",
         "allocationAmount": "Cantitate alocare",
         "contributionWallet": "Portofel oficial de contribuție"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "Contract | ENM Token",
+      "title": "Contract | EnergieMIND Token",
       "description": "Contractul oficial al tokenului ENM pe Ethereum Mainnet. Adresă contract ERC-20 verificată, parametri token și link Etherscan.",
       "ogTitle": "Contract ENM | enm.network",
       "ogDescription": "Contract oficial ENM ERC-20 pe Ethereum Mainnet. Adresă verificată și parametri token.",
@@ -310,7 +323,7 @@
       }
     },
     "roadmap": {
-      "title": "Foaie de parcurs | ENM Token",
+      "title": "Foaie de parcurs | EnergieMIND Token",
       "description": "Foaia de parcurs a tokenului ENM de la fundația contractului prin coordonarea ecosistemului până la alinierea la mainnetul EnteleKRON.",
       "ogTitle": "Foaie de parcurs ENM | enm.network",
       "ogDescription": "Foaia de parcurs a dezvoltării tokenului ENM de la fundație la alinierea la mainnetul EnteleKRON.",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "Fundația tokenului",
-          "desc": "Menținerea contractului ENM Ethereum verificat, publicarea documentației oficiale a tokenului pe enm.network și stabilirea informațiilor transparente despre contract pentru ecosistem."
+          "desc": "Menținerea contractului EnergieMIND Token (ENM) Ethereum verificat, publicarea documentației oficiale a tokenului pe enm.network și stabilirea informațiilor transparente despre contract pentru ecosistem."
         },
         {
           "title": "Documentație și transparență",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "Notificare de risc | ENM Token",
+      "title": "Notificare de risc | EnergieMIND Token",
       "description": "Divulgarea riscurilor tokenului ENM. ENM nu este un produs de investiții, o ofertă de titluri de valoare sau un instrument cu randament garantat.",
       "ogTitle": "Notificare de risc ENM | enm.network",
       "ogDescription": "Divulgare completă a riscurilor pentru tokenul ENM. Nu este un produs de investiții, o ofertă de titluri de valoare sau un instrument cu randament garantat.",
@@ -405,7 +418,7 @@
         },
         {
           "title": "Precauție prevânzare",
-          "content": "Folosiți doar adresele de portofel publicate pe enm.network/wallets. Portofelul oficial de contribuție la prevânzare este adresa ENM Treasury pe Ethereum Mainnet. Nu trimiteți fonduri la adrese din rețele sociale, DM sau site-uri terțe. ENM nu este un produs de investiții sau un instrument cu randament garantat."
+          "content": "Folosiți doar adresele de portofel publicate pe enm.network/wallets. Portofelul oficial de contribuție la prevânzare este adresa EnergieMIND Token Treasury pe Ethereum Mainnet. Nu trimiteți fonduri la adrese din rețele sociale, DM sau site-uri terțe. ENM nu este un produs de investiții sau un instrument cu randament garantat."
         },
         {
           "title": "Responsabilitatea ta",
@@ -414,7 +427,7 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "Întrebări frecvente despre tokenul ENM, contract, prevânzare, tokenomică și ecosistemul EnergieMIND.",
       "ogTitle": "FAQ ENM | enm.network",
       "ogDescription": "Întrebări frecvente despre tokenul ENM, contract, prevânzare și ecosistem.",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "Ce este ENM?",
-          "a": "ENM (EnergieMind) este tokenul utilitar al ecosistemului de inteligență energetică EnergieMIND. Este un token ERC-20 pe Ethereum Mainnet, conceput pentru coordonarea viitoare a ecosistemului legată de inteligența energetică, participarea la căldura minieră, programe pilot și alinierea la mainnetul EnteleKRON. ENM este un token utilitar — nu un produs de investiții."
+          "a": "EnergieMIND Token (ENM) este tokenul utilitar al ecosistemului de inteligență energetică EnergieMIND. Este un token ERC-20 pe Ethereum Mainnet, conceput pentru coordonarea viitoare a ecosistemului legată de inteligența energetică, participarea la căldura minieră, programe pilot și alinierea la mainnetul EnteleKRON. ENM este un token utilitar — nu un produs de investiții."
         },
         {
           "q": "Care este diferența dintre enm.network și energiemind.com?",
@@ -468,9 +481,9 @@
       ]
     },
     "contact": {
-      "title": "Contact | ENM Token",
+      "title": "Contact | EnergieMIND Token",
       "description": "Informații de contact pentru întrebări despre tokenul ENM. Canale oficiale de comunicare pentru enm.network.",
-      "ogTitle": "Contact ENM | enm.network",
+      "ogTitle": "Contact EnergieMIND Token | enm.network",
       "ogDescription": "Canale oficiale de contact pentru întrebări despre tokenul ENM și parteneriate.",
       "breadcrumb": "Contact",
       "eyebrow": "Ia legătura",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare."
     },
     "dashboard": {
-      "title": "Panou de lansare | ENM Token",
+      "title": "Panou de lansare | EnergieMIND Token",
       "description": "Panou de lansare token ENM — status live al fazei de prevânzare, numărătoare inversă, conexiune portofel și verificare portofel oficial de contribuție.",
       "ogTitle": "Panou de lansare ENM | enm.network",
       "ogDescription": "Panou live de prevânzare ENM cu urmărirea fazelor, numărătoare inversă și instrumente portofel.",
@@ -513,7 +526,7 @@
       "networkLabel": "Rețea",
       "networkRequired": "Ethereum Mainnet necesar",
       "contributionTitle": "Portofel oficial de contribuție",
-      "contributionDesc": "Contribuțiile la prevânzare sunt coordonate prin portofelul oficial ENM Treasury. Verificați întotdeauna că această adresă corespunde cu enm.network/wallets înainte de a trimite fonduri.",
+      "contributionDesc": "Contribuțiile la prevânzare sunt coordonate prin portofelul oficial EnergieMIND Token Treasury. Verificați întotdeauna că această adresă corespunde cu enm.network/wallets înainte de a trimite fonduri.",
       "statsTitle": "Prezentare generală lansare",
       "statPhase": "Fază activă",
       "statStage": "Etapă publică",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "Portofele oficiale | ENM Token",
-      "description": "Portofele oficiale ale ecosistemului EnergieMind ENM pe Ethereum Mainnet — adrese Founder, OPS, Genesis și Treasury.",
+      "title": "Portofele oficiale | EnergieMIND Token",
+      "description": "Portofele oficiale ale ecosistemului EnergieMIND Token (ENM) pe Ethereum Mainnet — adrese Founder, OPS, Genesis și Treasury.",
       "ogTitle": "Portofele oficiale ENM | enm.network",
       "ogDescription": "Adrese verificate ale portofelelor oficiale ale ecosistemului ENM pe Ethereum Mainnet.",
       "breadcrumb": "Portofele",
       "eyebrow": "Adrese verificate",
       "h1": "Portofele oficiale",
-      "lead": "Portofele oficiale ale ecosistemului EnergieMind ENM pe Ethereum Mainnet. Verificați fiecare adresă pe această pagină înainte de interacțiune. Adresele frauduloase pot folosi nume similare.",
+      "lead": "Portofele oficiale ale ecosistemului EnergieMIND Token (ENM) pe Ethereum Mainnet. Verificați fiecare adresă pe această pagină înainte de interacțiune. Adresele frauduloase pot folosi nume similare.",
       "riskShort": "Aveți încredere doar în adresele listate pe enm.network/wallets. Echipa ENM nu vă va trimite niciodată adrese de portofel prin DM. ENM nu este un produs de investiții.",
       "verifyTitle": "Verificare adresă",
       "verifyDesc": "Comparați caracter cu caracter înainte de a trimite fonduri. Contribuțiile la prevânzare folosesc portofelul Treasury când fazele sunt active.",
@@ -624,14 +637,14 @@
       "riskFooter": "Tranzacțiile cripto sunt ireversibile. Verificați întotdeauna adresele pe enm.network. ENM nu este un produs de investiții sau un instrument cu randament garantat."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

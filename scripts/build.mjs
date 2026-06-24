@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { SITE_URL, CONTRACT, ETHERSCAN, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
+import { SITE_URL, CONTRACT, ETHERSCAN, TOKEN_NAME, TOKEN_SYMBOL, TOKEN_ONCHAIN_NAME, SITE_BRAND, SITE_OG_NAME, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
 import {
   OFFICIAL_WALLETS,
   PRESALE_WALLET,
@@ -69,7 +69,7 @@ ${hreflangTags(pageId)}
   <meta property="og:description" content="${esc(page.ogDescription || page.description)}" />
   <meta property="og:url" content="${url}" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ENM Token | enm.network" />
+  <meta property="og:site_name" content="${esc(SITE_OG_NAME)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(page.ogTitle || page.title)}" />
   <meta name="twitter:description" content="${esc(page.ogDescription || page.description)}" />
@@ -84,11 +84,12 @@ function jsonLdOrganization() {
   return JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'ENM Token',
+    name: SITE_BRAND,
+    alternateName: TOKEN_SYMBOL,
     url: SITE_URL,
     logo: `${SITE_URL}/assets/images/logo.png`,
     sameAs: [ETHERSCAN],
-    description: 'Official ENM utility token documentation for the EnergieMIND energy intelligence ecosystem.',
+    description: `Official ${TOKEN_NAME} (${TOKEN_SYMBOL}) documentation for the EnergieMIND energy intelligence ecosystem.`,
   });
 }
 
@@ -99,7 +100,7 @@ function jsonLdWebSite(lang) {
     name: 'enm.network',
     url: pageUrl(lang, ''),
     inLanguage: LANGUAGES.find((l) => l.code === lang).hreflang,
-    publisher: { '@type': 'Organization', name: 'ENM Token', url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_BRAND, url: SITE_URL },
     potentialAction: {
       '@type': 'SearchAction',
       target: `${SITE_URL}/${lang}/faq?q={search_term_string}`,
@@ -145,7 +146,7 @@ function jsonLdArticle(lang, pageId, t) {
     description: t.pages[pageId].description,
     url: pageUrl(lang, page.slug),
     inLanguage: LANGUAGES.find((l) => l.code === lang).hreflang,
-    publisher: { '@type': 'Organization', name: 'ENM Token', url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_BRAND, url: SITE_URL },
     mainEntityOfPage: pageUrl(lang, page.slug),
   });
 }
@@ -259,7 +260,7 @@ function renderHome(lang, t) {
       <div class="wrap hero-grid">
         <div>
           <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-          <h1><span class="gradient-text">${esc(p.h1)}</span></h1>
+          <h1><span class="gradient-text">${esc(p.h1)}</span>${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
           <p class="lead">${esc(p.lead)}</p>
           <p class="support-line">${esc(p.supportLine)}</p>
           <div class="hero-actions">
@@ -279,7 +280,7 @@ function renderHome(lang, t) {
         <div class="stats-panel">
           <h3>${esc(c.stats.overview)}</h3>
           <div class="stats-grid">
-            <div class="stat-item"><strong>ENM</strong><span>${esc(c.stats.symbol)}</span></div>
+            <div class="stat-item"><strong>${TOKEN_SYMBOL}</strong><span>${esc(c.stats.ticker)}</span></div>
             <div class="stat-item"><strong>ERC-20</strong><span>${esc(c.stats.standard)}</span></div>
             <div class="stat-item"><strong>50B</strong><span>${esc(c.stats.maxSupply)}</span></div>
             <div class="stat-item"><strong>18</strong><span>${esc(c.stats.decimals)}</span></div>
@@ -350,7 +351,7 @@ function renderToken(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -369,8 +370,8 @@ function renderToken(lang, t) {
           <table class="data-table">
             <thead><tr><th>${esc(c.table.property)}</th><th>${esc(c.table.value)}</th></tr></thead>
             <tbody>
-              <tr><td>${esc(f.name)}</td><td><strong>EnergieMind</strong></td></tr>
-              <tr><td>${esc(f.symbol)}</td><td><strong>ENM</strong></td></tr>
+              <tr><td>${esc(f.name)}</td><td><strong>${esc(TOKEN_NAME)}</strong></td></tr>
+              <tr><td>${esc(f.symbol)}</td><td><strong>${TOKEN_SYMBOL}</strong></td></tr>
               <tr><td>${esc(f.network)}</td><td><strong>${esc(c.values.ethereumMainnet)}</strong></td></tr>
               <tr><td>${esc(f.standard)}</td><td><strong>ERC-20</strong></td></tr>
               <tr><td>${esc(f.decimals)}</td><td><strong>18</strong></td></tr>
@@ -409,7 +410,7 @@ function renderTokenomics(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -500,7 +501,7 @@ function renderPresale(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
       <div class="hero-actions" style="margin-top: 20px;">
         <a class="btn primary" href="${pagePath(lang, 'apply')}">${esc(c.buttons.applyAccess)}</a>
@@ -552,7 +553,7 @@ function renderDashboard(lang, t) {
       data-kyc-rejected="${esc(p.kycRejected)}">
       <div class="portal-head">
         <div class="portal-tag"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-        <h1>${esc(p.h1)}</h1>
+        <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
         <p class="portal-lead">${esc(p.lead)}</p>
       </div>
 
@@ -689,7 +690,7 @@ function renderApply(lang, t) {
     <div class="portal-wrap wrap-narrow" style="max-width:840px;">
       <div class="portal-head">
         <div class="portal-tag"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-        <h1>${esc(p.h1)}</h1>
+        <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
         <p class="portal-lead">${esc(p.lead)}</p>
       </div>
 
@@ -792,7 +793,7 @@ function renderWallets(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -818,7 +819,7 @@ function renderContract(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -838,8 +839,8 @@ function renderContract(lang, t) {
           <table class="data-table">
             <thead><tr><th>${esc(c.table.parameter)}</th><th>${esc(c.table.value)}</th></tr></thead>
             <tbody>
-              <tr><td>${esc(f.tokenName)}</td><td><strong>EnergieMind</strong></td></tr>
-              <tr><td>${esc(f.symbol)}</td><td><strong>ENM</strong></td></tr>
+              <tr><td>${esc(f.tokenName)}</td><td><strong>${esc(TOKEN_NAME)}</strong><br><span class="small" style="color:var(--ink-muted);">${esc(t.common.branding.onchainLabel)}: ${esc(TOKEN_ONCHAIN_NAME)}</span></td></tr>
+              <tr><td>${esc(f.symbol)}</td><td><strong>${TOKEN_SYMBOL}</strong></td></tr>
               <tr><td>${esc(f.standard)}</td><td><strong>ERC-20</strong></td></tr>
               <tr><td>${esc(f.decimals)}</td><td><strong>18</strong></td></tr>
               <tr><td>${esc(f.maxSupply)}</td><td><strong>${esc(c.values.maxSupplyValue)}</strong></td></tr>
@@ -873,7 +874,7 @@ function renderRoadmap(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -894,7 +895,7 @@ function renderRisk(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap"><div class="risk-page">
@@ -928,7 +929,7 @@ function renderFAQ(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -948,7 +949,7 @@ function renderContact(lang, t) {
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
+      <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div></div>
     <section><div class="wrap">
@@ -1025,7 +1026,7 @@ ${energyOrb}
     <div class="wrap nav-inner">
       <a class="brand" href="${pagePath(lang, '')}" aria-label="${esc(t.common.brandHome)}">
         <span class="mark"></span>
-        <span>ENM<div class="brand-sub">enm.network</div></span>
+        <span>${esc(TOKEN_NAME.replace(' Token', ''))}<div class="brand-sub">${TOKEN_SYMBOL} · enm.network</div></span>
       </a>
       <div class="nav-links">
         ${nav}
@@ -1121,7 +1122,7 @@ function generateRootRedirect() {
   <script>location.replace('/en/');</script>
   <title>Redirecting…</title>
 </head>
-<body><p><a href="/en/">Continue to ENM Token</a></p></body>
+<body><p><a href="/en/">Continue to ${esc(TOKEN_NAME)}</a></p></body>
 </html>`;
   fs.writeFileSync(path.join(ROOT, 'index.html'), html);
 }

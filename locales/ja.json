@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "ENM Token ホーム",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "メニューを開く",
     "closeMenu": "メニューを閉じる",
     "selectLanguage": "言語を選択",
     "nav": {
       "home": "ホーム",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "トークノミクス",
       "presale": "プレセール",
       "contract": "コントラクト",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "ENM トークンの公式ドキュメントは enm.network。EnergieMIND プロジェクト情報は energiemind.com をご覧ください。",
       "descShort": "ENM トークンの公式ドキュメントは enm.network。",
       "tokenHeading": "トークン",
@@ -67,7 +67,8 @@
       "standard": "標準",
       "maxSupply": "最大供給量",
       "decimals": "小数桁",
-      "overview": "トークン概要"
+      "overview": "トークン概要",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Ethereum コントラクト：",
@@ -88,17 +89,26 @@
       "verifiedMatch": "完全一致を検証済み",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM は EnergieMIND エネルギーインテリジェンスエコシステムのユーティリティトークンレイヤーです。公式トークンドキュメント、コントラクト情報、プレセール状況は enm.network をご覧ください。",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "EnergieMIND エネルギーインテリジェンスエコシステムのユーティリティトークンレイヤー。",
       "breadcrumb": "ホーム",
-      "eyebrow": "ENM Token 公式サイト",
-      "h1": "ENM Token",
+      "eyebrow": "EnergieMIND Token 公式サイト",
+      "h1": "EnergieMIND Token",
       "lead": "EnergieMIND エネルギーインテリジェンスエコシステムのユーティリティトークンレイヤー。",
       "supportLine": "エネルギーユーティリティ · マイニング熱参加 · エコシステム調整 · 将来のメインネット連携",
       "layersTitle": "2つのレイヤー、1つのエコシステム。",
@@ -129,16 +139,17 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM（EnergieMind）は EnergieMIND エネルギーインテリジェンスエコシステム向けの Ethereum ERC-20 ユーティリティトークンです。トークン詳細、ステータス、コントラクト情報。",
-      "ogTitle": "ENM Token ドキュメント | enm.network",
+      "ogTitle": "EnergieMIND Token ドキュメント | enm.network",
       "ogDescription": "ENM の Ethereum ERC-20 ユーティリティトークン詳細、ステータス、コントラクト情報。",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "トークンドキュメント",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "EnergieMIND エネルギーインテリジェンスエコシステムのユーティリティトークンレイヤー — エコシステム調整のために設計されており、投資商品ではありません。",
       "riskShort": "ENM は投資勧誘、金融商品、証券の提供、または保証リターンの手段ではありません。暗号資産は高リスクであり、価値を失う可能性があります。コントラクトアドレスは常に独自に確認してください。",
       "aboutTitle": "ENM について",
@@ -162,10 +173,11 @@
         "maxSupply": "最大供給量",
         "status": "ステータス",
         "contract": "コントラクト"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "トークノミクス | ENM Token",
+      "title": "トークノミクス | EnergieMIND Token",
       "description": "ENM トークノミクス構造と配分カテゴリ。最終パーセンテージは公式発表待ち。",
       "ogTitle": "ENM トークノミクス | enm.network",
       "ogDescription": "ENM トークン供給量と配分カテゴリ。最終パーセンテージは公式発表待ち。",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "プレセール | ENM Token",
+      "title": "プレセール | EnergieMIND Token",
       "description": "ENM トークンプレセールスケジュール：Early Investor、Strategic Investor、Private Sale、6段階の Public Presale。公式日程と起動ダッシュボードは enm.network。",
       "ogTitle": "ENM プレセールスケジュール | enm.network",
       "ogDescription": "2026年7月から2027年の公開段階までの公式 ENM プレセールフェーズ。",
@@ -269,10 +281,11 @@
         "saleDates": "販売日程",
         "allocationAmount": "配分量",
         "contributionWallet": "公式出資ウォレット"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "コントラクト | ENM Token",
+      "title": "コントラクト | EnergieMIND Token",
       "description": "Ethereum Mainnet 上の公式 ENM トークンコントラクト。検証済み ERC-20 コントラクトアドレス、トークンパラメータ、Etherscan リンク。",
       "ogTitle": "ENM コントラクト | enm.network",
       "ogDescription": "Ethereum Mainnet 上の公式 ENM ERC-20 コントラクト。検証済みアドレスとトークンパラメータ。",
@@ -310,7 +323,7 @@
       }
     },
     "roadmap": {
-      "title": "ロードマップ | ENM Token",
+      "title": "ロードマップ | EnergieMIND Token",
       "description": "コントラクト基盤からエコシステム調整、EnteleKRON メインネット連携までの ENM トークンロードマップ。",
       "ogTitle": "ENM ロードマップ | enm.network",
       "ogDescription": "基盤から EnteleKRON メインネット連携までの ENM トークン開発ロードマップ。",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "トークン基盤",
-          "desc": "検証済み ENM Ethereum コントラクトの維持、enm.network での公式トークンドキュメントの公開、エコシステム向けの透明なコントラクト情報の確立。"
+          "desc": "検証済み EnergieMIND Token (ENM) Ethereum コントラクトの維持、enm.network での公式トークンドキュメントの公開、エコシステム向けの透明なコントラクト情報の確立。"
         },
         {
           "title": "ドキュメントと透明性",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "リスク告知 | ENM Token",
+      "title": "リスク告知 | EnergieMIND Token",
       "description": "ENM トークンリスク開示。ENM は投資商品、証券の提供、または保証リターンの手段ではありません。",
       "ogTitle": "ENM リスク告知 | enm.network",
       "ogDescription": "ENM トークンの完全なリスク開示。投資商品、証券の提供、または保証リターンの手段ではありません。",
@@ -405,7 +418,7 @@
         },
         {
           "title": "プレセールに関する注意",
-          "content": "enm.network/wallets に掲載されたウォレットアドレスのみをご利用ください。公式プレセール出資ウォレットは Ethereum Mainnet 上の ENM Treasury アドレスです。ソーシャルメディア、DM、第三者サイトのアドレスには資金を送らないでください。ENM は投資商品や保証リターンの手段ではありません。"
+          "content": "enm.network/wallets に掲載されたウォレットアドレスのみをご利用ください。公式プレセール出資ウォレットは Ethereum Mainnet 上の EnergieMIND Token Treasury アドレスです。ソーシャルメディア、DM、第三者サイトのアドレスには資金を送らないでください。ENM は投資商品や保証リターンの手段ではありません。"
         },
         {
           "title": "お客様の責任",
@@ -414,9 +427,9 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "ENM トークン、コントラクト、プレセール、トークノミクス、EnergieMIND エコシステムに関するよくある質問。",
-      "ogTitle": "ENM FAQ | enm.network",
+      "ogTitle": "EnergieMIND Token FAQ | enm.network",
       "ogDescription": "ENM トークン、コントラクト、プレセール、エコシステムに関するよくある質問。",
       "breadcrumb": "FAQ",
       "eyebrow": "よくある質問",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "お問い合わせ | ENM Token",
+      "title": "お問い合わせ | EnergieMIND Token",
       "description": "ENM トークンに関するお問い合わせ先。enm.network の公式コミュニケーションチャネル。",
       "ogTitle": "ENM お問い合わせ | enm.network",
       "ogDescription": "ENM トークンに関するお問い合わせおよびパートナーシップの公式連絡先。",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM は投資勧誘、金融商品、証券の提供、または保証リターンの手段ではありません。暗号資産は高リスクであり、価値を失う可能性があります。"
     },
     "dashboard": {
-      "title": "起動ダッシュボード | ENM Token",
+      "title": "起動ダッシュボード | EnergieMIND Token",
       "description": "ENM トークン起動ダッシュボード — ライブプレセールフェーズステータス、カウントダウン、ウォレット接続、公式出資ウォレットの確認。",
       "ogTitle": "ENM 起動ダッシュボード | enm.network",
       "ogDescription": "フェーズ追跡、カウントダウン、ウォレットツール付きのライブ ENM プレセールダッシュボード。",
@@ -513,7 +526,7 @@
       "networkLabel": "ネットワーク",
       "networkRequired": "Ethereum Mainnet が必要です",
       "contributionTitle": "公式出資ウォレット",
-      "contributionDesc": "プレセール出資は公式 ENM Treasury ウォレットを通じて調整されます。資金を送る前に、常にこのアドレスが enm.network/wallets と一致することを確認してください。",
+      "contributionDesc": "プレセール出資は公式 EnergieMIND Token Treasury ウォレットを通じて調整されます。資金を送る前に、常にこのアドレスが enm.network/wallets と一致することを確認してください。",
       "statsTitle": "起動概要",
       "statPhase": "アクティブフェーズ",
       "statStage": "公開段階",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "公式ウォレット | ENM Token",
-      "description": "Ethereum Mainnet 上の公式 EnergieMind ENM エコシステムウォレット — Founder、OPS、Genesis、Treasury アドレス。",
+      "title": "公式ウォレット | EnergieMIND Token",
+      "description": "Ethereum Mainnet 上の公式 EnergieMIND Token (ENM) エコシステムウォレット — Founder、OPS、Genesis、Treasury アドレス。",
       "ogTitle": "ENM 公式ウォレット | enm.network",
       "ogDescription": "Ethereum Mainnet 上の検証済み公式 ENM エコシステムウォレットアドレス。",
       "breadcrumb": "ウォレット",
       "eyebrow": "検証済みアドレス",
       "h1": "公式ウォレット",
-      "lead": "Ethereum Mainnet 上の公式 EnergieMind ENM エコシステムウォレット。やり取りの前に本ページのすべてのアドレスを確認してください。詐欺アドレスは類似の名称を使用する場合があります。",
+      "lead": "Ethereum Mainnet 上の公式 EnergieMIND Token (ENM) エコシステムウォレット。やり取りの前に本ページのすべてのアドレスを確認してください。詐欺アドレスは類似の名称を使用する場合があります。",
       "riskShort": "enm.network/wallets に掲載されたアドレスのみを信頼してください。ENM チームが DM でウォレットアドレスを送ることは決してありません。ENM は投資商品ではありません。",
       "verifyTitle": "アドレス確認",
       "verifyDesc": "資金を送る前に1文字ずつ照合してください。フェーズがアクティブな場合、プレセール出資には Treasury ウォレットを使用します。",
@@ -624,14 +637,14 @@
       "riskFooter": "暗号取引は不可逆です。常に enm.network でアドレスを確認してください。ENM は投資商品や保証リターンの手段ではありません。"
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

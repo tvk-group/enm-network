@@ -1,6 +1,6 @@
 {
   "common": {
-    "brandHome": "الصفحة الرئيسية لرمز ENM",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "فتح القائمة",
     "closeMenu": "إغلاق القائمة",
     "selectLanguage": "اختيار اللغة",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "رمز ENM",
+      "brand": "EnergieMIND Token",
       "desc": "الوثائق الرسمية لرمز ENM على enm.network. معلومات مشروع EnergieMIND متاحة على energiemind.com.",
       "descShort": "الوثائق الرسمية لرمز ENM على enm.network.",
       "tokenHeading": "الرمز",
@@ -67,7 +67,8 @@
       "standard": "المعيار",
       "maxSupply": "الحد الأقصى للعرض",
       "decimals": "الخانات العشرية",
-      "overview": "نظرة عامة على الرمز"
+      "overview": "نظرة عامة على الرمز",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "عقد Ethereum:",
@@ -88,6 +89,15 @@
       "verifiedMatch": "تطابق دقيق موثّق",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
@@ -129,11 +139,12 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
       "title": "رمز ENM | enm.network",
-      "description": "ENM (EnergieMind) هو رمز مساعد ERC-20 على Ethereum لنظام EnergieMIND البيئي للذكاء الطاقوي. تفاصيل الرمز والحالة ومعلومات العقد.",
+      "description": "EnergieMIND Token (ENM) هو رمز مساعد ERC-20 على Ethereum لنظام EnergieMIND البيئي للذكاء الطاقوي. تفاصيل الرمز والحالة ومعلومات العقد.",
       "ogTitle": "وثائق رمز ENM | enm.network",
       "ogDescription": "تفاصيل رمز ERC-20 المساعد على Ethereum وحالته ومعلومات العقد لـ ENM.",
       "breadcrumb": "رمز ENM",
@@ -142,7 +153,7 @@
       "lead": "طبقة الرمز المساعد في نظام EnergieMIND البيئي للذكاء الطاقوي — مصممة لتنسيق النظام البيئي، وليس كمنتج استثماري.",
       "riskShort": "ENM ليس توصية استثمارية أو منتجاً مالياً أو عرض أوراق مالية أو أداة عائد مضمون. الأصول المشفرة عالية المخاطر وقد تفقد قيمتها. تحقق دائماً من عنوان العقد بشكل مستقل.",
       "aboutTitle": "حول ENM",
-      "aboutP1": "ENM (EnergieMind) هو رمز ERC-20 المساعد على Ethereum لنظام EnergieMIND البيئي. صُمم للتنسيق المستقبلي المتعلق بالذكاء الطاقوي، والمشاركة في منفعة حرارة التعدين، والبرامج التجريبية، وحوافز البنية التحتية الطاقوية، والتوافق مع الشبكة الرئيسية EnteleKRON.",
+      "aboutP1": "EnergieMIND Token (ENM) هو رمز ERC-20 المساعد على Ethereum لنظام EnergieMIND البيئي. صُمم للتنسيق المستقبلي المتعلق بالذكاء الطاقوي، والمشاركة في منفعة حرارة التعدين، والبرامج التجريبية، وحوافز البنية التحتية الطاقوية، والتوافق مع الشبكة الرئيسية EnteleKRON.",
       "aboutP2": "ENM منفصل عن موقع مشروع EnergieMIND على energiemind.com الذي يغطي التكنولوجيا والبنية التحتية. يوثّق هذا الموقع طبقة الرمز فقط.",
       "scopeTitle": "نطاق المنفعة المقصود.",
       "scopeDesc": "يُوضع ENM كمنفعة تنسيقية — وليس دخلاً سلبياً أو ضمان ربح أو عرض أوراق مالية.",
@@ -162,7 +173,8 @@
         "maxSupply": "الحد الأقصى للعرض",
         "status": "الحالة",
         "contract": "العقد"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
       "title": "اقتصاديات الرمز | رمز ENM",
@@ -269,7 +281,8 @@
         "saleDates": "تواريخ البيع",
         "allocationAmount": "كمية التخصيص",
         "contributionWallet": "محفظة المساهمة الرسمية"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
       "title": "العقد | رمز ENM",
@@ -405,7 +418,7 @@
         },
         {
           "title": "تحذير البيع المسبق",
-          "content": "استخدم فقط عناوين المحافظ المنشورة على enm.network/wallets. محفظة المساهمة الرسمية في البيع المسبق هي عنوان ENM Treasury على Ethereum Mainnet. لا ترسل أموالاً إلى عناوين من وسائل التواصل الاجتماعي أو الرسائل الخاصة أو مواقع طرف ثالث. ENM ليس منتجاً استثمارياً أو أداة عائد مضمون."
+          "content": "استخدم فقط عناوين المحافظ المنشورة على enm.network/wallets. محفظة المساهمة الرسمية في البيع المسبق هي عنوان EnergieMIND Token Treasury على Ethereum Mainnet. لا ترسل أموالاً إلى عناوين من وسائل التواصل الاجتماعي أو الرسائل الخاصة أو مواقع طرف ثالث. ENM ليس منتجاً استثمارياً أو أداة عائد مضمون."
         },
         {
           "title": "مسؤوليتك",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "ما هو ENM؟",
-          "a": "ENM (EnergieMind) هو الرمز المساعد لنظام EnergieMIND البيئي للذكاء الطاقوي. وهو رمز ERC-20 على Ethereum Mainnet، مصمم للتنسيق المستقبلي في النظام البيئي المتعلق بالذكاء الطاقوي، والمشاركة في حرارة التعدين، والبرامج التجريبية، والتوافق مع الشبكة الرئيسية EnteleKRON. ENM رمز مساعد — وليس منتجاً استثمارياً."
+          "a": "EnergieMIND Token (ENM) هو الرمز المساعد لنظام EnergieMIND البيئي للذكاء الطاقوي. وهو رمز ERC-20 على Ethereum Mainnet، مصمم للتنسيق المستقبلي في النظام البيئي المتعلق بالذكاء الطاقوي، والمشاركة في حرارة التعدين، والبرامج التجريبية، والتوافق مع الشبكة الرئيسية EnteleKRON. ENM رمز مساعد — وليس منتجاً استثمارياً."
         },
         {
           "q": "ما الفرق بين enm.network و energiemind.com؟",
@@ -513,7 +526,7 @@
       "networkLabel": "الشبكة",
       "networkRequired": "Ethereum Mainnet مطلوب",
       "contributionTitle": "محفظة المساهمة الرسمية",
-      "contributionDesc": "تُنسَّق مساهمات البيع المسبق عبر محفظة ENM Treasury الرسمية. تحقق دائماً من تطابق هذا العنوان مع enm.network/wallets قبل إرسال الأموال.",
+      "contributionDesc": "تُنسَّق مساهمات البيع المسبق عبر محفظة EnergieMIND Token Treasury الرسمية. تحقق دائماً من تطابق هذا العنوان مع enm.network/wallets قبل إرسال الأموال.",
       "statsTitle": "نظرة عامة على الإطلاق",
       "statPhase": "المرحلة النشطة",
       "statStage": "المرحلة العامة",
@@ -624,14 +637,14 @@
       "riskFooter": "معاملات العملات المشفرة لا رجعة فيها. تحقق دائماً من العناوين على enm.network. ENM ليس منتجاً استثمارياً أو أداة عائد مضمون."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

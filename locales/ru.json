@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "Главная ENM Token",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "Открыть меню",
     "closeMenu": "Закрыть меню",
     "selectLanguage": "Выбрать язык",
     "nav": {
       "home": "Главная",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "Токеномика",
       "presale": "Пресейл",
       "contract": "Контракт",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "Официальная документация токена ENM на enm.network. Информация о проекте EnergieMIND доступна на energiemind.com.",
       "descShort": "Официальная документация токена ENM на enm.network.",
       "tokenHeading": "Токен",
@@ -67,7 +67,8 @@
       "standard": "Стандарт",
       "maxSupply": "Макс. предложение",
       "decimals": "Десятичные знаки",
-      "overview": "Обзор токена"
+      "overview": "Обзор токена",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Контракт Ethereum:",
@@ -88,17 +89,26 @@
       "verifiedMatch": "Верифицированное точное совпадение",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM — утилитарный токен экосистемы энергетического интеллекта EnergieMIND. Официальная документация токена, информация о контракте и статус пресейла на enm.network.",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "Утилитарный токен экосистемы энергетического интеллекта EnergieMIND.",
       "breadcrumb": "Главная",
-      "eyebrow": "Официальный сайт ENM Token",
-      "h1": "ENM Token",
+      "eyebrow": "Официальный сайт EnergieMIND Token",
+      "h1": "EnergieMIND Token",
       "lead": "Утилитарный токен экосистемы энергетического интеллекта EnergieMIND.",
       "supportLine": "Энергетическая утилита · Участие в тепле майнинга · Координация экосистемы · Будущее выравнивание с mainnet",
       "layersTitle": "Два уровня, одна экосистема.",
@@ -129,20 +139,21 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM (EnergieMind) — утилитарный токен Ethereum ERC-20 для экосистемы энергетического интеллекта EnergieMIND. Детали токена, статус и информация о контракте.",
-      "ogTitle": "Документация ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
+      "description": "EnergieMIND Token (ENM) — утилитарный токен Ethereum ERC-20 для экосистемы энергетического интеллекта EnergieMIND. Детали токена, статус и информация о контракте.",
+      "ogTitle": "Документация EnergieMIND Token | enm.network",
       "ogDescription": "Детали утилитарного токена Ethereum ERC-20, статус и информация о контракте ENM.",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "Документация токена",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "Утилитарный токен экосистемы энергетического интеллекта EnergieMIND — предназначен для координации экосистемы, а не как инвестиционный продукт.",
       "riskShort": "ENM не является инвестиционной рекомендацией, финансовым продуктом, предложением ценных бумаг или инструментом с гарантированной доходностью. Криптоактивы высокорискованны и могут потерять стоимость. Всегда самостоятельно проверяйте адрес контракта.",
       "aboutTitle": "О ENM",
-      "aboutP1": "ENM (EnergieMind) — утилитарный токен Ethereum ERC-20 для экосистемы EnergieMIND. Он предназначен для будущей координации, связанной с энергетическим интеллектом, участием в утилите тепла майнинга, пилотными программами, стимулами энергетической инфраструктуры и выравниванием с mainnet EnteleKRON.",
+      "aboutP1": "EnergieMIND Token (ENM) — утилитарный токен Ethereum ERC-20 для экосистемы EnergieMIND. Он предназначен для будущей координации, связанной с энергетическим интеллектом, участием в утилите тепла майнинга, пилотными программами, стимулами энергетической инфраструктуры и выравниванием с mainnet EnteleKRON.",
       "aboutP2": "ENM отделён от сайта проекта EnergieMIND на energiemind.com, который охватывает технологии и инфраструктуру. Этот сайт документирует только токен-уровень.",
       "scopeTitle": "Предполагаемая область утилиты.",
       "scopeDesc": "ENM позиционируется как координационная утилита — не пассивный доход, гарантия прибыли или предложение ценных бумаг.",
@@ -162,10 +173,11 @@
         "maxSupply": "Макс. предложение",
         "status": "Статус",
         "contract": "Контракт"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "Токеномика | ENM Token",
+      "title": "Токеномика | EnergieMIND Token",
       "description": "Структура токеномики ENM и категории распределения. Окончательные проценты ожидают официальной публикации.",
       "ogTitle": "Токеномика ENM | enm.network",
       "ogDescription": "Предложение токена ENM и категории распределения. Окончательные проценты ожидают официальной публикации.",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "Пресейл | ENM Token",
+      "title": "Пресейл | EnergieMIND Token",
       "description": "Расписание пресейла токена ENM: Early Investor, Strategic Investor, Private Sale и 6-этапный Public Presale. Официальные даты и панель запуска на enm.network.",
       "ogTitle": "Расписание пресейла ENM | enm.network",
       "ogDescription": "Официальные фазы пресейла ENM с июля 2026 года до публичных этапов в 2027 году.",
@@ -269,10 +281,11 @@
         "saleDates": "Даты продажи",
         "allocationAmount": "Объём распределения",
         "contributionWallet": "Официальный кошелёк для взносов"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "Контракт | ENM Token",
+      "title": "Контракт | EnergieMIND Token",
       "description": "Официальный контракт токена ENM в Ethereum Mainnet. Верифицированный адрес контракта ERC-20, параметры токена и ссылка на Etherscan.",
       "ogTitle": "Контракт ENM | enm.network",
       "ogDescription": "Официальный контракт ENM ERC-20 в Ethereum Mainnet. Верифицированный адрес и параметры токена.",
@@ -310,7 +323,7 @@
       }
     },
     "roadmap": {
-      "title": "Дорожная карта | ENM Token",
+      "title": "Дорожная карта | EnergieMIND Token",
       "description": "Дорожная карта токена ENM от основы контракта до координации экосистемы и выравнивания с mainnet EnteleKRON.",
       "ogTitle": "Дорожная карта ENM | enm.network",
       "ogDescription": "Дорожная карта развития токена ENM от основы до выравнивания с mainnet EnteleKRON.",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "Уведомление о рисках | ENM Token",
+      "title": "Уведомление о рисках | EnergieMIND Token",
       "description": "Раскрытие рисков токена ENM. ENM не является инвестиционным продуктом, предложением ценных бумаг или инструментом с гарантированной доходностью.",
       "ogTitle": "Уведомление о рисках ENM | enm.network",
       "ogDescription": "Полное раскрытие рисков токена ENM. Не инвестиционный продукт, предложение ценных бумаг или инструмент с гарантированной доходностью.",
@@ -405,7 +418,7 @@
         },
         {
           "title": "Предостережение о пресейле",
-          "content": "Используйте только адреса кошельков, опубликованные на enm.network/wallets. Официальный кошелёк для взносов в пресейл — адрес ENM Treasury в Ethereum Mainnet. Не отправляйте средства на адреса из соцсетей, личных сообщений или сторонних сайтов. ENM не является инвестиционным продуктом или инструментом с гарантированной доходностью."
+          "content": "Используйте только адреса кошельков, опубликованные на enm.network/wallets. Официальный кошелёк для взносов в пресейл — адрес EnergieMIND Token Treasury в Ethereum Mainnet. Не отправляйте средства на адреса из соцсетей, личных сообщений или сторонних сайтов. ENM не является инвестиционным продуктом или инструментом с гарантированной доходностью."
         },
         {
           "title": "Ваша ответственность",
@@ -414,7 +427,7 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "Часто задаваемые вопросы о токене ENM, контракте, пресейле, токеномике и экосистеме EnergieMIND.",
       "ogTitle": "FAQ ENM | enm.network",
       "ogDescription": "Часто задаваемые вопросы о токене ENM, контракте, пресейле и экосистеме.",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "Что такое ENM?",
-          "a": "ENM (EnergieMind) — утилитарный токен экосистемы энергетического интеллекта EnergieMIND. Это токен ERC-20 в Ethereum Mainnet, предназначенный для будущей координации экосистемы, связанной с энергетическим интеллектом, участием в тепле майнинга, пилотными программами и выравниванием с mainnet EnteleKRON. ENM — утилитарный токен, а не инвестиционный продукт."
+          "a": "EnergieMIND Token (ENM) — утилитарный токен экосистемы энергетического интеллекта EnergieMIND. Это токен ERC-20 в Ethereum Mainnet, предназначенный для будущей координации экосистемы, связанной с энергетическим интеллектом, участием в тепле майнинга, пилотными программами и выравниванием с mainnet EnteleKRON. ENM — утилитарный токен, а не инвестиционный продукт."
         },
         {
           "q": "В чём разница между enm.network и energiemind.com?",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "Контакты | ENM Token",
+      "title": "Контакты | EnergieMIND Token",
       "description": "Контактная информация для запросов о токене ENM. Официальные каналы связи enm.network.",
       "ogTitle": "Контакты ENM | enm.network",
       "ogDescription": "Официальные каналы связи для запросов о токене ENM и партнёрствах.",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM не является инвестиционной рекомендацией, финансовым продуктом, предложением ценных бумаг или инструментом с гарантированной доходностью. Криптоактивы высокорискованны и могут потерять стоимость."
     },
     "dashboard": {
-      "title": "Панель запуска | ENM Token",
+      "title": "Панель запуска | EnergieMIND Token",
       "description": "Панель запуска токена ENM — актуальный статус фазы пресейла, обратный отсчёт, подключение кошелька и проверка официального кошелька для взносов.",
       "ogTitle": "Панель запуска ENM | enm.network",
       "ogDescription": "Панель пресейла ENM в реальном времени с отслеживанием фаз, обратным отсчётом и инструментами кошелька.",
@@ -513,7 +526,7 @@
       "networkLabel": "Сеть",
       "networkRequired": "Требуется Ethereum Mainnet",
       "contributionTitle": "Официальный кошелёк для взносов",
-      "contributionDesc": "Взносы в пресейл координируются через официальный кошелёк ENM Treasury. Всегда проверяйте, что этот адрес совпадает с enm.network/wallets, перед отправкой средств.",
+      "contributionDesc": "Взносы в пресейл координируются через официальный кошелёк EnergieMIND Token Treasury. Всегда проверяйте, что этот адрес совпадает с enm.network/wallets, перед отправкой средств.",
       "statsTitle": "Обзор запуска",
       "statPhase": "Активная фаза",
       "statStage": "Публичный этап",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "Официальные кошельки | ENM Token",
-      "description": "Официальные кошельки экосистемы EnergieMind ENM в Ethereum Mainnet — адреса Founder, OPS, Genesis и Treasury.",
+      "title": "Официальные кошельки | EnergieMIND Token",
+      "description": "Официальные кошельки экосистемы EnergieMIND Token (ENM) в Ethereum Mainnet — адреса Founder, OPS, Genesis и Treasury.",
       "ogTitle": "Официальные кошельки ENM | enm.network",
       "ogDescription": "Проверенные официальные адреса кошельков экосистемы ENM в Ethereum Mainnet.",
       "breadcrumb": "Кошельки",
       "eyebrow": "Проверенные адреса",
       "h1": "Официальные кошельки",
-      "lead": "Официальные кошельки экосистемы EnergieMind ENM в Ethereum Mainnet. Проверяйте каждый адрес на этой странице перед взаимодействием. Мошеннические адреса могут использовать похожие названия.",
+      "lead": "Официальные кошельки экосистемы EnergieMIND Token (ENM) в Ethereum Mainnet. Проверяйте каждый адрес на этой странице перед взаимодействием. Мошеннические адреса могут использовать похожие названия.",
       "riskShort": "Доверяйте только адресам, указанным на enm.network/wallets. Команда ENM никогда не пришлёт вам адреса кошельков в личных сообщениях. ENM не является инвестиционным продуктом.",
       "verifyTitle": "Проверка адреса",
       "verifyDesc": "Сравнивайте посимвольно перед отправкой средств. Взносы в пресейл используют кошелёк Treasury, когда фазы активны.",
@@ -624,14 +637,14 @@
       "riskFooter": "Криптотранзакции необратимы. Всегда проверяйте адреса на enm.network. ENM не является инвестиционным продуктом или инструментом с гарантированной доходностью."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

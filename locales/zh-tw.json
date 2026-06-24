@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "ENM Token 首頁",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "開啟選單",
     "closeMenu": "關閉選單",
     "selectLanguage": "選擇語言",
     "nav": {
       "home": "首頁",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "代幣經濟學",
       "presale": "預售",
       "contract": "合約",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "ENM 代幣官方文件請造訪 enm.network。EnergieMIND 專案資訊請造訪 energiemind.com。",
       "descShort": "ENM 代幣官方文件請造訪 enm.network。",
       "tokenHeading": "代幣",
@@ -67,7 +67,8 @@
       "standard": "標準",
       "maxSupply": "最大供應量",
       "decimals": "小數位數",
-      "overview": "代幣概覽"
+      "overview": "代幣概覽",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Ethereum 合約：",
@@ -88,17 +89,26 @@
       "verifiedMatch": "已驗證完全匹配",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM 是 EnergieMIND 能源智慧生態系統的實用型代幣層。官方代幣文件、合約資訊和預售狀態請造訪 enm.network。",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "EnergieMIND 能源智慧生態系統的實用型代幣層。",
       "breadcrumb": "首頁",
-      "eyebrow": "ENM Token 官方網站",
-      "h1": "ENM Token",
+      "eyebrow": "EnergieMIND Token 官方網站",
+      "h1": "EnergieMIND Token",
       "lead": "EnergieMIND 能源智慧生態系統的實用型代幣層。",
       "supportLine": "能源實用 · 挖礦熱能參與 · 生態協調 · 未來主網對齊",
       "layersTitle": "兩層架構，一個生態系統。",
@@ -129,16 +139,17 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM（EnergieMind）是 EnergieMIND 能源智慧生態系統的 Ethereum ERC-20 實用型代幣。代幣詳情、狀態和合約資訊。",
-      "ogTitle": "ENM Token 文件 | enm.network",
+      "ogTitle": "EnergieMIND Token 文件 | enm.network",
       "ogDescription": "ENM 的 Ethereum ERC-20 實用型代幣詳情、狀態和合約資訊。",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "代幣文件",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "EnergieMIND 能源智慧生態系統的實用型代幣層——專為生態協調設計，而非投資產品。",
       "riskShort": "ENM 並非投資建議、金融產品、證券發行或保證收益工具。加密資產風險極高，可能貶值。請始終獨立核實合約地址。",
       "aboutTitle": "關於 ENM",
@@ -162,10 +173,11 @@
         "maxSupply": "最大供應量",
         "status": "狀態",
         "contract": "合約"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "代幣經濟學 | ENM Token",
+      "title": "代幣經濟學 | EnergieMIND Token",
       "description": "ENM 代幣經濟學結構和分配類別。最終百分比待官方發布。",
       "ogTitle": "ENM 代幣經濟學 | enm.network",
       "ogDescription": "ENM 代幣供應量和分配類別。最終百分比待官方發布。",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "預售 | ENM Token",
+      "title": "預售 | EnergieMIND Token",
       "description": "ENM 代幣預售時間表：Early Investor、Strategic Investor、Private Sale 及 6 階段 Public Presale。官方日期與啟動面板請造訪 enm.network。",
       "ogTitle": "ENM 預售時間表 | enm.network",
       "ogDescription": "ENM 官方預售階段，自 2026 年 7 月至 2027 年公開階段。",
@@ -269,10 +281,11 @@
         "saleDates": "銷售日期",
         "allocationAmount": "分配數量",
         "contributionWallet": "官方出資錢包"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "合約 | ENM Token",
+      "title": "合約 | EnergieMIND Token",
       "description": "Ethereum Mainnet 上的官方 ENM 代幣合約。經核實的 ERC-20 合約地址、代幣參數和 Etherscan 連結。",
       "ogTitle": "ENM 合約 | enm.network",
       "ogDescription": "Ethereum Mainnet 上的官方 ENM ERC-20 合約。經核實的地址和代幣參數。",
@@ -310,7 +323,7 @@
       }
     },
     "roadmap": {
-      "title": "路線圖 | ENM Token",
+      "title": "路線圖 | EnergieMIND Token",
       "description": "ENM 代幣從合約基礎到生態協調及 EnteleKRON 主網對齊的路線圖。",
       "ogTitle": "ENM 路線圖 | enm.network",
       "ogDescription": "ENM 代幣從基礎到 EnteleKRON 主網對齊的發展路線圖。",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "代幣基礎",
-          "desc": "維護經核實的 ENM Ethereum 合約，在 enm.network 發布官方代幣文件，為生態系統建立透明的合約資訊。"
+          "desc": "維護經核實的 EnergieMIND Token (ENM) Ethereum 合約，在 enm.network 發布官方代幣文件，為生態系統建立透明的合約資訊。"
         },
         {
           "title": "文件與透明度",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "風險聲明 | ENM Token",
+      "title": "風險聲明 | EnergieMIND Token",
       "description": "ENM 代幣風險披露。ENM 並非投資產品、證券發行或保證收益工具。",
       "ogTitle": "ENM 風險聲明 | enm.network",
       "ogDescription": "ENM 代幣完整風險披露。非投資產品、證券發行或保證收益工具。",
@@ -405,7 +418,7 @@
         },
         {
           "title": "預售警示",
-          "content": "僅使用 enm.network/wallets 上公布的錢包地址。官方預售出資錢包為 Ethereum Mainnet 上的 ENM Treasury 地址。請勿向社群媒體、私訊或第三方網站上的地址發送資金。ENM 並非投資產品或保證收益工具。"
+          "content": "僅使用 enm.network/wallets 上公布的錢包地址。官方預售出資錢包為 Ethereum Mainnet 上的 EnergieMIND Token Treasury 地址。請勿向社群媒體、私訊或第三方網站上的地址發送資金。ENM 並非投資產品或保證收益工具。"
         },
         {
           "title": "您的責任",
@@ -414,7 +427,7 @@
       ]
     },
     "faq": {
-      "title": "常見問題 | ENM Token",
+      "title": "常見問題 | EnergieMIND Token",
       "description": "關於 ENM 代幣、合約、預售、代幣經濟學和 EnergieMIND 生態系統的常見問題。",
       "ogTitle": "ENM 常見問題 | enm.network",
       "ogDescription": "關於 ENM 代幣、合約、預售和生態系統的常見問題。",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "聯絡我們 | ENM Token",
+      "title": "聯絡我們 | EnergieMIND Token",
       "description": "ENM 代幣諮詢聯絡資訊。enm.network 官方溝通管道。",
       "ogTitle": "聯絡 ENM | enm.network",
       "ogDescription": "ENM 代幣諮詢和合作夥伴關係的官方聯絡管道。",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM 並非投資建議、金融產品、證券發行或保證收益工具。加密資產風險極高，可能貶值。"
     },
     "dashboard": {
-      "title": "啟動面板 | ENM Token",
+      "title": "啟動面板 | EnergieMIND Token",
       "description": "ENM 代幣啟動面板 — 即時預售階段狀態、倒數計時、錢包連接及官方出資錢包驗證。",
       "ogTitle": "ENM 啟動面板 | enm.network",
       "ogDescription": "ENM 預售即時面板，含階段追蹤、倒數計時和錢包工具。",
@@ -513,7 +526,7 @@
       "networkLabel": "網路",
       "networkRequired": "需要 Ethereum Mainnet",
       "contributionTitle": "官方出資錢包",
-      "contributionDesc": "預售出資透過官方 ENM Treasury 錢包協調。發送資金前，請始終核實此地址與 enm.network/wallets 一致。",
+      "contributionDesc": "預售出資透過官方 EnergieMIND Token Treasury 錢包協調。發送資金前，請始終核實此地址與 enm.network/wallets 一致。",
       "statsTitle": "啟動概覽",
       "statPhase": "活躍階段",
       "statStage": "公開階段",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "官方錢包 | ENM Token",
-      "description": "Ethereum Mainnet 上的官方 EnergieMind ENM 生態系統錢包 — Founder、OPS、Genesis 和 Treasury 地址。",
+      "title": "官方錢包 | EnergieMIND Token",
+      "description": "Ethereum Mainnet 上的官方 EnergieMIND Token (ENM) 生態系統錢包 — Founder、OPS、Genesis 和 Treasury 地址。",
       "ogTitle": "ENM 官方錢包 | enm.network",
       "ogDescription": "Ethereum Mainnet 上經核實的官方 ENM 生態系統錢包地址。",
       "breadcrumb": "錢包",
       "eyebrow": "經核實地址",
       "h1": "官方錢包",
-      "lead": "Ethereum Mainnet 上的官方 EnergieMind ENM 生態系統錢包。互動前請核實本頁面上的每個地址。詐騙地址可能使用相似名稱。",
+      "lead": "Ethereum Mainnet 上的官方 EnergieMIND Token (ENM) 生態系統錢包。互動前請核實本頁面上的每個地址。詐騙地址可能使用相似名稱。",
       "riskShort": "僅信任 enm.network/wallets 上列出的地址。ENM 團隊絕不會透過私訊發送錢包地址。ENM 並非投資產品。",
       "verifyTitle": "地址驗證",
       "verifyDesc": "發送資金前請逐字核對。階段活躍時，預售出資使用 Treasury 錢包。",
@@ -624,14 +637,14 @@
       "riskFooter": "加密交易不可逆。請始終在 enm.network 上核實地址。ENM 並非投資產品或保證收益工具。"
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

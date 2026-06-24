@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "Αρχική ENM Token",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "Άνοιγμα μενού",
     "closeMenu": "Κλείσιμο μενού",
     "selectLanguage": "Επιλογή γλώσσας",
     "nav": {
       "home": "Αρχική",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "Τοκονομικά",
       "presale": "Προπώληση",
       "contract": "Συμβόλαιο",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "Επίσημη τεκμηρίωση του token ENM στο enm.network. Πληροφορίες για το έργο EnergieMIND διατίθενται στο energiemind.com.",
       "descShort": "Επίσημη τεκμηρίωση του token ENM στο enm.network.",
       "tokenHeading": "Token",
@@ -67,7 +67,8 @@
       "standard": "Πρότυπο",
       "maxSupply": "Μέγ. προσφορά",
       "decimals": "Δεκαδικά",
-      "overview": "Επισκόπηση token"
+      "overview": "Επισκόπηση token",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "Συμβόλαιο Ethereum:",
@@ -88,17 +89,26 @@
       "verifiedMatch": "Επαληθευμένη ακριβής αντιστοιχία",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "Το ENM είναι το επίπεδο utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND. Επίσημη τεκμηρίωση token, πληροφορίες συμβολαίου και κατάσταση προπώλησης στο enm.network.",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "Το επίπεδο utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND.",
       "breadcrumb": "Αρχική",
-      "eyebrow": "Επίσημος ιστότοπος ENM Token",
-      "h1": "ENM Token",
+      "eyebrow": "Επίσημος ιστότοπος EnergieMIND Token",
+      "h1": "EnergieMIND Token",
       "lead": "Το επίπεδο utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND.",
       "supportLine": "Ενεργειακή χρηστικότητα · Συμμετοχή στη θερμότητα εξόρυξης · Συντονισμός οικοσυστήματος · Μελλοντική ευθυγράμμιση mainnet",
       "layersTitle": "Δύο επίπεδα, ένα οικοσύστημα.",
@@ -129,20 +139,21 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "Το ENM (EnergieMind) είναι ένα utility token Ethereum ERC-20 για το οικοσύστημα ενεργειακής νοημοσύνης EnergieMIND. Λεπτομέρειες token, κατάσταση και πληροφορίες συμβολαίου.",
-      "ogTitle": "Τεκμηρίωση ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
+      "description": "Το EnergieMIND Token (ENM) είναι ένα utility token Ethereum ERC-20 για το οικοσύστημα ενεργειακής νοημοσύνης EnergieMIND. Λεπτομέρειες token, κατάσταση και πληροφορίες συμβολαίου.",
+      "ogTitle": "Τεκμηρίωση EnergieMIND Token | enm.network",
       "ogDescription": "Λεπτομέρειες utility token Ethereum ERC-20, κατάσταση και πληροφορίες συμβολαίου για το ENM.",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "Τεκμηρίωση token",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "Το επίπεδο utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND — σχεδιασμένο για συντονισμό οικοσυστήματος, όχι ως επενδυτικό προϊόν.",
       "riskShort": "Το ENM δεν αποτελεί επενδυτική σύσταση, χρηματοοικονομικό προϊόν, προσφορά αξιώνγράφων ή εργαλείο εγγυημένης απόδοσης. Τα κρυπτονομίσματα είναι υψηλού κινδύνου και μπορεί να χάσουν αξία. Επαληθεύετε πάντα το contract address ανεξάρτητα.",
       "aboutTitle": "Σχετικά με το ENM",
-      "aboutP1": "Το ENM (EnergieMind) είναι το utility token Ethereum ERC-20 για το οικοσύστημα EnergieMIND. Έχει σχεδιαστεί για μελλοντικό συντονισμό σχετικό με ενεργειακή νοημοσύνη, συμμετοχή στη χρηστικότητα θερμότητας εξόρυξης, πιλοτικά προγράμματα, κίνητρα ενεργειακής υποδομής και ευθυγράμμιση με το mainnet EnteleKRON.",
+      "aboutP1": "Το EnergieMIND Token (ENM) είναι το utility token Ethereum ERC-20 για το οικοσύστημα EnergieMIND. Έχει σχεδιαστεί για μελλοντικό συντονισμό σχετικό με ενεργειακή νοημοσύνη, συμμετοχή στη χρηστικότητα θερμότητας εξόρυξης, πιλοτικά προγράμματα, κίνητρα ενεργειακής υποδομής και ευθυγράμμιση με το mainnet EnteleKRON.",
       "aboutP2": "Το ENM είναι ξεχωριστό από τον ιστότοπο έργου EnergieMIND στο energiemind.com, που καλύπτει τεχνολογία και υποδομή. Αυτός ο ιστότοπος τεκμηριώνει μόνο το επίπεδο token.",
       "scopeTitle": "Προβλεπόμενο πεδίο χρηστικότητας.",
       "scopeDesc": "Το ENM τοποθετείται ως χρηστικότητα συντονισμού — όχι παθητικό εισόδημα, εγγύηση κέρδους ή προσφορά αξιώνγράφων.",
@@ -162,10 +173,11 @@
         "maxSupply": "Μέγ. προσφορά",
         "status": "Κατάσταση",
         "contract": "Συμβόλαιο"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "Τοκονομικά | ENM Token",
+      "title": "Τοκονομικά | EnergieMIND Token",
       "description": "Δομή τοκονομικών ENM και κατηγορίες κατανομής. Οι τελικές ποσοστιαίες τιμές εκκρεμούν επίσημη δημοσίευση.",
       "ogTitle": "Τοκονομικά ENM | enm.network",
       "ogDescription": "Προσφορά token ENM και κατηγορίες κατανομής. Οι τελικές ποσοστιαίες τιμές εκκρεμούν επίσημη δημοσίευση.",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "Προπώληση | ENM Token",
+      "title": "Προπώληση | EnergieMIND Token",
       "description": "Πρόγραμμα προπώλησης token ENM: Early Investor, Strategic Investor, Private Sale και Public Presale 6 σταδίων. Επίσημες ημερομηνίες και πίνακας εκκίνησης στο enm.network.",
       "ogTitle": "Πρόγραμμα προπώλησης ENM | enm.network",
       "ogDescription": "Επίσημα στάδια προπώλησης ENM από Ιούλιο 2026 έως δημόσια στάδια το 2027.",
@@ -269,10 +281,11 @@
         "saleDates": "Ημερομηνίες πώλησης",
         "allocationAmount": "Ποσότητα κατανομής",
         "contributionWallet": "Επίσημο πορτοφόλι συνεισφοράς"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "Συμβόλαιο | ENM Token",
+      "title": "Συμβόλαιο | EnergieMIND Token",
       "description": "Επίσημο συμβόλαιο token ENM στο Ethereum Mainnet. Επαληθευμένη διεύθυνση συμβολαίου ERC-20, παράμετροι token και σύνδεσμος Etherscan.",
       "ogTitle": "Συμβόλαιο ENM | enm.network",
       "ogDescription": "Επίσημο συμβόλαιο ENM ERC-20 στο Ethereum Mainnet. Επαληθευμένη διεύθυνση και παράμετροι token.",
@@ -310,7 +323,7 @@
       }
     },
     "roadmap": {
-      "title": "Οδικός χάρτης | ENM Token",
+      "title": "Οδικός χάρτης | EnergieMIND Token",
       "description": "Οδικός χάρτης token ENM από τη θεμελίωση συμβολαίου μέσω συντονισμού οικοσυστήματος έως ευθυγράμμιση με το mainnet EnteleKRON.",
       "ogTitle": "Οδικός χάρτης ENM | enm.network",
       "ogDescription": "Οδικός χάρτης ανάπτυξης token ENM από τη θεμελίωση έως ευθυγράμμιση με το mainnet EnteleKRON.",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "Θεμελίωση token",
-          "desc": "Διατήρηση επαληθευμένου συμβολαίου ENM Ethereum, δημοσίευση επίσημης τεκμηρίωσης token στο enm.network και καθιέρωση διαφανών πληροφοριών συμβολαίου για το οικοσύστημα."
+          "desc": "Διατήρηση επαληθευμένου συμβολαίου EnergieMIND Token (ENM) Ethereum, δημοσίευση επίσημης τεκμηρίωσης token στο enm.network και καθιέρωση διαφανών πληροφοριών συμβολαίου για το οικοσύστημα."
         },
         {
           "title": "Τεκμηρίωση και διαφάνεια",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "Ειδοποίηση κινδύνου | ENM Token",
+      "title": "Ειδοποίηση κινδύνου | EnergieMIND Token",
       "description": "Αποκάλυψη κινδύνου token ENM. Το ENM δεν είναι επενδυτικό προϊόν, προσφορά αξιώνγράφων ή εργαλείο εγγυημένης απόδοσης.",
       "ogTitle": "Ειδοποίηση κινδύνου ENM | enm.network",
       "ogDescription": "Πλήρης αποκάλυψη κινδύνου για το token ENM. Δεν είναι επενδυτικό προϊόν, προσφορά αξιώνγράφων ή εργαλείο εγγυημένης απόδοσης.",
@@ -405,7 +418,7 @@
         },
         {
           "title": "Προσοχή προπώλησης",
-          "content": "Χρησιμοποιήστε μόνο διευθύνσεις πορτοφολιών που δημοσιεύονται στο enm.network/wallets. Το επίσημο πορτοφόλι συνεισφοράς προπώλησης είναι η διεύθυνση ENM Treasury στο Ethereum Mainnet. Μην στέλνετε κεφάλαια σε διευθύνσεις από μέσα κοινωνικής δικτύωσης, DM ή ιστότοπους τρίτων. Το ENM δεν είναι επενδυτικό προϊόν ή εργαλείο εγγυημένης απόδοσης."
+          "content": "Χρησιμοποιήστε μόνο διευθύνσεις πορτοφολιών που δημοσιεύονται στο enm.network/wallets. Το επίσημο πορτοφόλι συνεισφοράς προπώλησης είναι η διεύθυνση EnergieMIND Token Treasury στο Ethereum Mainnet. Μην στέλνετε κεφάλαια σε διευθύνσεις από μέσα κοινωνικής δικτύωσης, DM ή ιστότοπους τρίτων. Το ENM δεν είναι επενδυτικό προϊόν ή εργαλείο εγγυημένης απόδοσης."
         },
         {
           "title": "Η ευθύνη σας",
@@ -414,7 +427,7 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "Συχνές ερωτήσεις σχετικά με το token ENM, το συμβόλαιο, την προπώληση, τα τοκονομικά και το οικοσύστημα EnergieMIND.",
       "ogTitle": "FAQ ENM | enm.network",
       "ogDescription": "Συχνές ερωτήσεις σχετικά με το token ENM, το συμβόλαιο, την προπώληση και το οικοσύστημα.",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "Τι είναι το ENM;",
-          "a": "Το ENM (EnergieMind) είναι το utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND. Είναι token ERC-20 στο Ethereum Mainnet, σχεδιασμένο για μελλοντικό συντονισμό οικοσυστήματος σχετικό με ενεργειακή νοημοσύνη, συμμετοχή στη θερμότητα εξόρυξης, πιλοτικά προγράμματα και ευθυγράμμιση με το mainnet EnteleKRON. Το ENM είναι utility token — όχι επενδυτικό προϊόν."
+          "a": "Το EnergieMIND Token (ENM) είναι το utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND. Είναι token ERC-20 στο Ethereum Mainnet, σχεδιασμένο για μελλοντικό συντονισμό οικοσυστήματος σχετικό με ενεργειακή νοημοσύνη, συμμετοχή στη θερμότητα εξόρυξης, πιλοτικά προγράμματα και ευθυγράμμιση με το mainnet EnteleKRON. Το ENM είναι utility token — όχι επενδυτικό προϊόν."
         },
         {
           "q": "Ποια είναι η διαφορά μεταξύ enm.network και energiemind.com;",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "Επικοινωνία | ENM Token",
+      "title": "Επικοινωνία | EnergieMIND Token",
       "description": "Στοιχεία επικοινωνίας για ερωτήσεις σχετικά με το token ENM. Επίσημα κανάλια επικοινωνίας για το enm.network.",
       "ogTitle": "Επικοινωνία ENM | enm.network",
       "ogDescription": "Επίσημα κανάλια επικοινωνίας για ερωτήσεις και συνεργασίες σχετικά με το token ENM.",
@@ -491,7 +504,7 @@
       "riskFooter": "Το ENM δεν αποτελεί επενδυτική σύσταση, χρηματοοικονομικό προϊόν, προσφορά αξιώνγράφων ή εργαλείο εγγυημένης απόδοσης. Τα κρυπτονομίσματα είναι υψηλού κινδύνου και μπορεί να χάσουν αξία."
     },
     "dashboard": {
-      "title": "Πίνακας εκκίνησης | ENM Token",
+      "title": "Πίνακας εκκίνησης | EnergieMIND Token",
       "description": "Πίνακας εκκίνησης token ENM — ζωντανή κατάσταση φάσης προπώλησης, αντίστροφη μέτρηση, σύνδεση πορτοφολιού και επαλήθευση επίσημου πορτοφολιού συνεισφοράς.",
       "ogTitle": "Πίνακας εκκίνησης ENM | enm.network",
       "ogDescription": "Ζωντανός πίνακας προπώλησης ENM με παρακολούθηση φάσεων, αντίστροφη μέτρηση και εργαλεία πορτοφολιού.",
@@ -513,7 +526,7 @@
       "networkLabel": "Δίκτυο",
       "networkRequired": "Απαιτείται Ethereum Mainnet",
       "contributionTitle": "Επίσημο πορτοφόλι συνεισφοράς",
-      "contributionDesc": "Οι συνεισφορές προπώλησης συντονίζονται μέσω του επίσημου πορτοφολιού ENM Treasury. Επαληθεύετε πάντα ότι αυτή η διεύθυνση ταιριάζει με το enm.network/wallets πριν στείλετε κεφάλαια.",
+      "contributionDesc": "Οι συνεισφορές προπώλησης συντονίζονται μέσω του επίσημου πορτοφολιού EnergieMIND Token Treasury. Επαληθεύετε πάντα ότι αυτή η διεύθυνση ταιριάζει με το enm.network/wallets πριν στείλετε κεφάλαια.",
       "statsTitle": "Επισκόπηση εκκίνησης",
       "statPhase": "Ενεργή φάση",
       "statStage": "Δημόσιο στάδιο",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "Επίσημα πορτοφόλια | ENM Token",
-      "description": "Επίσημα πορτοφόλια οικοσυστήματος EnergieMind ENM στο Ethereum Mainnet — διευθύνσεις Founder, OPS, Genesis και Treasury.",
+      "title": "Επίσημα πορτοφόλια | EnergieMIND Token",
+      "description": "Επίσημα πορτοφόλια οικοσυστήματος EnergieMIND Token (ENM) στο Ethereum Mainnet — διευθύνσεις Founder, OPS, Genesis και Treasury.",
       "ogTitle": "Επίσημα πορτοφόλια ENM | enm.network",
       "ogDescription": "Επαληθευμένες επίσημες διευθύνσεις πορτοφολιών οικοσυστήματος ENM στο Ethereum Mainnet.",
       "breadcrumb": "Πορτοφόλια",
       "eyebrow": "Επαληθευμένες διευθύνσεις",
       "h1": "Επίσημα πορτοφόλια",
-      "lead": "Επίσημα πορτοφόλια οικοσυστήματος EnergieMind ENM στο Ethereum Mainnet. Επαληθεύστε κάθε διεύθυνση σε αυτή τη σελίδα πριν από οποιαδήποτε αλληλεπίδραση. Οι απατηλές διευθύνσεις μπορεί να χρησιμοποιούν παρόμοια ονόματα.",
+      "lead": "Επίσημα πορτοφόλια οικοσυστήματος EnergieMIND Token (ENM) στο Ethereum Mainnet. Επαληθεύστε κάθε διεύθυνση σε αυτή τη σελίδα πριν από οποιαδήποτε αλληλεπίδραση. Οι απατηλές διευθύνσεις μπορεί να χρησιμοποιούν παρόμοια ονόματα.",
       "riskShort": "Εμπιστευτείτε μόνο διευθύνσεις που αναφέρονται στο enm.network/wallets. Η ομάδα ENM δεν θα σας στείλει ποτέ διευθύνσεις πορτοφολιών μέσω DM. Το ENM δεν είναι επενδυτικό προϊόν.",
       "verifyTitle": "Επαλήθευση διεύθυνσης",
       "verifyDesc": "Συγκρίνετε χαρακτήρα προς χαρακτήρα πριν στείλετε κεφάλαια. Οι συνεισφορές προπώλησης χρησιμοποιούν το πορτοφόλι Treasury όταν οι φάσεις είναι ενεργές.",
@@ -624,14 +637,14 @@
       "riskFooter": "Οι συναλλαγές κρυπτονομισμάτων είναι μη αναστρέψιμες. Επαληθεύετε πάντα τις διευθύνσεις στο enm.network. Το ENM δεν είναι επενδυτικό προϊόν ή εργαλείο εγγυημένης απόδοσης."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "common": {
-    "brandHome": "דף הבית של ENM Token",
+    "brandHome": "EnergieMIND Token home",
     "openMenu": "פתח תפריט",
     "closeMenu": "סגור תפריט",
     "selectLanguage": "בחר שפה",
     "nav": {
       "home": "דף הבית",
-      "token": "ENM Token",
+      "token": "EnergieMIND Token",
       "tokenomics": "Tokenomics",
       "presale": "מכירה מוקדמת",
       "contract": "חוזה",
@@ -35,7 +35,7 @@
       "applyAccess": "Apply for Access"
     },
     "footer": {
-      "brand": "ENM Token",
+      "brand": "EnergieMIND Token",
       "desc": "תיעוד רשמי של טוקן ENM בכתובת enm.network. מידע על פרויקט EnergieMIND זמין בכתובת energiemind.com.",
       "descShort": "תיעוד רשמי של טוקן ENM בכתובת enm.network.",
       "tokenHeading": "Token",
@@ -67,7 +67,8 @@
       "standard": "תקן",
       "maxSupply": "היצע מקסימלי",
       "decimals": "ספרות עשרוניות",
-      "overview": "סקירת Token"
+      "overview": "סקירת Token",
+      "ticker": "Ticker"
     },
     "contract": {
       "label": "חוזה Ethereum:",
@@ -88,17 +89,26 @@
       "verifiedMatch": "התאמה מדויקת מאומתת",
       "mit": "MIT",
       "chainId": "1"
+    },
+    "branding": {
+      "tokenName": "EnergieMIND Token",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND Token (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND Token",
+      "siteSubtitle": "ENM · enm.network"
     }
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
       "description": "ENM הוא שכבת טוקן ה-utility של מערכת האקולוגיה EnergieMIND לבינה אנרגטית. תיעוד רשמי של הטוקן, מידע על החוזה וסטטוס המכירה המוקדמת בכתובת enm.network.",
-      "ogTitle": "ENM Token | enm.network",
+      "ogTitle": "EnergieMIND Token | enm.network",
       "ogDescription": "שכבת טוקן ה-utility של מערכת האקולוגיה EnergieMIND לבינה אנרגטית.",
       "breadcrumb": "דף הבית",
-      "eyebrow": "אתר ENM Token הרשמי",
-      "h1": "ENM Token",
+      "eyebrow": "אתר EnergieMIND Token הרשמי",
+      "h1": "EnergieMIND Token",
       "lead": "שכבת טוקן ה-utility של מערכת האקולוגיה EnergieMIND לבינה אנרגטית.",
       "supportLine": "שירות אנרגיה · השתתפות בחום כרייה · תיאום אקולוגי · יישור Mainnet עתידי",
       "layersTitle": "שתי שכבות, מערכת אקולוגית אחת.",
@@ -129,20 +139,21 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals."
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "h1Ticker": "ENM"
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM (EnergieMind) הוא טוקן utility מסוג Ethereum ERC-20 למערכת האקולוגיה EnergieMIND לבינה אנרגטית. פרטי טוקן, סטטוס ומידע על החוזה.",
-      "ogTitle": "תיעוד ENM Token | enm.network",
+      "title": "EnergieMIND Token | enm.network",
+      "description": "EnergieMIND Token (ENM) הוא טוקן utility מסוג Ethereum ERC-20 למערכת האקולוגיה EnergieMIND לבינה אנרגטית. פרטי טוקן, סטטוס ומידע על החוזה.",
+      "ogTitle": "תיעוד EnergieMIND Token | enm.network",
       "ogDescription": "פרטי טוקן utility מסוג Ethereum ERC-20, סטטוס ומידע על החוזה עבור ENM.",
-      "breadcrumb": "ENM Token",
+      "breadcrumb": "EnergieMIND Token",
       "eyebrow": "תיעוד Token",
-      "h1": "ENM Token",
+      "h1": "EnergieMIND Token",
       "lead": "שכבת טוקן ה-utility של מערכת האקולוגיה EnergieMIND לבינה אנרגטית — תוכנן לתיאום אקולוגי, לא כמוצר השקעה.",
       "riskShort": "ENM אינו המלצת השקעה, מוצר פיננסי, הצעת ניירות ערך או מכשיר עם תשואה מובטחת. נכסי קריפטו הם בסיכון גבוה ועלולים לאבד ערך. אמתו תמיד את contract address באופן עצמאי.",
       "aboutTitle": "אודות ENM",
-      "aboutP1": "ENM (EnergieMind) הוא טוקן utility מסוג Ethereum ERC-20 למערכת האקולוגיה EnergieMIND. הוא תוכנן לתיאום עתידי הקשור לבינה אנרגטית, השתתפות בשירות חום כרייה, תוכניות פיילוט, תמריצי תשתית אנרגטית ויישור EnteleKRON mainnet.",
+      "aboutP1": "EnergieMIND Token (ENM) הוא טוקן utility מסוג Ethereum ERC-20 למערכת האקולוגיה EnergieMIND. הוא תוכנן לתיאום עתידי הקשור לבינה אנרגטית, השתתפות בשירות חום כרייה, תוכניות פיילוט, תמריצי תשתית אנרגטית ויישור EnteleKRON mainnet.",
       "aboutP2": "ENM נפרד מאתר הפרויקט EnergieMIND בכתובת energiemind.com, המכסה טכנולוגיה ותשתיות. אתר זה מתעד את שכבת הטוקן בלבד.",
       "scopeTitle": "היקף utility מיועד.",
       "scopeDesc": "ENM ממוקם כ-utility לתיאום — לא הכנסה פסיבית, ערבות רווח או הצעת ניירות ערך.",
@@ -162,12 +173,13 @@
         "maxSupply": "היצע מקסימלי",
         "status": "סטטוס",
         "contract": "חוזה"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "tokenomics": {
-      "title": "Tokenomics | ENM Token",
+      "title": "Tokenomics | EnergieMIND Token",
       "description": "מבנה tokenomics של ENM וקטגוריות הקצאה. אחוזים סופיים ממתינים לפרסום רשמי.",
-      "ogTitle": "ENM Tokenomics | enm.network",
+      "ogTitle": "EnergieMIND Tokenomics | enm.network",
       "ogDescription": "היצע טוקן ENM וקטגוריות הקצאה. אחוזים סופיים ממתינים לפרסום רשמי.",
       "breadcrumb": "Tokenomics",
       "eyebrow": "מבנה הקצאה",
@@ -211,7 +223,7 @@
       ]
     },
     "presale": {
-      "title": "מכירה מוקדמת | ENM Token",
+      "title": "מכירה מוקדמת | EnergieMIND Token",
       "description": "לוח זמנים למכירה מוקדמת של טוקן ENM: Early Investor, Strategic Investor, Private Sale ומכירה מוקדמת ציבורית ב-6 שלבים. תאריכים רשמיים ולוח השקה בכתובת enm.network.",
       "ogTitle": "לוח זמנים למכירה מוקדמת ENM | enm.network",
       "ogDescription": "שלבי מכירה מוקדמת רשמיים של ENM מיולי 2026 ועד שלבים ציבוריים ב-2027.",
@@ -269,10 +281,11 @@
         "saleDates": "תאריכי מכירה",
         "allocationAmount": "כמות הקצאה",
         "contributionWallet": "ארנק תרומה רשמי"
-      }
+      },
+      "h1Ticker": "ENM"
     },
     "contract": {
-      "title": "חוזה | ENM Token",
+      "title": "חוזה | EnergieMIND Token",
       "description": "חוזה טוקן ENM הרשמי ב-Ethereum Mainnet. contract address מאומת מסוג ERC-20, פרמטרי טוקן וקישור ל-Etherscan.",
       "ogTitle": "חוזה ENM | enm.network",
       "ogDescription": "חוזה ENM ERC-20 הרשמי ב-Ethereum Mainnet. כתובת מאומתת ופרמטרי טוקן.",
@@ -310,9 +323,9 @@
       }
     },
     "roadmap": {
-      "title": "Roadmap | ENM Token",
+      "title": "Roadmap | EnergieMIND Token",
       "description": "Roadmap של טוקן ENM מיסוד החוזה ועד תיאום אקולוגי ויישור EnteleKRON mainnet.",
-      "ogTitle": "ENM Roadmap | enm.network",
+      "ogTitle": "EnergieMIND Token Roadmap | enm.network",
       "ogDescription": "Roadmap פיתוח טוקן ENM מיסוד ועד יישור EnteleKRON mainnet.",
       "breadcrumb": "Roadmap",
       "eyebrow": "מסלול פיתוח",
@@ -324,7 +337,7 @@
       "steps": [
         {
           "title": "יסוד הטוקן",
-          "desc": "תחזוקת חוזה ENM Ethereum מאומת, פרסום תיעוד טוקן רשמי בכתובת enm.network והקמת מידע חוזה שקוף למערכת האקולוגית."
+          "desc": "תחזוקת חוזה EnergieMIND Token (ENM) Ethereum מאומת, פרסום תיעוד טוקן רשמי בכתובת enm.network והקמת מידע חוזה שקוף למערכת האקולוגית."
         },
         {
           "title": "תיעוד ושקיפות",
@@ -357,7 +370,7 @@
       ]
     },
     "risk": {
-      "title": "הודעת סיכון | ENM Token",
+      "title": "הודעת סיכון | EnergieMIND Token",
       "description": "גילוי סיכון של טוקן ENM. ENM אינו מוצר השקעה, הצעת ניירות ערך או מכשיר עם תשואה מובטחת.",
       "ogTitle": "הודעת סיכון ENM | enm.network",
       "ogDescription": "גילוי סיכון מלא עבור טוקן ENM. לא מוצר השקעה, הצעת ניירות ערך או מכשיר עם תשואה מובטחת.",
@@ -405,7 +418,7 @@
         },
         {
           "title": "זהירות במכירה מוקדמת",
-          "content": "השתמשו רק בכתובות ארנק שפורסמו בכתובת enm.network/wallets. ארנק התרומה הרשמי למכירה מוקדמת הוא כתובת ENM Treasury ב-Ethereum Mainnet. אל תשלחו כספים לכתובות מרשתות חברתיות, הודעות פרטיות או אתרי צד שלישי. ENM אינו מוצר השקעה או מכשיר עם תשואה מובטחת."
+          "content": "השתמשו רק בכתובות ארנק שפורסמו בכתובת enm.network/wallets. ארנק התרומה הרשמי למכירה מוקדמת הוא כתובת EnergieMIND Token Treasury ב-Ethereum Mainnet. אל תשלחו כספים לכתובות מרשתות חברתיות, הודעות פרטיות או אתרי צד שלישי. ENM אינו מוצר השקעה או מכשיר עם תשואה מובטחת."
         },
         {
           "title": "אחריותכם",
@@ -414,9 +427,9 @@
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
+      "title": "FAQ | EnergieMIND Token",
       "description": "שאלות נפוצות על טוקן ENM, חוזה, מכירה מוקדמת, tokenomics ומערכת האקולוגיה EnergieMIND.",
-      "ogTitle": "ENM FAQ | enm.network",
+      "ogTitle": "EnergieMIND Token FAQ | enm.network",
       "ogDescription": "שאלות נפוצות על טוקן ENM, חוזה, מכירה מוקדמת ומערכת אקולוגית.",
       "breadcrumb": "FAQ",
       "eyebrow": "שאלות נפוצות",
@@ -427,7 +440,7 @@
       "items": [
         {
           "q": "מהו ENM?",
-          "a": "ENM (EnergieMind) הוא טוקן ה-utility של מערכת האקולוגיה EnergieMIND לבינה אנרגטית. זהו טוקן ERC-20 ב-Ethereum Mainnet, שתוכנן לתיאום אקולוגי עתידי הקשור לבינה אנרגטית, השתתפות בחום כרייה, תוכניות פיילוט ויישור EnteleKRON mainnet. ENM הוא טוקן utility — לא מוצר השקעה."
+          "a": "EnergieMIND Token (ENM) הוא טוקן ה-utility של מערכת האקולוגיה EnergieMIND לבינה אנרגטית. זהו טוקן ERC-20 ב-Ethereum Mainnet, שתוכנן לתיאום אקולוגי עתידי הקשור לבינה אנרגטית, השתתפות בחום כרייה, תוכניות פיילוט ויישור EnteleKRON mainnet. ENM הוא טוקן utility — לא מוצר השקעה."
         },
         {
           "q": "מה ההבדל בין enm.network ל-energiemind.com?",
@@ -468,7 +481,7 @@
       ]
     },
     "contact": {
-      "title": "צור קשר | ENM Token",
+      "title": "צור קשר | EnergieMIND Token",
       "description": "פרטי יצירת קשר לפניות על טוקן ENM. ערוצי תקשורת רשמיים עבור enm.network.",
       "ogTitle": "צור קשר ENM | enm.network",
       "ogDescription": "ערוצי יצירת קשר רשמיים לפניות על טוקן ENM ושותפויות.",
@@ -491,7 +504,7 @@
       "riskFooter": "ENM אינו המלצת השקעה, מוצר פיננסי, הצעת ניירות ערך או מכשיר עם תשואה מובטחת. נכסי קריפטו הם בסיכון גבוה ועלולים לאבד ערך."
     },
     "dashboard": {
-      "title": "לוח השקה | ENM Token",
+      "title": "לוח השקה | EnergieMIND Token",
       "description": "לוח השקה של טוקן ENM — סטטוס שלב מכירה מוקדמת חי, ספירה לאחור, חיבור ארנק ואימות ארנק תרומה רשמי.",
       "ogTitle": "לוח השקה ENM | enm.network",
       "ogDescription": "לוח מכירה מוקדמת חי של ENM עם מעקב שלבים, ספירה לאחור וכלי ארנק.",
@@ -513,7 +526,7 @@
       "networkLabel": "רשת",
       "networkRequired": "נדרש Ethereum Mainnet",
       "contributionTitle": "ארנק תרומה רשמי",
-      "contributionDesc": "תרומות למכירה מוקדמת מתואמות דרך ארנק ENM Treasury הרשמי. אמתו תמיד שכתובת זו תואמת ל-enm.network/wallets לפני שליחת כספים.",
+      "contributionDesc": "תרומות למכירה מוקדמת מתואמות דרך ארנק EnergieMIND Token Treasury הרשמי. אמתו תמיד שכתובת זו תואמת ל-enm.network/wallets לפני שליחת כספים.",
       "statsTitle": "סקירת השקה",
       "statPhase": "שלב פעיל",
       "statStage": "שלב ציבורי",
@@ -582,14 +595,14 @@
       "phaseProgress": "Phase progress"
     },
     "wallets": {
-      "title": "ארנקים רשמיים | ENM Token",
-      "description": "ארנקי מערכת אקולוגית EnergieMind ENM רשמיים ב-Ethereum Mainnet — כתובות Founder, OPS, Genesis ו-Treasury.",
+      "title": "ארנקים רשמיים | EnergieMIND Token",
+      "description": "ארנקי מערכת אקולוגית EnergieMIND Token (ENM) רשמיים ב-Ethereum Mainnet — כתובות Founder, OPS, Genesis ו-Treasury.",
       "ogTitle": "ארנקים רשמיים ENM | enm.network",
       "ogDescription": "כתובות ארנק רשמיות מאומתות של מערכת אקולוגית ENM ב-Ethereum Mainnet.",
       "breadcrumb": "ארנקים",
       "eyebrow": "כתובות מאומתות",
       "h1": "ארנקים רשמיים",
-      "lead": "ארנקי מערכת אקולוגית EnergieMind ENM רשמיים ב-Ethereum Mainnet. אמתו כל כתובת בדף זה לפני אינטראקציה. כתובות הונאה עשויות להשתמש בשמות דומים.",
+      "lead": "ארנקי מערכת אקולוגית EnergieMIND Token (ENM) רשמיים ב-Ethereum Mainnet. אמתו כל כתובת בדף זה לפני אינטראקציה. כתובות הונאה עשויות להשתמש בשמות דומים.",
       "riskShort": "סמכו רק על כתובות המפורטות בכתובת enm.network/wallets. צוות ENM לעולם לא ישלח לכם כתובות ארנק בהודעה פרטית. ENM אינו מוצר השקעה.",
       "verifyTitle": "אימות כתובת",
       "verifyDesc": "השוו תו אחר תו לפני שליחת כספים. תרומות למכירה מוקדמת משתמשות בארנק Treasury כשהשלבים פעילים.",
@@ -624,14 +637,14 @@
       "riskFooter": "עסקאות קריפטו הן בלתי הפיכות. אמתו תמיד כתובות בכתובת enm.network. ENM אינו מוצר השקעה או מכשיר עם תשואה מובטחת."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
+      "title": "Apply / Login | EnergieMIND Token Investor Portal",
+      "description": "Apply for EnergieMIND Token (ENM) presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
+      "ogTitle": "Apply for EnergieMIND Token (ENM) presale Access | enm.network",
       "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND Token (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,8 +683,8 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND Token (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     }
   }
 }

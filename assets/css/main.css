@@ -332,6 +332,24 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+.ticker-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-family: var(--display);
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #b45309;
+  background: rgba(255, 240, 200, 0.85);
+  border: 1px solid rgba(255, 176, 32, 0.45);
+  -webkit-text-fill-color: #b45309;
+}
+.page-hero .ticker-badge {
+  font-size: clamp(16px, 2.5vw, 22px);
+}
 .lead {
   font-size: clamp(17px, 2vw, 20px);
   line-height: 1.6;
