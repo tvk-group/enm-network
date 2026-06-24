@@ -73,7 +73,7 @@ ${hreflangTags(pageId)}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(page.ogTitle || page.title)}" />
   <meta name="twitter:description" content="${esc(page.ogDescription || page.description)}" />
-  <meta name="theme-color" content="#070d18" />
+  <meta name="theme-color" content="#ffb020" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ${fontLink}
@@ -228,14 +228,14 @@ function renderFooter(lang, t) {
 
 function riskBanner(t, text, withLink = true) {
   const riskLink = withLink
-    ? ` <a href="${pagePath('{lang}', 'risk').replace('{lang}', 'LANG')}" style="color: #92400e; font-weight: 700;">${esc(t.common.risk.readFull)}</a>`
+    ? ` <a href="${pagePath('{lang}', 'risk').replace('{lang}', 'LANG')}" style="color: var(--energy-blue-dark); font-weight: 700;">${esc(t.common.risk.readFull)}</a>`
     : '';
   return `<div class="risk-banner"><strong>${esc(t.common.risk.label)}</strong> ${esc(text)}${withLink ? riskLink.replace('LANG', '%%LANG%%') : ''}</div>`;
 }
 
 function riskBannerLang(t, text, lang, withLink = true) {
   const linkHtml = withLink
-    ? ` <a href="${pagePath(lang, 'risk')}" style="color: #92400e; font-weight: 700;">${esc(t.common.risk.readFull)}</a>`
+    ? ` <a href="${pagePath(lang, 'risk')}" style="color: var(--energy-blue-dark); font-weight: 700;">${esc(t.common.risk.readFull)}</a>`
     : '';
   return `<div class="risk-banner"><strong>${esc(t.common.risk.label)}</strong> ${esc(text)}${linkHtml}</div>`;
 }
@@ -362,7 +362,7 @@ function renderToken(lang, t) {
           <p style="margin-top: 14px;">${esc(p.aboutP2)}</p>
           <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;">
             <a class="btn primary" href="${ETHERSCAN}" target="_blank" rel="noopener">${esc(c.buttons.openEtherscan)}</a>
-            <a class="btn" href="${pagePath(lang, 'contract')}" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;">${esc(c.buttons.contractDetails)}</a>
+            <a class="btn" href="${pagePath(lang, 'contract')}">${esc(c.buttons.contractDetails)}</a>
           </div>
         </div>
         <div class="card" style="padding: 0; overflow: hidden;">
@@ -392,7 +392,7 @@ function renderToken(lang, t) {
     </div></section>
     <section><div class="wrap">
       <div class="risk-banner"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskFooter)}
-        <a href="${pagePath(lang, 'risk')}" style="color: #92400e; font-weight: 700;">${esc(c.risk.fullNotice)}</a>
+        <a href="${pagePath(lang, 'risk')}" style="color: var(--energy-blue-dark); font-weight: 700;">${esc(c.risk.fullNotice)}</a>
       </div>
     </div></section>`;
 }
@@ -933,7 +933,7 @@ function renderFAQ(lang, t) {
     </div></div>
     <section><div class="wrap">
       <div class="risk-banner" style="margin-bottom: 32px;"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}
-        <a href="${pagePath(lang, 'risk')}" style="color: #92400e; font-weight: 700;">${esc(c.risk.readFull)}</a>
+        <a href="${pagePath(lang, 'risk')}" style="color: var(--energy-blue-dark); font-weight: 700;">${esc(c.risk.readFull)}</a>
       </div>
       <div class="faq-list">${items}</div>
     </div></section>
