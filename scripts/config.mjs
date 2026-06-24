@@ -2,6 +2,24 @@ export const SITE_URL = 'https://enm.network';
 export const CONTRACT = '0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D';
 export const ETHERSCAN = `https://etherscan.io/token/${CONTRACT}`;
 
+/** Official token identity — EnergieMIND, ticker ENM */
+export const TOKEN_NAME = 'EnergieMIND';
+export const TOKEN_SYMBOL = 'ENM';
+/** Name as registered on the verified ERC-20 contract (Etherscan) */
+export const TOKEN_ONCHAIN_NAME = 'EnergieMind';
+export const SITE_BRAND = 'EnergieMIND';
+export const SITE_OG_NAME = 'EnergieMIND (ENM) | enm.network';
+
+/** Official EnergieMIND ecosystem domain map */
+export const ECOSYSTEM_DOMAINS = [
+  { id: 'corporate', domain: 'energiemind.com', url: 'https://energiemind.com' },
+  { id: 'io', domain: 'energiemind.io', url: 'https://energiemind.io' },
+  { id: 'network', domain: 'energiemind.network', url: 'https://energiemind.network' },
+  { id: 'org', domain: 'energiemind.org', url: 'https://energiemind.org' },
+  { id: 'shop', domain: 'energiemind.shop', url: 'https://energiemind.shop' },
+  { id: 'token', domain: 'enm.network', url: SITE_URL, current: true },
+];
+
 export const LANGUAGES = [
   { code: 'en', hreflang: 'en', dir: 'ltr', name: 'English', native: 'English' },
   { code: 'tr', hreflang: 'tr', dir: 'ltr', name: 'Turkish', native: 'Türkçe' },

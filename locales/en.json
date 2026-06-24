@@ -1,12 +1,21 @@
 {
   "common": {
-    "brandHome": "ENM Token home",
+    "brandHome": "EnergieMIND home",
+    "branding": {
+      "tokenName": "EnergieMIND",
+      "tokenSymbol": "ENM",
+      "tokenNameWithTicker": "EnergieMIND (ENM)",
+      "onchainName": "EnergieMind",
+      "onchainLabel": "On-chain contract name",
+      "siteBrand": "EnergieMIND",
+      "siteSubtitle": "ENM · enm.network"
+    },
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "selectLanguage": "Select language",
     "nav": {
       "home": "Home",
-      "token": "ENM Token",
+      "token": "The Token",
       "tokenomics": "Tokenomics",
       "presale": "Presale",
       "dashboard": "Dashboard",
@@ -35,11 +44,13 @@
       "verifyOnWallets": "Verify on Wallets page"
     },
     "footer": {
-      "brand": "ENM Token",
-      "desc": "Official ENM token documentation at enm.network. EnergieMIND project information is available at energiemind.com.",
-      "descShort": "Official ENM token documentation at enm.network.",
+      "brand": "EnergieMIND",
+      "desc": "Official EnergieMIND (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
+      "descShort": "Official EnergieMIND (ENM) documentation at enm.network.",
       "tokenHeading": "Token",
       "infoHeading": "Information",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here",
       "contractLabel": "Contract:"
     },
     "badges": {
@@ -63,6 +74,7 @@
       "allocation": "Allocation"
     },
     "stats": {
+      "ticker": "Ticker",
       "symbol": "Symbol",
       "standard": "Standard",
       "maxSupply": "Max Supply",
@@ -92,25 +104,59 @@
   },
   "pages": {
     "home": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM is the utility token layer of the EnergieMIND energy intelligence ecosystem. Official token documentation, contract information, and presale status at enm.network.",
-      "ogTitle": "ENM Token | enm.network",
-      "ogDescription": "The utility token layer of the EnergieMIND energy intelligence ecosystem.",
+      "title": "EnergieMIND (ENM) | enm.network",
+      "description": "EnergieMIND (ENM) is the utility token layer of the EnergieMIND energy intelligence ecosystem. Official token documentation, contract information, and presale status at enm.network.",
+      "ogTitle": "EnergieMIND (ENM) | enm.network",
+      "ogDescription": "The EnergieMIND (ENM) — utility token layer of the EnergieMIND energy intelligence ecosystem.",
       "breadcrumb": "Home",
-      "eyebrow": "Official ENM Token Site",
-      "h1": "ENM Token",
-      "lead": "The utility token layer of the EnergieMIND energy intelligence ecosystem.",
+      "eyebrow": "Official EnergieMIND Site",
+      "h1": "EnergieMIND",
+      "h1Ticker": "ENM",
+      "lead": "The utility token of the EnergieMIND energy intelligence ecosystem. Ticker: ENM.",
       "supportLine": "Energy Utility · Mining Heat Participation · Ecosystem Coordination · Future Mainnet Alignment",
-      "layersTitle": "Two layers, one ecosystem.",
-      "layersDesc": "ENM and EnergieMIND serve distinct but connected roles. This site covers the token layer only.",
-      "projectDomain": "energiemind.com",
-      "projectTitle": "EnergieMIND — Project Layer",
-      "projectDesc": "Energy intelligence, mining heat utility, technology development, pilot participation, and infrastructure coordination. Visit energiemind.com for project and technology information.",
-      "tokenDomain": "enm.network",
-      "tokenTitle": "ENM — Token Layer",
-      "tokenDesc": "Utility token for ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, infrastructure incentives, and future EnteleKRON mainnet alignment.",
-      "utilityTitle": "What ENM is designed for.",
-      "utilityDesc": "ENM is a utility coordination token — not an investment product or guaranteed return instrument.",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND (ENM) layer. This site documents EnergieMIND (ENM) at enm.network only.",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND (ENM)",
+          "desc": "EnergieMIND (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ],
+      "utilityTitle": "What EnergieMIND is designed for.",
+      "utilityDesc": "EnergieMIND (ENM) is a utility coordination token — not an investment product or guaranteed return instrument.",
       "card1Title": "Energy Utility",
       "card1Desc": "Future coordination of energy intelligence services, operational participation, and ecosystem-aligned utility functions within the EnergieMIND network.",
       "card2Title": "Mining Heat Participation",
@@ -129,21 +175,22 @@
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
       "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
-      "riskShort": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply. Always verify the contract address independently."
+      "riskShort": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply. Always verify the contract address independently."
     },
     "token": {
-      "title": "ENM Token | enm.network",
-      "description": "ENM (EnergieMind) is an Ethereum ERC-20 utility token for the EnergieMIND energy intelligence ecosystem. Token details, status, and contract information.",
-      "ogTitle": "ENM Token Documentation | enm.network",
-      "ogDescription": "Ethereum ERC-20 utility token details, status, and contract information for ENM.",
-      "breadcrumb": "ENM Token",
+      "title": "EnergieMIND (ENM) | enm.network",
+      "description": "EnergieMIND (ENM) is an Ethereum ERC-20 utility token for the EnergieMIND energy intelligence ecosystem. Token details, status, and contract information.",
+      "ogTitle": "EnergieMIND Documentation | enm.network",
+      "ogDescription": "Ethereum ERC-20 utility token details for EnergieMIND (ENM).",
+      "breadcrumb": "EnergieMIND",
       "eyebrow": "Token Documentation",
-      "h1": "ENM Token",
-      "lead": "The utility token layer of the EnergieMIND energy intelligence ecosystem — designed for ecosystem coordination, not as an investment product.",
-      "riskShort": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Always verify the contract address independently.",
-      "aboutTitle": "About ENM",
-      "aboutP1": "ENM (EnergieMind) is the Ethereum ERC-20 utility token for the EnergieMIND ecosystem. It is designed for future coordination related to energy intelligence, mining heat utility participation, pilot programs, energy infrastructure incentives, and EnteleKRON mainnet alignment.",
-      "aboutP2": "ENM is separate from the EnergieMIND project website at energiemind.com, which covers technology and infrastructure. This site documents the token layer only.",
+      "h1": "EnergieMIND",
+      "h1Ticker": "ENM",
+      "lead": "The utility token of the EnergieMIND energy intelligence ecosystem — ticker ENM. Designed for ecosystem coordination, not as an investment product.",
+      "riskShort": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Always verify the contract address independently.",
+      "aboutTitle": "About EnergieMIND",
+      "aboutP1": "EnergieMIND (ticker: ENM) is the Ethereum ERC-20 utility token for the EnergieMIND ecosystem. On-chain, the verified contract registers the name \"EnergieMind\" with symbol \"ENM\". It is designed for future coordination related to energy intelligence, mining heat utility participation, pilot programs, energy infrastructure incentives, and EnteleKRON mainnet alignment.",
+      "aboutP2": "EnergieMIND (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "Intended utility scope.",
       "scopeDesc": "ENM is positioned as a coordination utility — not passive income, profit guarantee, or security offering.",
       "card1Title": "Energy Intelligence",
@@ -165,43 +212,65 @@
       }
     },
     "tokenomics": {
-      "title": "Tokenomics | ENM Token",
-      "description": "ENM tokenomics structure and allocation categories. Final percentages pending official publication.",
-      "ogTitle": "ENM Tokenomics | enm.network",
-      "ogDescription": "ENM token supply and allocation categories. Final percentages pending official publication.",
+      "title": "Tokenomics | EnergieMIND (ENM)",
+      "description": "EnergieMIND (ENM) tokenomics structure and allocation categories. Final percentages pending official publication.",
+      "ogTitle": "EnergieMINDomics | enm.network",
+      "ogDescription": "EnergieMIND (ENM) supply and allocation categories. Final percentages pending official publication.",
       "breadcrumb": "Tokenomics",
       "eyebrow": "Allocation Structure",
       "h1": "Tokenomics",
-      "lead": "ENM token supply and allocation categories. Final allocation percentages are pending official publication.",
-      "riskShort": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Tokenomics information does not constitute a promise of value, return, or appreciation.",
+      "lead": "EnergieMIND (ENM) supply and allocation categories. Final allocation percentages are pending official publication.",
+      "riskShort": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Tokenomics information does not constitute a promise of value, return, or appreciation.",
       "totalSupply": "Total Supply",
       "categoriesTitle": "Allocation categories.",
       "categoriesDesc": "Structure below reflects planned allocation categories. Exact percentages will be published when finalized.",
       "footerNote": "No exact allocation percentages are published at this time. When final tokenomics are approved, this page will be updated with verified figures. Do not rely on unofficial or third-party tokenomics charts.",
       "riskFooter": "Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply.",
       "allocations": [
-        { "name": "Utility Allocation", "desc": "Tokens reserved for ecosystem utility functions, operational participation, and service coordination within the EnergieMIND network." },
-        { "name": "Ecosystem Reserve", "desc": "Reserve for long-term ecosystem development, partnerships, and strategic coordination activities." },
-        { "name": "Liquidity", "desc": "Allocation for market liquidity provisioning when applicable and officially announced." },
-        { "name": "Treasury", "desc": "Operational treasury for ecosystem maintenance, development, and infrastructure support." },
-        { "name": "Founder / Team Lock", "desc": "Team and founder allocations subject to lock schedules and vesting terms to be published." },
-        { "name": "Community / Partner Programs", "desc": "Allocations for community initiatives, partner onboarding, and pilot participation programs." },
-        { "name": "Migration Reserve", "desc": "Reserve for future EnteleKRON mainnet migration alignment and cross-chain utility transition." }
+        {
+          "name": "Utility Allocation",
+          "desc": "Tokens reserved for ecosystem utility functions, operational participation, and service coordination within the EnergieMIND network."
+        },
+        {
+          "name": "Ecosystem Reserve",
+          "desc": "Reserve for long-term ecosystem development, partnerships, and strategic coordination activities."
+        },
+        {
+          "name": "Liquidity",
+          "desc": "Allocation for market liquidity provisioning when applicable and officially announced."
+        },
+        {
+          "name": "Treasury",
+          "desc": "Operational treasury for ecosystem maintenance, development, and infrastructure support."
+        },
+        {
+          "name": "Founder / Team Lock",
+          "desc": "Team and founder allocations subject to lock schedules and vesting terms to be published."
+        },
+        {
+          "name": "Community / Partner Programs",
+          "desc": "Allocations for community initiatives, partner onboarding, and pilot participation programs."
+        },
+        {
+          "name": "Migration Reserve",
+          "desc": "Reserve for future EnteleKRON mainnet migration alignment and cross-chain utility transition."
+        }
       ]
     },
     "presale": {
-      "title": "Presale | ENM Token",
-      "description": "ENM token presale schedule: Early Investor, Strategic Investor, Private Sale, and 6-stage Public Presale. Official dates and launch dashboard at enm.network.",
-      "ogTitle": "ENM Presale Schedule | enm.network",
-      "ogDescription": "Official ENM presale phases from July 2026 through public stages in 2027.",
+      "title": "Presale | EnergieMIND (ENM)",
+      "description": "EnergieMIND (ENM) presale schedule: Early Investor, Strategic Investor, Private Sale, and 6-stage Public Presale. Official dates and investor portal at enm.network.",
+      "ogTitle": "EnergieMIND Presale | enm.network",
+      "ogDescription": "Official EnergieMIND (ENM) presale phases from July 2026 through public stages in 2027.",
       "breadcrumb": "Presale",
       "eyebrow": "Presale Schedule",
-      "h1": "ENM Presale",
-      "lead": "Structured presale phases from early investor access through a six-stage public presale. Use the launch dashboard for live status and always verify wallet addresses on the official wallets page.",
+      "h1": "EnergieMIND Presale",
+      "h1Ticker": "ENM",
+      "lead": "Structured presale phases for EnergieMIND (ENM) from early investor access through a six-stage public presale. Use the investor portal for live status and always verify wallet addresses on the official wallets page.",
       "important": "Important:",
-      "riskShort": "ENM is not an investment product or guaranteed return instrument. Only use wallet addresses published on enm.network/wallets. Do not send funds to unofficial addresses. Crypto assets are high-risk and may lose value.",
+      "riskShort": "EnergieMIND (ENM) is not an investment product or guaranteed return instrument. Only use wallet addresses published on enm.network/wallets. Do not send funds to unofficial addresses. Crypto assets are high-risk and may lose value.",
       "timelineTitle": "Presale timeline",
-      "timelineDesc": "Official phase schedule for ENM token distribution coordination.",
+      "timelineDesc": "Official phase schedule for EnergieMIND (ENM) distribution coordination.",
       "phasesTitle": "Investment phases",
       "publicStagesTitle": "Public presale — 6 stages",
       "publicStagesDesc": "Public presale begins 01 April 2027. Each stage runs for 6 weeks.",
@@ -210,18 +279,34 @@
       "durationLabel": "Duration",
       "statusLabel": "Status",
       "dashboardCta": "Open the launch dashboard for live phase status, countdown, and wallet connection.",
-      "walletsCta": "All official ENM wallets are listed on the wallets page. Verify every address before sending funds.",
+      "walletsCta": "All official EnergieMIND (ENM) wallets are listed on the wallets page. Verify every address before sending funds.",
       "phases": [
-        { "id": "early", "name": "Early Investor", "desc": "Early ecosystem coordination access for qualified early participants." },
-        { "id": "strategic", "name": "Strategic Investor", "desc": "Strategic partners and infrastructure-aligned participants." },
-        { "id": "private", "name": "Private Sale", "desc": "Private sale phase before public presale opening." },
-        { "id": "public", "name": "Public Presale", "desc": "Public presale across six consecutive 6-week stages." }
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Early ecosystem coordination access for qualified early participants."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Strategic partners and infrastructure-aligned participants."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Private sale phase before public presale opening."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Public presale across six consecutive 6-week stages."
+        }
       ],
       "expectTitle": "Participation",
       "expectP1": "Accepted assets for presale coordination: ETH, USDC, and USDT on Ethereum Mainnet. Final pricing, allocation limits, and vesting terms will be published before each active phase.",
       "expectP2": "For eligibility questions, contact",
       "contactLink": "token@enm.network",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value.",
+      "riskFooter": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value.",
       "fields": {
         "presaleStatus": "Presale Status",
         "acceptedAssets": "Accepted Assets",
@@ -235,15 +320,15 @@
       }
     },
     "dashboard": {
-      "title": "Investor Portal | ENM Token",
-      "description": "ENM investor portal — apply, KYC, allocation tracking, payment instructions, vesting schedule, and transaction history. Institutional presale dashboard at enm.network.",
-      "ogTitle": "ENM Investor Portal | enm.network",
-      "ogDescription": "Full ENM investor portal with KYC, allocation, payment, and vesting tracking.",
+      "title": "Investor Portal | EnergieMIND (ENM)",
+      "description": "EnergieMIND (ENM) investor portal — apply, KYC, allocation tracking, payment instructions, vesting schedule, and transaction history.",
+      "ogTitle": "EnergieMIND Investor Portal | enm.network",
+      "ogDescription": "Full investor portal for EnergieMIND (ENM) with KYC, allocation, payment, and vesting tracking.",
       "breadcrumb": "Investor Portal",
       "eyebrow": "Investor Portal",
       "h1": "Investor Dashboard",
-      "lead": "Track your presale journey from application through KYC, approval, payment, and vesting. ENM is a utility token — not an investment product or guaranteed return instrument.",
-      "riskShort": "ENM is not an investment product or guaranteed return instrument. Verify all addresses on the official wallets page. Crypto assets are high-risk.",
+      "lead": "Track your presale journey from application through KYC, approval, payment, and vesting. EnergieMIND (ENM) is a utility token — not an investment product or guaranteed return instrument.",
+      "riskShort": "EnergieMIND (ENM) is not an investment product or guaranteed return instrument. Verify all addresses on the official wallets page. Crypto assets are high-risk.",
       "logout": "Log out",
       "guestTitle": "Sign in to your investor account",
       "guestDesc": "Apply for presale access or log in to view your allocation, KYC status, payment instructions, and vesting schedule.",
@@ -310,7 +395,7 @@
       "walletDisconnected": "Not connected",
       "networkLabel": "Network",
       "contributionTitle": "Official contribution wallet",
-      "contributionDesc": "Presale contributions are coordinated through the official ENM Treasury wallet.",
+      "contributionDesc": "Presale contributions are coordinated through the official EnergieMIND Treasury wallet.",
       "statsTitle": "Launch overview",
       "statPhase": "Active phase",
       "statStage": "Public stage",
@@ -319,17 +404,17 @@
       "timelineTitle": "Phase timeline",
       "registerTitle": "Participation notice",
       "registerDesc": "During active phases, connect your wallet and coordinate participation according to published terms. This portal does not guarantee allocation, return, or token delivery.",
-      "riskFooter": "Always verify wallet addresses independently. ENM is not an investment recommendation or guaranteed return instrument."
+      "riskFooter": "Always verify wallet addresses independently. EnergieMIND (ENM) is not an investment recommendation or guaranteed return instrument."
     },
     "apply": {
-      "title": "Apply / Login | ENM Investor Portal",
-      "description": "Apply for ENM presale access or log in to your investor dashboard. Complete KYC, track allocation, and payment status.",
-      "ogTitle": "Apply for ENM Presale Access | enm.network",
-      "ogDescription": "Apply or log in to the ENM investor portal for presale coordination.",
+      "title": "Apply / Login | EnergieMIND Investor Portal",
+      "description": "Apply for EnergieMIND (ENM) presale access or log in to your investor dashboard.",
+      "ogTitle": "Apply for EnergieMIND Presale | enm.network",
+      "ogDescription": "Apply or log in to the EnergieMIND (ENM) investor portal for presale coordination.",
       "breadcrumb": "Apply / Login",
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
-      "lead": "Request access to the ENM presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "lead": "Request access to the EnergieMIND (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -368,19 +453,19 @@
       "submitLogin": "Log in →",
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
-      "riskShort": "ENM is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskShort": "EnergieMIND (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
+      "riskFooter": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
     },
     "wallets": {
-      "title": "Official Wallets | ENM Token",
-      "description": "Official EnergieMind ENM ecosystem wallets on Ethereum Mainnet — Founder, OPS, Genesis, and Treasury addresses.",
-      "ogTitle": "ENM Official Wallets | enm.network",
-      "ogDescription": "Verified official ENM ecosystem wallet addresses on Ethereum Mainnet.",
+      "title": "Official Wallets | EnergieMIND (ENM)",
+      "description": "Official EnergieMIND (ENM) ecosystem wallets on Ethereum Mainnet — Founder, OPS, Genesis, and Treasury addresses.",
+      "ogTitle": "EnergieMIND Official Wallets | enm.network",
+      "ogDescription": "Verified official EnergieMIND (ENM) ecosystem wallet addresses on Ethereum Mainnet.",
       "breadcrumb": "Wallets",
       "eyebrow": "Verified Addresses",
       "h1": "Official Wallets",
-      "lead": "Official EnergieMind ENM ecosystem wallets on Ethereum Mainnet. Verify every address on this page before interacting. Scam addresses may use similar names.",
-      "riskShort": "Only trust addresses listed on enm.network/wallets. ENM team will never DM you wallet addresses. ENM is not an investment product.",
+      "lead": "Official EnergieMIND (ENM) ecosystem wallets on Ethereum Mainnet. Verify every address on this page before interacting. Scam addresses may use similar names.",
+      "riskShort": "Only trust addresses listed on enm.network/wallets. The EnergieMIND team will never DM you wallet addresses. EnergieMIND (ENM) is not an investment product.",
       "verifyTitle": "Address verification",
       "verifyDesc": "Compare character-by-character before sending funds. Presale contributions use the Treasury wallet when phases are active.",
       "tableTitle": "Ecosystem wallets",
@@ -388,10 +473,22 @@
       "recommendedTitle": "Recommended additional wallets",
       "recommendedDesc": "For a complete token launch, consider creating these additional wallets when ready:",
       "recommended": [
-        { "name": "Presale Escrow / Sale", "desc": "Dedicated sale wallet separate from Treasury if you want operational isolation (optional — Treasury can serve this role)." },
-        { "name": "Vesting & Locks", "desc": "For team, founder, and investor vesting schedules when on-chain vesting is deployed." },
-        { "name": "Liquidity", "desc": "For DEX liquidity provisioning when officially announced." },
-        { "name": "Community & Rewards", "desc": "For pilot programs, community incentives, and partner allocations." }
+        {
+          "name": "Presale Escrow / Sale",
+          "desc": "Dedicated sale wallet separate from Treasury if you want operational isolation (optional — Treasury can serve this role)."
+        },
+        {
+          "name": "Vesting & Locks",
+          "desc": "For team, founder, and investor vesting schedules when on-chain vesting is deployed."
+        },
+        {
+          "name": "Liquidity",
+          "desc": "For DEX liquidity provisioning when officially announced."
+        },
+        {
+          "name": "Community & Rewards",
+          "desc": "For pilot programs, community incentives, and partner allocations."
+        }
       ],
       "purposes": {
         "founder": "Founder allocation and governance coordination",
@@ -399,32 +496,32 @@
         "genesis": "Genesis allocation and initial ecosystem bootstrap",
         "treasury": "Treasury, presale contributions, and ecosystem reserves"
       },
-      "riskFooter": "Crypto transactions are irreversible. Always verify addresses on enm.network. ENM is not an investment product or guaranteed return instrument."
+      "riskFooter": "Crypto transactions are irreversible. Always verify addresses on enm.network. EnergieMIND (ENM) is not an investment product or guaranteed return instrument."
     },
     "contract": {
-      "title": "Contract | ENM Token",
-      "description": "Official ENM token contract on Ethereum Mainnet. Verified ERC-20 contract address, token parameters, and Etherscan link.",
-      "ogTitle": "ENM Contract | enm.network",
-      "ogDescription": "Official ENM ERC-20 contract on Ethereum Mainnet. Verified address and token parameters.",
+      "title": "Contract | EnergieMIND (ENM)",
+      "description": "Official EnergieMIND (ENM) contract on Ethereum Mainnet. Verified ERC-20 contract address, token parameters, and Etherscan link.",
+      "ogTitle": "EnergieMIND Contract | enm.network",
+      "ogDescription": "Official EnergieMIND (ENM) ERC-20 contract on Ethereum Mainnet. Verified address and token parameters.",
       "breadcrumb": "Contract",
       "eyebrow": "On-Chain Verification",
       "h1": "Contract",
-      "lead": "Official ENM token contract on Ethereum Mainnet. Always verify this address independently before any interaction.",
+      "lead": "Official EnergieMIND (ENM) contract on Ethereum Mainnet. Always verify this address independently before any interaction.",
       "verifyBanner": "Verify independently:",
-      "verifyText": "Only interact with the contract address listed below. Scam tokens may use similar names. ENM is not an investment product or guaranteed return instrument.",
+      "verifyText": "Only interact with the contract address listed below. Scam tokens may use similar names. EnergieMIND (ENM) is not an investment product or guaranteed return instrument.",
       "officialTitle": "Official Contract",
-      "officialDesc": "The ENM token is deployed as a verified ERC-20 contract on Ethereum Mainnet. According to the current verified contract, transfers may be restricted or locked.",
+      "officialDesc": "EnergieMIND (ENM) is deployed as a verified ERC-20 contract on Ethereum Mainnet. According to the current verified contract, transfers may be restricted or locked.",
       "copyLabel": "Contract Address (copy and verify)",
       "checklistTitle": "Verification checklist",
-      "checklistIntro": "Before adding ENM to your wallet or interacting with the contract:",
+      "checklistIntro": "Before adding EnergieMIND (ENM) to your wallet or interacting with the contract:",
       "checklist": [
         "Confirm the contract address matches exactly: 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D",
         "Verify on Etherscan that the contract is verified with source code",
-        "Check that the token name is \"EnergieMind\" and symbol is \"ENM\"",
+        "Check that the on-chain token name is \"EnergieMind\" and the ticker symbol is \"ENM\" (EnergieMIND)",
         "Review current transfer restrictions on the contract before attempting transfers",
         "Do not trust contract addresses from unofficial sources, social media DMs, or third-party sites"
       ],
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value.",
+      "riskFooter": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value.",
       "fields": {
         "address": "Address",
         "network": "Network",
@@ -440,97 +537,189 @@
       }
     },
     "roadmap": {
-      "title": "Roadmap | ENM Token",
-      "description": "ENM token roadmap from contract foundation through ecosystem coordination and EnteleKRON mainnet alignment.",
-      "ogTitle": "ENM Roadmap | enm.network",
-      "ogDescription": "ENM token development roadmap from foundation to EnteleKRON mainnet alignment.",
+      "title": "Roadmap | EnergieMIND (ENM)",
+      "description": "EnergieMIND (ENM) roadmap from contract foundation through ecosystem coordination and EnteleKRON mainnet alignment.",
+      "ogTitle": "EnergieMIND Roadmap | enm.network",
+      "ogDescription": "ENM development roadmap from foundation to EnteleKRON mainnet alignment.",
       "breadcrumb": "Roadmap",
       "eyebrow": "Development Path",
       "h1": "Roadmap",
       "lead": "A staged path from token foundation to ecosystem utility coordination and mainnet alignment. Timelines are indicative and subject to change.",
-      "riskShort": "Roadmap items are planning milestones, not guarantees of delivery, value, or return. ENM is not an investment product or guaranteed return instrument.",
+      "riskShort": "Roadmap items are planning milestones, not guarantees of delivery, value, or return. EnergieMIND (ENM) is not an investment product or guaranteed return instrument.",
       "footerNote": "Roadmap phases represent intended direction. No specific dates are published. Progress updates will be communicated through official channels when available.",
       "riskFooter": "Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply.",
       "steps": [
-        { "title": "Token Foundation", "desc": "Maintain verified ENM Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem." },
-        { "title": "Documentation & Transparency", "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Complete token layer separation from energiemind.com project site." },
-        { "title": "Presale & Distribution", "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics." },
-        { "title": "Utility Activation", "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures." },
-        { "title": "Partner & Pilot Network", "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models." },
-        { "title": "Ecosystem Expansion", "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem." },
-        { "title": "EnteleKRON Alignment", "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement." },
-        { "title": "Mainnet Migration", "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance." }
+        {
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
+        },
+        {
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
+        },
+        {
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
+        },
+        {
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
+        },
+        {
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
+        },
+        {
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
+        },
+        {
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
+        },
+        {
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
+        }
       ]
     },
     "risk": {
-      "title": "Risk Notice | ENM Token",
-      "description": "ENM token risk disclosure. ENM is not an investment product, security offering, or guaranteed return instrument.",
-      "ogTitle": "ENM Risk Notice | enm.network",
-      "ogDescription": "Full risk disclosure for ENM token. Not an investment product, security offering, or guaranteed return instrument.",
+      "title": "Risk Notice | EnergieMIND (ENM)",
+      "description": "EnergieMIND (ENM) risk disclosure. Not an investment product, security offering, or guaranteed return instrument.",
+      "ogTitle": "EnergieMIND Risk Notice | enm.network",
+      "ogDescription": "Full risk disclosure for EnergieMIND (ENM). Not an investment product, security offering, or guaranteed return instrument.",
       "breadcrumb": "Risk Notice",
       "eyebrow": "Legal Disclosure",
       "h1": "Risk Notice",
-      "lead": "Read this notice carefully before interacting with ENM or any related ecosystem services.",
+      "lead": "Read this notice carefully before interacting with EnergieMIND (ENM) or any related ecosystem services.",
       "sections": [
-        { "title": "General Disclaimer", "content": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply. Always verify the contract address independently.", "bold": true },
-        { "title": "Not an Investment Product", "content": "ENM is presented as a utility token for ecosystem coordination within the EnergieMIND energy intelligence network. It is not offered or described as an investment product, security, equity interest, debt instrument, or financial derivative. Nothing on enm.network constitutes financial advice, investment advice, or a recommendation to buy, sell, or hold any crypto asset." },
-        { "title": "No Guaranteed Returns", "content": "ENM does not promise, guarantee, or imply any return on investment, passive income, profit, appreciation, or yield. Past performance of any crypto asset is not indicative of future results. You may lose part or all of any value associated with ENM." },
-        { "title": "Not a Security Offering", "content": "ENM is not offered as a security under any jurisdiction. Regulatory classification of crypto tokens varies by country and may change. You are solely responsible for understanding and complying with applicable laws in your jurisdiction." },
-        { "title": "Market and Liquidity Risks", "content": "Crypto markets are volatile. ENM may have limited or no liquidity. Prices can fluctuate dramatically or become untradeable. There is no assurance of any secondary market, exchange listing, or trading venue." },
-        { "title": "Technical Risks", "content": "Smart contracts, blockchain networks, and wallet software carry inherent technical risks including bugs, exploits, network failures, forks, and irreversible transactions. The ENM contract currently indicates transfer restrictions. Always verify contract behavior on Etherscan before interacting." },
-        { "title": "Regulatory Risks", "content": "Cryptocurrency regulations are evolving globally. Future regulatory actions may restrict, prohibit, or impose requirements on ENM holders, transfers, or ecosystem participation. Compliance obligations may vary by jurisdiction." },
-        { "title": "Operational Risks", "content": "Ecosystem development, presale execution, utility activation, and mainnet migration are subject to technical, operational, and resource constraints. Roadmap items are planning milestones, not binding commitments or guarantees of delivery." },
-        { "title": "Contract Verification", "content": "The official ENM contract address is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D on Ethereum Mainnet. Always verify this address independently on Etherscan. Do not trust addresses from unofficial sources, social media messages, or third-party websites. Scam tokens may use similar names." },
-        { "title": "Presale Caution", "content": "Only use wallet addresses published on enm.network/wallets. The official presale contribution wallet is the ENM Treasury address on Ethereum Mainnet. Do not send funds to addresses from social media, DMs, or third-party sites. ENM is not an investment product or guaranteed return instrument." },
-        { "title": "Your Responsibility", "content": "By accessing enm.network or interacting with ENM, you acknowledge that you understand these risks and accept full responsibility for your decisions. Consult qualified legal, tax, and financial professionals before making any decisions related to crypto assets." }
+        {
+          "title": "General Disclaimer",
+          "content": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply. Always verify the contract address independently.",
+          "bold": true
+        },
+        {
+          "title": "Not an Investment Product",
+          "content": "EnergieMIND (ENM) is presented as a utility token for ecosystem coordination within the EnergieMIND energy intelligence network. It is not offered or described as an investment product, security, equity interest, debt instrument, or financial derivative. Nothing on enm.network constitutes financial advice, investment advice, or a recommendation to buy, sell, or hold any crypto asset."
+        },
+        {
+          "title": "No Guaranteed Returns",
+          "content": "EnergieMIND (ENM) does not promise, guarantee, or imply any return on investment, passive income, profit, appreciation, or yield. Past performance of any crypto asset is not indicative of future results. You may lose part or all of any value associated with ENM."
+        },
+        {
+          "title": "Not a Security Offering",
+          "content": "EnergieMIND (ENM) is not offered as a security under any jurisdiction. Regulatory classification of crypto tokens varies by country and may change. You are solely responsible for understanding and complying with applicable laws in your jurisdiction."
+        },
+        {
+          "title": "Market and Liquidity Risks",
+          "content": "Crypto markets are volatile. ENM may have limited or no liquidity. Prices can fluctuate dramatically or become untradeable. There is no assurance of any secondary market, exchange listing, or trading venue."
+        },
+        {
+          "title": "Technical Risks",
+          "content": "Smart contracts, blockchain networks, and wallet software carry inherent technical risks including bugs, exploits, network failures, forks, and irreversible transactions. The EnergieMIND (ENM) contract currently indicates transfer restrictions. Always verify contract behavior on Etherscan before interacting."
+        },
+        {
+          "title": "Regulatory Risks",
+          "content": "Cryptocurrency regulations are evolving globally. Future regulatory actions may restrict, prohibit, or impose requirements on ENM holders, transfers, or ecosystem participation. Compliance obligations may vary by jurisdiction."
+        },
+        {
+          "title": "Operational Risks",
+          "content": "Ecosystem development, presale execution, utility activation, and mainnet migration are subject to technical, operational, and resource constraints. Roadmap items are planning milestones, not binding commitments or guarantees of delivery."
+        },
+        {
+          "title": "Contract Verification",
+          "content": "The official EnergieMIND (ENM) contract address is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D on Ethereum Mainnet. Always verify this address independently on Etherscan. Do not trust addresses from unofficial sources, social media messages, or third-party websites. Scam tokens may use similar names."
+        },
+        {
+          "title": "Presale Caution",
+          "content": "Only use wallet addresses published on enm.network/wallets. The official presale contribution wallet is the EnergieMIND Treasury address on Ethereum Mainnet. Do not send funds to addresses from social media, DMs, or third-party sites. EnergieMIND (ENM) is not an investment product or guaranteed return instrument."
+        },
+        {
+          "title": "Your Responsibility",
+          "content": "By accessing enm.network or interacting with EnergieMIND (ENM), you acknowledge that you understand these risks and accept full responsibility for your decisions. Consult qualified legal, tax, and financial professionals before making any decisions related to crypto assets."
+        }
       ]
     },
     "faq": {
-      "title": "FAQ | ENM Token",
-      "description": "Frequently asked questions about ENM token, contract, presale, tokenomics, and the EnergieMIND ecosystem.",
-      "ogTitle": "ENM FAQ | enm.network",
-      "ogDescription": "Frequently asked questions about ENM token, contract, presale, and ecosystem.",
+      "title": "FAQ | EnergieMIND (ENM)",
+      "description": "Frequently asked questions about EnergieMIND (ENM), contract, presale, tokenomics, and the EnergieMIND ecosystem.",
+      "ogTitle": "EnergieMIND FAQ | enm.network",
+      "ogDescription": "Frequently asked questions about EnergieMIND (ENM), contract, presale, and ecosystem.",
       "breadcrumb": "FAQ",
       "eyebrow": "Common Questions",
       "h1": "FAQ",
-      "lead": "Answers to frequently asked questions about ENM, the contract, presale, and ecosystem positioning.",
-      "riskShort": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument.",
+      "lead": "Answers to frequently asked questions about EnergieMIND (ENM), the contract, presale, and ecosystem positioning.",
+      "riskShort": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument.",
       "riskFooter": "Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply. Always verify the contract address independently.",
       "items": [
-        { "q": "What is ENM?", "a": "ENM (EnergieMind) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product." },
-        { "q": "What is the difference between enm.network and energiemind.com?", "a": "enm.network is the official ENM token documentation site covering the token layer: contract, tokenomics, presale, and risk disclosures. energiemind.com covers the EnergieMIND project layer: energy intelligence technology, mining heat utility, and infrastructure development. They are separate but connected parts of the same ecosystem." },
-        { "q": "What is the official contract address?", "a": "The official ENM contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting." },
-        { "q": "Can I transfer ENM right now?", "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer." },
-        { "q": "Is ENM an investment?", "a": "No. ENM is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice." },
-        { "q": "When is the presale?", "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and launch dashboard for live status." },
-        { "q": "What is the total supply?", "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page." },
-        { "q": "What is EnteleKRON mainnet alignment?", "a": "ENM is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available." },
-        { "q": "How do I add ENM to my wallet?", "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with token symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state." },
-        { "q": "Where can I get official updates?", "a": "Official token information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information." }
+        {
+          "q": "What is EnergieMIND?",
+          "a": "EnergieMIND (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
+        },
+        {
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND (ENM), presale, and token documentation (this site)."
+        },
+        {
+          "q": "What is the difference between enm.network and energiemind.com?",
+          "a": "enm.network is dedicated to EnergieMIND (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
+        },
+        {
+          "q": "What is the official contract address?",
+          "a": "The official EnergieMIND (ENM) contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting."
+        },
+        {
+          "q": "Can I transfer ENM right now?",
+          "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer."
+        },
+        {
+          "q": "Is EnergieMIND an investment?",
+          "a": "No. EnergieMIND (ENM) is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice."
+        },
+        {
+          "q": "When is the presale?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and investor portal for live status."
+        },
+        {
+          "q": "What is the total supply?",
+          "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page."
+        },
+        {
+          "q": "What is EnteleKRON mainnet alignment?",
+          "a": "EnergieMIND (ENM) is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available."
+        },
+        {
+          "q": "How do I add ENM to my wallet?",
+          "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with ticker symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state."
+        },
+        {
+          "q": "Where can I get official updates?",
+          "a": "Official EnergieMIND (ENM) information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information."
+        }
       ]
     },
     "contact": {
-      "title": "Contact | ENM Token",
-      "description": "Contact information for ENM token inquiries. Official communication channels for enm.network.",
-      "ogTitle": "Contact ENM | enm.network",
-      "ogDescription": "Official contact channels for ENM token inquiries and partnerships.",
+      "title": "Contact | EnergieMIND (ENM)",
+      "description": "Contact information for EnergieMIND (ENM) inquiries. Official communication channels for enm.network.",
+      "ogTitle": "Contact EnergieMIND | enm.network",
+      "ogDescription": "Official contact channels for EnergieMIND (ENM) inquiries and partnerships.",
       "breadcrumb": "Contact",
       "eyebrow": "Get in Touch",
       "h1": "Contact",
-      "lead": "For ENM token inquiries, partnership questions, and official communication.",
+      "lead": "For EnergieMIND (ENM) inquiries, partnership questions, and official communication.",
       "securityLabel": "Security notice:",
-      "securityText": "ENM team members will never ask you to send funds via direct message. Do not share seed phrases or private keys. Verify all contract addresses on enm.network and Etherscan only.",
+      "securityText": "The EnergieMIND team will never ask you to send funds via direct message. Do not share seed phrases or private keys. Verify all contract addresses on enm.network and Etherscan only.",
       "card1Title": "Token Inquiries",
-      "card1Desc": "For questions about ENM token, contract verification, presale status, or tokenomics.",
-      "card2Title": "Partnership & Pilots",
-      "card2Desc": "For ecosystem partnership, pilot participation, and infrastructure coordination inquiries.",
-      "card3Title": "EnergieMIND Project",
-      "card3Desc": "For energy intelligence technology, mining heat utility, and project-layer questions, visit the EnergieMIND project site.",
-      "card4Title": "Official Resources",
+      "card1Desc": "For questions about EnergieMIND (ENM), contract verification, presale status, or tokenomics.",
+      "card2Title": "Partners & Network",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
+      "card4Title": "Official Token Resources",
       "card4Desc": "Verify information through official channels only.",
       "contractPage": "Contract page",
       "footerNote": "Response times may vary. For urgent security concerns related to scam addresses or impersonation, include \"SECURITY\" in your subject line. Never send cryptocurrency to addresses received via unsolicited messages.",
-      "riskFooter": "ENM is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value."
+      "riskFooter": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value."
     }
   }
 }
