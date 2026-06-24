@@ -51,6 +51,13 @@
       "tokenHeading": "Token",
       "infoHeading": "Information",
       "ecosystemHeading": "Ecosystem Domains",
+      "relatedHeading": "Related Ecosystem",
+      "relatedDesc": {
+        "entelekron": "Future mainnet alignment",
+        "tvkgroup": "Corporate & project host",
+        "tvklabs": "Technology development"
+      },
+      "attribution": "EnergieMIND is developed under TVK Group. Technology by TVK Labs.",
       "youAreHere": "You are here",
       "contractLabel": "Contract:"
     },
@@ -175,7 +182,7 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting through the institutional investor portal.",
       "riskShort": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply. Always verify the contract address independently."
     },
     "token": {
@@ -416,6 +423,7 @@
       "eyebrow": "Investor Access",
       "h1": "Apply / Login",
       "lead": "Request access to the EnergieMIND (ENM) presale portal. Complete your application, accept risk disclosures, and track your journey through KYC, approval, and payment.",
+      "workflowNote": "This portal uses the same institutional apply → KYC → allocation workflow as EnteleKRON and SOVRA protocol sites. EnergieMIND (ENM) is a separate utility token — not an investment product or guaranteed return instrument.",
       "previewTitle": "Preview mode",
       "previewDesc": "The backend is not yet connected. Set your Supabase credentials in assets/config.js to enable real account creation, KYC, and allocation tracking. The form below is fully built and validates input.",
       "tabApply": "Apply",
@@ -670,6 +678,10 @@
         {
           "q": "What are the official EnergieMIND domains?",
           "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND (ENM), presale, and token documentation (this site)."
+        },
+        {
+          "q": "How does EnergieMIND relate to EnteleKRON, TVK Group, and TVK Labs?",
+          "a": "EnergieMIND (ENM) is the energy-intelligence utility token documented on enm.network. EnteleKRON is the planned mainnet alignment ecosystem referenced in the ENM roadmap — alignment is a technical direction, not a guarantee of migration, value, or return. TVK Group is the corporate project host (energiemind.com). TVK Labs supports technology development (energiemind.io). The investor portal workflow is similar to EnteleKRON and SOVRA protocol portals, but those are separate projects. Nothing on enm.network presents ENM as an investment product."
         },
         {
           "q": "What is the difference between enm.network and energiemind.com?",

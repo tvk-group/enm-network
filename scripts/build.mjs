@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { SITE_URL, CONTRACT, ETHERSCAN, TOKEN_NAME, TOKEN_SYMBOL, TOKEN_ONCHAIN_NAME, SITE_BRAND, SITE_OG_NAME, ECOSYSTEM_DOMAINS, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
+import { SITE_URL, CONTRACT, ETHERSCAN, TOKEN_NAME, TOKEN_SYMBOL, TOKEN_ONCHAIN_NAME, SITE_BRAND, SITE_OG_NAME, ECOSYSTEM_DOMAINS, RELATED_ECOSYSTEM, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
 import {
   OFFICIAL_WALLETS,
   PRESALE_WALLET,
@@ -85,6 +85,23 @@ function renderEcosystemContactLinks(lang, t) {
     const suffix = d.current ? ` <span class="domain-badge-inline">${esc(youAreHere)}</span>` : ' ↗';
     return `<a href="${href}"${target}>${esc(d.domain)}${suffix}</a>`;
   }).join('<br/>\n          ');
+}
+
+function renderRelatedFooterBar(t) {
+  const f = t.common.footer;
+  const descMap = f.relatedDesc || {};
+  const items = RELATED_ECOSYSTEM.map((r) => {
+    const desc = descMap[r.id] || '';
+    return `<a href="${r.url}" target="_blank" rel="noopener" class="footer-related-item">
+      <strong>${esc(r.name)} ↗</strong>
+      <span>${esc(desc)}</span>
+    </a>`;
+  }).join('\n            ');
+  return `<div class="footer-related">
+        <h4>${esc(f.relatedHeading)}</h4>
+        <div class="footer-related-grid">${items}</div>
+        <p class="footer-attribution">${esc(f.attribution)}</p>
+      </div>`;
 }
 
 function loadLocale(code) {
@@ -284,6 +301,7 @@ function renderFooter(lang, t) {
           </div>
         </div>
       </div>
+      ${renderRelatedFooterBar(t)}
       <div class="footer-bottom">
         <span class="small">${esc(c.footer.contractLabel)} <code>${CONTRACT}</code></span>
         <a class="small" href="${ETHERSCAN}" target="_blank" rel="noopener">${esc(c.buttons.etherscan)}</a>
@@ -748,6 +766,7 @@ function renderApply(lang, t) {
         <div class="portal-tag"><span class="dot"></span> ${esc(p.eyebrow)}</div>
         <h1>${esc(p.h1)}${p.h1Ticker ? ` <span class="ticker-badge">${esc(p.h1Ticker)}</span>` : ''}</h1>
         <p class="portal-lead">${esc(p.lead)}</p>
+        <p class="portal-note">${esc(p.workflowNote)}</p>
       </div>
 
       <div class="portal-alert info">

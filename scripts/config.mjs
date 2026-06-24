@@ -20,6 +20,13 @@ export const ECOSYSTEM_DOMAINS = [
   { id: 'token', domain: 'enm.network', url: SITE_URL, current: true },
 ];
 
+/** Sister projects & corporate links (footer context only — not token products) */
+export const RELATED_ECOSYSTEM = [
+  { id: 'entelekron', name: 'EnteleKRON', url: 'https://entelekron.io' },
+  { id: 'tvkgroup', name: 'TVK Group', url: 'https://energiemind.com' },
+  { id: 'tvklabs', name: 'TVK Labs', url: 'https://energiemind.io' },
+];
+
 export const LANGUAGES = [
   { code: 'en', hreflang: 'en', dir: 'ltr', name: 'English', native: 'English' },
   { code: 'tr', hreflang: 'tr', dir: 'ltr', name: 'Turkish', native: 'Türkçe' },
