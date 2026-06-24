@@ -41,11 +41,18 @@ function hreflangTags(pageId) {
   }).join('\n') + `\n  <link rel="alternate" hreflang="x-default" href="${pageUrl('en', page.slug)}" />`;
 }
 
+const PORTAL_PAGES = new Set(['dashboard', 'apply']);
+
 function headMeta({ lang, langInfo, pageId, t, page }) {
   const slug = PAGES.find((p) => p.id === pageId).slug;
   const url = pageUrl(lang, slug);
   const htmlLang = langInfo.hreflang.toLowerCase();
   const dir = langInfo.dir;
+  const isPortal = PORTAL_PAGES.has(pageId);
+  const fontLink = isPortal
+    ? `  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">`
+    : `  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">`;
+  const extraCss = isPortal ? '\n  <link rel="stylesheet" href="/assets/css/portal.css" />' : '';
 
   return `<!DOCTYPE html>
 <html lang="${htmlLang}" dir="${dir}">
@@ -66,11 +73,11 @@ ${hreflangTags(pageId)}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(page.ogTitle || page.title)}" />
   <meta name="twitter:description" content="${esc(page.ogDescription || page.description)}" />
-  <meta name="theme-color" content="#0a1628" />
+  <meta name="theme-color" content="#070d18" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css" />`;
+${fontLink}
+  <link rel="stylesheet" href="/assets/css/main.css" />${extraCss}`;
 }
 
 function jsonLdOrganization() {
@@ -165,6 +172,7 @@ function renderNav(lang, t, activePage) {
     ['tokenomics', c.nav.tokenomics, 'tokenomics'],
     ['presale', c.nav.presale, 'presale'],
     ['dashboard', c.nav.dashboard, 'dashboard'],
+    ['apply', c.nav.apply, 'apply'],
     ['wallets', c.nav.wallets, 'wallets'],
     ['contract', c.nav.contract, 'contract'],
     ['roadmap', c.nav.roadmap, 'roadmap'],
@@ -195,6 +203,7 @@ function renderFooter(lang, t) {
             ${link(lang, 'tokenomics', c.nav.tokenomics)}
             ${link(lang, 'presale', c.nav.presale)}
             ${link(lang, 'dashboard', c.nav.dashboard)}
+            ${link(lang, 'apply', c.nav.apply)}
             ${link(lang, 'wallets', c.nav.wallets)}
             ${link(lang, 'contract', c.nav.contract)}
           </div>
@@ -231,9 +240,20 @@ function riskBannerLang(t, text, lang, withLink = true) {
   return `<div class="risk-banner"><strong>${esc(t.common.risk.label)}</strong> ${esc(text)}${linkHtml}</div>`;
 }
 
+function portalBgMarkup() {
+  return `<div class="portal-bg" aria-hidden="true"></div>
+  <div class="portal-bg-grid" aria-hidden="true"></div>
+  <div class="portal-bg-flow" aria-hidden="true">
+    <div class="energy-line"></div><div class="energy-line"></div>
+    <div class="energy-line"></div><div class="energy-line"></div>
+  </div>
+  <div class="portal-pulse" aria-hidden="true"></div>`;
+}
+
 function renderHome(lang, t) {
   const p = t.pages.home;
   const c = t.common;
+  const target = p.countdownTarget || '2026-07-01';
   return `
     <section class="hero">
       <div class="wrap hero-grid">
@@ -243,11 +263,18 @@ function renderHome(lang, t) {
           <p class="lead">${esc(p.lead)}</p>
           <p class="support-line">${esc(p.supportLine)}</p>
           <div class="hero-actions">
-            <a class="btn primary" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
-            <a class="btn outline-navy" href="${pagePath(lang, 'risk')}">${esc(c.buttons.readRisk)}</a>
+            <a class="btn primary" href="${pagePath(lang, 'apply')}">${esc(c.buttons.applyAccess)}</a>
+            <a class="btn outline-navy" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
             <a class="btn green" href="${pagePath(lang, 'presale')}">${esc(c.buttons.joinPresale)}</a>
           </div>
           <div class="contract-pill"><strong>${esc(c.contract.label)}</strong> <code>${CONTRACT}</code></div>
+          <div class="countdown-grid" id="energy-countdown" data-target="${target}">
+            <p style="grid-column: 1 / -1; margin: 24px 0 8px; font-weight: 700; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;">${esc(p.countdownTitle)}</p>
+            <div class="countdown-unit"><div class="num" data-unit="days">—</div><div class="lbl">${esc(p.countdownDays)}</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="hours">—</div><div class="lbl">${esc(p.countdownHours)}</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="mins">—</div><div class="lbl">${esc(p.countdownMins)}</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="secs">—</div><div class="lbl">${esc(p.countdownSecs)}</div></div>
+          </div>
         </div>
         <div class="stats-panel">
           <h3>${esc(c.stats.overview)}</h3>
@@ -257,6 +284,14 @@ function renderHome(lang, t) {
             <div class="stat-item"><strong>50B</strong><span>${esc(c.stats.maxSupply)}</span></div>
             <div class="stat-item"><strong>18</strong><span>${esc(c.stats.decimals)}</span></div>
           </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="trust-bar">
+          <div class="trust-item"><span>✓</span> ${esc(p.trustAudit)}</div>
+          <div class="trust-item"><span>✓</span> ${esc(p.trustKyc)}</div>
+          <div class="trust-item"><span>✓</span> ${esc(p.trustVesting)}</div>
+          <div class="trust-item"><span>✓</span> ${esc(p.trustMultichain)}</div>
         </div>
       </div>
     </section>
@@ -290,6 +325,18 @@ function renderHome(lang, t) {
           <article class="card"><div class="icon">⚡</div><h3>${esc(p.card1Title)}</h3><p>${esc(p.card1Desc)}</p></article>
           <article class="card"><div class="icon">♨️</div><h3>${esc(p.card2Title)}</h3><p>${esc(p.card2Desc)}</p></article>
           <article class="card"><div class="icon">🔗</div><h3>${esc(p.card3Title)}</h3><p>${esc(p.card3Desc)}</p></article>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>${esc(p.portalCtaTitle)}</h2>
+          <p>${esc(p.portalCtaDesc)}</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="${pagePath(lang, 'apply')}">${esc(c.buttons.applyAccess)}</a>
+          <a class="btn" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
         </div>
       </div>
     </section>
@@ -456,8 +503,8 @@ function renderPresale(lang, t) {
       <h1>${esc(p.h1)}</h1>
       <p class="lead">${esc(p.lead)}</p>
       <div class="hero-actions" style="margin-top: 20px;">
-        <a class="btn primary" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
-        <a class="btn" href="${pagePath(lang, 'wallets')}">${esc(c.buttons.viewWallets)}</a>
+        <a class="btn primary" href="${pagePath(lang, 'apply')}">${esc(c.buttons.applyAccess)}</a>
+        <a class="btn" href="${pagePath(lang, 'dashboard')}">${esc(c.buttons.openDashboard)}</a>
       </div>
     </div></div>
     <section><div class="wrap">
@@ -494,69 +541,233 @@ function renderPresale(lang, t) {
 function renderDashboard(lang, t) {
   const p = t.pages.dashboard;
   const c = t.common;
-  const phases = renderPhaseTimeline(lang, t, t.pages.presale);
+  const dashPath = pagePath(lang, 'dashboard');
+  const applyPath = pagePath(lang, 'apply');
   return `
-    <div class="page-hero dashboard-hero"><div class="wrap">
-      <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
-      <h1>${esc(p.h1)}</h1>
-      <p class="lead">${esc(p.lead)}</p>
-    </div></div>
-    <section class="dashboard-section"><div class="wrap">
-      <div class="risk-banner" style="margin-bottom: 24px;"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}</div>
-      <div class="dashboard-grid">
-        <div class="dash-panel dash-main">
-          <div class="dash-status-row">
-            <div>
-              <div class="dash-label">${esc(p.currentPhase)}</div>
-              <div class="dash-value" id="dash-current-phase">—</div>
-            </div>
-            <div>
-              <div class="dash-label">${esc(p.timeRemaining)}</div>
-              <div class="dash-countdown" id="dash-countdown">—</div>
-            </div>
-          </div>
-          <div class="dash-stage-row" id="dash-public-stage-wrap" hidden>
-            <div class="dash-label">${esc(p.publicStage)}</div>
-            <div class="dash-value"><span id="dash-public-stage">—</span> ${esc(p.ofStages)}</div>
-          </div>
-          <div class="progress-bar-wrap"><div class="progress-bar" id="dash-phase-progress" style="width:0%"></div></div>
-        </div>
-        <div class="dash-panel">
-          <h3>${esc(p.walletPanel)}</h3>
-          <p class="dash-muted" id="dash-wallet-status">${esc(p.walletDisconnected)}</p>
-          <p class="dash-address" id="dash-wallet-address"></p>
-          <button type="button" class="btn primary" id="dash-connect-btn">${esc(c.buttons.connectWallet)}</button>
-          <p class="dash-muted" style="margin-top:12px;">${esc(p.networkLabel)}: ${esc(c.values.ethereumMainnet)}</p>
-        </div>
-        <div class="dash-panel dash-contribution">
-          <h3>${esc(p.contributionTitle)}</h3>
-          <p class="dash-muted">${esc(p.contributionDesc)}</p>
-          <div class="wallet-address-box">
-            <code id="dash-treasury-address">${PRESALE_WALLET.address}</code>
-            <button type="button" class="btn" id="dash-copy-treasury">${esc(c.buttons.copyAddress)}</button>
-          </div>
-          <a class="btn" href="${walletEtherscan(PRESALE_WALLET.address)}" target="_blank" rel="noopener">${esc(c.buttons.etherscan)}</a>
-        </div>
-        <div class="dash-panel">
-          <h3>${esc(p.statsTitle)}</h3>
-          <div class="dash-stats">
-            <div><span>${esc(p.statPhase)}</span><strong id="dash-stat-phase">—</strong></div>
-            <div><span>${esc(p.statStage)}</span><strong id="dash-stat-stage">—</strong></div>
-            <div><span>${esc(p.statAccepted)}</span><strong>${ACCEPTED_ASSETS.join(', ')}</strong></div>
-            <div><span>${esc(p.statNetwork)}</span><strong>${esc(c.values.ethereumMainnet)}</strong></div>
+    ${portalBgMarkup()}
+    <div class="portal-wrap" id="portal-dashboard"
+      data-kyc-not-started="${esc(p.kycNotStarted)}"
+      data-kyc-pending="${esc(p.kycPending)}"
+      data-kyc-approved="${esc(p.kycApproved)}"
+      data-kyc-rejected="${esc(p.kycRejected)}">
+      <div class="portal-head">
+        <div class="portal-tag"><span class="dot"></span> ${esc(p.eyebrow)}</div>
+        <h1>${esc(p.h1)}</h1>
+        <p class="portal-lead">${esc(p.lead)}</p>
+      </div>
+
+      <div id="portal-guest-view">
+        <div class="portal-card" style="text-align: center; padding: 48px 24px;">
+          <h2 style="font-family: var(--portal-display); margin-bottom: 10px;">${esc(p.guestTitle)}</h2>
+          <p class="card-desc">${esc(p.guestDesc)}</p>
+          <div class="hero-actions" style="justify-content: center; margin-top: 20px;">
+            <a class="btn primary" href="${applyPath}">${esc(p.guestApply)}</a>
+            <a class="btn" href="${applyPath}#login">${esc(p.guestLogin)}</a>
           </div>
         </div>
       </div>
-      <div class="section-head" style="margin-top: 40px;"><h2>${esc(p.timelineTitle)}</h2></div>
-      <div class="phase-grid dash-timeline">${phases}</div>
-      <div class="card" style="margin-top: 24px; padding: 24px;">
-        <h3>${esc(p.registerTitle)}</h3>
-        <p style="color: var(--muted); margin: 0 0 12px;">${esc(p.registerDesc)}</p>
-        <a href="${pagePath(lang, 'risk')}" style="color: var(--energy-blue-dark); font-weight: 600;">${esc(c.buttons.readRisk)}</a>
+
+      <div id="portal-investor-view" class="portal-hidden">
+        <div class="portal-toolbar">
+          <div>
+            <strong id="portal-user-name">—</strong>
+            <span class="muted" style="display:block;font-size:13px;color:var(--portal-muted);" id="portal-user-email">—</span>
+          </div>
+          <span class="spacer"></span>
+          <a class="btn btn-sm" href="${pagePath(lang, 'wallets')}">${esc(c.buttons.viewWallets)}</a>
+          <button type="button" class="btn btn-sm" id="portal-logout">${esc(p.logout)}</button>
+        </div>
+
+        <div class="journey-stepper">
+          <div class="journey-step" data-step="0"><div class="step-icon">1</div><div class="step-label">${esc(p.stepApply)}</div></div>
+          <div class="journey-step" data-step="1"><div class="step-icon">2</div><div class="step-label">${esc(p.stepKyc)}</div></div>
+          <div class="journey-step" data-step="2"><div class="step-icon">3</div><div class="step-label">${esc(p.stepApproval)}</div></div>
+          <div class="journey-step" data-step="3"><div class="step-icon">4</div><div class="step-label">${esc(p.stepPayment)}</div></div>
+          <div class="journey-step" data-step="4"><div class="step-icon">5</div><div class="step-label">${esc(p.stepVesting)}</div></div>
+        </div>
+
+        <div class="kpi-row">
+          <div class="kpi-card"><div class="kpi-label">${esc(p.kpiKyc)}</div><div class="kpi-value" id="kpi-kyc">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">${esc(p.kpiInvested)}</div><div class="kpi-value cyan" id="kpi-invested">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">${esc(p.kpiAllocation)}</div><div class="kpi-value green" id="kpi-allocation">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">${esc(p.kpiClaim)}</div><div class="kpi-value" id="kpi-claim">—</div></div>
+        </div>
+
+        <div class="portal-grid-2">
+          <div class="portal-card">
+            <h3>${esc(p.kycTitle)}</h3>
+            <p class="card-desc">${esc(p.kycDesc)}</p>
+            <p><strong>${esc(p.kycStatusLabel)}:</strong> <span id="kpi-kyc-inline">—</span></p>
+            <button type="button" class="btn primary" style="margin-top:12px;" disabled>${esc(p.kycStart)}</button>
+          </div>
+          <div class="portal-card">
+            <h3>${esc(p.phaseTitle)}</h3>
+            <p class="card-desc">${esc(p.phaseProgress)}</p>
+            <div class="kpi-value cyan" id="portal-phase-label" style="font-size:18px;margin-bottom:8px;">—</div>
+            <div class="portal-progress"><span id="portal-phase-progress" style="width:0%"></span></div>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>${esc(p.paymentTitle)}</h3>
+          <p class="card-desc">${esc(p.paymentDesc)}</p>
+          <p><strong>${esc(p.paymentWallet)}</strong></p>
+          <div class="addr-row">
+            <code class="addr-mono">${PRESALE_WALLET.address}</code>
+            <button type="button" class="btn btn-sm" data-copy="${PRESALE_WALLET.address}" data-copied-label="${esc(c.buttons.copied)}">${esc(c.buttons.copyAddress)}</button>
+            <a class="btn btn-sm" href="${walletEtherscan(PRESALE_WALLET.address)}" target="_blank" rel="noopener">${esc(c.buttons.etherscan)}</a>
+          </div>
+          <p style="margin-top:14px;color:var(--portal-muted);font-size:13px;"><strong>${esc(p.paymentAssets)}:</strong> ${ACCEPTED_ASSETS.join(', ')}</p>
+        </div>
+
+        <div class="portal-grid-2">
+          <div class="portal-card">
+            <h3>${esc(p.allocationTitle)}</h3>
+            <p class="card-desc">${esc(p.allocationDesc)}</p>
+            <table class="portal-table">
+              <tbody>
+                <tr><td>${esc(p.allocationRound)}</td><td><strong id="detail-round">—</strong></td></tr>
+                <tr><td>${esc(p.allocationWallet)}</td><td><code class="addr-mono" id="detail-wallet">—</code></td></tr>
+                <tr><td>${esc(p.allocationPayment)}</td><td><strong id="detail-payment">—</strong></td></tr>
+                <tr><td>${esc(p.allocationCountry)}</td><td><strong id="detail-country">—</strong></td></tr>
+                <tr><td>${esc(p.allocationStatus)}</td><td><strong id="detail-status">—</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="portal-card">
+            <h3>${esc(p.vestingTitle)}</h3>
+            <p class="card-desc">${esc(p.vestingDesc)}</p>
+            <table class="portal-table">
+              <tbody>
+                <tr><td>${esc(p.vestingTge)}</td><td><strong>${esc(p.vestingTgeValue)}</strong></td></tr>
+                <tr><td>${esc(p.vestingCliff)}</td><td><strong>${esc(p.vestingCliffValue)}</strong></td></tr>
+                <tr><td>${esc(p.vestingRelease)}</td><td><strong>${esc(p.vestingReleaseValue)}</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>${esc(p.txTitle)}</h3>
+          <p class="card-desc">${esc(p.txDesc)}</p>
+          <div class="portal-table-wrap">
+            <table class="portal-table">
+              <thead><tr><th>${esc(p.txDate)}</th><th>${esc(p.txAsset)}</th><th>${esc(p.txAmount)}</th><th>${esc(p.txStatus)}</th></tr></thead>
+              <tbody><tr><td colspan="4" style="text-align:center;padding:24px;">${esc(p.txEmpty)}</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>${esc(p.docsTitle)}</h3>
+          <p class="card-desc">${esc(p.docsDesc)}</p>
+          <div class="portal-table-wrap">
+            <table class="portal-table">
+              <thead><tr><th>${esc(p.docsName)}</th><th>${esc(p.docsDate)}</th><th>${esc(p.docsAction)}</th></tr></thead>
+              <tbody>
+                <tr><td><strong>${esc(c.buttons.readRisk)}</strong></td><td>—</td><td><a href="${pagePath(lang, 'risk')}">${esc(c.risk.readFull)}</a></td></tr>
+                <tr><td colspan="3" style="text-align:center;color:var(--portal-dim);">${esc(p.docsEmpty)}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div></section>
-    <section><div class="wrap">${riskBannerLang(t, p.riskFooter, lang)}</div></section>
+
+      <div class="portal-risk"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}
+        <a href="${pagePath(lang, 'risk')}">${esc(c.risk.readFull)}</a>
+      </div>
+    </div>
     ${presaleConfigScript(lang, t)}`;
+}
+
+function renderApply(lang, t) {
+  const p = t.pages.apply;
+  const c = t.common;
+  const dashPath = pagePath(lang, 'dashboard');
+  return `
+    ${portalBgMarkup()}
+    <div class="portal-wrap wrap-narrow" style="max-width:840px;">
+      <div class="portal-head">
+        <div class="portal-tag"><span class="dot"></span> ${esc(p.eyebrow)}</div>
+        <h1>${esc(p.h1)}</h1>
+        <p class="portal-lead">${esc(p.lead)}</p>
+      </div>
+
+      <div class="portal-alert info">
+        <strong>${esc(p.previewTitle)}</strong>
+        ${esc(p.previewDesc)}
+      </div>
+
+      <div class="portal-card">
+        <div class="portal-tabs">
+          <button type="button" class="portal-tab active" data-portal-tab="apply">${esc(p.tabApply)}</button>
+          <button type="button" class="portal-tab" data-portal-tab="login">${esc(p.tabLogin)}</button>
+        </div>
+
+        <div class="portal-tab-panel active" data-portal-panel="apply">
+          <form id="portal-apply-form" data-dashboard-path="${dashPath}">
+            <div class="portal-form-grid">
+              <div class="portal-field"><label>${esc(p.fullName)} *</label><input name="fullName" required autocomplete="name" /></div>
+              <div class="portal-field"><label>${esc(p.email)} *</label><input name="email" type="email" required autocomplete="email" /></div>
+              <div class="portal-field"><label>${esc(p.password)} *</label><input name="password" type="password" required autocomplete="new-password" /></div>
+              <div class="portal-field"><label>${esc(p.confirmPassword)} *</label><input name="confirmPassword" type="password" required autocomplete="new-password" /></div>
+              <div class="portal-field"><label>${esc(p.country)} *</label>
+                <select name="country" required>
+                  <option value="">${esc(p.countryPlaceholder)}</option>
+                  <option value="DE">Germany</option><option value="TR">Turkey</option><option value="US">United States</option>
+                  <option value="GB">United Kingdom</option><option value="FR">France</option><option value="NL">Netherlands</option>
+                  <option value="CH">Switzerland</option><option value="AE">UAE</option><option value="SG">Singapore</option>
+                  <option value="OTHER">Other</option>
+                </select>
+              </div>
+              <div class="portal-field"><label>${esc(p.phone)}</label><input name="phone" type="tel" autocomplete="tel" /></div>
+              <div class="portal-field" style="grid-column:1/-1;"><label>${esc(p.wallet)} *</label><input name="wallet" required placeholder="0x…" pattern="^0x[a-fA-F0-9]{40}$" /></div>
+              <div class="portal-field"><label>${esc(p.round)} *</label>
+                <select name="round" required>
+                  <option value="early">${esc(p.roundEarly)}</option>
+                  <option value="strategic">${esc(p.roundStrategic)}</option>
+                  <option value="private">${esc(p.roundPrivate)}</option>
+                  <option value="public">${esc(p.roundPublic)}</option>
+                </select>
+              </div>
+              <div class="portal-field"><label>${esc(p.allocation)} *</label><input name="allocation" type="number" min="0" step="1000" required /></div>
+              <div class="portal-field"><label>${esc(p.payment)} *</label>
+                <select name="payment" required>
+                  <option value="ETH">${esc(p.paymentEth)}</option>
+                  <option value="USDC">${esc(p.paymentUsdc)}</option>
+                  <option value="USDT">${esc(p.paymentUsdt)}</option>
+                </select>
+              </div>
+              <div class="portal-field"><label>${esc(p.investorType)}</label>
+                <select name="investorType">
+                  <option value="individual">${esc(p.typeIndividual)}</option>
+                  <option value="company">${esc(p.typeCompany)}</option>
+                  <option value="accredited">${esc(p.typeAccredited)}</option>
+                </select>
+              </div>
+              <div class="portal-field"><label>${esc(p.referral)}</label><input name="referral" /></div>
+            </div>
+            <div class="portal-checkbox"><input type="checkbox" name="terms" required id="chk-terms" /><label for="chk-terms">${esc(p.termsCheck)}</label></div>
+            <div class="portal-checkbox"><input type="checkbox" name="risk" required id="chk-risk" /><label for="chk-risk">${esc(p.riskCheck)}</label></div>
+            <div class="portal-checkbox"><input type="checkbox" name="kyc" required id="chk-kyc" /><label for="chk-kyc">${esc(p.kycCheck)}</label></div>
+            <div class="portal-checkbox"><input type="checkbox" name="restricted" required id="chk-restricted" /><label for="chk-restricted">${esc(p.restrictedCheck)}</label></div>
+            <button type="submit" class="btn primary btn-block" style="width:100%;margin-top:8px;">${esc(p.submitApply)}</button>
+            <p style="margin-top:16px;font-size:13px;color:var(--portal-muted);">${esc(p.alreadyApplied)} <a href="#" onclick="document.querySelector('[data-portal-tab=login]').click();return false;">${esc(p.tabLogin)}</a></p>
+          </form>
+        </div>
+
+        <div class="portal-tab-panel" data-portal-panel="login" id="login">
+          <form id="portal-login-form" data-dashboard-path="${dashPath}">
+            <div class="portal-field"><label>${esc(p.loginEmail)}</label><input name="email" type="email" required autocomplete="email" /></div>
+            <div class="portal-field"><label>${esc(p.loginPassword)}</label><input name="password" type="password" required autocomplete="current-password" /></div>
+            <button type="submit" class="btn primary btn-block" style="width:100%;">${esc(p.submitLogin)}</button>
+            <p style="margin-top:16px;font-size:13px;color:var(--portal-muted);">${esc(p.noAccount)} <a href="${pagePath(lang, 'apply')}">${esc(p.applyLink)}</a></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="portal-risk"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}</div>
+    </div>`;
 }
 
 function renderWallets(lang, t) {
@@ -767,6 +978,7 @@ const RENDERERS = {
   tokenomics: renderTokenomics,
   presale: renderPresale,
   dashboard: renderDashboard,
+  apply: renderApply,
   wallets: renderWallets,
   contract: renderContract,
   roadmap: renderRoadmap,
@@ -788,12 +1000,27 @@ function buildPage(lang, langInfo, pageId, t) {
 
   const contractBtn = pageId === 'contract'
     ? `<a class="btn primary" href="${ETHERSCAN}" target="_blank" rel="noopener">${esc(t.common.buttons.etherscan)}</a>`
-    : `<a class="btn primary" href="${pagePath(lang, 'contract')}">${esc(t.common.buttons.viewContract)}</a>`;
+    : PORTAL_PAGES.has(pageId)
+      ? `<a class="btn primary" href="${pagePath(lang, 'apply')}">${esc(t.common.buttons.applyAccess)}</a>`
+      : `<a class="btn primary" href="${pagePath(lang, 'contract')}">${esc(t.common.buttons.viewContract)}</a>`;
+
+  const bodyClass = PORTAL_PAGES.has(pageId) ? ' class="portal-energy"' : '';
+  const energyOrb = pageId === 'home' ? '<div class="energy-orb" aria-hidden="true"></div>' : '';
+  const portalScripts = PORTAL_PAGES.has(pageId)
+    ? '\n  <script src="/assets/js/config.js"></script>\n  <script src="/assets/js/portal.js"></script>'
+    : '';
+  const presaleScripts = ['presale', 'wallets'].includes(pageId)
+    ? '\n  <script src="/assets/js/dashboard.js"></script>'
+    : '';
+  const homeScripts = pageId === 'home'
+    ? '\n  <script src="/assets/js/portal.js"></script>'
+    : '';
 
   return `${headMeta({ lang, langInfo, pageId, t, page })}
 ${schemas.join('\n')}
 </head>
-<body>
+<body${bodyClass}>
+${energyOrb}
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="${pagePath(lang, '')}" aria-label="${esc(t.common.brandHome)}">
@@ -821,7 +1048,7 @@ ${schemas.join('\n')}
     ${RENDERERS[pageId](lang, t)}
   </main>
   ${renderFooter(lang, t)}
-  <script src="/assets/js/main.js"></script>${['presale', 'dashboard', 'wallets'].includes(pageId) ? '\n  <script src="/assets/js/dashboard.js"></script>' : ''}
+  <script src="/assets/js/main.js"></script>${presaleScripts}${portalScripts}${homeScripts}
 </body>
 </html>`;
 }
@@ -835,7 +1062,7 @@ function generateSitemaps() {
     const urls = PAGES.map((p) => {
       const loc = pageUrl(lang.code, p.slug);
       const priority = p.id === 'home' ? '1.0' : '0.8';
-      const changefreq = ['presale', 'dashboard'].includes(p.id) ? 'weekly' : 'monthly';
+      const changefreq = ['presale', 'dashboard', 'apply'].includes(p.id) ? 'weekly' : 'monthly';
       return `  <url>
     <loc>${loc}</loc>
     <changefreq>${changefreq}</changefreq>

@@ -42,10 +42,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ENM Token | enm.network" />
   <meta name="twitter:description" content="EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत।" />
-  <meta name="theme-color" content="#0a1628" />
+  <meta name="theme-color" content="#070d18" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ENM Token","url":"https://enm.network","logo":"https://enm.network/assets/images/logo.png","sameAs":["https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D"],"description":"Official ENM utility token documentation for the EnergieMIND energy intelligence ecosystem."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://enm.network/hi/"}]}</script>
@@ -53,6 +53,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"enm.network","url":"https://enm.network/hi/","inLanguage":"hi","publisher":{"@type":"Organization","name":"ENM Token","url":"https://enm.network"},"potentialAction":{"@type":"SearchAction","target":"https://enm.network/hi/faq?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
+<div class="energy-orb" aria-hidden="true"></div>
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="/hi/" aria-label="ENM Token होम">
@@ -65,6 +66,7 @@
         <a href="/hi/tokenomics">टोकनोमिक्स</a>
         <a href="/hi/presale">प्रीसेल</a>
         <a href="/hi/dashboard">डैशबोर्ड</a>
+        <a href="/hi/apply">Apply / Login</a>
         <a href="/hi/wallets">वॉलेट</a>
         <a href="/hi/contract">कॉन्ट्रैक्ट</a>
         <a href="/hi/roadmap">रोडमैप</a>
@@ -94,6 +96,7 @@
         <a href="/hi/tokenomics">टोकनोमिक्स</a>
         <a href="/hi/presale">प्रीसेल</a>
         <a href="/hi/dashboard">डैशबोर्ड</a>
+        <a href="/hi/apply">Apply / Login</a>
         <a href="/hi/wallets">वॉलेट</a>
         <a href="/hi/contract">कॉन्ट्रैक्ट</a>
         <a href="/hi/roadmap">रोडमैप</a>
@@ -112,11 +115,18 @@
           <p class="lead">EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत।</p>
           <p class="support-line">ऊर्जा उपयोगिता · माइनिंग हीट भागीदारी · पारिस्थितिकी तंत्र समन्वय · भविष्य के मेननेट संरेखण</p>
           <div class="hero-actions">
-            <a class="btn primary" href="/hi/dashboard">लॉन्च डैशबोर्ड खोलें</a>
-            <a class="btn outline-navy" href="/hi/risk">जोखिम सूचना पढ़ें</a>
+            <a class="btn primary" href="/hi/apply">Apply for Access</a>
+            <a class="btn outline-navy" href="/hi/dashboard">लॉन्च डैशबोर्ड खोलें</a>
             <a class="btn green" href="/hi/presale">प्रीसेल में शामिल हों</a>
           </div>
           <div class="contract-pill"><strong>Ethereum कॉन्ट्रैक्ट:</strong> <code>0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D</code></div>
+          <div class="countdown-grid" id="energy-countdown" data-target="2026-07-01">
+            <p style="grid-column: 1 / -1; margin: 24px 0 8px; font-weight: 700; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;">Early Investor round opens in</p>
+            <div class="countdown-unit"><div class="num" data-unit="days">—</div><div class="lbl">Days</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="hours">—</div><div class="lbl">Hours</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="mins">—</div><div class="lbl">Minutes</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="secs">—</div><div class="lbl">Seconds</div></div>
+          </div>
         </div>
         <div class="stats-panel">
           <h3>टोकन अवलोकन</h3>
@@ -126,6 +136,14 @@
             <div class="stat-item"><strong>50B</strong><span>अधिकतम आपूर्ति</span></div>
             <div class="stat-item"><strong>18</strong><span>दशमलव</span></div>
           </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="trust-bar">
+          <div class="trust-item"><span>✓</span> Verified Contract</div>
+          <div class="trust-item"><span>✓</span> KYC / AML Ready</div>
+          <div class="trust-item"><span>✓</span> Vesting Schedule</div>
+          <div class="trust-item"><span>✓</span> Ethereum Mainnet</div>
         </div>
       </div>
     </section>
@@ -162,6 +180,18 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Investor Portal</h2>
+          <p>Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="/hi/apply">Apply for Access</a>
+          <a class="btn" href="/hi/dashboard">लॉन्च डैशबोर्ड खोलें</a>
+        </div>
+      </div>
+    </section>
     <section><div class="wrap"><div class="risk-banner"><strong>जोखिम सूचना:</strong> ENM निवेश सिफारिश, वित्तीय उत्पाद, प्रतिभूति पेशकश या गारंटीकृत रिटर्न उपकरण नहीं है। क्रिप्टो संपत्तियाँ उच्च जोखिम वाली हैं और मूल्य खो सकती हैं। नियामक, तकनीकी, तरलता, बाजार और परिचालन जोखिम लागू होते हैं। हमेशा contract address को स्वतंत्र रूप से सत्यापित करें। <a href="/hi/risk" style="color: #92400e; font-weight: 700;">पूर्ण जोखिम सूचना पढ़ें →</a></div></div></section>
   </main>
   <footer class="footer">
@@ -178,6 +208,7 @@
             <a href="/hi/tokenomics">टोकनोमिक्स</a>
             <a href="/hi/presale">प्रीसेल</a>
             <a href="/hi/dashboard">डैशबोर्ड</a>
+            <a href="/hi/apply">Apply / Login</a>
             <a href="/hi/wallets">वॉलेट</a>
             <a href="/hi/contract">कॉन्ट्रैक्ट</a>
           </div>
@@ -199,5 +230,6 @@
     </div>
   </footer>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/portal.js"></script>
 </body>
 </html>

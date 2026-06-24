@@ -42,16 +42,18 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Панель запуска ENM | enm.network" />
   <meta name="twitter:description" content="Панель пресейла ENM в реальном времени с отслеживанием фаз, обратным отсчётом и инструментами кошелька." />
-  <meta name="theme-color" content="#0a1628" />
+  <meta name="theme-color" content="#070d18" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/portal.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ENM Token","url":"https://enm.network","logo":"https://enm.network/assets/images/logo.png","sameAs":["https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D"],"description":"Official ENM utility token documentation for the EnergieMIND energy intelligence ecosystem."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://enm.network/ru/"},{"@type":"ListItem","position":2,"name":"Панель запуска","item":"https://enm.network/ru/dashboard"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Панель запуска","description":"Панель запуска токена ENM — актуальный статус фазы пресейла, обратный отсчёт, подключение кошелька и проверка официального кошелька для взносов.","url":"https://enm.network/ru/dashboard","inLanguage":"ru","publisher":{"@type":"Organization","name":"ENM Token","url":"https://enm.network"},"mainEntityOfPage":"https://enm.network/ru/dashboard"}</script>
 </head>
-<body>
+<body class="portal-energy">
+
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="/ru/" aria-label="Главная ENM Token">
@@ -64,6 +66,7 @@
         <a href="/ru/tokenomics">Токеномика</a>
         <a href="/ru/presale">Пресейл</a>
         <a href="/ru/dashboard" class="active">Панель запуска</a>
+        <a href="/ru/apply">Apply / Login</a>
         <a href="/ru/wallets">Кошельки</a>
         <a href="/ru/contract">Контракт</a>
         <a href="/ru/roadmap">Дорожная карта</a>
@@ -76,7 +79,7 @@
     <label class="sr-only" for="lang-select-nav">Выбрать язык</label>
     <select id="lang-select-nav" class="lang-select" aria-label="Выбрать язык"><option value="https://enm.network/en/dashboard">English</option><option value="https://enm.network/tr/dashboard">Türkçe</option><option value="https://enm.network/de/dashboard">Deutsch</option><option value="https://enm.network/fr/dashboard">Français</option><option value="https://enm.network/es/dashboard">Español</option><option value="https://enm.network/it/dashboard">Italiano</option><option value="https://enm.network/pt/dashboard">Português</option><option value="https://enm.network/nl/dashboard">Nederlands</option><option value="https://enm.network/ar/dashboard">العربية</option><option value="https://enm.network/ru/dashboard" selected>Русский</option><option value="https://enm.network/zh-cn/dashboard">简体中文</option><option value="https://enm.network/zh-tw/dashboard">繁體中文</option><option value="https://enm.network/ja/dashboard">日本語</option><option value="https://enm.network/ko/dashboard">한국어</option><option value="https://enm.network/hi/dashboard">हिन्दी</option><option value="https://enm.network/ur/dashboard">اردو</option><option value="https://enm.network/pl/dashboard">Polski</option><option value="https://enm.network/ro/dashboard">Română</option><option value="https://enm.network/el/dashboard">Ελληνικά</option><option value="https://enm.network/sv/dashboard">Svenska</option><option value="https://enm.network/no/dashboard">Norsk</option><option value="https://enm.network/da/dashboard">Dansk</option><option value="https://enm.network/fi/dashboard">Suomi</option><option value="https://enm.network/he/dashboard">עברית</option><option value="https://enm.network/id/dashboard">Bahasa Indonesia</option></select>
   </div>
-        <a class="btn primary" href="/ru/contract">Просмотреть контракт</a>
+        <a class="btn primary" href="/ru/apply">Apply for Access</a>
         <button class="menu-toggle" aria-label="Открыть меню">☰</button>
       </div>
     </div>
@@ -93,6 +96,7 @@
         <a href="/ru/tokenomics">Токеномика</a>
         <a href="/ru/presale">Пресейл</a>
         <a href="/ru/dashboard" class="active">Панель запуска</a>
+        <a href="/ru/apply">Apply / Login</a>
         <a href="/ru/wallets">Кошельки</a>
         <a href="/ru/contract">Контракт</a>
         <a href="/ru/roadmap">Дорожная карта</a>
@@ -103,98 +107,145 @@
   </div>
   <main>
     
-    <div class="page-hero dashboard-hero"><div class="wrap">
-      <div class="eyebrow"><span class="dot"></span> Центр управления запуском</div>
-      <h1>Панель запуска</h1>
-      <p class="lead">Отслеживайте фазы пресейла, следите за текущим этапом, подключайте кошелёк и проверяйте официальный адрес для взносов перед участием.</p>
-    </div></div>
-    <section class="dashboard-section"><div class="wrap">
-      <div class="risk-banner" style="margin-bottom: 24px;"><strong>Уведомление о рисках:</strong> ENM не является инвестиционным продуктом или инструментом с гарантированной доходностью. Проверяйте все адреса на официальной странице кошельков. Криптоактивы высокорискованны.</div>
-      <div class="dashboard-grid">
-        <div class="dash-panel dash-main">
-          <div class="dash-status-row">
-            <div>
-              <div class="dash-label">Текущая фаза</div>
-              <div class="dash-value" id="dash-current-phase">—</div>
-            </div>
-            <div>
-              <div class="dash-label">Оставшееся время</div>
-              <div class="dash-countdown" id="dash-countdown">—</div>
-            </div>
-          </div>
-          <div class="dash-stage-row" id="dash-public-stage-wrap" hidden>
-            <div class="dash-label">Публичный этап</div>
-            <div class="dash-value"><span id="dash-public-stage">—</span> из 6</div>
-          </div>
-          <div class="progress-bar-wrap"><div class="progress-bar" id="dash-phase-progress" style="width:0%"></div></div>
-        </div>
-        <div class="dash-panel">
-          <h3>Ваш кошелёк</h3>
-          <p class="dash-muted" id="dash-wallet-status">Не подключён</p>
-          <p class="dash-address" id="dash-wallet-address"></p>
-          <button type="button" class="btn primary" id="dash-connect-btn">Подключить кошелёк</button>
-          <p class="dash-muted" style="margin-top:12px;">Сеть: Ethereum Mainnet</p>
-        </div>
-        <div class="dash-panel dash-contribution">
-          <h3>Официальный кошелёк для взносов</h3>
-          <p class="dash-muted">Взносы в пресейл координируются через официальный кошелёк ENM Treasury. Всегда проверяйте, что этот адрес совпадает с enm.network/wallets, перед отправкой средств.</p>
-          <div class="wallet-address-box">
-            <code id="dash-treasury-address">0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66</code>
-            <button type="button" class="btn" id="dash-copy-treasury">Копировать адрес</button>
-          </div>
-          <a class="btn" href="https://etherscan.io/address/0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66" target="_blank" rel="noopener">Etherscan ↗</a>
-        </div>
-        <div class="dash-panel">
-          <h3>Обзор запуска</h3>
-          <div class="dash-stats">
-            <div><span>Активная фаза</span><strong id="dash-stat-phase">—</strong></div>
-            <div><span>Публичный этап</span><strong id="dash-stat-stage">—</strong></div>
-            <div><span>Принимаемые активы</span><strong>ETH, USDC, USDT</strong></div>
-            <div><span>Сеть</span><strong>Ethereum Mainnet</strong></div>
+    <div class="portal-bg" aria-hidden="true"></div>
+  <div class="portal-bg-grid" aria-hidden="true"></div>
+  <div class="portal-bg-flow" aria-hidden="true">
+    <div class="energy-line"></div><div class="energy-line"></div>
+    <div class="energy-line"></div><div class="energy-line"></div>
+  </div>
+  <div class="portal-pulse" aria-hidden="true"></div>
+    <div class="portal-wrap" id="portal-dashboard"
+      data-kyc-not-started="Not started"
+      data-kyc-pending="Pending review"
+      data-kyc-approved="Approved"
+      data-kyc-rejected="Rejected">
+      <div class="portal-head">
+        <div class="portal-tag"><span class="dot"></span> Центр управления запуском</div>
+        <h1>Панель запуска</h1>
+        <p class="portal-lead">Отслеживайте фазы пресейла, следите за текущим этапом, подключайте кошелёк и проверяйте официальный адрес для взносов перед участием.</p>
+      </div>
+
+      <div id="portal-guest-view">
+        <div class="portal-card" style="text-align: center; padding: 48px 24px;">
+          <h2 style="font-family: var(--portal-display); margin-bottom: 10px;">Sign in to your investor account</h2>
+          <p class="card-desc">Apply for presale access or log in to view your allocation, KYC status, payment instructions, and vesting schedule.</p>
+          <div class="hero-actions" style="justify-content: center; margin-top: 20px;">
+            <a class="btn primary" href="/ru/apply">Apply for Access</a>
+            <a class="btn" href="/ru/apply#login">Log In</a>
           </div>
         </div>
       </div>
-      <div class="section-head" style="margin-top: 40px;"><h2>Временная шкала фаз</h2></div>
-      <div class="phase-grid dash-timeline">
-      <article class="phase-card" data-phase="early">
-        <div class="phase-card-head">
-          <h3>Early Investor</h3>
-          <span class="badge scheduled phase-status">Запланировано</span>
+
+      <div id="portal-investor-view" class="portal-hidden">
+        <div class="portal-toolbar">
+          <div>
+            <strong id="portal-user-name">—</strong>
+            <span class="muted" style="display:block;font-size:13px;color:var(--portal-muted);" id="portal-user-email">—</span>
+          </div>
+          <span class="spacer"></span>
+          <a class="btn btn-sm" href="/ru/wallets">Официальные кошельки</a>
+          <button type="button" class="btn btn-sm" id="portal-logout">Log out</button>
         </div>
-        <p class="phase-desc">Ранний доступ к координации экосистемы для квалифицированных ранних участников.</p>
-        <div class="phase-dates">01.07.2026 – 30.09.2026</div>
-      </article>
-      <article class="phase-card" data-phase="strategic">
-        <div class="phase-card-head">
-          <h3>Strategic Investor</h3>
-          <span class="badge scheduled phase-status">Запланировано</span>
+
+        <div class="journey-stepper">
+          <div class="journey-step" data-step="0"><div class="step-icon">1</div><div class="step-label">Apply</div></div>
+          <div class="journey-step" data-step="1"><div class="step-icon">2</div><div class="step-label">KYC / AML</div></div>
+          <div class="journey-step" data-step="2"><div class="step-icon">3</div><div class="step-label">Approval</div></div>
+          <div class="journey-step" data-step="3"><div class="step-icon">4</div><div class="step-label">Payment</div></div>
+          <div class="journey-step" data-step="4"><div class="step-icon">5</div><div class="step-label">Vesting / TGE</div></div>
         </div>
-        <p class="phase-desc">Стратегические партнёры и участники, ориентированные на инфраструктуру.</p>
-        <div class="phase-dates">01.10.2026 – 31.12.2026</div>
-      </article>
-      <article class="phase-card" data-phase="private">
-        <div class="phase-card-head">
-          <h3>Private Sale</h3>
-          <span class="badge scheduled phase-status">Запланировано</span>
+
+        <div class="kpi-row">
+          <div class="kpi-card"><div class="kpi-label">KYC Status</div><div class="kpi-value" id="kpi-kyc">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">Amount Committed</div><div class="kpi-value cyan" id="kpi-invested">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">Allocation</div><div class="kpi-value green" id="kpi-allocation">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">Claim Status</div><div class="kpi-value" id="kpi-claim">—</div></div>
         </div>
-        <p class="phase-desc">Фаза частной продажи перед открытием публичного пресейла.</p>
-        <div class="phase-dates">01.01.2027 – 31.03.2027</div>
-      </article>
-      <article class="phase-card" data-phase="public">
-        <div class="phase-card-head">
-          <h3>Public Presale</h3>
-          <span class="badge scheduled phase-status">Запланировано</span>
+
+        <div class="portal-grid-2">
+          <div class="portal-card">
+            <h3>KYC / AML Verification</h3>
+            <p class="card-desc">Complete identity verification before allocation is confirmed. KYC provider integration will be activated before the Early Investor phase.</p>
+            <p><strong>Status:</strong> <span id="kpi-kyc-inline">—</span></p>
+            <button type="button" class="btn primary" style="margin-top:12px;" disabled>Start KYC Verification</button>
+          </div>
+          <div class="portal-card">
+            <h3>Current presale phase</h3>
+            <p class="card-desc">Phase progress</p>
+            <div class="kpi-value cyan" id="portal-phase-label" style="font-size:18px;margin-bottom:8px;">—</div>
+            <div class="portal-progress"><span id="portal-phase-progress" style="width:0%"></span></div>
+          </div>
         </div>
-        <p class="phase-desc">Публичный пресейл в шести последовательных 6-недельных этапах.</p>
-        <div class="phase-dates">01.04.2027 – 08.12.2027</div>
-      </article></div>
-      <div class="card" style="margin-top: 24px; padding: 24px;">
-        <h3>Уведомление об участии</h3>
-        <p style="color: var(--muted); margin: 0 0 12px;">В активные фазы подключайте кошелёк и координируйте участие согласно опубликованным условиям. Эта панель не гарантирует распределение, доходность или доставку токенов — см. уведомление о рисках.</p>
-        <a href="/ru/risk" style="color: var(--energy-blue-dark); font-weight: 600;">Прочитать уведомление о рисках</a>
+
+        <div class="portal-card">
+          <h3>Payment Instructions</h3>
+          <p class="card-desc">Send accepted assets only to the official Treasury wallet. Always verify the address on the wallets page before transferring.</p>
+          <p><strong>Official Treasury Wallet</strong></p>
+          <div class="addr-row">
+            <code class="addr-mono">0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66</code>
+            <button type="button" class="btn btn-sm" data-copy="0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66" data-copied-label="Скопировано!">Копировать адрес</button>
+            <a class="btn btn-sm" href="https://etherscan.io/address/0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66" target="_blank" rel="noopener">Etherscan ↗</a>
+          </div>
+          <p style="margin-top:14px;color:var(--portal-muted);font-size:13px;"><strong>Accepted assets:</strong> ETH, USDC, USDT</p>
+        </div>
+
+        <div class="portal-grid-2">
+          <div class="portal-card">
+            <h3>Allocation Summary</h3>
+            <p class="card-desc">Your indicative allocation and round selection from your application.</p>
+            <table class="portal-table">
+              <tbody>
+                <tr><td>Round</td><td><strong id="detail-round">—</strong></td></tr>
+                <tr><td>Wallet address</td><td><code class="addr-mono" id="detail-wallet">—</code></td></tr>
+                <tr><td>Payment method</td><td><strong id="detail-payment">—</strong></td></tr>
+                <tr><td>Country</td><td><strong id="detail-country">—</strong></td></tr>
+                <tr><td>Application status</td><td><strong id="detail-status">—</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="portal-card">
+            <h3>Vesting Schedule</h3>
+            <p class="card-desc">Token delivery and vesting terms will be published before each active phase. No vesting schedule is active until officially announced.</p>
+            <table class="portal-table">
+              <tbody>
+                <tr><td>TGE</td><td><strong>To be announced</strong></td></tr>
+                <tr><td>Cliff</td><td><strong>To be announced</strong></td></tr>
+                <tr><td>Release schedule</td><td><strong>To be announced</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>Transaction History</h3>
+          <p class="card-desc">On-chain contributions will appear here once payment is confirmed.</p>
+          <div class="portal-table-wrap">
+            <table class="portal-table">
+              <thead><tr><th>Date</th><th>Asset</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody><tr><td colspan="4" style="text-align:center;padding:24px;">No transactions recorded yet.</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>Documents</h3>
+          <p class="card-desc">Terms, risk disclosures, and allocation confirmations.</p>
+          <div class="portal-table-wrap">
+            <table class="portal-table">
+              <thead><tr><th>Document</th><th>Date</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Прочитать уведомление о рисках</strong></td><td>—</td><td><a href="/ru/risk">Прочитать полное уведомление о рисках →</a></td></tr>
+                <tr><td colspan="3" style="text-align:center;color:var(--portal-dim);">No documents available yet.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div></section>
-    <section><div class="wrap"><div class="risk-banner"><strong>Уведомление о рисках:</strong> Всегда самостоятельно проверяйте адреса кошельков. ENM не является инвестиционной рекомендацией или инструментом с гарантированной доходностью. <a href="/ru/risk" style="color: #92400e; font-weight: 700;">Прочитать полное уведомление о рисках →</a></div></div></section>
+
+      <div class="portal-risk"><strong>Уведомление о рисках:</strong> ENM не является инвестиционным продуктом или инструментом с гарантированной доходностью. Проверяйте все адреса на официальной странице кошельков. Криптоактивы высокорискованны.
+        <a href="/ru/risk">Прочитать полное уведомление о рисках →</a>
+      </div>
+    </div>
     <script type="application/json" id="presale-config">{"phases":[{"id":"early","start":"2026-07-01","end":"2026-09-30","type":"private","allocationNote":"early"},{"id":"strategic","start":"2026-10-01","end":"2026-12-31","type":"private","allocationNote":"strategic"},{"id":"private","start":"2027-01-01","end":"2027-03-31","type":"private","allocationNote":"private"},{"id":"public","start":"2027-04-01","end":"2027-12-08","type":"public","allocationNote":"public"}],"phaseLabels":{"early":"Early Investor","strategic":"Strategic Investor","private":"Private Sale","public":"Public Presale"},"phaseDescs":{"early":"Ранний доступ к координации экосистемы для квалифицированных ранних участников.","strategic":"Стратегические партнёры и участники, ориентированные на инфраструктуру.","private":"Фаза частной продажи перед открытием публичного пресейла.","public":"Публичный пресейл в шести последовательных 6-недельных этапах."},"publicStages":[{"stage":1,"start":"2027-04-01","end":"2027-05-12","weeks":6},{"stage":2,"start":"2027-05-13","end":"2027-06-23","weeks":6},{"stage":3,"start":"2027-06-24","end":"2027-08-04","weeks":6},{"stage":4,"start":"2027-08-05","end":"2027-09-15","weeks":6},{"stage":5,"start":"2027-09-16","end":"2027-10-27","weeks":6},{"stage":6,"start":"2027-10-28","end":"2027-12-08","weeks":6}],"wallets":[{"id":"founder","label":"EnergieMind ENM Founder","network":"Ethereum","symbol":"ETH","address":"0xB2556d7365A3657eAa9860B6d38eC96a5806E125","purpose":"founder"},{"id":"ops","label":"EnergieMind ENM OPS","network":"Ethereum","symbol":"ETH","address":"0xb7590526929c24f552Ad9E5256d433F1DaaFE5f2","purpose":"operations"},{"id":"genesis","label":"EnergieMind ENM GENESIS","network":"Ethereum","symbol":"ETH","address":"0x6047cB96256E4C07E9709C2389E2A91Bc639e8f8","purpose":"genesis"},{"id":"treasury","label":"EnergieMind ENM Treasury","network":"Ethereum","symbol":"ETH","address":"0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66","purpose":"treasury"}],"presaleWallet":{"id":"treasury","label":"EnergieMind ENM Treasury","network":"Ethereum","symbol":"ETH","address":"0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66","purpose":"treasury"},"acceptedAssets":["ETH","USDC","USDT"],"tokenContract":"0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D","lang":"ru","badges":{"pending":"Ожидание","confirmed":"Подтверждено","preparation":"Подготовка","locked":"Переводы ограничены / заблокированы","scheduled":"Запланировано","active":"Активно","completed":"Завершено","upcoming":"Предстоящее"},"labels":{"walletConnected":"Подключён","walletDisconnected":"Не подключён","connectWallet":"Подключить кошелёк","disconnectWallet":"Отключить","copied":"Скопировано!"}}</script>
   </main>
   <footer class="footer">
@@ -211,6 +262,7 @@
             <a href="/ru/tokenomics">Токеномика</a>
             <a href="/ru/presale">Пресейл</a>
             <a href="/ru/dashboard">Панель запуска</a>
+            <a href="/ru/apply">Apply / Login</a>
             <a href="/ru/wallets">Кошельки</a>
             <a href="/ru/contract">Контракт</a>
           </div>
@@ -232,6 +284,7 @@
     </div>
   </footer>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/dashboard.js"></script>
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/portal.js"></script>
 </body>
 </html>

@@ -42,16 +42,18 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ENM 啟動面板 | enm.network" />
   <meta name="twitter:description" content="ENM 預售即時面板，含階段追蹤、倒數計時和錢包工具。" />
-  <meta name="theme-color" content="#0a1628" />
+  <meta name="theme-color" content="#070d18" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/portal.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ENM Token","url":"https://enm.network","logo":"https://enm.network/assets/images/logo.png","sameAs":["https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D"],"description":"Official ENM utility token documentation for the EnergieMIND energy intelligence ecosystem."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://enm.network/zh-tw/"},{"@type":"ListItem","position":2,"name":"啟動面板","item":"https://enm.network/zh-tw/dashboard"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"啟動面板","description":"ENM 代幣啟動面板 — 即時預售階段狀態、倒數計時、錢包連接及官方出資錢包驗證。","url":"https://enm.network/zh-tw/dashboard","inLanguage":"zh-TW","publisher":{"@type":"Organization","name":"ENM Token","url":"https://enm.network"},"mainEntityOfPage":"https://enm.network/zh-tw/dashboard"}</script>
 </head>
-<body>
+<body class="portal-energy">
+
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="/zh-tw/" aria-label="ENM Token 首頁">
@@ -64,6 +66,7 @@
         <a href="/zh-tw/tokenomics">代幣經濟學</a>
         <a href="/zh-tw/presale">預售</a>
         <a href="/zh-tw/dashboard" class="active">啟動面板</a>
+        <a href="/zh-tw/apply">Apply / Login</a>
         <a href="/zh-tw/wallets">錢包</a>
         <a href="/zh-tw/contract">合約</a>
         <a href="/zh-tw/roadmap">路線圖</a>
@@ -76,7 +79,7 @@
     <label class="sr-only" for="lang-select-nav">選擇語言</label>
     <select id="lang-select-nav" class="lang-select" aria-label="選擇語言"><option value="https://enm.network/en/dashboard">English</option><option value="https://enm.network/tr/dashboard">Türkçe</option><option value="https://enm.network/de/dashboard">Deutsch</option><option value="https://enm.network/fr/dashboard">Français</option><option value="https://enm.network/es/dashboard">Español</option><option value="https://enm.network/it/dashboard">Italiano</option><option value="https://enm.network/pt/dashboard">Português</option><option value="https://enm.network/nl/dashboard">Nederlands</option><option value="https://enm.network/ar/dashboard">العربية</option><option value="https://enm.network/ru/dashboard">Русский</option><option value="https://enm.network/zh-cn/dashboard">简体中文</option><option value="https://enm.network/zh-tw/dashboard" selected>繁體中文</option><option value="https://enm.network/ja/dashboard">日本語</option><option value="https://enm.network/ko/dashboard">한국어</option><option value="https://enm.network/hi/dashboard">हिन्दी</option><option value="https://enm.network/ur/dashboard">اردو</option><option value="https://enm.network/pl/dashboard">Polski</option><option value="https://enm.network/ro/dashboard">Română</option><option value="https://enm.network/el/dashboard">Ελληνικά</option><option value="https://enm.network/sv/dashboard">Svenska</option><option value="https://enm.network/no/dashboard">Norsk</option><option value="https://enm.network/da/dashboard">Dansk</option><option value="https://enm.network/fi/dashboard">Suomi</option><option value="https://enm.network/he/dashboard">עברית</option><option value="https://enm.network/id/dashboard">Bahasa Indonesia</option></select>
   </div>
-        <a class="btn primary" href="/zh-tw/contract">檢視合約</a>
+        <a class="btn primary" href="/zh-tw/apply">Apply for Access</a>
         <button class="menu-toggle" aria-label="開啟選單">☰</button>
       </div>
     </div>
@@ -93,6 +96,7 @@
         <a href="/zh-tw/tokenomics">代幣經濟學</a>
         <a href="/zh-tw/presale">預售</a>
         <a href="/zh-tw/dashboard" class="active">啟動面板</a>
+        <a href="/zh-tw/apply">Apply / Login</a>
         <a href="/zh-tw/wallets">錢包</a>
         <a href="/zh-tw/contract">合約</a>
         <a href="/zh-tw/roadmap">路線圖</a>
@@ -103,98 +107,145 @@
   </div>
   <main>
     
-    <div class="page-hero dashboard-hero"><div class="wrap">
-      <div class="eyebrow"><span class="dot"></span> 啟動控制中心</div>
-      <h1>啟動面板</h1>
-      <p class="lead">監控預售階段、追蹤當前階段、連接錢包，並在參與前核實官方出資地址。</p>
-    </div></div>
-    <section class="dashboard-section"><div class="wrap">
-      <div class="risk-banner" style="margin-bottom: 24px;"><strong>風險聲明：</strong> ENM 並非投資產品或保證收益工具。請在官方錢包頁面核實所有地址。加密資產風險極高。</div>
-      <div class="dashboard-grid">
-        <div class="dash-panel dash-main">
-          <div class="dash-status-row">
-            <div>
-              <div class="dash-label">當前階段</div>
-              <div class="dash-value" id="dash-current-phase">—</div>
-            </div>
-            <div>
-              <div class="dash-label">剩餘時間</div>
-              <div class="dash-countdown" id="dash-countdown">—</div>
-            </div>
-          </div>
-          <div class="dash-stage-row" id="dash-public-stage-wrap" hidden>
-            <div class="dash-label">公開階段</div>
-            <div class="dash-value"><span id="dash-public-stage">—</span> 共 6 個</div>
-          </div>
-          <div class="progress-bar-wrap"><div class="progress-bar" id="dash-phase-progress" style="width:0%"></div></div>
-        </div>
-        <div class="dash-panel">
-          <h3>您的錢包</h3>
-          <p class="dash-muted" id="dash-wallet-status">未連接</p>
-          <p class="dash-address" id="dash-wallet-address"></p>
-          <button type="button" class="btn primary" id="dash-connect-btn">連接錢包</button>
-          <p class="dash-muted" style="margin-top:12px;">網路: Ethereum Mainnet</p>
-        </div>
-        <div class="dash-panel dash-contribution">
-          <h3>官方出資錢包</h3>
-          <p class="dash-muted">預售出資透過官方 ENM Treasury 錢包協調。發送資金前，請始終核實此地址與 enm.network/wallets 一致。</p>
-          <div class="wallet-address-box">
-            <code id="dash-treasury-address">0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66</code>
-            <button type="button" class="btn" id="dash-copy-treasury">複製地址</button>
-          </div>
-          <a class="btn" href="https://etherscan.io/address/0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66" target="_blank" rel="noopener">Etherscan ↗</a>
-        </div>
-        <div class="dash-panel">
-          <h3>啟動概覽</h3>
-          <div class="dash-stats">
-            <div><span>活躍階段</span><strong id="dash-stat-phase">—</strong></div>
-            <div><span>公開階段</span><strong id="dash-stat-stage">—</strong></div>
-            <div><span>接受資產</span><strong>ETH, USDC, USDT</strong></div>
-            <div><span>網路</span><strong>Ethereum Mainnet</strong></div>
+    <div class="portal-bg" aria-hidden="true"></div>
+  <div class="portal-bg-grid" aria-hidden="true"></div>
+  <div class="portal-bg-flow" aria-hidden="true">
+    <div class="energy-line"></div><div class="energy-line"></div>
+    <div class="energy-line"></div><div class="energy-line"></div>
+  </div>
+  <div class="portal-pulse" aria-hidden="true"></div>
+    <div class="portal-wrap" id="portal-dashboard"
+      data-kyc-not-started="Not started"
+      data-kyc-pending="Pending review"
+      data-kyc-approved="Approved"
+      data-kyc-rejected="Rejected">
+      <div class="portal-head">
+        <div class="portal-tag"><span class="dot"></span> 啟動控制中心</div>
+        <h1>啟動面板</h1>
+        <p class="portal-lead">監控預售階段、追蹤當前階段、連接錢包，並在參與前核實官方出資地址。</p>
+      </div>
+
+      <div id="portal-guest-view">
+        <div class="portal-card" style="text-align: center; padding: 48px 24px;">
+          <h2 style="font-family: var(--portal-display); margin-bottom: 10px;">Sign in to your investor account</h2>
+          <p class="card-desc">Apply for presale access or log in to view your allocation, KYC status, payment instructions, and vesting schedule.</p>
+          <div class="hero-actions" style="justify-content: center; margin-top: 20px;">
+            <a class="btn primary" href="/zh-tw/apply">Apply for Access</a>
+            <a class="btn" href="/zh-tw/apply#login">Log In</a>
           </div>
         </div>
       </div>
-      <div class="section-head" style="margin-top: 40px;"><h2>階段時間線</h2></div>
-      <div class="phase-grid dash-timeline">
-      <article class="phase-card" data-phase="early">
-        <div class="phase-card-head">
-          <h3>Early Investor</h3>
-          <span class="badge scheduled phase-status">已排期</span>
+
+      <div id="portal-investor-view" class="portal-hidden">
+        <div class="portal-toolbar">
+          <div>
+            <strong id="portal-user-name">—</strong>
+            <span class="muted" style="display:block;font-size:13px;color:var(--portal-muted);" id="portal-user-email">—</span>
+          </div>
+          <span class="spacer"></span>
+          <a class="btn btn-sm" href="/zh-tw/wallets">官方錢包</a>
+          <button type="button" class="btn btn-sm" id="portal-logout">Log out</button>
         </div>
-        <p class="phase-desc">為符合條件的早期參與者提供生態系統協調的早期准入。</p>
-        <div class="phase-dates">2026/07/01 – 2026/09/30</div>
-      </article>
-      <article class="phase-card" data-phase="strategic">
-        <div class="phase-card-head">
-          <h3>Strategic Investor</h3>
-          <span class="badge scheduled phase-status">已排期</span>
+
+        <div class="journey-stepper">
+          <div class="journey-step" data-step="0"><div class="step-icon">1</div><div class="step-label">Apply</div></div>
+          <div class="journey-step" data-step="1"><div class="step-icon">2</div><div class="step-label">KYC / AML</div></div>
+          <div class="journey-step" data-step="2"><div class="step-icon">3</div><div class="step-label">Approval</div></div>
+          <div class="journey-step" data-step="3"><div class="step-icon">4</div><div class="step-label">Payment</div></div>
+          <div class="journey-step" data-step="4"><div class="step-icon">5</div><div class="step-label">Vesting / TGE</div></div>
         </div>
-        <p class="phase-desc">策略合作夥伴及與基礎設施對齊的參與者。</p>
-        <div class="phase-dates">2026/10/01 – 2026/12/31</div>
-      </article>
-      <article class="phase-card" data-phase="private">
-        <div class="phase-card-head">
-          <h3>Private Sale</h3>
-          <span class="badge scheduled phase-status">已排期</span>
+
+        <div class="kpi-row">
+          <div class="kpi-card"><div class="kpi-label">KYC Status</div><div class="kpi-value" id="kpi-kyc">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">Amount Committed</div><div class="kpi-value cyan" id="kpi-invested">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">Allocation</div><div class="kpi-value green" id="kpi-allocation">—</div></div>
+          <div class="kpi-card"><div class="kpi-label">Claim Status</div><div class="kpi-value" id="kpi-claim">—</div></div>
         </div>
-        <p class="phase-desc">公開預售開始前的私募階段。</p>
-        <div class="phase-dates">2027/01/01 – 2027/03/31</div>
-      </article>
-      <article class="phase-card" data-phase="public">
-        <div class="phase-card-head">
-          <h3>Public Presale</h3>
-          <span class="badge scheduled phase-status">已排期</span>
+
+        <div class="portal-grid-2">
+          <div class="portal-card">
+            <h3>KYC / AML Verification</h3>
+            <p class="card-desc">Complete identity verification before allocation is confirmed. KYC provider integration will be activated before the Early Investor phase.</p>
+            <p><strong>Status:</strong> <span id="kpi-kyc-inline">—</span></p>
+            <button type="button" class="btn primary" style="margin-top:12px;" disabled>Start KYC Verification</button>
+          </div>
+          <div class="portal-card">
+            <h3>Current presale phase</h3>
+            <p class="card-desc">Phase progress</p>
+            <div class="kpi-value cyan" id="portal-phase-label" style="font-size:18px;margin-bottom:8px;">—</div>
+            <div class="portal-progress"><span id="portal-phase-progress" style="width:0%"></span></div>
+          </div>
         </div>
-        <p class="phase-desc">分六個連續 6 週階段的公開預售。</p>
-        <div class="phase-dates">2027/04/01 – 2027/12/08</div>
-      </article></div>
-      <div class="card" style="margin-top: 24px; padding: 24px;">
-        <h3>參與須知</h3>
-        <p style="color: var(--muted); margin: 0 0 12px;">在活躍階段，請連接錢包並依已公布條款協調參與。本面板不保證分配、收益或代幣交付 — 請參閱風險聲明。</p>
-        <a href="/zh-tw/risk" style="color: var(--energy-blue-dark); font-weight: 600;">閱讀風險聲明</a>
+
+        <div class="portal-card">
+          <h3>Payment Instructions</h3>
+          <p class="card-desc">Send accepted assets only to the official Treasury wallet. Always verify the address on the wallets page before transferring.</p>
+          <p><strong>Official Treasury Wallet</strong></p>
+          <div class="addr-row">
+            <code class="addr-mono">0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66</code>
+            <button type="button" class="btn btn-sm" data-copy="0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66" data-copied-label="已複製！">複製地址</button>
+            <a class="btn btn-sm" href="https://etherscan.io/address/0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66" target="_blank" rel="noopener">Etherscan ↗</a>
+          </div>
+          <p style="margin-top:14px;color:var(--portal-muted);font-size:13px;"><strong>Accepted assets:</strong> ETH, USDC, USDT</p>
+        </div>
+
+        <div class="portal-grid-2">
+          <div class="portal-card">
+            <h3>Allocation Summary</h3>
+            <p class="card-desc">Your indicative allocation and round selection from your application.</p>
+            <table class="portal-table">
+              <tbody>
+                <tr><td>Round</td><td><strong id="detail-round">—</strong></td></tr>
+                <tr><td>Wallet address</td><td><code class="addr-mono" id="detail-wallet">—</code></td></tr>
+                <tr><td>Payment method</td><td><strong id="detail-payment">—</strong></td></tr>
+                <tr><td>Country</td><td><strong id="detail-country">—</strong></td></tr>
+                <tr><td>Application status</td><td><strong id="detail-status">—</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="portal-card">
+            <h3>Vesting Schedule</h3>
+            <p class="card-desc">Token delivery and vesting terms will be published before each active phase. No vesting schedule is active until officially announced.</p>
+            <table class="portal-table">
+              <tbody>
+                <tr><td>TGE</td><td><strong>To be announced</strong></td></tr>
+                <tr><td>Cliff</td><td><strong>To be announced</strong></td></tr>
+                <tr><td>Release schedule</td><td><strong>To be announced</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>Transaction History</h3>
+          <p class="card-desc">On-chain contributions will appear here once payment is confirmed.</p>
+          <div class="portal-table-wrap">
+            <table class="portal-table">
+              <thead><tr><th>Date</th><th>Asset</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody><tr><td colspan="4" style="text-align:center;padding:24px;">No transactions recorded yet.</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <h3>Documents</h3>
+          <p class="card-desc">Terms, risk disclosures, and allocation confirmations.</p>
+          <div class="portal-table-wrap">
+            <table class="portal-table">
+              <thead><tr><th>Document</th><th>Date</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><strong>閱讀風險聲明</strong></td><td>—</td><td><a href="/zh-tw/risk">閱讀完整風險聲明 →</a></td></tr>
+                <tr><td colspan="3" style="text-align:center;color:var(--portal-dim);">No documents available yet.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div></section>
-    <section><div class="wrap"><div class="risk-banner"><strong>風險聲明：</strong> 請始終獨立核實錢包地址。ENM 並非投資建議或保證收益工具。 <a href="/zh-tw/risk" style="color: #92400e; font-weight: 700;">閱讀完整風險聲明 →</a></div></div></section>
+
+      <div class="portal-risk"><strong>風險聲明：</strong> ENM 並非投資產品或保證收益工具。請在官方錢包頁面核實所有地址。加密資產風險極高。
+        <a href="/zh-tw/risk">閱讀完整風險聲明 →</a>
+      </div>
+    </div>
     <script type="application/json" id="presale-config">{"phases":[{"id":"early","start":"2026-07-01","end":"2026-09-30","type":"private","allocationNote":"early"},{"id":"strategic","start":"2026-10-01","end":"2026-12-31","type":"private","allocationNote":"strategic"},{"id":"private","start":"2027-01-01","end":"2027-03-31","type":"private","allocationNote":"private"},{"id":"public","start":"2027-04-01","end":"2027-12-08","type":"public","allocationNote":"public"}],"phaseLabels":{"early":"Early Investor","strategic":"Strategic Investor","private":"Private Sale","public":"Public Presale"},"phaseDescs":{"early":"為符合條件的早期參與者提供生態系統協調的早期准入。","strategic":"策略合作夥伴及與基礎設施對齊的參與者。","private":"公開預售開始前的私募階段。","public":"分六個連續 6 週階段的公開預售。"},"publicStages":[{"stage":1,"start":"2027-04-01","end":"2027-05-12","weeks":6},{"stage":2,"start":"2027-05-13","end":"2027-06-23","weeks":6},{"stage":3,"start":"2027-06-24","end":"2027-08-04","weeks":6},{"stage":4,"start":"2027-08-05","end":"2027-09-15","weeks":6},{"stage":5,"start":"2027-09-16","end":"2027-10-27","weeks":6},{"stage":6,"start":"2027-10-28","end":"2027-12-08","weeks":6}],"wallets":[{"id":"founder","label":"EnergieMind ENM Founder","network":"Ethereum","symbol":"ETH","address":"0xB2556d7365A3657eAa9860B6d38eC96a5806E125","purpose":"founder"},{"id":"ops","label":"EnergieMind ENM OPS","network":"Ethereum","symbol":"ETH","address":"0xb7590526929c24f552Ad9E5256d433F1DaaFE5f2","purpose":"operations"},{"id":"genesis","label":"EnergieMind ENM GENESIS","network":"Ethereum","symbol":"ETH","address":"0x6047cB96256E4C07E9709C2389E2A91Bc639e8f8","purpose":"genesis"},{"id":"treasury","label":"EnergieMind ENM Treasury","network":"Ethereum","symbol":"ETH","address":"0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66","purpose":"treasury"}],"presaleWallet":{"id":"treasury","label":"EnergieMind ENM Treasury","network":"Ethereum","symbol":"ETH","address":"0x9dC5FeFA214F3276381b5aA6d85E6C219a5bCe66","purpose":"treasury"},"acceptedAssets":["ETH","USDC","USDT"],"tokenContract":"0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D","lang":"zh-tw","badges":{"pending":"待定","confirmed":"已確認","preparation":"準備中","locked":"轉帳受限 / 已鎖定","scheduled":"已排期","active":"進行中","completed":"已完成","upcoming":"即將開始"},"labels":{"walletConnected":"已連接","walletDisconnected":"未連接","connectWallet":"連接錢包","disconnectWallet":"中斷連線","copied":"已複製！"}}</script>
   </main>
   <footer class="footer">
@@ -211,6 +262,7 @@
             <a href="/zh-tw/tokenomics">代幣經濟學</a>
             <a href="/zh-tw/presale">預售</a>
             <a href="/zh-tw/dashboard">啟動面板</a>
+            <a href="/zh-tw/apply">Apply / Login</a>
             <a href="/zh-tw/wallets">錢包</a>
             <a href="/zh-tw/contract">合約</a>
           </div>
@@ -232,6 +284,7 @@
     </div>
   </footer>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/dashboard.js"></script>
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/portal.js"></script>
 </body>
 </html>

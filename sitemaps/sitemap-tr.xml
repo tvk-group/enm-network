@@ -152,6 +152,36 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/dashboard" />
   </url>
   <url>
+    <loc>https://enm.network/tr/apply</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://enm.network/en/apply" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://enm.network/tr/apply" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://enm.network/de/apply" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enm.network/fr/apply" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://enm.network/es/apply" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://enm.network/it/apply" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://enm.network/pt/apply" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://enm.network/nl/apply" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://enm.network/ar/apply" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://enm.network/ru/apply" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://enm.network/zh-cn/apply" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://enm.network/zh-tw/apply" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://enm.network/ja/apply" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://enm.network/ko/apply" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://enm.network/hi/apply" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://enm.network/ur/apply" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://enm.network/pl/apply" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://enm.network/ro/apply" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://enm.network/el/apply" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://enm.network/sv/apply" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://enm.network/no/apply" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://enm.network/da/apply" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://enm.network/fi/apply" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://enm.network/he/apply" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://enm.network/id/apply" />
+  </url>
+  <url>
     <loc>https://enm.network/tr/wallets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
