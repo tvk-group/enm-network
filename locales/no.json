@@ -13,7 +13,9 @@
       "roadmap": "Roadmap",
       "risk": "Risikomelding",
       "faq": "FAQ",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "dashboard": "Dashbord",
+      "wallets": "Lommebøker"
     },
     "buttons": {
       "viewContract": "Vis kontrakt",
@@ -21,7 +23,14 @@
       "joinPresale": "Delta i forhåndssalg",
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Åpne på Etherscan",
-      "contractDetails": "Kontraktsdetaljer"
+      "contractDetails": "Kontraktsdetaljer",
+      "openDashboard": "Åpne lanseringsdashbord",
+      "viewWallets": "Offisielle lommebøker",
+      "connectWallet": "Koble til lommebok",
+      "disconnectWallet": "Koble fra",
+      "copyAddress": "Kopier adresse",
+      "copied": "Kopiert!",
+      "verifyOnWallets": "Verifiser på lommebøkersiden"
     },
     "footer": {
       "brand": "ENM Token",
@@ -35,7 +44,11 @@
       "pending": "Venter",
       "confirmed": "Bekreftet",
       "preparation": "Forberedelse",
-      "locked": "Overføringer begrenset / låst"
+      "locked": "Overføringer begrenset / låst",
+      "scheduled": "Planlagt",
+      "active": "Aktiv",
+      "completed": "Fullført",
+      "upcoming": "Kommende"
     },
     "table": {
       "property": "Egenskap",
@@ -44,7 +57,8 @@
       "parameter": "Parameter",
       "category": "Kategori",
       "description": "Beskrivelse",
-      "allocation": "Allokering"
+      "allocation": "Allokering",
+      "network": "Nettverk"
     },
     "stats": {
       "symbol": "Symbol",
@@ -152,30 +166,84 @@
       "footerNote": "Ingen eksakte allokeringsprosentandeler er publisert for øyeblikket. Når endelig tokenomics er godkjent, oppdateres denne siden med verifiserte tall. Stol ikke på uoffisielle eller tredjeparts tokenomics-diagrammer.",
       "riskFooter": "Kryptoaktiva er høyrisiko og kan miste verdi. Regulatoriske, tekniske, likviditets-, marknads- og operative risikoer gjelder.",
       "allocations": [
-        { "name": "Utility-allokering", "desc": "Tokens reservert for økosystemets utility-funksjoner, operativ deltakelse og tjenestekoordinering i EnergieMIND-nettverket." },
-        { "name": "Økosystemreserve", "desc": "Reserve for langsiktig økosystemutvikling, partnerskap og strategiske koordineringsaktiviteter." },
-        { "name": "Likviditet", "desc": "Allokering for markedsliquiditetsforsyning når aktuelt og offisielt kunngjort." },
-        { "name": "Treasury", "desc": "Operativ treasury for økosystemvedlikehold, utvikling og infrastrukturstøtte." },
-        { "name": "Grunnlegger / Team-lås", "desc": "Team- og grunnleggerallokeringer med låsskjemaer og vesting-vilkår som skal publiseres." },
-        { "name": "Community / Partnerprogrammer", "desc": "Allokeringer for community-initiativer, partneronboarding og pilotdeltakelsesprogrammer." },
-        { "name": "Migreringsreserve", "desc": "Reserve for fremtidig EnteleKRON mainnet-migreringstilpasning og cross-chain utility-overgang." }
+        {
+          "name": "Utility-allokering",
+          "desc": "Tokens reservert for økosystemets utility-funksjoner, operativ deltakelse og tjenestekoordinering i EnergieMIND-nettverket."
+        },
+        {
+          "name": "Økosystemreserve",
+          "desc": "Reserve for langsiktig økosystemutvikling, partnerskap og strategiske koordineringsaktiviteter."
+        },
+        {
+          "name": "Likviditet",
+          "desc": "Allokering for markedsliquiditetsforsyning når aktuelt og offisielt kunngjort."
+        },
+        {
+          "name": "Treasury",
+          "desc": "Operativ treasury for økosystemvedlikehold, utvikling og infrastrukturstøtte."
+        },
+        {
+          "name": "Grunnlegger / Team-lås",
+          "desc": "Team- og grunnleggerallokeringer med låsskjemaer og vesting-vilkår som skal publiseres."
+        },
+        {
+          "name": "Community / Partnerprogrammer",
+          "desc": "Allokeringer for community-initiativer, partneronboarding og pilotdeltakelsesprogrammer."
+        },
+        {
+          "name": "Migreringsreserve",
+          "desc": "Reserve for fremtidig EnteleKRON mainnet-migreringstilpasning og cross-chain utility-overgang."
+        }
       ]
     },
     "presale": {
       "title": "Forhåndssalg | ENM Token",
-      "description": "ENM token forhåndssalgsstatus og forberedelsesinformasjon. Ingen forhåndssalgsdatoer, priser eller betalingsmetoder publiseres før de er offisielt endelig fastsatt.",
-      "ogTitle": "ENM Forhåndssalg | enm.network",
-      "ogDescription": "ENM forhåndssalgsforberedelse. Ingen datoer, priser eller betalingsmetoder publiseres før de er offisielt endelig fastsatt.",
+      "description": "ENM token forhåndssalgsskjema: Early Investor, Strategic Investor, Private Sale og 6-trinns offentlig forhåndssalg. Offisielle datoer og lanseringsdashbord på enm.network.",
+      "ogTitle": "ENM Forhåndssalgsskjema | enm.network",
+      "ogDescription": "Offisielle ENM forhåndssalgsfaser fra juli 2026 til offentlige etapper i 2027.",
       "breadcrumb": "Forhåndssalg",
-      "eyebrow": "Forhåndssalgsinformasjon",
-      "h1": "Forhåndssalgsforberedelse",
-      "lead": "ENM forhåndssalgsvilkår er ennå ikke endelig fastsatt. Denne siden oppdateres når offisielle salgsregler, datoer og aksepterte aktiva er bekreftet.",
+      "eyebrow": "Forhåndssalgsskjema",
+      "h1": "ENM Forhåndssalg",
+      "lead": "Strukturerte forhåndssalgsfaser fra tidlig investortilgang til et seks-trinns offentlig forhåndssalg. Bruk lanseringsdashbordet for livestatus og verifiser alltid lommebokadresser på den offisielle lommebøkersiden.",
       "important": "Viktig:",
-      "riskShort": "Ingen forhåndssalgsdatoer, priser, tokenmengder eller aksepterte betalingsmetoder publiseres på denne nettsiden. Ikke send midler til noen adresse som hevder å være et ENM-forhåndssalg med mindre det er verifisert gjennom offisielle kanaler på enm.network. ENM er ikke et investeringsprodukt eller instrument med garantert avkastning.",
-      "expectTitle": "Hva du kan forvente",
-      "expectP1": "Når forhåndssalgsvilkårene er endelig fastsatt, oppdateres denne siden med verifisert informasjon inkludert aksepterte aktiva, vesting-skjemaer, KYC-krav (hvis noen) og fullstendige salgsvilkår. Inntil da er ingen aktiv forhåndssalgsmekanisme på denne nettsiden.",
-      "expectP2": "For henvendelser om forhåndssalgstidspunkt eller kvalifisering, bruk kontaktsiden. Verifiser alltid informasjon gjennom enm.network før du iverksetter tiltak.",
-      "contactLink": "kontaktsiden",
+      "riskShort": "ENM er ikke et investeringsprodukt eller instrument med garantert avkastning. Bruk kun lommebokadresser publisert på enm.network/wallets. Ikke send midler til uoffisielle adresser. Kryptoaktiva er høyrisiko og kan miste verdi.",
+      "timelineTitle": "Forhåndssalgstidslinje",
+      "timelineDesc": "Offisielt faseskjema for koordinering av ENM token-distribusjon.",
+      "phasesTitle": "Investeringsfaser",
+      "publicStagesTitle": "Offentlig forhåndssalg — 6 etapper",
+      "publicStagesDesc": "Offentlig forhåndssalg starter 01. april 2027. Hver etappe varer i 6 uker.",
+      "stageLabel": "Etappe",
+      "weeksLabel": "uker",
+      "durationLabel": "Varighet",
+      "statusLabel": "Status",
+      "dashboardCta": "Åpne lanseringsdashbordet for live fasestatus, nedtelling og lommeboktilkobling.",
+      "walletsCta": "Alle offisielle ENM-lommebøker er oppført på lommebøkersiden. Verifiser hver adresse før du sender midler.",
+      "phases": [
+        {
+          "id": "early",
+          "name": "Early Investor",
+          "desc": "Tidlig ekosystemkoordinering for kvalifiserte tidlige deltakere."
+        },
+        {
+          "id": "strategic",
+          "name": "Strategic Investor",
+          "desc": "Strategiske partnere og infrastrukturtilpassede deltakere."
+        },
+        {
+          "id": "private",
+          "name": "Private Sale",
+          "desc": "Privat salgsfase før åpning av offentlig forhåndssalg."
+        },
+        {
+          "id": "public",
+          "name": "Public Presale",
+          "desc": "Offentlig forhåndssalg over seks påfølgende 6-ukers etapper."
+        }
+      ],
+      "expectTitle": "Deltakelse",
+      "expectP1": "Aksepterte aktiva for forhåndssalgkoordinering: ETH, USDC og USDT på Ethereum Mainnet. Endelig prising, allokeringsgrenser og vesting-vilkår publiseres før hver aktiv fase.",
+      "expectP2": "For spørsmål om kvalifisering, kontakt",
+      "contactLink": "token@enm.network",
       "riskFooter": "ENM er ikke en investeringsanbefaling, finansielt produkt, verdipapirtilbud eller instrument med garantert avkastning. Kryptoaktiva er høyrisiko og kan miste verdi.",
       "fields": {
         "presaleStatus": "Forhåndssalgsstatus",
@@ -185,7 +253,8 @@
         "saleTerms": "Salgsvilkår",
         "price": "Pris",
         "saleDates": "Salgsdatoer",
-        "allocationAmount": "Allokeringsmengde"
+        "allocationAmount": "Allokeringsmengde",
+        "contributionWallet": "Offisiell bidragslommebok"
       }
     },
     "contract": {
@@ -239,14 +308,38 @@
       "footerNote": "Roadmap-faser representerer tiltenkt retning. Ingen spesifikke datoer publiseres. Fremdriftsoppdateringer kommuniseres gjennom offisielle kanaler når de er tilgjengelige.",
       "riskFooter": "Kryptoaktiva er høyrisiko og kan miste verdi. Regulatoriske, tekniske, likviditets-, marknads- og operative risikoer gjelder.",
       "steps": [
-        { "title": "Tokengrunnlag", "desc": "Vedlikehold verifisert ENM Ethereum-kontrakt, publiser offisiell token-dokumentasjon på enm.network og etabler transparent kontraktsinformasjon for økosystemet." },
-        { "title": "Dokumentasjon og transparens", "desc": "Publiser tokenomics, forhåndssalgsvilkår (når endelig fastsatt), risikoopplysninger og offisielle kommunikasjonskanaler. Fullstendig separasjon av tokenlaget fra energiemind.com-prosjektnettstedet." },
-        { "title": "Forhåndssalg og distribusjon", "desc": "Lanser forhåndssalg når vilkårene er endelig fastsatt og offisielt kunngjort. Implementer vesting, allokering og distribusjon i henhold til publisert tokenomics." },
-        { "title": "Utility-aktivering", "desc": "Aktiver økosystemutility-funksjoner knyttet til energiintelligensdeltakelse, gruvedriftvarmekoordinering og pilotprogramrammeverk når infrastrukturen modnes." },
-        { "title": "Partner- og pilotnettverk", "desc": "Støtt pilotinstallasjoner for hoteller, kommersielle bygninger, solanlegg og miner-heater-installasjoner med token-koordinerte deltakelsesmodeller." },
-        { "title": "Økosystemutvidelse", "desc": "Utvikle community- og partnerprogrammer, infrastrukturinsentivstrukturer og operative koordineringsverktøy i EnergieMIND-økosystemet." },
-        { "title": "EnteleKRON-tilpasning", "desc": "Forbered migreringsreserve og tilpasningsrammeverk for EnteleKRON mainnet-moduler, validatorsystemer og økosystemnativt oppgjør." },
-        { "title": "Mainnet-migrering", "desc": "Gjennomfør migreringstilpasning med EnteleKRON mainnet når tekniske, regulatoriske og økosystembetingelser er oppfylt. Vilkår publiseres på forhånd." }
+        {
+          "title": "Tokengrunnlag",
+          "desc": "Vedlikehold verifisert ENM Ethereum-kontrakt, publiser offisiell token-dokumentasjon på enm.network og etabler transparent kontraktsinformasjon for økosystemet."
+        },
+        {
+          "title": "Dokumentasjon og transparens",
+          "desc": "Publiser tokenomics, forhåndssalgsvilkår (når endelig fastsatt), risikoopplysninger og offisielle kommunikasjonskanaler. Fullstendig separasjon av tokenlaget fra energiemind.com-prosjektnettstedet."
+        },
+        {
+          "title": "Forhåndssalg og distribusjon",
+          "desc": "Lanser forhåndssalg når vilkårene er endelig fastsatt og offisielt kunngjort. Implementer vesting, allokering og distribusjon i henhold til publisert tokenomics."
+        },
+        {
+          "title": "Utility-aktivering",
+          "desc": "Aktiver økosystemutility-funksjoner knyttet til energiintelligensdeltakelse, gruvedriftvarmekoordinering og pilotprogramrammeverk når infrastrukturen modnes."
+        },
+        {
+          "title": "Partner- og pilotnettverk",
+          "desc": "Støtt pilotinstallasjoner for hoteller, kommersielle bygninger, solanlegg og miner-heater-installasjoner med token-koordinerte deltakelsesmodeller."
+        },
+        {
+          "title": "Økosystemutvidelse",
+          "desc": "Utvikle community- og partnerprogrammer, infrastrukturinsentivstrukturer og operative koordineringsverktøy i EnergieMIND-økosystemet."
+        },
+        {
+          "title": "EnteleKRON-tilpasning",
+          "desc": "Forbered migreringsreserve og tilpasningsrammeverk for EnteleKRON mainnet-moduler, validatorsystemer og økosystemnativt oppgjør."
+        },
+        {
+          "title": "Mainnet-migrering",
+          "desc": "Gjennomfør migreringstilpasning med EnteleKRON mainnet når tekniske, regulatoriske og økosystembetingelser er oppfylt. Vilkår publiseres på forhånd."
+        }
       ]
     },
     "risk": {
@@ -259,17 +352,51 @@
       "h1": "Risikomelding",
       "lead": "Les denne meldingen nøye før du interagerer med ENM eller relaterte økosystemtjenester.",
       "sections": [
-        { "title": "Generell ansvarsfraskrivelse", "content": "ENM er ikke en investeringsanbefaling, finansielt produkt, verdipapirtilbud eller instrument med garantert avkastning. Kryptoaktiva er høyrisiko og kan miste verdi. Regulatoriske, tekniske, likviditets-, marknads- og operative risikoer gjelder. Verifiser alltid contract address uavhengig.", "bold": true },
-        { "title": "Ikke et investeringsprodukt", "content": "ENM presenteres som en utility-token for økosystemkoordinering i EnergieMINDs energiintelligens-nettverk. Den tilbys eller beskrives ikke som et investeringsprodukt, verdipapir, eierinteresse, gjeldinstrument eller finansiell derivat. Ingenting på enm.network utgjør finansiell rådgivning, investeringsrådgivning eller anbefaling om å kjøpe, selge eller holde noen kryptoaktiva." },
-        { "title": "Ingen garantert avkastning", "content": "ENM lover, garanterer eller antyder ikke noen investeringsavkastning, passiv inntekt, profitt, verdistigning eller yield. Tidligere resultater for noen kryptoaktiva er ikke en indikasjon på fremtidige resultater. Du kan miste del av eller hele verdien knyttet til ENM." },
-        { "title": "Ikke et verdipapirtilbud", "content": "ENM tilbys ikke som et verdipapir i noen jurisdiksjon. Regulatorisk klassifisering av kryptotokens varierer per land og kan endres. Du er alene ansvarlig for å forstå og overholde gjeldende lover i din jurisdiksjon." },
-        { "title": "Marknads- og likviditetsrisikoer", "content": "Kryptomarkeder er volatile. ENM kan ha begrenset eller ingen likviditet. Priser kan svinge dramatisk eller bli uhåndterbare. Det er ingen garanti for noe sekundærmarked, børsnotering eller handelsplattform." },
-        { "title": "Tekniske risikoer", "content": "Smarte kontrakter, blokkjedenettverk og lommebokprogramvare innebærer iboende tekniske risikoer inkludert feil, utnyttelser, nettverksfeil, forks og irreversible transaksjoner. ENM-kontrakten indikerer for øyeblikket overføringsbegrensninger. Verifiser alltid kontraktsatferd på Etherscan før interaksjon." },
-        { "title": "Regulatoriske risikoer", "content": "Kryptovalutareguleringer utvikler seg globalt. Fremtidige regulatoriske tiltak kan begrense, forby eller stille krav til ENM-innehavere, overføringer eller økosystemdeltakelse. Etterlevelsesforpliktelser kan variere per jurisdiksjon." },
-        { "title": "Operative risikoer", "content": "Økosystemutvikling, forhåndssalgsgjennomføring, utility-aktivering og mainnet-migrering er underlagt tekniske, operative og ressursmessige begrensninger. Roadmap-punkter er planleggingsmilepæler, ikke bindende forpliktelser eller garantier for levering." },
-        { "title": "Kontraktsverifisering", "content": "Den offisielle ENM contract address er 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D på Ethereum Mainnet. Verifiser alltid denne adressen uavhengig på Etherscan. Stol ikke på adresser fra uoffisielle kilder, sosiale medier-meldinger eller tredjepartsnettsteder. Svindel-tokens kan bruke lignende navn." },
-        { "title": "Forhåndssalgsforsiktighet", "content": "Ingen forhåndssalgsdatoer, priser eller betalingsmetoder publiseres før de er offisielt endelig fastsatt på enm.network. Ikke send midler til noen adresse som hevder å representere et ENM-forhåndssalg med mindre det er verifisert gjennom denne offisielle nettsiden." },
-        { "title": "Ditt ansvar", "content": "Ved å besøke enm.network eller interagere med ENM bekrefter du at du forstår disse risikoene og aksepterer fullt ansvar for dine beslutninger. Konsulter kvalifiserte juridiske, skattemessige og finansielle fagpersoner før du tar beslutninger knyttet til kryptoaktiva." }
+        {
+          "title": "Generell ansvarsfraskrivelse",
+          "content": "ENM er ikke en investeringsanbefaling, finansielt produkt, verdipapirtilbud eller instrument med garantert avkastning. Kryptoaktiva er høyrisiko og kan miste verdi. Regulatoriske, tekniske, likviditets-, marknads- og operative risikoer gjelder. Verifiser alltid contract address uavhengig.",
+          "bold": true
+        },
+        {
+          "title": "Ikke et investeringsprodukt",
+          "content": "ENM presenteres som en utility-token for økosystemkoordinering i EnergieMINDs energiintelligens-nettverk. Den tilbys eller beskrives ikke som et investeringsprodukt, verdipapir, eierinteresse, gjeldinstrument eller finansiell derivat. Ingenting på enm.network utgjør finansiell rådgivning, investeringsrådgivning eller anbefaling om å kjøpe, selge eller holde noen kryptoaktiva."
+        },
+        {
+          "title": "Ingen garantert avkastning",
+          "content": "ENM lover, garanterer eller antyder ikke noen investeringsavkastning, passiv inntekt, profitt, verdistigning eller yield. Tidligere resultater for noen kryptoaktiva er ikke en indikasjon på fremtidige resultater. Du kan miste del av eller hele verdien knyttet til ENM."
+        },
+        {
+          "title": "Ikke et verdipapirtilbud",
+          "content": "ENM tilbys ikke som et verdipapir i noen jurisdiksjon. Regulatorisk klassifisering av kryptotokens varierer per land og kan endres. Du er alene ansvarlig for å forstå og overholde gjeldende lover i din jurisdiksjon."
+        },
+        {
+          "title": "Marknads- og likviditetsrisikoer",
+          "content": "Kryptomarkeder er volatile. ENM kan ha begrenset eller ingen likviditet. Priser kan svinge dramatisk eller bli uhåndterbare. Det er ingen garanti for noe sekundærmarked, børsnotering eller handelsplattform."
+        },
+        {
+          "title": "Tekniske risikoer",
+          "content": "Smarte kontrakter, blokkjedenettverk og lommebokprogramvare innebærer iboende tekniske risikoer inkludert feil, utnyttelser, nettverksfeil, forks og irreversible transaksjoner. ENM-kontrakten indikerer for øyeblikket overføringsbegrensninger. Verifiser alltid kontraktsatferd på Etherscan før interaksjon."
+        },
+        {
+          "title": "Regulatoriske risikoer",
+          "content": "Kryptovalutareguleringer utvikler seg globalt. Fremtidige regulatoriske tiltak kan begrense, forby eller stille krav til ENM-innehavere, overføringer eller økosystemdeltakelse. Etterlevelsesforpliktelser kan variere per jurisdiksjon."
+        },
+        {
+          "title": "Operative risikoer",
+          "content": "Økosystemutvikling, forhåndssalgsgjennomføring, utility-aktivering og mainnet-migrering er underlagt tekniske, operative og ressursmessige begrensninger. Roadmap-punkter er planleggingsmilepæler, ikke bindende forpliktelser eller garantier for levering."
+        },
+        {
+          "title": "Kontraktsverifisering",
+          "content": "Den offisielle ENM contract address er 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D på Ethereum Mainnet. Verifiser alltid denne adressen uavhengig på Etherscan. Stol ikke på adresser fra uoffisielle kilder, sosiale medier-meldinger eller tredjepartsnettsteder. Svindel-tokens kan bruke lignende navn."
+        },
+        {
+          "title": "Forhåndssalgsforsiktighet",
+          "content": "Bruk kun lommebokadresser publisert på enm.network/wallets. Den offisielle forhåndssalgsbidragslommeboken er ENM Treasury-adressen på Ethereum Mainnet. Ikke send midler til adresser fra sosiale medier, DM eller tredjepartsnettsteder. ENM er ikke et investeringsprodukt eller instrument med garantert avkastning."
+        },
+        {
+          "title": "Ditt ansvar",
+          "content": "Ved å besøke enm.network eller interagere med ENM bekrefter du at du forstår disse risikoene og aksepterer fullt ansvar for dine beslutninger. Konsulter kvalifiserte juridiske, skattemessige og finansielle fagpersoner før du tar beslutninger knyttet til kryptoaktiva."
+        }
       ]
     },
     "faq": {
@@ -284,16 +411,46 @@
       "riskShort": "ENM er ikke en investeringsanbefaling, finansielt produkt, verdipapirtilbud eller instrument med garantert avkastning.",
       "riskFooter": "Kryptoaktiva er høyrisiko og kan miste verdi. Regulatoriske, tekniske, likviditets-, marknads- og operative risikoer gjelder. Verifiser alltid contract address uavhengig.",
       "items": [
-        { "q": "Hva er ENM?", "a": "ENM (EnergieMind) er utility-token i EnergieMINDs energiintelligens-økosystem. Det er en ERC-20-token på Ethereum Mainnet, designet for fremtidig økosystemkoordinering knyttet til energiintelligens, gruvedriftvarmedeltakelse, pilotprogrammer og EnteleKRON mainnet-tilpasning. ENM er en utility-token — ikke et investeringsprodukt." },
-        { "q": "Hva er forskjellen mellom enm.network og energiemind.com?", "a": "enm.network er den offisielle ENM token-dokumentasjonsnettstedet som dekker tokenlaget: kontrakt, tokenomics, forhåndssalg og risikoopplysninger. energiemind.com dekker EnergieMIND-prosjektlaget: energiintelligensteknologi, gruvedriftvarme og infrastrukturutvikling. De er separate, men sammenhengende deler av samme økosystem." },
-        { "q": "Hva er den offisielle contract address?", "a": "Den offisielle ENM-kontrakten på Ethereum Mainnet er 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifiser alltid denne adressen uavhengig på Etherscan før interaksjon." },
-        { "q": "Kan jeg overføre ENM akkurat nå?", "a": "I henhold til den nåværende verifiserte kontrakten er overføringer begrenset eller låst. Sjekk kontraktsstatus på Etherscan for siste on-chain-tilstand før du forsøker overføring." },
-        { "q": "Er ENM en investering?", "a": "Nei. ENM presenteres ikke som et investeringsprodukt, verdipapirtilbud, instrument med garantert avkastning eller løfte om passiv inntekt. Det er en utility-token for økosystemkoordinering. Kryptoaktiva er høyrisiko og kan miste verdi. Se den fullstendige risikomeldingen." },
-        { "q": "Når er forhåndssalget?", "a": "Forhåndssalget er i forberedelsesstadiet. Ingen datoer, priser, aksepterte aktiva eller salgsvilkår er publisert. Denne siden oppdateres når vilkårene er endelig fastsatt. Ikke send midler til uoffisielle forhåndssalgsadresser." },
-        { "q": "Hva er det totale tilbudet?", "a": "Det maksimale totale tilbudet er 50 000 000 000 ENM (50 milliarder) med 18 desimaler. Allokeringsprosentandeler per kategori venter på offisiell publisering på tokenomics-siden." },
-        { "q": "Hva er EnteleKRON mainnet-tilpasning?", "a": "ENM er forberedt for fremtidig migrering og tilpasning til EnteleKRON mainnet-økosystemet. En migreringsreserve-allokeringskategori er planlagt. Spesifikke migreringsvilkår, tidslinjer og tekniske detaljer publiseres når de er tilgjengelige." },
-        { "q": "Hvordan legger jeg til ENM i lommeboken min?", "a": "Bruk den offisielle contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D med tokensymbol ENM og 18 desimaler. Verifiser adressen på Etherscan. Vær oppmerksom på at overføringer for øyeblikket kan være begrenset i henhold til kontraktstilstanden." },
-        { "q": "Hvor får jeg offisielle oppdateringer?", "a": "Offisiell token-informasjon publiseres på enm.network. For henvendelser, bruk kontaktsiden. Stol ikke på uoffisielle kanaler, sosiale medier-DM eller tredjepartsnettsteder for contract address eller forhåndssalgsinformasjon." }
+        {
+          "q": "Hva er ENM?",
+          "a": "ENM (EnergieMind) er utility-token i EnergieMINDs energiintelligens-økosystem. Det er en ERC-20-token på Ethereum Mainnet, designet for fremtidig økosystemkoordinering knyttet til energiintelligens, gruvedriftvarmedeltakelse, pilotprogrammer og EnteleKRON mainnet-tilpasning. ENM er en utility-token — ikke et investeringsprodukt."
+        },
+        {
+          "q": "Hva er forskjellen mellom enm.network og energiemind.com?",
+          "a": "enm.network er den offisielle ENM token-dokumentasjonsnettstedet som dekker tokenlaget: kontrakt, tokenomics, forhåndssalg og risikoopplysninger. energiemind.com dekker EnergieMIND-prosjektlaget: energiintelligensteknologi, gruvedriftvarme og infrastrukturutvikling. De er separate, men sammenhengende deler av samme økosystem."
+        },
+        {
+          "q": "Hva er den offisielle contract address?",
+          "a": "Den offisielle ENM-kontrakten på Ethereum Mainnet er 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifiser alltid denne adressen uavhengig på Etherscan før interaksjon."
+        },
+        {
+          "q": "Kan jeg overføre ENM akkurat nå?",
+          "a": "I henhold til den nåværende verifiserte kontrakten er overføringer begrenset eller låst. Sjekk kontraktsstatus på Etherscan for siste on-chain-tilstand før du forsøker overføring."
+        },
+        {
+          "q": "Er ENM en investering?",
+          "a": "Nei. ENM presenteres ikke som et investeringsprodukt, verdipapirtilbud, instrument med garantert avkastning eller løfte om passiv inntekt. Det er en utility-token for økosystemkoordinering. Kryptoaktiva er høyrisiko og kan miste verdi. Se den fullstendige risikomeldingen."
+        },
+        {
+          "q": "Når er forhåndssalget?",
+          "a": "Early Investor: 01. jul – 30. sep 2026. Strategic Investor: 01. okt – 31. des 2026. Private Sale: 01. jan – 31. mar 2027. Offentlig forhåndssalg: fra 01. apr 2027 i seks 6-ukers etapper. Se forhåndssalgssiden og lanseringsdashbordet for livestatus."
+        },
+        {
+          "q": "Hva er det totale tilbudet?",
+          "a": "Det maksimale totale tilbudet er 50 000 000 000 ENM (50 milliarder) med 18 desimaler. Allokeringsprosentandeler per kategori venter på offisiell publisering på tokenomics-siden."
+        },
+        {
+          "q": "Hva er EnteleKRON mainnet-tilpasning?",
+          "a": "ENM er forberedt for fremtidig migrering og tilpasning til EnteleKRON mainnet-økosystemet. En migreringsreserve-allokeringskategori er planlagt. Spesifikke migreringsvilkår, tidslinjer og tekniske detaljer publiseres når de er tilgjengelige."
+        },
+        {
+          "q": "Hvordan legger jeg til ENM i lommeboken min?",
+          "a": "Bruk den offisielle contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D med tokensymbol ENM og 18 desimaler. Verifiser adressen på Etherscan. Vær oppmerksom på at overføringer for øyeblikket kan være begrenset i henhold til kontraktstilstanden."
+        },
+        {
+          "q": "Hvor får jeg offisielle oppdateringer?",
+          "a": "Offisiell token-informasjon publiseres på enm.network. For henvendelser, bruk kontaktsiden. Stol ikke på uoffisielle kanaler, sosiale medier-DM eller tredjepartsnettsteder for contract address eller forhåndssalgsinformasjon."
+        }
       ]
     },
     "contact": {
@@ -318,6 +475,82 @@
       "contractPage": "Kontraktsside",
       "footerNote": "Svartider kan variere. For presserende sikkerhetshensyn knyttet til svindeladresser eller identitetstyveri, inkluder \"SECURITY\" i emnefeltet. Send aldri kryptovaluta til adresser mottatt via uoppfordrede meldinger.",
       "riskFooter": "ENM er ikke en investeringsanbefaling, finansielt produkt, verdipapirtilbud eller instrument med garantert avkastning. Kryptoaktiva er høyrisiko og kan miste verdi."
+    },
+    "dashboard": {
+      "title": "Lanseringsdashbord | ENM Token",
+      "description": "ENM token lanseringsdashbord — live forhåndssalgsfasestatus, nedtelling, lommeboktilkobling og verifisering av offisiell bidragslommebok.",
+      "ogTitle": "ENM Lanseringsdashbord | enm.network",
+      "ogDescription": "Live ENM forhåndssalgsdashbord med fasesporing, nedtelling og lommebokverktøy.",
+      "breadcrumb": "Dashbord",
+      "eyebrow": "Lanseringskontrollsenter",
+      "h1": "Lanseringsdashbord",
+      "lead": "Overvåk forhåndssalgsfaser, følg gjeldende etappe, koble til lommeboken din og verifiser den offisielle bidragsadressen før deltakelse.",
+      "riskShort": "ENM er ikke et investeringsprodukt eller instrument med garantert avkastning. Verifiser alle adresser på den offisielle lommebøkersiden. Kryptoaktiva er høyrisiko.",
+      "currentPhase": "Gjeldende fase",
+      "nextPhase": "Neste fase",
+      "timeRemaining": "Gjenstående tid",
+      "phaseEnded": "Fase avsluttet",
+      "phaseNotStarted": "Ikke startet ennå",
+      "publicStage": "Offentlig etappe",
+      "ofStages": "av 6",
+      "walletPanel": "Din lommebok",
+      "walletConnected": "Tilkoblet",
+      "walletDisconnected": "Ikke tilkoblet",
+      "networkLabel": "Nettverk",
+      "networkRequired": "Ethereum Mainnet kreves",
+      "contributionTitle": "Offisiell bidragslommebok",
+      "contributionDesc": "Forhåndssalgsbidrag koordineres via den offisielle ENM Treasury-lommeboken. Verifiser alltid at denne adressen samsvarer med enm.network/wallets før du sender midler.",
+      "statsTitle": "Lanseringsoversikt",
+      "statPhase": "Aktiv fase",
+      "statStage": "Offentlig etappe",
+      "statAccepted": "Aksepterte aktiva",
+      "statNetwork": "Nettverk",
+      "timelineTitle": "Fasetidslinje",
+      "registerTitle": "Deltakelsesvarsel",
+      "registerDesc": "Under aktive faser, koble til lommeboken din og koordiner deltakelse i henhold til publiserte vilkår. Dette dashbordet garanterer ikke allokering, avkastning eller tokenlevering — se risikomelding.",
+      "riskFooter": "Verifiser alltid lommebokadresser uavhengig. ENM er ikke en investeringsanbefaling eller instrument med garantert avkastning."
+    },
+    "wallets": {
+      "title": "Offisielle lommebøker | ENM Token",
+      "description": "Offisielle EnergieMind ENM-økosystemlommebøker på Ethereum Mainnet — Founder, OPS, Genesis og Treasury-adresser.",
+      "ogTitle": "ENM Offisielle lommebøker | enm.network",
+      "ogDescription": "Verifiserte offisielle ENM-økosystemlommebokadresser på Ethereum Mainnet.",
+      "breadcrumb": "Lommebøker",
+      "eyebrow": "Verifiserte adresser",
+      "h1": "Offisielle lommebøker",
+      "lead": "Offisielle EnergieMind ENM-økosystemlommebøker på Ethereum Mainnet. Verifiser hver adresse på denne siden før interaksjon. Svindeladresser kan bruke lignende navn.",
+      "riskShort": "Stol kun på adresser oppført på enm.network/wallets. ENM-teamet vil aldri DM deg lommebokadresser. ENM er ikke et investeringsprodukt.",
+      "verifyTitle": "Adresseverifisering",
+      "verifyDesc": "Sammenlign tegn for tegn før du sender midler. Forhåndssalgsbidrag bruker Treasury-lommeboken når faser er aktive.",
+      "tableTitle": "Økosystemlommebøker",
+      "purposeLabel": "Formål",
+      "recommendedTitle": "Anbefalte tilleggslommebøker",
+      "recommendedDesc": "For en komplett tokenlansering, vurder å opprette disse tilleggslommebøkene når du er klar:",
+      "recommended": [
+        {
+          "name": "Forhåndssalg escrow / salg",
+          "desc": "Dedikert salgslommebok separat fra Treasury hvis du ønsker operativ isolasjon (valgfritt — Treasury kan fylle denne rollen)."
+        },
+        {
+          "name": "Vesting og lås",
+          "desc": "For team-, grunnlegger- og investorvesting-skjemaer når on-chain vesting distribueres."
+        },
+        {
+          "name": "Likviditet",
+          "desc": "For DEX-likviditetsforsyning når offisielt kunngjort."
+        },
+        {
+          "name": "Community og belønninger",
+          "desc": "For pilotprogrammer, community-insentiver og partnerallokeringer."
+        }
+      ],
+      "purposes": {
+        "founder": "Grunnleggerallokering og styringskoordinering",
+        "operations": "Operative utgifter og økosystemdrift",
+        "genesis": "Genesis-allokering og initial økosystembootstrap",
+        "treasury": "Treasury, forhåndssalgsbidrag og økosystemreserver"
+      },
+      "riskFooter": "Kryptotransaksjoner er irreversible. Verifiser alltid adresser på enm.network. ENM er ikke et investeringsprodukt eller instrument med garantert avkastning."
     }
   }
 }
