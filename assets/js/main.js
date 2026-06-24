@@ -13,4 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => mobileNav.classList.remove('open'));
     });
   }
+
+  document.querySelectorAll('.lang-select').forEach((select) => {
+    select.addEventListener('change', (e) => {
+      const url = e.target.value;
+      if (url) window.location.href = url;
+    });
+  });
 });
