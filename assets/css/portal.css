@@ -168,6 +168,17 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   background-clip: text;
 }
 .portal-lead { color: var(--portal-muted); font-size: 16px; max-width: 720px; margin: 0; }
+.portal-note {
+  color: var(--portal-muted);
+  font-size: 13px;
+  max-width: 720px;
+  margin: 12px 0 0;
+  line-height: 1.6;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 176, 32, 0.25);
+  background: rgba(255, 176, 32, 0.08);
+}
 
 .portal-toolbar {
   display: flex;

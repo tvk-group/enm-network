@@ -43,7 +43,14 @@
       "infoHeading": "Informacje",
       "contractLabel": "Kontrakt:",
       "ecosystemHeading": "Ecosystem Domains",
-      "youAreHere": "You are here"
+      "youAreHere": "You are here",
+      "relatedHeading": "Related Ecosystem",
+      "relatedDesc": {
+        "entelekron": "Future mainnet alignment",
+        "tvkgroup": "Corporate & project host",
+        "tvklabs": "Technology development"
+      },
+      "attribution": "EnergieMIND is developed under TVK Group. Technology by TVK Labs."
     },
     "badges": {
       "pending": "Oczekujące",
@@ -142,7 +149,7 @@
       "trustVesting": "Vesting Schedule",
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
-      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
+      "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting through the institutional investor portal.",
       "h1Ticker": "ENM",
       "domains": [
         {
@@ -499,6 +506,10 @@
           "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND (ENM), presale, and token documentation (this site)."
         },
         {
+          "q": "How does EnergieMIND relate to EnteleKRON, TVK Group, and TVK Labs?",
+          "a": "EnergieMIND (ENM) is the energy-intelligence utility token documented on enm.network. EnteleKRON is the planned mainnet alignment ecosystem referenced in the ENM roadmap — alignment is a technical direction, not a guarantee of migration, value, or return. TVK Group is the corporate project host (energiemind.com). TVK Labs supports technology development (energiemind.io). The investor portal workflow is similar to EnteleKRON and SOVRA protocol portals, but those are separate projects. Nothing on enm.network presents ENM as an investment product."
+        },
+        {
           "q": "What is the difference between enm.network and energiemind.com?",
           "a": "enm.network is dedicated to EnergieMIND (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
@@ -740,7 +751,8 @@
       "noAccount": "No account yet?",
       "applyLink": "Apply for access.",
       "riskShort": "EnergieMIND (ENM) is not an investment product, security, or guaranteed return instrument. Crypto assets are high-risk. Allocation is subject to approval and KYC.",
-      "riskFooter": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument."
+      "riskFooter": "EnergieMIND (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument.",
+      "workflowNote": "This portal uses the same institutional apply → KYC → allocation workflow as EnteleKRON and SOVRA protocol sites. EnergieMIND (ENM) is a separate utility token — not an investment product or guaranteed return instrument."
     }
   }
 }
