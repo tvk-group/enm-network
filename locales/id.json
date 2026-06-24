@@ -32,7 +32,8 @@
       "copyAddress": "Salin alamat",
       "copied": "Disalin!",
       "verifyOnWallets": "Verifikasi di halaman dompet",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "Aset kripto berisiko tinggi dan dapat kehilangan nilai. Berlaku risiko regulasi, teknis, likuiditas, pasar, dan operasional.",
       "steps": [
         {
-          "title": "Fondasi Token",
-          "desc": "Pertahankan kontrak EnergieMIND (ENM) Ethereum terverifikasi, publikasikan dokumentasi token resmi di enm.network, dan bangun informasi kontrak transparan untuk ekosistem."
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "Dokumentasi & Transparansi",
-          "desc": "Publikasikan tokenomics, ketentuan pra-penjualan (setelah difinalisasi), pengungkapan risiko, dan saluran komunikasi resmi. Pemisahan lapisan token sepenuhnya dari situs proyek energiemind.com."
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "Pra-penjualan & Distribusi",
-          "desc": "Luncurkan pra-penjualan ketika ketentuan difinalisasi dan diumumkan secara resmi. Terapkan vesting, alokasi, dan distribusi sesuai tokenomics yang dipublikasikan."
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "Aktivasi Utility",
-          "desc": "Aktifkan fungsi utility ekosistem terkait partisipasi kecerdasan energi, koordinasi panas penambangan, dan kerangka program pilot seiring infrastruktur matang."
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "Jaringan Mitra & Pilot",
-          "desc": "Dukung penerapan pilot untuk hotel, gedung komersial, lokasi surya, dan instalasi miner-heater dengan model partisipasi terkoordinasi token."
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "Ekspansi Ekosistem",
-          "desc": "Kembangkan program komunitas dan mitra, struktur insentif infrastruktur, dan alat koordinasi operasional dalam ekosistem EnergieMIND."
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "Penyelarasan EnteleKRON",
-          "desc": "Siapkan cadangan migrasi dan kerangka penyelarasan untuk modul EnteleKRON mainnet, sistem validator, dan penyelesaian asli ekosistem."
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "Migrasi Mainnet",
-          "desc": "Laksanakan penyelarasan migrasi dengan EnteleKRON mainnet ketika kondisi teknis, regulasi, dan ekosistem terpenuhi. Ketentuan akan dipublikasikan sebelumnya."
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "Pemberitahuan Risiko | EnergieMIND",

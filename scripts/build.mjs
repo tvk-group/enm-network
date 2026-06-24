@@ -32,25 +32,38 @@ function ecosystemHref(d, lang) {
   return d.current ? pagePath(lang, '') : d.url;
 }
 
+const DOMAIN_ICONS = {
+  corporate: '🏛',
+  io: '⚡',
+  network: '🔗',
+  org: '🌿',
+  shop: '☀',
+  token: '⬡',
+};
+
 function renderDomainGrid(lang, t) {
   const domains = t.pages.home.domains || [];
   const youAreHere = t.common.footer.youAreHere;
+  const openLabel = t.common.buttons.openSite || 'Open site';
   return domains.map((d) => {
     const isCurrent = Boolean(d.current);
-    const href = ecosystemHref(
-      ECOSYSTEM_DOMAINS.find((x) => x.id === d.id) || { url: `https://${d.domain}`, current: isCurrent },
-      lang,
-    );
+    const meta = ECOSYSTEM_DOMAINS.find((x) => x.id === d.id) || { url: `https://${d.domain}`, current: isCurrent };
+    const href = ecosystemHref(meta, lang);
     const target = isCurrent ? '' : ' target="_blank" rel="noopener"';
-    const badge = isCurrent ? `<span class="domain-badge">${esc(youAreHere)}</span>` : '';
-    return `<article class="domain-card ${esc(d.id)}${isCurrent ? ' current' : ''}">
-            <a href="${href}"${target} class="domain-link">
-              <div class="domain">${esc(d.domain)}${isCurrent ? '' : ' ↗'}</div>
-              <h3>${esc(d.title)}</h3>
-              <p>${esc(d.desc)}</p>
-            </a>
-            ${badge}
-          </article>`;
+    const icon = DOMAIN_ICONS[d.id] || '◈';
+    const cta = isCurrent ? youAreHere : openLabel;
+    return `<a href="${href}"${target} class="domain-box ${esc(d.id)}${isCurrent ? ' is-current' : ''}" aria-label="${esc(d.title)} — ${esc(d.domain)}">
+      <span class="domain-box-glow" aria-hidden="true"></span>
+      <span class="domain-box-gridlines" aria-hidden="true"></span>
+      <span class="domain-box-inner">
+        ${isCurrent ? `<span class="domain-box-badge">${esc(youAreHere)}</span>` : ''}
+        <span class="domain-box-icon" aria-hidden="true">${icon}</span>
+        <span class="domain-box-url">${esc(d.domain)}${isCurrent ? '' : ' ↗'}</span>
+        <span class="domain-box-title">${esc(d.title)}</span>
+        <span class="domain-box-desc">${esc(d.desc)}</span>
+        <span class="domain-box-cta">${esc(cta)} <span class="domain-box-arrow" aria-hidden="true">→</span></span>
+      </span>
+    </a>`;
   }).join('\n          ');
 }
 
@@ -348,13 +361,13 @@ function renderHome(lang, t) {
         </div>
       </div>
     </section>
-    <section>
+    <section class="ecosystem-section">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head ecosystem-head">
           <h2>${esc(p.layersTitle)}</h2>
           <p>${esc(p.layersDesc)}</p>
         </div>
-        <div class="domain-grid">
+        <div class="domain-box-grid" role="list">
           ${renderDomainGrid(lang, t)}
         </div>
       </div>
@@ -912,8 +925,21 @@ function renderContract(lang, t) {
 function renderRoadmap(lang, t) {
   const p = t.pages.roadmap;
   const c = t.common;
-  const steps = p.steps.map((s) => `
-          <article class="step"><h3>${esc(s.title)}</h3><p>${esc(s.desc)}</p></article>`).join('');
+  const total = p.steps.length;
+  const steps = p.steps.map((s, i) => {
+    const rise = Math.round((i / Math.max(total - 1, 1)) * 100);
+    return `
+          <article class="roadmap-stair" style="--stair-rise: ${rise}%" role="listitem">
+            <div class="roadmap-stair-rail" aria-hidden="true">
+              <span class="roadmap-stair-node"></span>
+            </div>
+            <div class="roadmap-stair-tread">
+              <span class="roadmap-stair-marker">${esc(s.marker || s.title)}</span>
+              <h3>${esc(s.title)}</h3>
+              <p>${esc(s.desc)}</p>
+            </div>
+          </article>`;
+  }).join('');
   return `
     <div class="page-hero"><div class="wrap">
       <div class="eyebrow"><span class="dot"></span> ${esc(p.eyebrow)}</div>
@@ -922,7 +948,14 @@ function renderRoadmap(lang, t) {
     </div></div>
     <section><div class="wrap">
       <div class="risk-banner" style="margin-bottom: 32px;"><strong>${esc(c.risk.label)}</strong> ${esc(p.riskShort)}</div>
-      <div class="roadmap">${steps}</div>
+      <div class="roadmap-stairs" role="list">
+        <div class="roadmap-stairs-axis" aria-hidden="true">
+          <span class="roadmap-axis-label roadmap-axis-start">${esc(p.timelineStart)}</span>
+          <div class="roadmap-axis-line"></div>
+          <span class="roadmap-axis-label roadmap-axis-end">${esc(p.timelineEnd)}</span>
+        </div>
+        <div class="roadmap-stairs-track">${steps}</div>
+      </div>
       <div class="prose" style="margin-top: 32px;"><p>${esc(p.footerNote)}</p></div>
     </div></section>
     <section><div class="wrap">${riskBannerLang(t, p.riskFooter, lang)}</div></section>`;

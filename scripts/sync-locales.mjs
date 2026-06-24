@@ -41,6 +41,7 @@ const en = JSON.parse(fs.readFileSync(path.join(LOCALES, 'en.json'), 'utf8'));
 
 const FORCE_SYNC_PATHS = [
   'common.brandHome',
+  'common.buttons.openSite',
   'common.branding',
   'common.footer.brand',
   'common.footer.desc',
@@ -54,6 +55,9 @@ const FORCE_SYNC_PATHS = [
   'pages.contact.card2Desc',
   'pages.contact.card3Title',
   'pages.contact.card3Desc',
+  'pages.roadmap.timelineStart',
+  'pages.roadmap.timelineEnd',
+  'pages.roadmap.steps',
   'pages.faq.items',
 ];
 

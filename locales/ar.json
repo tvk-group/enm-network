@@ -32,7 +32,8 @@
       "copyAddress": "نسخ العنوان",
       "copied": "تم النسخ!",
       "verifyOnWallets": "التحقق في صفحة المحافظ",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "الأصول المشفرة عالية المخاطر وقد تفقد قيمتها. تنطبق مخاطر تنظيمية وتقنية وسيولة وسوقية وتشغيلية.",
       "steps": [
         {
-          "title": "أساس الرمز",
-          "desc": "الحفاظ على عقد ENM الموثّق على Ethereum، ونشر الوثائق الرسمية للرمز على enm.network، وإنشاء معلومات عقد شفافة للنظام البيئي."
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "الوثائق والشفافية",
-          "desc": "نشر اقتصاديات الرمز، وشروط البيع المسبق (عند اعتمادها)، وإفصاحات المخاطر، وقنوات التواصل الرسمية. فصل كامل لطبقة الرمز عن موقع مشروع energiemind.com."
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "البيع المسبق والتوزيع",
-          "desc": "إطلاق البيع المسبق عند اعتماد الشروط والإعلان الرسمي عنها. تنفيذ الاستحقاق والتخصيص والتوزيع وفق اقتصاديات الرمز المنشورة."
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "تفعيل المنفعة",
-          "desc": "تمكين وظائف المنفعة في النظام البيئي المتعلقة بالمشاركة في الذكاء الطاقوي، وتنسيق حرارة التعدين، وأطر البرامج التجريبية مع نضوج البنية التحتية."
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "شبكة الشركاء والتجارب",
-          "desc": "دعم النشرات التجريبية للفنادق والمباني التجارية ومواقع الطاقة الشمسية وتركيبات أجهزة تسخين التعدين بنماذج مشاركة منسقة بالرمز."
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "توسيع النظام البيئي",
-          "desc": "تطوير برامج المجتمع والشركاء، وهياكل حوافز البنية التحتية، وأدوات التنسيق التشغيلي ضمن نظام EnergieMIND البيئي."
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "التوافق مع EnteleKRON",
-          "desc": "إعداد احتياطي الهجرة وإطار التوافق لوحدات الشبكة الرئيسية EnteleKRON وأنظمة المدققين والتسوية الأصلية للنظام البيئي."
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "هجرة الشبكة الرئيسية",
-          "desc": "تنفيذ توافق الهجرة مع الشبكة الرئيسية EnteleKRON عند استيفاء الشروط التقنية والتنظيمية والبيئية. ستُنشر الشروط مسبقاً."
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "إشعار المخاطر | رمز ENM",

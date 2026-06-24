@@ -32,7 +32,8 @@
       "copyAddress": "پتہ کاپی کریں",
       "copied": "کاپی ہو گیا!",
       "verifyOnWallets": "والیٹس صفحے پر تصدیق کریں",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "کرپٹو اثاثے زیادہ خطرے والے ہیں اور قدر کھو سکتے ہیں۔ ریگولیٹری، تکنیکی، لیکویڈیٹی، مارکیٹ اور آپریشنل خطرات لاگو ہوتے ہیں۔",
       "steps": [
         {
-          "title": "ٹوکن کی بنیاد",
-          "desc": "تصدیق شدہ EnergieMIND (ENM) Ethereum کنٹریکٹ برقرار رکھیں، enm.network پر سرکاری ٹوکن دستاویزات شائع کریں، اور ایکو سسٹم کے لیے شفاف کنٹریکٹ معلومات قائم کریں۔"
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "دستاویزات اور شفافیت",
-          "desc": "ٹوکنومکس، پری سیل شرائط (حتمی ہونے پر)، خطرے کے انکشافات اور سرکاری مواصلاتی چینلز شائع کریں۔ energiemind.com پروجیکٹ سائٹ سے مکمل ٹوکن پرت کی علیحدگی۔"
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "پری سیل اور تقسیم",
-          "desc": "شرائط حتمی اور سرکاری طور پر اعلان ہونے پر پری سیل لانچ کریں۔ شائع شدہ ٹوکنومکس کے مطابق ویسٹنگ، تخصیص اور تقسیم نافذ کریں۔"
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "یوٹیلیٹی ایکٹیویشن",
-          "desc": "انفراسٹرکچر پختہ ہونے پر توانائی انٹیلی جنس شرکت، مائننگ ہیٹ ہم آہنگی اور پائلٹ پروگرام فریم ورک سے متعلق ایکو سسٹم یوٹیلیٹی افعال فعال کریں۔"
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "پارٹنر اور پائلٹ نیٹ ورک",
-          "desc": "ہوٹلز، تجارتی عمارتیں، سولر سائٹس اور مائنر-ہیٹر تنصیبات کے لیے ٹوکن سے ہم آہنگ شرکت کے ماڈلز کے ساتھ پائلٹ تعیناتیوں کی حمایت کریں۔"
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "ایکو سسٹم کی توسیع",
-          "desc": "EnergieMIND ایکو سسٹم کے اندر کمیونٹی اور پارٹنر پروگرامز، انفراسٹرکچر مراعاتی ساختیں اور آپریشنل ہم آہنگی کے ٹولز تیار کریں۔"
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "EnteleKRON ہم آہنگی",
-          "desc": "EnteleKRON مین نیٹ ماڈیولز، ویلیڈیٹر سسٹمز اور ایکو سسٹم نیٹو تصفیہ کے لیے منتقلی ریزرو اور ہم آہنگی کا فریم ورک تیار کریں۔"
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "مین نیٹ منتقلی",
-          "desc": "تکنیکی، ریگولیٹری اور ایکو سسٹم کی شرائط پوری ہونے پر EnteleKRON مین نیٹ کے ساتھ منتقلی ہم آہنگی نافذ کریں۔ شرائط پہلے سے شائع کی جائیں گی۔"
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "خطرے کا نوٹس | EnergieMIND",

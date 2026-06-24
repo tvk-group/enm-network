@@ -32,7 +32,8 @@
       "copyAddress": "주소 복사",
       "copied": "복사됨!",
       "verifyOnWallets": "지갑 페이지에서 확인",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "암호화폐 자산은 고위험이며 가치가 하락할 수 있습니다. 규제, 기술, 유동성, 시장 및 운영 위험이 적용됩니다.",
       "steps": [
         {
-          "title": "토큰 기반",
-          "desc": "검증된 EnergieMIND (ENM) Ethereum 컨트랙트 유지, enm.network에 공식 토큰 문서 게시, 생태계를 위한 투명한 컨트랙트 정보 확립."
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "문서화 및 투명성",
-          "desc": "토크노믹스, 프리세일 조건(확정 시), 위험 공시 및 공식 커뮤니케이션 채널 게시. energiemind.com 프로젝트 사이트와의 토큰 계층 완전 분리."
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "프리세일 및 배분",
-          "desc": "조건이 확정되고 공식 발표되면 프리세일 시작. 공개된 토크노믹스에 따라 베스팅, 배분 및 분배 구현."
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "유틸리티 활성화",
-          "desc": "인프라가 성숙해짐에 따라 에너지 인텔리전스 참여, 채굴 열 조정 및 파일럿 프로그램 프레임워크와 관련된 생태계 유틸리티 기능 활성화."
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "파트너 및 파일럿 네트워크",
-          "desc": "호텔, 상업 건물, 태양광 사이트 및 마이너-히터 설치를 위한 파일럿 배포를 토큰 조정 참여 모델로 지원."
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "생태계 확장",
-          "desc": "EnergieMIND 생태계 내 커뮤니티 및 파트너 프로그램, 인프라 인센티브 구조 및 운영 조정 도구 개발."
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "EnteleKRON 연계",
-          "desc": "EnteleKRON 메인넷 모듈, 검증자 시스템 및 생태계 네이티브 정산을 위한 마이그레이션 준비금 및 연계 프레임워크 준비."
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "메인넷 마이그레이션",
-          "desc": "기술, 규제 및 생태계 조건이 충족되면 EnteleKRON 메인넷과 마이그레이션 연계 실행. 조건은 사전에 공개됩니다."
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "위험 고지 | EnergieMIND",
