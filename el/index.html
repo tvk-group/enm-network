@@ -42,10 +42,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ENM Token | enm.network" />
   <meta name="twitter:description" content="Το επίπεδο utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND." />
-  <meta name="theme-color" content="#0a1628" />
+  <meta name="theme-color" content="#070d18" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ENM Token","url":"https://enm.network","logo":"https://enm.network/assets/images/logo.png","sameAs":["https://etherscan.io/token/0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D"],"description":"Official ENM utility token documentation for the EnergieMIND energy intelligence ecosystem."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://enm.network/el/"}]}</script>
@@ -53,6 +53,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"enm.network","url":"https://enm.network/el/","inLanguage":"el","publisher":{"@type":"Organization","name":"ENM Token","url":"https://enm.network"},"potentialAction":{"@type":"SearchAction","target":"https://enm.network/el/faq?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
+<div class="energy-orb" aria-hidden="true"></div>
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="/el/" aria-label="Αρχική ENM Token">
@@ -65,6 +66,7 @@
         <a href="/el/tokenomics">Τοκονομικά</a>
         <a href="/el/presale">Προπώληση</a>
         <a href="/el/dashboard">Πίνακας ελέγχου</a>
+        <a href="/el/apply">Apply / Login</a>
         <a href="/el/wallets">Πορτοφόλια</a>
         <a href="/el/contract">Συμβόλαιο</a>
         <a href="/el/roadmap">Οδικός χάρτης</a>
@@ -94,6 +96,7 @@
         <a href="/el/tokenomics">Τοκονομικά</a>
         <a href="/el/presale">Προπώληση</a>
         <a href="/el/dashboard">Πίνακας ελέγχου</a>
+        <a href="/el/apply">Apply / Login</a>
         <a href="/el/wallets">Πορτοφόλια</a>
         <a href="/el/contract">Συμβόλαιο</a>
         <a href="/el/roadmap">Οδικός χάρτης</a>
@@ -112,11 +115,18 @@
           <p class="lead">Το επίπεδο utility token του οικοσυστήματος ενεργειακής νοημοσύνης EnergieMIND.</p>
           <p class="support-line">Ενεργειακή χρηστικότητα · Συμμετοχή στη θερμότητα εξόρυξης · Συντονισμός οικοσυστήματος · Μελλοντική ευθυγράμμιση mainnet</p>
           <div class="hero-actions">
-            <a class="btn primary" href="/el/dashboard">Άνοιγμα πίνακα εκκίνησης</a>
-            <a class="btn outline-navy" href="/el/risk">Ανάγνωση ειδοποίησης κινδύνου</a>
+            <a class="btn primary" href="/el/apply">Apply for Access</a>
+            <a class="btn outline-navy" href="/el/dashboard">Άνοιγμα πίνακα εκκίνησης</a>
             <a class="btn green" href="/el/presale">Συμμετοχή στην προπώληση</a>
           </div>
           <div class="contract-pill"><strong>Συμβόλαιο Ethereum:</strong> <code>0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D</code></div>
+          <div class="countdown-grid" id="energy-countdown" data-target="2026-07-01">
+            <p style="grid-column: 1 / -1; margin: 24px 0 8px; font-weight: 700; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;">Early Investor round opens in</p>
+            <div class="countdown-unit"><div class="num" data-unit="days">—</div><div class="lbl">Days</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="hours">—</div><div class="lbl">Hours</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="mins">—</div><div class="lbl">Minutes</div></div>
+            <div class="countdown-unit"><div class="num" data-unit="secs">—</div><div class="lbl">Seconds</div></div>
+          </div>
         </div>
         <div class="stats-panel">
           <h3>Επισκόπηση token</h3>
@@ -126,6 +136,14 @@
             <div class="stat-item"><strong>50B</strong><span>Μέγ. προσφορά</span></div>
             <div class="stat-item"><strong>18</strong><span>Δεκαδικά</span></div>
           </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="trust-bar">
+          <div class="trust-item"><span>✓</span> Verified Contract</div>
+          <div class="trust-item"><span>✓</span> KYC / AML Ready</div>
+          <div class="trust-item"><span>✓</span> Vesting Schedule</div>
+          <div class="trust-item"><span>✓</span> Ethereum Mainnet</div>
         </div>
       </div>
     </section>
@@ -162,6 +180,18 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Investor Portal</h2>
+          <p>Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="/el/apply">Apply for Access</a>
+          <a class="btn" href="/el/dashboard">Άνοιγμα πίνακα εκκίνησης</a>
+        </div>
+      </div>
+    </section>
     <section><div class="wrap"><div class="risk-banner"><strong>Ειδοποίηση κινδύνου:</strong> Το ENM δεν αποτελεί επενδυτική σύσταση, χρηματοοικονομικό προϊόν, προσφορά αξιώνγράφων ή εργαλείο εγγυημένης απόδοσης. Τα κρυπτονομίσματα είναι υψηλού κινδύνου και μπορεί να χάσουν αξία. Ισχύουν ρυθμιστικοί, τεχνικοί, ρευστότητας, αγοράς και λειτουργικοί κίνδυνοι. Επαληθεύετε πάντα το contract address ανεξάρτητα. <a href="/el/risk" style="color: #92400e; font-weight: 700;">Ανάγνωση πλήρους ειδοποίησης κινδύνου →</a></div></div></section>
   </main>
   <footer class="footer">
@@ -178,6 +208,7 @@
             <a href="/el/tokenomics">Τοκονομικά</a>
             <a href="/el/presale">Προπώληση</a>
             <a href="/el/dashboard">Πίνακας ελέγχου</a>
+            <a href="/el/apply">Apply / Login</a>
             <a href="/el/wallets">Πορτοφόλια</a>
             <a href="/el/contract">Συμβόλαιο</a>
           </div>
@@ -199,5 +230,6 @@
     </div>
   </footer>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/portal.js"></script>
 </body>
 </html>

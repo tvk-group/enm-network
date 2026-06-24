@@ -36,6 +36,7 @@ export const PAGES = [
   { id: 'tokenomics', slug: 'tokenomics', file: 'tokenomics.html' },
   { id: 'presale', slug: 'presale', file: 'presale.html' },
   { id: 'dashboard', slug: 'dashboard', file: 'dashboard.html' },
+  { id: 'apply', slug: 'apply', file: 'apply.html' },
   { id: 'wallets', slug: 'wallets', file: 'wallets.html' },
   { id: 'contract', slug: 'contract', file: 'contract.html' },
   { id: 'roadmap', slug: 'roadmap', file: 'roadmap.html' },
