@@ -36,11 +36,13 @@
     },
     "footer": {
       "brand": "EnergieMIND Token",
-      "desc": "Documentația oficială a tokenului ENM pe enm.network. Informațiile despre proiectul EnergieMIND sunt disponibile pe energiemind.com.",
-      "descShort": "Documentația oficială a tokenului ENM pe enm.network.",
+      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
+      "descShort": "Official EnergieMIND Token (ENM) documentation at enm.network.",
       "tokenHeading": "Token",
       "infoHeading": "Informații",
-      "contractLabel": "Contract:"
+      "contractLabel": "Contract:",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here"
     },
     "badges": {
       "pending": "În așteptare",
@@ -111,8 +113,8 @@
       "h1": "EnergieMIND Token",
       "lead": "Stratul de token utilitar al ecosistemului de inteligență energetică EnergieMIND.",
       "supportLine": "Utilitate energetică · Participare la căldura minieră · Coordonare ecosistem · Aliniere viitoare la mainnet",
-      "layersTitle": "Două straturi, un ecosistem.",
-      "layersDesc": "ENM și EnergieMIND au roluri distincte, dar conectate. Acest site acoperă doar stratul de token.",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND Token (ENM) layer. This site documents EnergieMIND Token (ENM) at enm.network only.",
       "projectDomain": "energiemind.com",
       "projectTitle": "EnergieMIND — Stratul proiectului",
       "projectDesc": "Inteligență energetică, utilitatea căldurii miniere, dezvoltare tehnologică, participare la proiecte pilot și coordonare infrastructură. Vizitează energiemind.com pentru informații despre proiect și tehnologie.",
@@ -140,7 +142,46 @@
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
       "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
-      "h1Ticker": "ENM"
+      "h1Ticker": "ENM",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND Token (ENM)",
+          "desc": "EnergieMIND Token (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ]
     },
     "token": {
       "title": "EnergieMIND Token | enm.network",
@@ -154,7 +195,7 @@
       "riskShort": "ENM nu este o recomandare de investiții, un produs financiar, o ofertă de titluri de valoare sau un instrument cu randament garantat. Activele cripto sunt cu risc ridicat și pot pierde valoare. Verifică întotdeauna contract address în mod independent.",
       "aboutTitle": "Despre ENM",
       "aboutP1": "EnergieMIND Token (ENM) este tokenul utilitar Ethereum ERC-20 pentru ecosistemul EnergieMIND. Este conceput pentru coordonarea viitoare legată de inteligența energetică, participarea la utilitatea căldurii miniere, programe pilot, stimulente pentru infrastructura energetică și alinierea la mainnetul EnteleKRON.",
-      "aboutP2": "ENM este separat de site-ul proiectului EnergieMIND de pe energiemind.com, care acoperă tehnologia și infrastructura. Acest site documentează doar stratul de token.",
+      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "Domeniul utilitar intenționat.",
       "scopeDesc": "ENM este poziționat ca utilitate de coordonare — nu venit pasiv, garanție de profit sau ofertă de titluri de valoare.",
       "card1Title": "Inteligență energetică",
@@ -439,44 +480,48 @@
       "riskFooter": "Activele cripto sunt cu risc ridicat și pot pierde valoare. Se aplică riscuri de reglementare, tehnice, de lichiditate, de piață și operaționale. Verifică întotdeauna contract address în mod independent.",
       "items": [
         {
-          "q": "Ce este ENM?",
-          "a": "EnergieMIND Token (ENM) este tokenul utilitar al ecosistemului de inteligență energetică EnergieMIND. Este un token ERC-20 pe Ethereum Mainnet, conceput pentru coordonarea viitoare a ecosistemului legată de inteligența energetică, participarea la căldura minieră, programe pilot și alinierea la mainnetul EnteleKRON. ENM este un token utilitar — nu un produs de investiții."
+          "q": "What is EnergieMIND Token?",
+          "a": "EnergieMIND Token (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
         },
         {
-          "q": "Care este diferența dintre enm.network și energiemind.com?",
-          "a": "enm.network este site-ul oficial de documentație a tokenului ENM care acoperă stratul de token: contract, tokenomică, prevânzare și divulgări de risc. energiemind.com acoperă stratul proiectului EnergieMIND: tehnologia inteligenței energetice, utilitatea căldurii miniere și dezvoltarea infrastructurii. Sunt părți separate, dar conectate ale aceluiași ecosistem."
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND Token (ENM), presale, and token documentation (this site)."
         },
         {
-          "q": "Care este contract address oficial?",
-          "a": "Contractul oficial ENM pe Ethereum Mainnet este 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifică întotdeauna această adresă în mod independent pe Etherscan înainte de a interacționa."
+          "q": "What is the difference between enm.network and energiemind.com?",
+          "a": "enm.network is dedicated to EnergieMIND Token (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
         {
-          "q": "Pot transfera ENM acum?",
-          "a": "Conform contractului verificat actual, transferurile sunt restricționate sau blocate. Verifică starea contractului pe Etherscan pentru cea mai recentă stare on-chain înainte de a încerca orice transfer."
+          "q": "What is the official contract address?",
+          "a": "The official EnergieMIND Token (ENM) contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting."
         },
         {
-          "q": "Este ENM o investiție?",
-          "a": "Nu. ENM nu este prezentat ca produs de investiții, ofertă de titluri de valoare, instrument cu randament garantat sau promisiune de venit pasiv. Este un token utilitar pentru coordonarea ecosistemului. Activele cripto sunt cu risc ridicat și pot pierde valoare. Consultă notificarea completă de risc."
+          "q": "Can I transfer ENM right now?",
+          "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer."
         },
         {
-          "q": "Când este prevânzarea?",
-          "a": "Early Investor: 01 iul – 30 sep 2026. Strategic Investor: 01 oct – 31 dec 2026. Private Sale: 01 ian – 31 mar 2027. Public Presale: din 01 apr 2027 în șase etape de câte 6 săptămâni. Consultați pagina de prevânzare și panoul de lansare pentru status live."
+          "q": "Is EnergieMIND Token an investment?",
+          "a": "No. EnergieMIND Token (ENM) is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice."
         },
         {
-          "q": "Care este oferta totală?",
-          "a": "Oferta totală maximă este de 50,000,000,000 ENM (50 de miliarde) cu 18 zecimale. Procentele de alocare pe categorii așteaptă publicarea oficială pe pagina de tokenomică."
+          "q": "When is the presale?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and investor portal for live status."
         },
         {
-          "q": "Ce este alinierea la mainnetul EnteleKRON?",
-          "a": "ENM este pregătit pentru migrarea viitoare și alinierea cu ecosistemul mainnet EnteleKRON. Este planificată o categorie de alocare pentru rezerva de migrare. Termenii specifici de migrare, calendarele și detaliile tehnice vor fi publicate când vor fi disponibile."
+          "q": "What is the total supply?",
+          "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page."
         },
         {
-          "q": "Cum adaug ENM în portofelul meu?",
-          "a": "Folosește contract address oficial 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D cu simbolul token ENM și 18 zecimale. Verifică adresa pe Etherscan. Reține că transferurile pot fi în prezent restricționate conform stării contractului."
+          "q": "What is EnteleKRON mainnet alignment?",
+          "a": "EnergieMIND Token (ENM) is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available."
         },
         {
-          "q": "De unde pot obține actualizări oficiale?",
-          "a": "Informațiile oficiale despre token sunt publicate pe enm.network. Pentru întrebări, folosește pagina de contact. Nu avea încredere în canale neoficiale, mesaje DM pe rețele sociale sau site-uri terțe pentru contract address sau informații despre prevânzare."
+          "q": "How do I add ENM to my wallet?",
+          "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with ticker symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state."
+        },
+        {
+          "q": "Where can I get official updates?",
+          "a": "Official EnergieMIND Token (ENM) information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information."
         }
       ]
     },
@@ -494,9 +539,9 @@
       "card1Title": "Întrebări despre token",
       "card1Desc": "Pentru întrebări despre tokenul ENM, verificarea contractului, starea prevânzării sau tokenomica.",
       "card2Title": "Parteneriate și proiecte pilot",
-      "card2Desc": "Pentru întrebări despre parteneriate în ecosistem, participare la proiecte pilot și coordonare infrastructură.",
-      "card3Title": "Proiectul EnergieMIND",
-      "card3Desc": "Pentru întrebări despre tehnologia inteligenței energetice, utilitatea căldurii miniere și stratul proiectului, vizitează site-ul proiectului EnergieMIND.",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
       "card4Title": "Resurse oficiale",
       "card4Desc": "Verifică informațiile doar prin canale oficiale.",
       "contractPage": "Pagina contractului",

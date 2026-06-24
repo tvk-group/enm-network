@@ -39,6 +39,21 @@ function forceFromEn(target, source, keyPath) {
 
 const en = JSON.parse(fs.readFileSync(path.join(LOCALES, 'en.json'), 'utf8'));
 
+const FORCE_SYNC_PATHS = [
+  'common.footer.desc',
+  'common.footer.descShort',
+  'common.footer.ecosystemHeading',
+  'common.footer.youAreHere',
+  'pages.home.layersTitle',
+  'pages.home.layersDesc',
+  'pages.home.domains',
+  'pages.token.aboutP2',
+  'pages.contact.card2Desc',
+  'pages.contact.card3Title',
+  'pages.contact.card3Desc',
+  'pages.faq.items',
+];
+
 for (const file of fs.readdirSync(LOCALES).filter((f) => f.endsWith('.json') && f !== 'en.json')) {
   const fp = path.join(LOCALES, file);
   const locale = JSON.parse(fs.readFileSync(fp, 'utf8'));
@@ -47,6 +62,7 @@ for (const file of fs.readdirSync(LOCALES).filter((f) => f.endsWith('.json') && 
   locale.common.brandHome = en.common.brandHome;
   if (locale.common.footer) locale.common.footer.brand = en.common.footer.brand;
   if (locale.common.stats) locale.common.stats.ticker = en.common.stats.ticker;
+  for (const keyPath of FORCE_SYNC_PATHS) forceFromEn(locale, en, keyPath);
   fs.writeFileSync(fp, JSON.stringify(locale, null, 2) + '\n');
   console.log('Synced', file);
 }

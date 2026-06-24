@@ -45,10 +45,12 @@
     },
     "footer": {
       "brand": "EnergieMIND Token",
-      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. EnergieMIND project information is available at energiemind.com.",
+      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
       "descShort": "Official EnergieMIND Token (ENM) documentation at enm.network.",
       "tokenHeading": "Token",
       "infoHeading": "Information",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here",
       "contractLabel": "Contract:"
     },
     "badges": {
@@ -112,14 +114,47 @@
       "h1Ticker": "ENM",
       "lead": "The utility token of the EnergieMIND energy intelligence ecosystem. Ticker: ENM.",
       "supportLine": "Energy Utility · Mining Heat Participation · Ecosystem Coordination · Future Mainnet Alignment",
-      "layersTitle": "Two layers, one ecosystem.",
-      "layersDesc": "The EnergieMIND Token (ENM) and the EnergieMIND project serve distinct but connected roles. This site covers the token layer only.",
-      "projectDomain": "energiemind.com",
-      "projectTitle": "EnergieMIND — Project Layer",
-      "projectDesc": "Energy intelligence, mining heat utility, technology development, pilot participation, and infrastructure coordination. Visit energiemind.com for project and technology information.",
-      "tokenDomain": "enm.network",
-      "tokenTitle": "EnergieMIND Token (ENM)",
-      "tokenDesc": "Utility token for ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, infrastructure incentives, and future EnteleKRON mainnet alignment.",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND Token (ENM) layer. This site documents EnergieMIND Token (ENM) at enm.network only.",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND Token (ENM)",
+          "desc": "EnergieMIND Token (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ],
       "utilityTitle": "What EnergieMIND Token is designed for.",
       "utilityDesc": "EnergieMIND Token (ENM) is a utility coordination token — not an investment product or guaranteed return instrument.",
       "card1Title": "Energy Utility",
@@ -155,7 +190,7 @@
       "riskShort": "EnergieMIND Token (ENM) is not an investment recommendation, financial product, security offering or guaranteed return instrument. Crypto assets are high-risk and may lose value. Always verify the contract address independently.",
       "aboutTitle": "About EnergieMIND Token",
       "aboutP1": "EnergieMIND Token (ticker: ENM) is the Ethereum ERC-20 utility token for the EnergieMIND ecosystem. On-chain, the verified contract registers the name \"EnergieMind\" with symbol \"ENM\". It is designed for future coordination related to energy intelligence, mining heat utility participation, pilot programs, energy infrastructure incentives, and EnteleKRON mainnet alignment.",
-      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network, separate from the EnergieMIND project website at energiemind.com, which covers technology and infrastructure.",
+      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "Intended utility scope.",
       "scopeDesc": "ENM is positioned as a coordination utility — not passive income, profit guarantee, or security offering.",
       "card1Title": "Energy Intelligence",
@@ -520,7 +555,7 @@
         },
         {
           "title": "Documentation & Transparency",
-          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Complete token layer separation from energiemind.com project site."
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
           "title": "Presale & Distribution",
@@ -622,8 +657,12 @@
           "a": "EnergieMIND Token (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
         },
         {
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND Token (ENM), presale, and token documentation (this site)."
+        },
+        {
           "q": "What is the difference between enm.network and energiemind.com?",
-          "a": "enm.network is the official EnergieMIND Token (ENM) documentation site covering the token layer: contract, tokenomics, presale, and risk disclosures. energiemind.com covers the EnergieMIND project layer: energy intelligence technology, mining heat utility, and infrastructure development. They are separate but connected parts of the same ecosystem."
+          "a": "enm.network is dedicated to EnergieMIND Token (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
         {
           "q": "What is the official contract address?",
@@ -672,11 +711,11 @@
       "securityText": "The EnergieMIND team will never ask you to send funds via direct message. Do not share seed phrases or private keys. Verify all contract addresses on enm.network and Etherscan only.",
       "card1Title": "Token Inquiries",
       "card1Desc": "For questions about EnergieMIND Token (ENM), contract verification, presale status, or tokenomics.",
-      "card2Title": "Partnership & Pilots",
-      "card2Desc": "For ecosystem partnership, pilot participation, and infrastructure coordination inquiries.",
-      "card3Title": "EnergieMIND Project",
-      "card3Desc": "For energy intelligence technology, mining heat utility, and project-layer questions, visit the EnergieMIND project site.",
-      "card4Title": "Official Resources",
+      "card2Title": "Partners & Network",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
+      "card4Title": "Official Token Resources",
       "card4Desc": "Verify information through official channels only.",
       "contractPage": "Contract page",
       "footerNote": "Response times may vary. For urgent security concerns related to scam addresses or impersonation, include \"SECURITY\" in your subject line. Never send cryptocurrency to addresses received via unsolicited messages.",

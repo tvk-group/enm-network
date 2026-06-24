@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { SITE_URL, CONTRACT, ETHERSCAN, TOKEN_NAME, TOKEN_SYMBOL, TOKEN_ONCHAIN_NAME, SITE_BRAND, SITE_OG_NAME, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
+import { SITE_URL, CONTRACT, ETHERSCAN, TOKEN_NAME, TOKEN_SYMBOL, TOKEN_ONCHAIN_NAME, SITE_BRAND, SITE_OG_NAME, ECOSYSTEM_DOMAINS, LANGUAGES, PAGES, pageUrl, pagePath } from './config.mjs';
 import {
   OFFICIAL_WALLETS,
   PRESALE_WALLET,
@@ -27,6 +27,52 @@ const link = (lang, slug, text, cls = '') => {
   const c = cls ? ` class="${cls}"` : '';
   return `<a href="${href}"${c}>${esc(text)}</a>`;
 };
+
+function ecosystemHref(d, lang) {
+  return d.current ? pagePath(lang, '') : d.url;
+}
+
+function renderDomainGrid(lang, t) {
+  const domains = t.pages.home.domains || [];
+  const youAreHere = t.common.footer.youAreHere;
+  return domains.map((d) => {
+    const isCurrent = Boolean(d.current);
+    const href = ecosystemHref(
+      ECOSYSTEM_DOMAINS.find((x) => x.id === d.id) || { url: `https://${d.domain}`, current: isCurrent },
+      lang,
+    );
+    const target = isCurrent ? '' : ' target="_blank" rel="noopener"';
+    const badge = isCurrent ? `<span class="domain-badge">${esc(youAreHere)}</span>` : '';
+    return `<article class="domain-card ${esc(d.id)}${isCurrent ? ' current' : ''}">
+            <a href="${href}"${target} class="domain-link">
+              <div class="domain">${esc(d.domain)}${isCurrent ? '' : ' ↗'}</div>
+              <h3>${esc(d.title)}</h3>
+              <p>${esc(d.desc)}</p>
+            </a>
+            ${badge}
+          </article>`;
+  }).join('\n          ');
+}
+
+function renderEcosystemFooterLinks(lang, t) {
+  const youAreHere = t.common.footer.youAreHere;
+  return ECOSYSTEM_DOMAINS.map((d) => {
+    if (d.current) {
+      return `<span class="footer-domain current" title="${esc(youAreHere)}">${esc(d.domain)}</span>`;
+    }
+    return `<a href="${d.url}" target="_blank" rel="noopener">${esc(d.domain)} ↗</a>`;
+  }).join('\n            ');
+}
+
+function renderEcosystemContactLinks(lang, t) {
+  const youAreHere = t.common.footer.youAreHere;
+  return ECOSYSTEM_DOMAINS.map((d) => {
+    const href = ecosystemHref(d, lang);
+    const target = d.current ? '' : ' target="_blank" rel="noopener"';
+    const suffix = d.current ? ` <span class="domain-badge-inline">${esc(youAreHere)}</span>` : ' ↗';
+    return `<a href="${href}"${target}>${esc(d.domain)}${suffix}</a>`;
+  }).join('<br/>\n          ');
+}
 
 function loadLocale(code) {
   const file = path.join(LOCALES_DIR, `${code}.json`);
@@ -218,6 +264,12 @@ function renderFooter(lang, t) {
             ${link(lang, 'contact', c.nav.contact)}
           </div>
         </div>
+        <div>
+          <h4>${esc(c.footer.ecosystemHeading)}</h4>
+          <div class="footer-links">
+            ${renderEcosystemFooterLinks(lang, t)}
+          </div>
+        </div>
       </div>
       <div class="footer-bottom">
         <span class="small">${esc(c.footer.contractLabel)} <code>${CONTRACT}</code></span>
@@ -302,17 +354,8 @@ function renderHome(lang, t) {
           <h2>${esc(p.layersTitle)}</h2>
           <p>${esc(p.layersDesc)}</p>
         </div>
-        <div class="layer-grid">
-          <article class="layer-card project">
-            <div class="domain">${esc(p.projectDomain)}</div>
-            <h3>${esc(p.projectTitle)}</h3>
-            <p>${esc(p.projectDesc)}</p>
-          </article>
-          <article class="layer-card token">
-            <div class="domain">${esc(p.tokenDomain)}</div>
-            <h3>${esc(p.tokenTitle)}</h3>
-            <p>${esc(p.tokenDesc)}</p>
-          </article>
+        <div class="domain-grid">
+          ${renderDomainGrid(lang, t)}
         </div>
       </div>
     </section>
@@ -960,7 +1003,7 @@ function renderContact(lang, t) {
         <article class="contact-card"><h3>${esc(p.card2Title)}</h3><p>${esc(p.card2Desc)}</p>
           <p style="margin-top: 12px;"><a href="mailto:partners@enm.network">partners@enm.network</a></p></article>
         <article class="contact-card"><h3>${esc(p.card3Title)}</h3><p>${esc(p.card3Desc)}</p>
-          <p style="margin-top: 12px;"><a href="https://energiemind.com" target="_blank" rel="noopener">energiemind.com ↗</a></p></article>
+          <p style="margin-top: 12px;">${renderEcosystemContactLinks(lang, t)}</p></article>
         <article class="contact-card"><h3>${esc(p.card4Title)}</h3><p>${esc(p.card4Desc)}</p>
           <p style="margin-top: 12px;">
             <a href="${pagePath(lang, 'contract')}">${esc(p.contractPage)}</a><br/>

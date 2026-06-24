@@ -36,11 +36,13 @@
     },
     "footer": {
       "brand": "EnergieMIND Token",
-      "desc": "enm.network पर आधिकारिक ENM टोकन दस्तावेज़। EnergieMIND परियोजना जानकारी energiemind.com पर उपलब्ध है।",
-      "descShort": "enm.network पर आधिकारिक ENM टोकन दस्तावेज़।",
+      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
+      "descShort": "Official EnergieMIND Token (ENM) documentation at enm.network.",
       "tokenHeading": "टोकन",
       "infoHeading": "जानकारी",
-      "contractLabel": "कॉन्ट्रैक्ट:"
+      "contractLabel": "कॉन्ट्रैक्ट:",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here"
     },
     "badges": {
       "pending": "लंबित",
@@ -111,8 +113,8 @@
       "h1": "EnergieMIND Token",
       "lead": "EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र की उपयोगिता टोकन परत।",
       "supportLine": "ऊर्जा उपयोगिता · माइनिंग हीट भागीदारी · पारिस्थितिकी तंत्र समन्वय · भविष्य के मेननेट संरेखण",
-      "layersTitle": "दो परतें, एक पारिस्थितिकी तंत्र।",
-      "layersDesc": "ENM और EnergieMIND अलग-अलग लेकिन जुड़ी हुई भूमिकाएँ निभाते हैं। यह साइट केवल टोकन परत को कवर करती है।",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND Token (ENM) layer. This site documents EnergieMIND Token (ENM) at enm.network only.",
       "projectDomain": "energiemind.com",
       "projectTitle": "EnergieMIND — परियोजना परत",
       "projectDesc": "ऊर्जा बुद्धिमत्ता, माइनिंग हीट उपयोगिता, तकनीकी विकास, पायलट भागीदारी और अवसंरचना समन्वय। परियोजना और तकनीकी जानकारी के लिए energiemind.com पर जाएँ।",
@@ -140,7 +142,46 @@
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
       "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
-      "h1Ticker": "ENM"
+      "h1Ticker": "ENM",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND Token (ENM)",
+          "desc": "EnergieMIND Token (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ]
     },
     "token": {
       "title": "EnergieMIND Token | enm.network",
@@ -154,7 +195,7 @@
       "riskShort": "ENM निवेश सिफारिश, वित्तीय उत्पाद, प्रतिभूति पेशकश या गारंटीकृत रिटर्न उपकरण नहीं है। क्रिप्टो संपत्तियाँ उच्च जोखिम वाली हैं और मूल्य खो सकती हैं। हमेशा contract address को स्वतंत्र रूप से सत्यापित करें।",
       "aboutTitle": "ENM के बारे में",
       "aboutP1": "EnergieMIND Token (ENM) EnergieMIND पारिस्थितिकी तंत्र के लिए Ethereum ERC-20 उपयोगिता टोकन है। यह ऊर्जा बुद्धिमत्ता, माइनिंग हीट उपयोगिता भागीदारी, पायलट कार्यक्रम, ऊर्जा अवसंरचना प्रोत्साहन और EnteleKRON मेननेट संरेखण से संबंधित भविष्य के समन्वय के लिए डिज़ाइन किया गया है।",
-      "aboutP2": "ENM energiemind.com पर EnergieMIND परियोजना वेबसाइट से अलग है, जो तकनीक और अवसंरचना को कवर करती है। यह साइट केवल टोकन परत का दस्तावेज़ीकरण करती है।",
+      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "इच्छित उपयोगिता दायरा।",
       "scopeDesc": "ENM एक समन्वय उपयोगिता के रूप में स्थित है — निष्क्रिय आय, लाभ गारंटी या प्रतिभूति पेशकश नहीं।",
       "card1Title": "ऊर्जा बुद्धिमत्ता",
@@ -439,44 +480,48 @@
       "riskFooter": "क्रिप्टो संपत्तियाँ उच्च जोखिम वाली हैं और मूल्य खो सकती हैं। नियामक, तकनीकी, तरलता, बाजार और परिचालन जोखिम लागू होते हैं। हमेशा contract address को स्वतंत्र रूप से सत्यापित करें।",
       "items": [
         {
-          "q": "ENM क्या है?",
-          "a": "EnergieMIND Token (ENM) EnergieMIND ऊर्जा बुद्धिमत्ता पारिस्थितिकी तंत्र का उपयोगिता टोकन है। यह Ethereum Mainnet पर ERC-20 टोकन है, ऊर्जा बुद्धिमत्ता, माइनिंग हीट भागीदारी, पायलट कार्यक्रम और EnteleKRON मेननेट संरेखण से संबंधित भविष्य के पारिस्थितिकी तंत्र समन्वय के लिए डिज़ाइन किया गया। ENM एक उपयोगिता टोकन है — निवेश उत्पाद नहीं।"
+          "q": "What is EnergieMIND Token?",
+          "a": "EnergieMIND Token (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
         },
         {
-          "q": "enm.network और energiemind.com में क्या अंतर है?",
-          "a": "enm.network टोकन परत को कवर करने वाली आधिकारिक ENM टोकन दस्तावेज़ साइट है: कॉन्ट्रैक्ट, टोकनोमिक्स, प्रीसेल और जोखिम प्रकटीकरण। energiemind.com EnergieMIND परियोजना परत को कवर करता है: ऊर्जा बुद्धिमत्ता तकनीक, माइनिंग हीट उपयोगिता और अवसंरचना विकास। वे एक ही पारिस्थितिकी तंत्र के अलग लेकिन जुड़े हुए भाग हैं।"
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND Token (ENM), presale, and token documentation (this site)."
         },
         {
-          "q": "आधिकारिक contract address क्या है?",
-          "a": "Ethereum Mainnet पर आधिकारिक ENM कॉन्ट्रैक्ट 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D है। बातचीत करने से पहले हमेशा Etherscan पर इस पते को स्वतंत्र रूप से सत्यापित करें।"
+          "q": "What is the difference between enm.network and energiemind.com?",
+          "a": "enm.network is dedicated to EnergieMIND Token (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
         {
-          "q": "क्या मैं अभी ENM ट्रांसफर कर सकता हूँ?",
-          "a": "वर्तमान सत्यापित कॉन्ट्रैक्ट के अनुसार, ट्रांसफर प्रतिबंधित या लॉक हैं। कोई भी ट्रांसफर प्रयास करने से पहले नवीनतम ऑन-चेन स्थिति के लिए Etherscan पर कॉन्ट्रैक्ट स्थिति जाँचें।"
+          "q": "What is the official contract address?",
+          "a": "The official EnergieMIND Token (ENM) contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting."
         },
         {
-          "q": "क्या ENM एक निवेश है?",
-          "a": "नहीं। ENM निवेश उत्पाद, प्रतिभूति पेशकश, गारंटीकृत रिटर्न उपकरण या निष्क्रिय आय वादे के रूप में प्रस्तुत नहीं है। यह पारिस्थितिकी तंत्र समन्वय के लिए उपयोगिता टोकन है। क्रिप्टो संपत्तियाँ उच्च जोखिम वाली हैं और मूल्य खो सकती हैं। पूर्ण जोखिम सूचना देखें।"
+          "q": "Can I transfer ENM right now?",
+          "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer."
         },
         {
-          "q": "प्रीसेल कब है?",
-          "a": "Early Investor: 01 जुलाई – 30 सितंबर 2026। Strategic Investor: 01 अक्टूबर – 31 दिसंबर 2026। Private Sale: 01 जनवरी – 31 मार्च 2027। Public Presale: 01 अप्रैल 2027 से छह 6-सप्ताहीय चरणों में। लाइव स्थिति के लिए प्रीसेल पृष्ठ और लॉन्च डैशबोर्ड देखें।"
+          "q": "Is EnergieMIND Token an investment?",
+          "a": "No. EnergieMIND Token (ENM) is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice."
         },
         {
-          "q": "कुल आपूर्ति क्या है?",
-          "a": "अधिकतम कुल आपूर्ति 18 दशमलव के साथ 50,000,000,000 ENM (50 अरब) है। श्रेणियों में आवंटन प्रतिशत टोकनोमिक्स पृष्ठ पर आधिकारिक प्रकाशन लंबित।"
+          "q": "When is the presale?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and investor portal for live status."
         },
         {
-          "q": "EnteleKRON मेननेट संरेखण क्या है?",
-          "a": "ENM EnteleKRON मेननेट पारिस्थितिकी तंत्र के साथ भविष्य के माइग्रेशन और संरेखण के लिए तैयार है। माइग्रेशन रिज़र्व आवंटन श्रेणी की योजना है। विशिष्ट माइग्रेशन शर्तें, समयसीमा और तकनीकी विवरण उपलब्ध होने पर प्रकाशित किए जाएँगे।"
+          "q": "What is the total supply?",
+          "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page."
         },
         {
-          "q": "मैं अपने वॉलेट में ENM कैसे जोड़ूँ?",
-          "a": "टोकन प्रतीक ENM और 18 दशमलव के साथ आधिकारिक contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D का उपयोग करें। Etherscan पर पता सत्यापित करें। ध्यान रखें कि कॉन्ट्रैक्ट स्थिति के अनुसार ट्रांसफर वर्तमान में प्रतिबंधित हो सकते हैं।"
+          "q": "What is EnteleKRON mainnet alignment?",
+          "a": "EnergieMIND Token (ENM) is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available."
         },
         {
-          "q": "मुझे आधिकारिक अपडेट कहाँ मिल सकते हैं?",
-          "a": "आधिकारिक टोकन जानकारी enm.network पर प्रकाशित है। पूछताछ के लिए, संपर्क पृष्ठ का उपयोग करें। contract address या प्रीसेल जानकारी के लिए अनौपचारिक चैनलों, सोशल मीडिया DM या तृतीय-पक्ष साइटों पर भरोसा न करें।"
+          "q": "How do I add ENM to my wallet?",
+          "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with ticker symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state."
+        },
+        {
+          "q": "Where can I get official updates?",
+          "a": "Official EnergieMIND Token (ENM) information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information."
         }
       ]
     },
@@ -494,9 +539,9 @@
       "card1Title": "टोकन पूछताछ",
       "card1Desc": "ENM टोकन, कॉन्ट्रैक्ट सत्यापन, प्रीसेल स्थिति या टोकनोमिक्स के बारे में प्रश्न।",
       "card2Title": "साझेदारी और पायलट",
-      "card2Desc": "पारिस्थितिकी तंत्र साझेदारी, पायलट भागीदारी और अवसंरचना समन्वय पूछताछ के लिए।",
-      "card3Title": "EnergieMIND परियोजना",
-      "card3Desc": "ऊर्जा बुद्धिमत्ता तकनीक, माइनिंग हीट उपयोगिता और परियोजना-परत प्रश्नों के लिए, EnergieMIND परियोजना साइट पर जाएँ।",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
       "card4Title": "आधिकारिक संसाधन",
       "card4Desc": "केवल आधिकारिक चैनलों के माध्यम से जानकारी सत्यापित करें।",
       "contractPage": "कॉन्ट्रैक्ट पृष्ठ",

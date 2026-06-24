@@ -36,11 +36,13 @@
     },
     "footer": {
       "brand": "EnergieMIND Token",
-      "desc": "Documentación oficial del token ENM en enm.network. La información del proyecto EnergieMIND está disponible en energiemind.com.",
-      "descShort": "Documentación oficial del token ENM en enm.network.",
+      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
+      "descShort": "Official EnergieMIND Token (ENM) documentation at enm.network.",
       "tokenHeading": "Token",
       "infoHeading": "Información",
-      "contractLabel": "Contrato:"
+      "contractLabel": "Contrato:",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here"
     },
     "badges": {
       "pending": "Pendiente",
@@ -111,8 +113,8 @@
       "h1": "EnergieMIND Token",
       "lead": "La capa de token de utilidad del ecosistema de inteligencia energética EnergieMIND.",
       "supportLine": "Utilidad energética · Participación en calor minero · Coordinación del ecosistema · Alineación futura con mainnet",
-      "layersTitle": "Dos capas, un ecosistema.",
-      "layersDesc": "ENM y EnergieMIND cumplen roles distintos pero conectados. Este sitio cubre únicamente la capa del token.",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND Token (ENM) layer. This site documents EnergieMIND Token (ENM) at enm.network only.",
       "projectDomain": "energiemind.com",
       "projectTitle": "EnergieMIND — Capa de proyecto",
       "projectDesc": "Inteligencia energética, utilidad de calor minero, desarrollo tecnológico, participación en pilotos y coordinación de infraestructura. Visite energiemind.com para información del proyecto y la tecnología.",
@@ -140,7 +142,46 @@
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
       "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
-      "h1Ticker": "ENM"
+      "h1Ticker": "ENM",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND Token (ENM)",
+          "desc": "EnergieMIND Token (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ]
     },
     "token": {
       "title": "EnergieMIND Token | enm.network",
@@ -154,7 +195,7 @@
       "riskShort": "ENM no es una recomendación de inversión, un producto financiero, una oferta de valores ni un instrumento de rendimiento garantizado. Los activos cripto son de alto riesgo y pueden perder valor. Verifique siempre la dirección del contrato de forma independiente.",
       "aboutTitle": "Acerca de ENM",
       "aboutP1": "EnergieMIND Token (ENM) es el token de utilidad Ethereum ERC-20 del ecosistema EnergieMIND. Está diseñado para la coordinación futura relacionada con inteligencia energética, participación en utilidad de calor minero, programas piloto, incentivos de infraestructura energética y alineación con el mainnet EnteleKRON.",
-      "aboutP2": "ENM es independiente del sitio web del proyecto EnergieMIND en energiemind.com, que cubre tecnología e infraestructura. Este sitio documenta únicamente la capa del token.",
+      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "Alcance de utilidad previsto.",
       "scopeDesc": "ENM se posiciona como utilidad de coordinación — no como ingreso pasivo, garantía de beneficio u oferta de valores.",
       "card1Title": "Inteligencia energética",
@@ -439,44 +480,48 @@
       "riskFooter": "Los activos cripto son de alto riesgo y pueden perder valor. Aplican riesgos regulatorios, técnicos, de liquidez, de mercado y operativos. Verifique siempre la dirección del contrato de forma independiente.",
       "items": [
         {
-          "q": "¿Qué es ENM?",
-          "a": "EnergieMIND Token (ENM) es el token de utilidad del ecosistema de inteligencia energética EnergieMIND. Es un token ERC-20 en Ethereum Mainnet, diseñado para la coordinación futura del ecosistema relacionada con inteligencia energética, participación en calor minero, programas piloto y alineación con el mainnet EnteleKRON. ENM es un token de utilidad — no un producto de inversión."
+          "q": "What is EnergieMIND Token?",
+          "a": "EnergieMIND Token (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
         },
         {
-          "q": "¿Cuál es la diferencia entre enm.network y energiemind.com?",
-          "a": "enm.network es el sitio oficial de documentación del token ENM que cubre la capa del token: contrato, tokenomics, preventa y divulgaciones de riesgo. energiemind.com cubre la capa del proyecto EnergieMIND: tecnología de inteligencia energética, utilidad de calor minero y desarrollo de infraestructura. Son partes separadas pero conectadas del mismo ecosistema."
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND Token (ENM), presale, and token documentation (this site)."
         },
         {
-          "q": "¿Cuál es la dirección oficial del contrato?",
-          "a": "El contrato oficial de ENM en Ethereum Mainnet es 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Verifique siempre esta dirección de forma independiente en Etherscan antes de interactuar."
+          "q": "What is the difference between enm.network and energiemind.com?",
+          "a": "enm.network is dedicated to EnergieMIND Token (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
         {
-          "q": "¿Puedo transferir ENM ahora mismo?",
-          "a": "Según el contrato verificado actual, las transferencias están restringidas o bloqueadas. Consulte el estado del contrato en Etherscan para el estado on-chain más reciente antes de intentar cualquier transferencia."
+          "q": "What is the official contract address?",
+          "a": "The official EnergieMIND Token (ENM) contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting."
         },
         {
-          "q": "¿Es ENM una inversión?",
-          "a": "No. ENM no se presenta como producto de inversión, oferta de valores, instrumento de rendimiento garantizado o promesa de ingreso pasivo. Es un token de utilidad para la coordinación del ecosistema. Los activos cripto son de alto riesgo y pueden perder valor. Consulte el aviso de riesgo completo."
+          "q": "Can I transfer ENM right now?",
+          "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer."
         },
         {
-          "q": "¿Cuándo es la preventa?",
-          "a": "Early Investor: 01 jul. – 30 sep. 2026. Strategic Investor: 01 oct. – 31 dic. 2026. Private Sale: 01 ene. – 31 mar. 2027. Public Presale: desde el 01 abr. 2027 en seis etapas de 6 semanas. Consulte la página de Preventa y el panel de lanzamiento para el estado en vivo."
+          "q": "Is EnergieMIND Token an investment?",
+          "a": "No. EnergieMIND Token (ENM) is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice."
         },
         {
-          "q": "¿Cuál es el suministro total?",
-          "a": "El suministro total máximo es de 50.000.000.000 ENM (50 mil millones) con 18 decimales. Los porcentajes de asignación por categorías están pendientes de publicación oficial en la página de tokenomics."
+          "q": "When is the presale?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and investor portal for live status."
         },
         {
-          "q": "¿Qué es la alineación con el mainnet EnteleKRON?",
-          "a": "ENM está preparado para la migración futura y alineación con el ecosistema mainnet EnteleKRON. Se planifica una categoría de asignación de reserva de migración. Los términos, plazos y detalles técnicos específicos de migración se publicarán cuando estén disponibles."
+          "q": "What is the total supply?",
+          "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page."
         },
         {
-          "q": "¿Cómo añado ENM a mi cartera?",
-          "a": "Utilice la dirección oficial del contrato 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D con el símbolo del token ENM y 18 decimales. Verifique la dirección en Etherscan. Tenga en cuenta que las transferencias pueden estar actualmente restringidas según el estado del contrato."
+          "q": "What is EnteleKRON mainnet alignment?",
+          "a": "EnergieMIND Token (ENM) is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available."
         },
         {
-          "q": "¿Dónde puedo obtener actualizaciones oficiales?",
-          "a": "La información oficial del token se publica en enm.network. Para consultas, utilice la página de contacto. No confíe en canales no oficiales, mensajes directos en redes sociales o sitios de terceros para direcciones de contrato o información de preventa."
+          "q": "How do I add ENM to my wallet?",
+          "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with ticker symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state."
+        },
+        {
+          "q": "Where can I get official updates?",
+          "a": "Official EnergieMIND Token (ENM) information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information."
         }
       ]
     },
@@ -494,9 +539,9 @@
       "card1Title": "Consultas sobre el token",
       "card1Desc": "Para preguntas sobre el token ENM, verificación del contrato, estado de la preventa o tokenomics.",
       "card2Title": "Asociaciones y pilotos",
-      "card2Desc": "Para consultas sobre asociaciones del ecosistema, participación en pilotos y coordinación de infraestructura.",
-      "card3Title": "Proyecto EnergieMIND",
-      "card3Desc": "Para preguntas sobre tecnología de inteligencia energética, utilidad de calor minero y capa de proyecto, visite el sitio del proyecto EnergieMIND.",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
       "card4Title": "Recursos oficiales",
       "card4Desc": "Verifique la información únicamente a través de canales oficiales.",
       "contractPage": "Página del contrato",

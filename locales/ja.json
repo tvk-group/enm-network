@@ -36,11 +36,13 @@
     },
     "footer": {
       "brand": "EnergieMIND Token",
-      "desc": "ENM トークンの公式ドキュメントは enm.network。EnergieMIND プロジェクト情報は energiemind.com をご覧ください。",
-      "descShort": "ENM トークンの公式ドキュメントは enm.network。",
+      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
+      "descShort": "Official EnergieMIND Token (ENM) documentation at enm.network.",
       "tokenHeading": "トークン",
       "infoHeading": "情報",
-      "contractLabel": "コントラクト："
+      "contractLabel": "コントラクト：",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here"
     },
     "badges": {
       "pending": "保留中",
@@ -111,8 +113,8 @@
       "h1": "EnergieMIND Token",
       "lead": "EnergieMIND エネルギーインテリジェンスエコシステムのユーティリティトークンレイヤー。",
       "supportLine": "エネルギーユーティリティ · マイニング熱参加 · エコシステム調整 · 将来のメインネット連携",
-      "layersTitle": "2つのレイヤー、1つのエコシステム。",
-      "layersDesc": "ENM と EnergieMIND は異なるが相互に関連する役割を担います。本サイトはトークンレイヤーのみを扱います。",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND Token (ENM) layer. This site documents EnergieMIND Token (ENM) at enm.network only.",
       "projectDomain": "energiemind.com",
       "projectTitle": "EnergieMIND — プロジェクトレイヤー",
       "projectDesc": "エネルギーインテリジェンス、マイニング熱ユーティリティ、技術開発、パイロット参加、インフラ調整。プロジェクト・技術情報は energiemind.com をご覧ください。",
@@ -140,7 +142,46 @@
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
       "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
-      "h1Ticker": "ENM"
+      "h1Ticker": "ENM",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND Token (ENM)",
+          "desc": "EnergieMIND Token (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ]
     },
     "token": {
       "title": "EnergieMIND Token | enm.network",
@@ -154,7 +195,7 @@
       "riskShort": "ENM は投資勧誘、金融商品、証券の提供、または保証リターンの手段ではありません。暗号資産は高リスクであり、価値を失う可能性があります。コントラクトアドレスは常に独自に確認してください。",
       "aboutTitle": "ENM について",
       "aboutP1": "ENM（EnergieMind）は EnergieMIND エコシステム向けの Ethereum ERC-20 ユーティリティトークンです。エネルギーインテリジェンス、マイニング熱ユーティリティ参加、パイロットプログラム、エネルギーインフラインセンティブ、EnteleKRON メインネット連携に関連する将来の調整のために設計されています。",
-      "aboutP2": "ENM は技術とインフラを扱う energiemind.com の EnergieMIND プロジェクトサイトとは別です。本サイトはトークンレイヤーのみを文書化します。",
+      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "想定ユーティリティ範囲。",
       "scopeDesc": "ENM は調整ユーティリティとして位置づけられています — 不労所得、利益保証、証券の提供ではありません。",
       "card1Title": "エネルギーインテリジェンス",
@@ -439,44 +480,48 @@
       "riskFooter": "暗号資産は高リスクであり、価値を失う可能性があります。規制、技術、流動性、市場、運用のリスクが適用されます。コントラクトアドレスは常に独自に確認してください。",
       "items": [
         {
-          "q": "ENM とは何ですか？",
-          "a": "ENM（EnergieMind）は EnergieMIND エネルギーインテリジェンスエコシステムのユーティリティトークンです。Ethereum Mainnet 上の ERC-20 トークンであり、エネルギーインテリジェンス、マイニング熱参加、パイロットプログラム、EnteleKRON メインネット連携に関連する将来のエコシステム調整のために設計されています。ENM はユーティリティトークンであり、投資商品ではありません。"
+          "q": "What is EnergieMIND Token?",
+          "a": "EnergieMIND Token (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
         },
         {
-          "q": "enm.network と energiemind.com の違いは何ですか？",
-          "a": "enm.network はトークンレイヤー（コントラクト、トークノミクス、プレセール、リスク開示）を扱う ENM トークンの公式ドキュメントサイトです。energiemind.com は EnergieMIND プロジェクトレイヤー（エネルギーインテリジェンス技術、マイニング熱ユーティリティ、インフラ開発）を扱います。同一エコシステムの別々だが関連する部分です。"
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND Token (ENM), presale, and token documentation (this site)."
         },
         {
-          "q": "公式コントラクトアドレスは何ですか？",
-          "a": "Ethereum Mainnet 上の公式 ENM コントラクトは 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D です。やり取りの前に常に Etherscan でこのアドレスを独自に確認してください。"
+          "q": "What is the difference between enm.network and energiemind.com?",
+          "a": "enm.network is dedicated to EnergieMIND Token (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
         {
-          "q": "今 ENM を送金できますか？",
-          "a": "現在の検証済みコントラクトによると、送金は制限またはロックされています。送金を試みる前に、Etherscan でコントラクトの最新のオンチェーン状態を確認してください。"
+          "q": "What is the official contract address?",
+          "a": "The official EnergieMIND Token (ENM) contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting."
         },
         {
-          "q": "ENM は投資ですか？",
-          "a": "いいえ。ENM は投資商品、証券の提供、保証リターンの手段、または不労所得の約束として提示されていません。エコシステム調整のためのユーティリティトークンです。暗号資産は高リスクであり、価値を失う可能性があります。完全なリスク告知をご覧ください。"
+          "q": "Can I transfer ENM right now?",
+          "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer."
         },
         {
-          "q": "プレセールはいつですか？",
-          "a": "Early Investor：2026年7月1日 – 9月30日。Strategic Investor：2026年10月1日 – 12月31日。Private Sale：2027年1月1日 – 3月31日。Public Presale：2027年4月1日から6週間ずつの6段階。ライブステータスはプレセールページと起動ダッシュボードをご覧ください。"
+          "q": "Is EnergieMIND Token an investment?",
+          "a": "No. EnergieMIND Token (ENM) is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice."
         },
         {
-          "q": "総供給量はいくらですか？",
-          "a": "最大総供給量は 50,000,000,000 ENM（500億）で、小数桁は18です。カテゴリ別の配分パーセンテージは、トークノミクスページでの公式発表待ちです。"
+          "q": "When is the presale?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and investor portal for live status."
         },
         {
-          "q": "EnteleKRON メインネット連携とは何ですか？",
-          "a": "ENM は EnteleKRON メインネットエコシステムへの将来の移行と連携に備えています。移行リザーブ配分カテゴリが計画されています。具体的な移行条件、タイムライン、技術詳細は、利用可能になった際に公開されます。"
+          "q": "What is the total supply?",
+          "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page."
         },
         {
-          "q": "ENM をウォレットに追加するには？",
-          "a": "公式コントラクトアドレス 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D を使用し、トークンシンボル ENM、小数桁 18 で設定してください。Etherscan でアドレスを確認してください。コントラクトの状態により、現在送金が制限されている場合があることにご注意ください。"
+          "q": "What is EnteleKRON mainnet alignment?",
+          "a": "EnergieMIND Token (ENM) is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available."
         },
         {
-          "q": "公式の更新情報はどこで入手できますか？",
-          "a": "公式トークン情報は enm.network で公開されています。お問い合わせはお問い合わせページをご利用ください。コントラクトアドレスやプレセール情報について、非公式チャネル、ソーシャルメディアの DM、第三者サイトを信頼しないでください。"
+          "q": "How do I add ENM to my wallet?",
+          "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with ticker symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state."
+        },
+        {
+          "q": "Where can I get official updates?",
+          "a": "Official EnergieMIND Token (ENM) information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information."
         }
       ]
     },
@@ -494,9 +539,9 @@
       "card1Title": "トークンに関するお問い合わせ",
       "card1Desc": "ENM トークン、コントラクト検証、プレセール状況、トークノミクスに関するご質問。",
       "card2Title": "パートナーシップとパイロット",
-      "card2Desc": "エコシステムパートナーシップ、パイロット参加、インフラ調整に関するお問い合わせ。",
-      "card3Title": "EnergieMIND プロジェクト",
-      "card3Desc": "エネルギーインテリジェンス技術、マイニング熱ユーティリティ、プロジェクトレイヤーに関するご質問は、EnergieMIND プロジェクトサイトをご覧ください。",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
       "card4Title": "公式リソース",
       "card4Desc": "公式チャネルのみで情報を確認してください。",
       "contractPage": "コントラクトページ",

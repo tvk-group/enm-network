@@ -681,26 +681,93 @@ section { padding: 56px 0; }
 .contact-card p { margin: 0; color: var(--ink-muted); font-size: 15px; line-height: 1.6; }
 .contact-card a { color: var(--energy-blue-dark); font-weight: 600; }
 
-/* Layer distinction */
-.layer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.layer-card {
+/* Ecosystem domain map */
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.domain-card {
+  position: relative;
   border-radius: var(--radius);
-  padding: 24px;
   border: 1px solid var(--line);
   background: var(--panel);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.layer-card.project {
-  background: linear-gradient(135deg, rgba(45, 156, 219, 0.08), rgba(255, 255, 255, 0.9));
-  border-color: rgba(45, 156, 219, 0.2);
+.domain-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); }
+.domain-card .domain-link {
+  display: block;
+  padding: 22px 22px 20px;
+  color: inherit;
+  text-decoration: none;
 }
-.layer-card.token {
-  background: linear-gradient(135deg, rgba(255, 176, 32, 0.12), rgba(23, 178, 106, 0.06));
-  border-color: rgba(255, 176, 32, 0.3);
+.domain-card h3 { margin: 0 0 8px; font-size: 17px; color: var(--ink); }
+.domain-card .domain {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
 }
-.layer-card h3 { margin: 0 0 8px; font-size: 18px; color: var(--ink); }
-.layer-card .domain { font-size: 13px; font-weight: 700; color: var(--energy-blue-dark); margin-bottom: 10px; }
-.layer-card.token .domain { color: #b45309; }
-.layer-card p { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.6; }
+.domain-card p { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.6; }
+.domain-card.corporate {
+  background: linear-gradient(135deg, rgba(45, 156, 219, 0.1), rgba(255, 255, 255, 0.95));
+  border-color: rgba(45, 156, 219, 0.22);
+}
+.domain-card.corporate .domain { color: var(--energy-blue-dark); }
+.domain-card.io {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(255, 255, 255, 0.95));
+  border-color: rgba(99, 102, 241, 0.22);
+}
+.domain-card.io .domain { color: #4338ca; }
+.domain-card.network {
+  background: linear-gradient(135deg, rgba(23, 178, 106, 0.1), rgba(255, 255, 255, 0.95));
+  border-color: rgba(23, 178, 106, 0.22);
+}
+.domain-card.network .domain { color: #047857; }
+.domain-card.org {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(255, 255, 255, 0.95));
+  border-color: rgba(20, 184, 166, 0.22);
+}
+.domain-card.org .domain { color: #0f766e; }
+.domain-card.shop {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(255, 255, 255, 0.95));
+  border-color: rgba(249, 115, 22, 0.22);
+}
+.domain-card.shop .domain { color: #c2410c; }
+.domain-card.token {
+  background: linear-gradient(135deg, rgba(255, 176, 32, 0.14), rgba(255, 237, 180, 0.35));
+  border-color: rgba(255, 176, 32, 0.35);
+}
+.domain-card.token .domain { color: #b45309; }
+.domain-card.current {
+  box-shadow: 0 0 0 2px rgba(255, 176, 32, 0.35);
+}
+.domain-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 176, 32, 0.2);
+  color: #92400e;
+}
+.domain-badge-inline {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #92400e;
+}
+.footer-domain.current {
+  font-weight: 700;
+  color: #b45309;
+  cursor: default;
+}
 
 /* Footer */
 .footer {
@@ -711,7 +778,7 @@ section { padding: 56px 0; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
   gap: 32px;
 }
 .footer h4 {
@@ -911,7 +978,7 @@ section { padding: 56px 0; }
   .nav-links { display: none; }
   .menu-toggle { display: block; }
   .dashboard-grid { grid-template-columns: 1fr; }
-  .hero-grid, .token-panel, .contact-grid, .layer-grid { grid-template-columns: 1fr; }
+  .hero-grid, .token-panel, .contact-grid, .domain-grid { grid-template-columns: 1fr 1fr; }
   .cards { grid-template-columns: 1fr; }
   .cards.two { grid-template-columns: 1fr; }
   .roadmap { grid-template-columns: 1fr 1fr; }
@@ -919,6 +986,7 @@ section { padding: 56px 0; }
 }
 
 @media (max-width: 620px) {
+  .domain-grid { grid-template-columns: 1fr; }
   .roadmap { grid-template-columns: 1fr; }
   .section-head { display: block; }
   .section-head p { margin-top: 12px; }

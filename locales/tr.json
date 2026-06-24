@@ -36,11 +36,13 @@
     },
     "footer": {
       "brand": "EnergieMIND Token",
-      "desc": "Resmi EnergieMIND Token (ENM) dokümantasyonu enm.network adresindedir. EnergieMIND proje bilgileri energiemind.com adresinde mevcuttur.",
-      "descShort": "Resmi EnergieMIND Token (ENM) dokümantasyonu enm.network adresindedir.",
+      "desc": "Official EnergieMIND Token (ENM) documentation at enm.network. The wider EnergieMIND ecosystem uses dedicated domains for corporate, technology, network, mission, and commerce.",
+      "descShort": "Official EnergieMIND Token (ENM) documentation at enm.network.",
       "tokenHeading": "Token",
       "infoHeading": "Bilgi",
-      "contractLabel": "Kontrat:"
+      "contractLabel": "Kontrat:",
+      "ecosystemHeading": "Ecosystem Domains",
+      "youAreHere": "You are here"
     },
     "badges": {
       "pending": "Beklemede",
@@ -111,8 +113,8 @@
       "h1": "EnergieMIND Token",
       "lead": "EnergieMIND enerji zekâsı ekosisteminin yardımcı token katmanı.",
       "supportLine": "Enerji Yardımcısı · Madencilik Isı Katılımı · Ekosistem Koordinasyonu · Gelecek Mainnet Uyumu",
-      "layersTitle": "İki katman, tek ekosistem.",
-      "layersDesc": "ENM ve EnergieMIND farklı ancak bağlantılı roller üstlenir. Bu site yalnızca token katmanını kapsar.",
+      "layersTitle": "Official EnergieMIND ecosystem domains",
+      "layersDesc": "EnergieMIND uses dedicated domains for corporate, technology, network operations, public mission, commerce, and EnergieMIND Token (ENM) layer. This site documents EnergieMIND Token (ENM) at enm.network only.",
       "projectDomain": "energiemind.com",
       "projectTitle": "EnergieMIND — Proje Katmanı",
       "projectDesc": "Enerji zekâsı, madencilik ısı yardımcısı, teknoloji geliştirme, pilot katılımı ve altyapı koordinasyonu. Proje ve teknoloji bilgileri için energiemind.com adresini ziyaret edin.",
@@ -140,7 +142,46 @@
       "trustMultichain": "Ethereum Mainnet",
       "portalCtaTitle": "Investor Portal",
       "portalCtaDesc": "Apply for presale access, complete KYC, track allocation, payment status, and vesting — same institutional workflow as EnteleKRON and SOVRA protocol portals.",
-      "h1Ticker": "ENM"
+      "h1Ticker": "ENM",
+      "domains": [
+        {
+          "id": "corporate",
+          "domain": "energiemind.com",
+          "title": "Corporate & Project",
+          "desc": "Main corporate and project website."
+        },
+        {
+          "id": "io",
+          "domain": "energiemind.io",
+          "title": "Technology Platform",
+          "desc": "Technology platform, dashboard, and application layer."
+        },
+        {
+          "id": "network",
+          "domain": "energiemind.network",
+          "title": "Energy Network",
+          "desc": "Partners, nodes, miner-heaters, and energy network coordination."
+        },
+        {
+          "id": "org",
+          "domain": "energiemind.org",
+          "title": "Sustainability & Research",
+          "desc": "Sustainability, research, and public mission."
+        },
+        {
+          "id": "shop",
+          "domain": "energiemind.shop",
+          "title": "Energy Shop",
+          "desc": "Shop for miners, miner-heaters, solar, and energy products."
+        },
+        {
+          "id": "token",
+          "domain": "enm.network",
+          "title": "EnergieMIND Token (ENM)",
+          "desc": "EnergieMIND Token (ENM), presale, and token documentation.",
+          "current": true
+        }
+      ]
     },
     "token": {
       "title": "EnergieMIND Token | enm.network",
@@ -154,7 +195,7 @@
       "riskShort": "ENM bir yatırım tavsiyesi, finansal ürün, menkul kıymet teklifi veya garantili getiri aracı değildir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Kontrat adresini her zaman bağımsız olarak doğrulayın.",
       "aboutTitle": "ENM Hakkında",
       "aboutP1": "EnergieMIND Token (ENM), EnergieMIND ekosistemi için Ethereum ERC-20 yardımcı tokenidir. Enerji zekâsı, madencilik ısı yardımcısı katılımı, pilot programlar, enerji altyapısı teşvikleri ve EnteleKRON mainnet uyumu ile ilgili gelecekteki koordinasyon için tasarlanmıştır.",
-      "aboutP2": "ENM, teknoloji ve altyapıyı kapsayan energiemind.com adresindeki EnergieMIND proje sitesinden ayrıdır. Bu site yalnızca token katmanını belgeler.",
+      "aboutP2": "EnergieMIND Token (ENM) is documented on enm.network. The broader EnergieMIND ecosystem uses dedicated domains — energiemind.com (corporate), energiemind.io (platform), energiemind.network (partners & nodes), energiemind.org (mission), and energiemind.shop (products).",
       "scopeTitle": "Öngörülen yardımcı kapsam.",
       "scopeDesc": "ENM pasif gelir, kâr garantisi veya menkul kıymet teklifi olarak değil, bir koordinasyon yardımcısı olarak konumlandırılmıştır.",
       "card1Title": "Enerji Zekâsı",
@@ -439,44 +480,48 @@
       "riskFooter": "Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Düzenleyici, teknik, likidite, piyasa ve operasyonel riskler geçerlidir. Kontrat adresini her zaman bağımsız olarak doğrulayın.",
       "items": [
         {
-          "q": "ENM nedir?",
-          "a": "EnergieMIND Token (ENM), EnergieMIND enerji zekâsı ekosisteminin yardımcı tokenidir. Ethereum Mainnet üzerinde bir ERC-20 tokenidir; enerji zekâsı, madencilik ısı katılımı, pilot programlar ve EnteleKRON mainnet uyumu ile ilgili gelecekteki ekosistem koordinasyonu için tasarlanmıştır. ENM bir yardımcı tokenidir — yatırım ürünü değildir."
+          "q": "What is EnergieMIND Token?",
+          "a": "EnergieMIND Token (ticker: ENM) is the utility token of the EnergieMIND energy intelligence ecosystem. It is an ERC-20 token on Ethereum Mainnet, designed for future ecosystem coordination related to energy intelligence, mining heat participation, pilot programs, and EnteleKRON mainnet alignment. ENM is a utility token — not an investment product."
         },
         {
-          "q": "enm.network ile energiemind.com arasındaki fark nedir?",
-          "a": "enm.network, token katmanını kapsayan resmi EnergieMIND Token (ENM) dokümantasyon sitesidir: kontrat, tokenomik, ön satış ve risk açıklamaları. energiemind.com EnergieMIND proje katmanını kapsar: enerji zekâsı teknolojisi, madencilik ısı yardımcısı ve altyapı geliştirme. Aynı ekosistemin ayrı ancak bağlantılı parçalarıdır."
+          "q": "What are the official EnergieMIND domains?",
+          "a": "energiemind.com — main corporate/project website; energiemind.io — technology platform, dashboard, and app; energiemind.network — partners, nodes, miner-heaters, and energy network; energiemind.org — sustainability, research, and public mission; energiemind.shop — shop for miners, miner-heaters, solar, and energy products; enm.network — EnergieMIND Token (ENM), presale, and token documentation (this site)."
         },
         {
-          "q": "Resmi kontrat adresi nedir?",
-          "a": "Ethereum Mainnet üzerindeki resmi ENM kontratı 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'dir. Etkileşime girmeden önce bu adresi her zaman Etherscan'da bağımsız olarak doğrulayın."
+          "q": "What is the difference between enm.network and energiemind.com?",
+          "a": "enm.network is dedicated to EnergieMIND Token (ENM): contract, tokenomics, presale, investor portal, and risk disclosures. energiemind.com is the main corporate and project website. Other ecosystem functions use energiemind.io, energiemind.network, energiemind.org, and energiemind.shop."
         },
         {
-          "q": "ENM'yi şu anda transfer edebilir miyim?",
-          "a": "Mevcut doğrulanmış kontrata göre transferler kısıtlı veya kilitlidir. Herhangi bir transfer denemeden önce en son zincir üstü durum için Etherscan'da kontrat durumunu kontrol edin."
+          "q": "What is the official contract address?",
+          "a": "The official EnergieMIND Token (ENM) contract on Ethereum Mainnet is 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D. Always verify this address independently on Etherscan before interacting."
         },
         {
-          "q": "ENM bir yatırım mı?",
-          "a": "Hayır. ENM yatırım ürünü, menkul kıymet teklifi, garantili getiri aracı veya pasif gelir vaadi olarak sunulmamaktadır. Ekosistem koordinasyonu için bir yardımcı tokenidir. Kripto varlıklar yüksek risklidir ve değer kaybedebilir. Tam risk bildirimine bakın."
+          "q": "Can I transfer ENM right now?",
+          "a": "According to the current verified contract, transfers are restricted or locked. Check the contract status on Etherscan for the latest on-chain state before attempting any transfer."
         },
         {
-          "q": "Ön satış ne zaman?",
-          "a": "Early Investor: 01 Tem – 30 Eyl 2026. Strategic Investor: 01 Eki – 31 Ara 2026. Private Sale: 01 Oca – 31 Mar 2027. Public Presale: 01 Nis 2027'den itibaren altı 6 haftalık aşamada. Canlı durum için ön satış sayfası ve lansman paneline bakın."
+          "q": "Is EnergieMIND Token an investment?",
+          "a": "No. EnergieMIND Token (ENM) is not presented as an investment product, security offering, guaranteed return instrument, or passive income promise. It is a utility token for ecosystem coordination. Crypto assets are high-risk and may lose value. See the full risk notice."
         },
         {
-          "q": "Toplam arz nedir?",
-          "a": "Maksimum toplam arz 18 ondalık basamakla 50.000.000.000 ENM'dir (50 milyar). Kategoriler arası tahsis yüzdeleri tokenomik sayfasında resmi yayın beklemektedir."
+          "q": "When is the presale?",
+          "a": "Early Investor: 01 Jul – 30 Sep 2026. Strategic Investor: 01 Oct – 31 Dec 2026. Private Sale: 01 Jan – 31 Mar 2027. Public Presale: from 01 Apr 2027 in six 6-week stages. See the presale page and investor portal for live status."
         },
         {
-          "q": "EnteleKRON mainnet uyumu nedir?",
-          "a": "ENM, EnteleKRON mainnet ekosistemi ile gelecekteki geçiş ve uyum için hazırlanmıştır. Bir geçiş rezervi tahsis kategorisi planlanmaktadır. Belirli geçiş koşulları, zaman çizelgeleri ve teknik detaylar mevcut olduğunda yayınlanacaktır."
+          "q": "What is the total supply?",
+          "a": "The maximum total supply is 50,000,000,000 ENM (50 billion) with 18 decimals. Allocation percentages across categories are pending official publication on the tokenomics page."
         },
         {
-          "q": "ENM'yi cüzdanıma nasıl eklerim?",
-          "a": "Token sembolü ENM ve 18 ondalık basamakla resmi kontrat adresi 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D'yi kullanın. Adresi Etherscan'da doğrulayın. Kontrat durumuna göre transferlerin şu anda kısıtlı olabileceğini unutmayın."
+          "q": "What is EnteleKRON mainnet alignment?",
+          "a": "EnergieMIND Token (ENM) is prepared for future migration and alignment with the EnteleKRON mainnet ecosystem. A migration reserve allocation category is planned. Specific migration terms, timelines, and technical details will be published when available."
         },
         {
-          "q": "Resmi güncellemeleri nereden alabilirim?",
-          "a": "Resmi token bilgileri enm.network adresinde yayınlanmaktadır. Sorularınız için iletişim sayfasını kullanın. Kontrat adresleri veya ön satış bilgileri için resmi olmayan kanallara, sosyal medya DM'lerine veya üçüncü taraf sitelere güvenmeyin."
+          "q": "How do I add ENM to my wallet?",
+          "a": "Use the official contract address 0x00faB8baFfF3f849dd23FF68cfE51d8E3d09937D with ticker symbol ENM and 18 decimals. Verify the address on Etherscan. Be aware that transfers may currently be restricted per the contract state."
+        },
+        {
+          "q": "Where can I get official updates?",
+          "a": "Official EnergieMIND Token (ENM) information is published on enm.network. For inquiries, use the contact page. Do not trust unofficial channels, social media DMs, or third-party sites for contract addresses or presale information."
         }
       ]
     },
@@ -494,9 +539,9 @@
       "card1Title": "Token Soruları",
       "card1Desc": "EnergieMIND Token (ENM), kontrat doğrulama, ön satış durumu veya tokenomik hakkında sorular için.",
       "card2Title": "Ortaklık ve Pilotlar",
-      "card2Desc": "Ekosistem ortaklığı, pilot katılımı ve altyapı koordinasyonu soruları için.",
-      "card3Title": "EnergieMIND Projesi",
-      "card3Desc": "Enerji zekâsı teknolojisi, madencilik ısı yardımcısı ve proje katmanı soruları için EnergieMIND proje sitesini ziyaret edin.",
+      "card2Desc": "For partner, node, miner-heater, and energy network coordination — see energiemind.network.",
+      "card3Title": "EnergieMIND Ecosystem",
+      "card3Desc": "Corporate site: energiemind.com · Platform: energiemind.io · Mission: energiemind.org · Shop: energiemind.shop",
       "card4Title": "Resmi Kaynaklar",
       "card4Desc": "Bilgileri yalnızca resmi kanallar aracılığıyla doğrulayın.",
       "contractPage": "Kontrat sayfası",

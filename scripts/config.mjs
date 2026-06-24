@@ -10,6 +10,16 @@ export const TOKEN_ONCHAIN_NAME = 'EnergieMind';
 export const SITE_BRAND = 'EnergieMIND Token';
 export const SITE_OG_NAME = 'EnergieMIND Token (ENM) | enm.network';
 
+/** Official EnergieMIND ecosystem domain map */
+export const ECOSYSTEM_DOMAINS = [
+  { id: 'corporate', domain: 'energiemind.com', url: 'https://energiemind.com' },
+  { id: 'io', domain: 'energiemind.io', url: 'https://energiemind.io' },
+  { id: 'network', domain: 'energiemind.network', url: 'https://energiemind.network' },
+  { id: 'org', domain: 'energiemind.org', url: 'https://energiemind.org' },
+  { id: 'shop', domain: 'energiemind.shop', url: 'https://energiemind.shop' },
+  { id: 'token', domain: 'enm.network', url: SITE_URL, current: true },
+];
+
 export const LANGUAGES = [
   { code: 'en', hreflang: 'en', dir: 'ltr', name: 'English', native: 'English' },
   { code: 'tr', hreflang: 'tr', dir: 'ltr', name: 'Turkish', native: 'Türkçe' },
