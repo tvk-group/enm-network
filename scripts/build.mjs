@@ -1069,7 +1069,7 @@ ${energyOrb}
     <div class="wrap nav-inner">
       <a class="brand" href="${pagePath(lang, '')}" aria-label="${esc(t.common.brandHome)}">
         <span class="mark"></span>
-        <span>${esc(TOKEN_NAME.replace(' Token', ''))}<div class="brand-sub">${TOKEN_SYMBOL} · enm.network</div></span>
+        <span>${esc(TOKEN_NAME)}<div class="brand-sub">${TOKEN_SYMBOL} · enm.network</div></span>
       </a>
       <div class="nav-links">
         ${nav}

@@ -8,6 +8,7 @@ const LOCALES = path.join(__dirname, '..', 'locales');
 const en = JSON.parse(fs.readFileSync(path.join(LOCALES, 'en.json'), 'utf8'));
 
 const REPLACEMENTS = [
+  [/EnergieMIND Token/g, TOKEN_NAME],
   [/ENM Token/g, TOKEN_NAME],
   [/ENM \(EnergieMind\)/g, `${TOKEN_NAME} (${TOKEN_SYMBOL})`],
   [/EnergieMind ENM/g, `${TOKEN_NAME} (${TOKEN_SYMBOL})`],

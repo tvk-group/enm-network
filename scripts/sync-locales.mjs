@@ -40,6 +40,9 @@ function forceFromEn(target, source, keyPath) {
 const en = JSON.parse(fs.readFileSync(path.join(LOCALES, 'en.json'), 'utf8'));
 
 const FORCE_SYNC_PATHS = [
+  'common.brandHome',
+  'common.branding',
+  'common.footer.brand',
   'common.footer.desc',
   'common.footer.descShort',
   'common.footer.ecosystemHeading',
