@@ -32,7 +32,8 @@
       "copyAddress": "Kopioi osoite",
       "copied": "Kopioitu!",
       "verifyOnWallets": "Vahvista lompakkosivulla",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "Krypto-omaisuudet ovat korkean riskin ja voivat menettää arvonsa. Sovellettavissa ovat sääntely-, tekniset, likviditeetti-, markkina- ja operatiiviset riskit.",
       "steps": [
         {
-          "title": "Tokenin perusta",
-          "desc": "Ylläpidä vahvistettua EnergieMIND (ENM) Ethereum -sopimusta, julkaise virallinen token-dokumentaatio osoitteessa enm.network ja luo läpinäkyvät sopimustiedot ekosysteemille."
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "Dokumentaatio ja läpinäkyvyys",
-          "desc": "Julkaise tokenomics, ennakkomyynnin ehdot (kun viimeistelty), riskitiedot ja viralliset viestintäkanavat. Täydellinen token-kerroksen erottelu energiemind.com-projektisivustosta."
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "Ennakkomyynti ja jakelu",
-          "desc": "Käynnistä ennakkomyynti, kun ehdot on viimeistelty ja virallisesti ilmoitettu. Toteuta vesting, allokaatio ja jakelu julkaistun tokenomicsin mukaisesti."
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "Utility-aktivointi",
-          "desc": "Ota käyttöön ekosysteemin utility-toiminnot, jotka liittyvät energiaälykkyyteen osallistumiseen, kaivostoiminnan lämmön koordinointiin ja pilottiohjelmakehyksiin infrastruktuurin kypsyessä."
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "Kumppani- ja pilottiverkosto",
-          "desc": "Tue pilottikäyttöönottoja hotelleissa, kaupallisissa rakennuksissa, aurinkovoimaloissa ja miner-heater-asennuksissa token-koordinoiduilla osallistumismalleilla."
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "Ekosysteemin laajentuminen",
-          "desc": "Kehitä yhteisö- ja kumppaniohjelmia, infrastruktuuriin kannustinrakenteita ja operatiivisia koordinointityökaluja EnergieMIND-ekosysteemissä."
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "EnteleKRON-kohdistus",
-          "desc": "Valmistele siirtovara ja kohdistuskehys EnteleKRON mainnet -moduuleille, validaattorijärjestelmille ja ekosysteemin natiiville selvitykselle."
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "Mainnet-siirto",
-          "desc": "Toteuta siirron kohdistus EnteleKRON mainnetiin, kun tekniset, sääntely- ja ekosysteemiehdot täyttyvät. Ehdot julkaistaan etukäteen."
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "Riskivaroitus | EnergieMIND",

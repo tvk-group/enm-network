@@ -32,7 +32,8 @@
       "copyAddress": "複製地址",
       "copied": "已複製！",
       "verifyOnWallets": "在錢包頁面驗證",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "加密資產風險極高，可能貶值。適用監管、技術、流動性、市場及營運風險。",
       "steps": [
         {
-          "title": "代幣基礎",
-          "desc": "維護經核實的 EnergieMIND (ENM) Ethereum 合約，在 enm.network 發布官方代幣文件，為生態系統建立透明的合約資訊。"
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "文件與透明度",
-          "desc": "發布代幣經濟學、預售條款（最終確定後）、風險披露和官方溝通管道。完成代幣層與 energiemind.com 專案網站的分離。"
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "預售與分配",
-          "desc": "條款最終確定並官方公布後啟動預售。根據已發布的代幣經濟學實施歸屬、分配和分發。"
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "實用啟用",
-          "desc": "隨著基礎設施成熟，啟用與能源智慧參與、挖礦熱能協調和試點計畫框架相關的生態實用功能。"
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "合作夥伴與試點網路",
-          "desc": "支援飯店、商業建築、太陽能站點和礦機加熱器安裝的試點部署，採用代幣協調的參與模式。"
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "生態擴展",
-          "desc": "在 EnergieMIND 生態系統內發展社群和合作夥伴計畫、基礎設施激勵結構和營運協調工具。"
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "EnteleKRON 對齊",
-          "desc": "為 EnteleKRON 主網模組、驗證者系統和生態原生結算準備遷移儲備和對齊框架。"
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "主網遷移",
-          "desc": "在技術、監管和生態條件滿足時，執行與 EnteleKRON 主網的遷移對齊。條款將提前公布。"
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "風險聲明 | EnergieMIND",

@@ -32,7 +32,8 @@
       "copyAddress": "Копировать адрес",
       "copied": "Скопировано!",
       "verifyOnWallets": "Проверить на странице кошельков",
-      "applyAccess": "Apply for Access"
+      "applyAccess": "Apply for Access",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -377,38 +378,48 @@
       "riskFooter": "Криптоактивы высокорискованны и могут потерять стоимость. Применяются регуляторные, технические, ликвидностные, рыночные и операционные риски.",
       "steps": [
         {
-          "title": "Основа токена",
-          "desc": "Поддержание верифицированного контракта ENM в Ethereum, публикация официальной документации токена на enm.network и создание прозрачной информации о контракте для экосистемы."
+          "marker": "Foundation",
+          "title": "Token Foundation",
+          "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
-          "title": "Документация и прозрачность",
-          "desc": "Публикация токеномики, условий пресейла (после утверждения), раскрытия рисков и официальных каналов связи. Полное разделение токен-уровня от сайта проекта energiemind.com."
+          "marker": "Transparency",
+          "title": "Documentation & Transparency",
+          "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
-          "title": "Пресейл и распределение",
-          "desc": "Запуск пресейла после утверждения и официального объявления условий. Реализация вестинга, распределения и дистрибуции согласно опубликованной токеномике."
+          "marker": "Distribution",
+          "title": "Presale & Distribution",
+          "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
-          "title": "Активация утилиты",
-          "desc": "Включение утилитарных функций экосистемы, связанных с участием в энергетическом интеллекте, координацией тепла майнинга и рамками пилотных программ по мере созревания инфраструктуры."
+          "marker": "Utility",
+          "title": "Utility Activation",
+          "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
-          "title": "Сеть партнёров и пилотов",
-          "desc": "Поддержка пилотных развёртываний для отелей, коммерческих зданий, солнечных площадок и установок майнер-обогревателей с моделями участия, координируемыми токеном."
+          "marker": "Pilots",
+          "title": "Partner & Pilot Network",
+          "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
-          "title": "Расширение экосистемы",
-          "desc": "Разработка программ сообщества и партнёров, структур стимулов инфраструктуры и инструментов операционной координации в экосистеме EnergieMIND."
+          "marker": "Growth",
+          "title": "Ecosystem Expansion",
+          "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
-          "title": "Выравнивание с EnteleKRON",
-          "desc": "Подготовка резерва миграции и рамки выравнивания для модулей mainnet EnteleKRON, систем валидаторов и нативных расчётов экосистемы."
+          "marker": "Alignment",
+          "title": "EnteleKRON Alignment",
+          "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
-          "title": "Миграция на mainnet",
-          "desc": "Выполнение выравнивания миграции с mainnet EnteleKRON при выполнении технических, регуляторных и экосистемных условий. Условия будут опубликованы заранее."
+          "marker": "Summit",
+          "title": "Mainnet Migration",
+          "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
-      ]
+      ],
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment"
     },
     "risk": {
       "title": "Уведомление о рисках | EnergieMIND",

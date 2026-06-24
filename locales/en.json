@@ -41,7 +41,8 @@
       "etherscan": "Etherscan ↗",
       "openEtherscan": "Open on Etherscan",
       "contractDetails": "Contract Details",
-      "verifyOnWallets": "Verify on Wallets page"
+      "verifyOnWallets": "Verify on Wallets page",
+      "openSite": "Open site"
     },
     "footer": {
       "brand": "EnergieMIND",
@@ -547,37 +548,47 @@
       "lead": "A staged path from token foundation to ecosystem utility coordination and mainnet alignment. Timelines are indicative and subject to change.",
       "riskShort": "Roadmap items are planning milestones, not guarantees of delivery, value, or return. EnergieMIND (ENM) is not an investment product or guaranteed return instrument.",
       "footerNote": "Roadmap phases represent intended direction. No specific dates are published. Progress updates will be communicated through official channels when available.",
+      "timelineStart": "Foundation",
+      "timelineEnd": "Mainnet alignment",
       "riskFooter": "Crypto assets are high-risk and may lose value. Regulatory, technical, liquidity, market and operational risks apply.",
       "steps": [
         {
+          "marker": "Foundation",
           "title": "Token Foundation",
           "desc": "Maintain verified EnergieMIND (ENM) Ethereum contract, publish official token documentation at enm.network, and establish transparent contract information for the ecosystem."
         },
         {
+          "marker": "Transparency",
           "title": "Documentation & Transparency",
           "desc": "Publish tokenomics, presale terms (when finalized), risk disclosures, and official communication channels. Maintain clear separation between enm.network (token) and other EnergieMIND ecosystem domains."
         },
         {
+          "marker": "Distribution",
           "title": "Presale & Distribution",
           "desc": "Launch presale when terms are finalized and officially announced. Implement vesting, allocation, and distribution according to published tokenomics."
         },
         {
+          "marker": "Utility",
           "title": "Utility Activation",
           "desc": "Enable ecosystem utility functions related to energy intelligence participation, mining heat coordination, and pilot program frameworks as infrastructure matures."
         },
         {
+          "marker": "Pilots",
           "title": "Partner & Pilot Network",
           "desc": "Support pilot deployments for hotels, commercial buildings, solar sites, and miner-heater installations with token-coordinated participation models."
         },
         {
+          "marker": "Growth",
           "title": "Ecosystem Expansion",
           "desc": "Develop community and partner programs, infrastructure incentive structures, and operational coordination tools within the EnergieMIND ecosystem."
         },
         {
+          "marker": "Alignment",
           "title": "EnteleKRON Alignment",
           "desc": "Prepare migration reserve and alignment framework for EnteleKRON mainnet modules, validator systems, and ecosystem-native settlement."
         },
         {
+          "marker": "Summit",
           "title": "Mainnet Migration",
           "desc": "Execute migration alignment with EnteleKRON mainnet when technical, regulatory, and ecosystem conditions are met. Terms to be published in advance."
         }
