@@ -1,25 +1,26 @@
-/* ENM Investor Portal — Golden-hour institutional (harmonizes with sunshine ENM identity) */
+/* EnergieMIND Investor Portal — Renewable green institutional + ENM gold accents */
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --portal-bg: #fff4e0;
-  --portal-bg-deep: #fffaf3;
+  --portal-bg: #eaf5ef;
+  --portal-bg-deep: #f4faf7;
   --portal-card: #ffffff;
-  --portal-card-2: #fffdf8;
-  --portal-border: rgba(255, 176, 32, 0.28);
-  --portal-glow: rgba(255, 176, 32, 0.35);
+  --portal-card-2: #fafff8;
+  --portal-border: rgba(13, 122, 78, 0.22);
+  --portal-glow: rgba(13, 122, 78, 0.28);
   --portal-gold: #ffb020;
   --portal-gold-dark: #b45309;
   --portal-cyan: #2d9cdb;
   --portal-green: #17b26a;
-  --portal-green-bright: #087443;
+  --portal-green-bright: #065a38;
+  --portal-green-light: #34d399;
   --portal-amber: #f59e0b;
   --portal-red: #dc2626;
   --portal-purple: #7c3aed;
-  --portal-text: #1a2744;
-  --portal-muted: #5a6b7d;
-  --portal-dim: #8b9cb8;
-  --portal-deep: #1e2d4a;
+  --portal-text: #122a1f;
+  --portal-muted: #4a6b5c;
+  --portal-dim: #6b8f7c;
+  --portal-deep: #0a3d2a;
   --portal-display: 'Orbitron', sans-serif;
   --portal-body: 'Inter', sans-serif;
   --portal-mono: 'JetBrains Mono', monospace;
@@ -43,9 +44,10 @@ body.portal-energy::after { display: none; }
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 900px 600px at 50% -10%, rgba(255, 200, 50, 0.4), transparent 55%),
+    radial-gradient(ellipse 900px 600px at 50% -10%, rgba(52, 211, 153, 0.28), transparent 55%),
     radial-gradient(ellipse 600px 400px at 90% 90%, rgba(45, 156, 219, 0.1), transparent 50%),
-    linear-gradient(180deg, #fff8e8 0%, #fffaf3 50%, #fff4e0 100%);
+    radial-gradient(ellipse 400px 300px at 10% 20%, rgba(255, 200, 50, 0.06), transparent 50%),
+    linear-gradient(180deg, #eef9f3 0%, #f4faf7 50%, #eaf5ef 100%);
 }
 
 .portal-bg-grid {
@@ -53,10 +55,10 @@ body.portal-energy::after { display: none; }
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.18;
   background:
-    linear-gradient(rgba(255, 176, 32, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 176, 32, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(13, 122, 78, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 122, 78, 0.07) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 
@@ -69,7 +71,7 @@ body.portal-energy::after { display: none; }
   border-radius: 50%;
   top: -120px;
   right: -80px;
-  background: radial-gradient(circle, rgba(255, 200, 50, 0.25) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.22) 0%, transparent 65%);
   animation: portal-pulse 10s ease-in-out infinite;
   z-index: -1;
   pointer-events: none;
@@ -80,19 +82,19 @@ body.portal-energy::after { display: none; }
   50% { transform: scale(1.12); opacity: 1; }
 }
 
-/* Portal nav — matches main sunshine nav */
+/* Portal nav — renewable green */
 body.portal-energy .nav {
-  background: rgba(255, 250, 243, 0.94);
+  background: rgba(244, 250, 247, 0.95);
   border-bottom: 1px solid var(--portal-border);
-  box-shadow: 0 4px 20px rgba(255, 176, 32, 0.08);
+  box-shadow: 0 4px 20px rgba(13, 122, 78, 0.08);
 }
 body.portal-energy .brand { color: var(--portal-text); }
-body.portal-energy .brand-sub { color: var(--portal-gold-dark); }
+body.portal-energy .brand-sub { color: var(--portal-green-bright); }
 body.portal-energy .nav-links a { color: var(--portal-muted); }
 body.portal-energy .nav-links a:hover,
 body.portal-energy .nav-links a.active {
   color: var(--portal-green-bright);
-  background: rgba(255, 176, 32, 0.12);
+  background: rgba(13, 122, 78, 0.1);
 }
 body.portal-energy .lang-select {
   background: white;
@@ -100,14 +102,14 @@ body.portal-energy .lang-select {
   color: var(--portal-text);
 }
 body.portal-energy .mark {
-  background: linear-gradient(135deg, var(--portal-gold), var(--portal-green));
+  background: linear-gradient(135deg, var(--portal-green), var(--portal-green-bright));
   box-shadow: 0 0 16px var(--portal-glow);
 }
 body.portal-energy .mark::after { background: rgba(255, 255, 255, 0.92); }
 
 body.portal-energy .btn.primary {
-  background: linear-gradient(135deg, #ffc94d, var(--portal-gold));
-  color: var(--portal-text);
+  background: linear-gradient(135deg, var(--portal-green), var(--portal-green-bright));
+  color: #fff;
   box-shadow: 0 4px 16px var(--portal-glow);
 }
 body.portal-energy .btn {
@@ -116,12 +118,12 @@ body.portal-energy .btn {
   color: var(--portal-text);
 }
 body.portal-energy .footer {
-  background: #fff4e0;
+  background: #eaf5ef;
   border-top: 1px solid var(--portal-border);
   color: var(--portal-muted);
 }
 body.portal-energy .footer h4 { color: var(--portal-text); }
-body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
+body.portal-energy .footer-links a:hover { color: var(--portal-green-bright); }
 
 .portal-wrap {
   width: min(1200px, calc(100% - 40px));
@@ -138,8 +140,8 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--portal-gold-dark);
-  background: rgba(255, 240, 200, 0.8);
+  color: var(--portal-green-bright);
+  background: rgba(232, 247, 239, 0.9);
   border: 1px solid var(--portal-border);
   padding: 5px 12px;
   border-radius: 20px;
@@ -162,7 +164,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   letter-spacing: -0.5px;
   margin: 0 0 10px;
   color: var(--portal-text);
-  background: linear-gradient(135deg, var(--portal-text) 20%, var(--portal-gold-dark) 60%, var(--portal-green-bright));
+  background: linear-gradient(135deg, var(--portal-text) 20%, var(--portal-green-bright) 55%, var(--portal-green-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -176,8 +178,8 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   line-height: 1.6;
   padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 176, 32, 0.25);
-  background: rgba(255, 176, 32, 0.08);
+  border: 1px solid rgba(13, 122, 78, 0.22);
+  background: rgba(232, 247, 239, 0.85);
 }
 
 .portal-toolbar {
@@ -200,7 +202,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   border: 1px solid var(--portal-border);
   border-radius: var(--portal-radius);
   padding: 20px;
-  box-shadow: 0 8px 24px rgba(255, 176, 32, 0.08);
+  box-shadow: 0 8px 24px rgba(13, 122, 78, 0.08);
 }
 .kpi-card .kpi-label {
   font-size: 11px;
@@ -240,12 +242,12 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   left: 50%;
   right: -50%;
   height: 2px;
-  background: rgba(255, 176, 32, 0.2);
+  background: rgba(13, 122, 78, 0.12);
   z-index: 0;
 }
 .journey-step:last-child::before { display: none; }
-.journey-step.done::before { background: linear-gradient(90deg, var(--portal-green), rgba(255, 176, 32, 0.2)); }
-.journey-step.active::before { background: linear-gradient(90deg, var(--portal-gold), rgba(255, 176, 32, 0.15)); }
+.journey-step.done::before { background: linear-gradient(90deg, var(--portal-green), rgba(13, 122, 78, 0.15)); }
+.journey-step.active::before { background: linear-gradient(90deg, var(--portal-gold), rgba(13, 122, 78, 0.12)); }
 
 .step-icon {
   width: 36px;
@@ -273,7 +275,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   background: rgba(255, 176, 32, 0.15);
   border-color: rgba(255, 176, 32, 0.45);
   color: var(--portal-gold-dark);
-  box-shadow: 0 0 12px var(--portal-glow);
+  box-shadow: 0 0 12px rgba(255, 176, 32, 0.3);
 }
 .step-label {
   font-size: 11px;
@@ -350,7 +352,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   color: var(--portal-dim);
   padding: 12px 14px;
   border-bottom: 1px solid var(--portal-border);
-  background: #fff8ec;
+  background: #f0faf5;
 }
 .portal-table td {
   padding: 12px 14px;
@@ -358,7 +360,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   color: var(--portal-muted);
 }
 .portal-table td strong { color: var(--portal-text); }
-.portal-table tr:hover td { background: rgba(255, 240, 200, 0.3); }
+.portal-table tr:hover td { background: rgba(232, 247, 239, 0.65); }
 
 .portal-tabs {
   display: flex;
@@ -379,8 +381,8 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   font-family: var(--portal-body);
 }
 .portal-tab.active {
-  color: var(--portal-gold-dark);
-  background: rgba(255, 240, 200, 0.6);
+  color: var(--portal-green-bright);
+  background: rgba(232, 247, 239, 0.75);
   border-color: var(--portal-border);
 }
 
@@ -413,8 +415,8 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
 .portal-field input:focus,
 .portal-field select:focus {
   outline: none;
-  border-color: var(--portal-gold);
-  box-shadow: 0 0 0 3px rgba(255, 176, 32, 0.15);
+  border-color: var(--portal-green);
+  box-shadow: 0 0 0 3px rgba(13, 122, 78, 0.15);
 }
 .portal-form-grid {
   display: grid;
@@ -484,7 +486,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
 .portal-progress > span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, var(--portal-gold), var(--portal-green));
+  background: linear-gradient(90deg, var(--portal-green), var(--portal-green-bright));
 }
 
 .portal-risk {
@@ -506,7 +508,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   left: 50%;
   transform: translateX(-50%) translateY(20px);
   background: white;
-  border: 1px solid var(--portal-gold);
+  border: 1px solid var(--portal-green);
   color: var(--portal-text);
   padding: 14px 20px;
   border-radius: 12px;
@@ -514,7 +516,7 @@ body.portal-energy .footer-links a:hover { color: var(--portal-gold-dark); }
   z-index: 5000;
   opacity: 0;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 40px rgba(255, 176, 32, 0.2);
+  box-shadow: 0 8px 40px rgba(13, 122, 78, 0.18);
 }
 .portal-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
